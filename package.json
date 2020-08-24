@@ -6,7 +6,7 @@
   },
  
   "scripts": {
-    "heroku-postbuild": "cd ANGULAR_APP_FOLDER && npm install",
+    "heroku-postbuild": "cd Explora && npm install",
     "postinstall": "ng build --aot -prod",
     "ng": "ng",
     "start": "ng serve",
