@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "heroku-postbuild": "cd ANGULAR_APP_FOLDER && npm install",
+    "postinstall": "ng build --aot -prod",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
