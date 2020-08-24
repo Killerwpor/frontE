@@ -6,7 +6,6 @@
   },
  
   "scripts": {
-    "heroku-postbuild": "cd Explora && npm install",
     "postinstall": "ng build",
     "ng": "ng",
     "start": "ng serve",
