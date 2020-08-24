@@ -7,7 +7,7 @@
  
   "scripts": {
     "heroku-postbuild": "cd Explora && npm install",
-    "postinstall": "ng build --aot -prod",
+    "postinstall": "ng build",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
