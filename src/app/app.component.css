@@ -1,31 +1,40 @@
-.flechaDerecha{
-    filter: invert(77%) sepia(44%) saturate(6606%) hue-rotate(289deg) brightness(102%) contrast(101%);
-    position: absolute;
-    top: 70%;
-    left: 72%;
+.header{
+    margin-left: 7%;
+    margin-top: 3%;
+    position: fixed;
 }
 
-.textoScroll{
-    margin-left: 12%;
-    margin-right: 23%;
-    position: absolute;
-    color: white;
-    font-size: 4vw;
-    height: 100%;  
-    text-align: center; 
-}
+  .icono1{
+      max-width: 100px;
+  }
 
-.ciudadEspejo{
-    position: absolute;
-    top:25%;
-    left:34%;
-    max-width: 660px;
-}
+  .icono2{
+    max-width: 100px;
+  }
 
-.mapa{
-    max-width: 1100px; 
-    position: absolute;
-    top: 10%;
-    left: 15%;
-}
+  .aliados{
+    max-width: 100px;
+    margin-left: 800px;
+  }
 
+  @media only screen and (max-width: 500px) {
+    .header{
+        margin-left: 0% !important;
+        margin-top: 6% !important;
+        position: fixed;
+    }
+
+    .icono1{
+        max-width: 60px !important;
+    }
+  
+    .icono2{
+      max-width: 60px !important;
+      margin-left: 10px;
+    }
+
+    .aliados{
+      max-width: 60px !important;
+      margin-left: 160px !important;
+    }
+  }

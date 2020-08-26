@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 
-import * as $ from "jquery";
 
 
 @Component({
@@ -8,21 +7,16 @@ import * as $ from "jquery";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'test';  
-  permitirScroll=false;
-  permitirMapa=false;
+export class AppComponent implements AfterViewInit {
+
+  ngAfterViewInit(): void {
  
-  arrancarAnimacion(){
-    $(".ciudadEspejo").addClass("animate__animated animate__fadeOut");
-    setTimeout(()=>{
-      this.permitirScroll=true;
-      setTimeout(()=>{
-        this.permitirMapa=true;
-      }, 24500);
-    }, 1500);
 
     
   }
+
+
+  title = 'test';  
+ 
 
 }
