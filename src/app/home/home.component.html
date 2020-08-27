@@ -13,11 +13,11 @@
   
 
 
-<div *ngIf="home=='home1'" class="container text-center">
-  <img class="aliados" src="https://ep01.epimg.net/iconos/v1.x/v1.0/promos/promo_og_icon.png"/>
+<div *ngIf="home=='home1'" class="container-fluid text-center">
+  <img class="aliados" src="assets/vertical/CRÉDITOS.png"/>
     <div class="row">
       <div class="col">
-        <img class="img-fluid ciudadEspejo"  src="assets/img/ciudadEspejo.png"/>
+        <img class="img-fluid ciudadEspejo"  src="assets/vertical/CABEZOTE-MEDIANO-CON-ELEMENTO.png"/>
       </div>
     </div>
       <div class="row">
@@ -35,25 +35,24 @@
     </div>
     <div class="row">
         <div class="col">
-            <img class="flechaDerecha" (click)="siguienteHome('home2')" src="assets/img/flechaDerecha.png"/>   
+            <img class="flechaDerecha" (click)="siguienteHome('home2')" src="assets/vertical/FLECHA-SIGUIENTE.png"/>   
         </div>
     </div>
 </div>
 
 
 <div class="text-center home2" *ngIf="home=='home2'" (window:scroll)="onWindowScroll()">
-  
+  <img class="imagenHome" (click)="siguienteHome('home1')" src="assets/vertical/NOMBRE-DLE-FILTRO-HOME.png"/>
         <div class="row text-center">
           <div class="col">
-     <img class="img-fluid ciudadEspejo2"  src="assets/img/ciudadEspejo.png"/>
-    <img *ngIf="cambiarCiudadEspejo" class="img-fluid ciudadEspejo3"  src="assets/img/ciudadEspejo2.jpg"/>
+     <img class="img-fluid ciudadEspejo2"  src="assets/vertical/CABEZOTE-GRANDE.png"/>
+    <img *ngIf="cambiarCiudadEspejo" class="img-fluid ciudadEspejo3"  src="assets/vertical/CABEZOTE-GRANDE-EN-CONTORNOS.png"/>
      </div>
      </div>   
 
  <div class="container2">
   
-  <div class="row">
-  
+  <div class="row">  
     <div class="col-md-12 my-5">
       <h5 class="h1 font-bold mb-5 texto2">Lorem ipsum dolor sit amet, consectetur quis elit.
      Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro, cumque
@@ -109,7 +108,7 @@
   </div>
   <div class="row">
     <div class="col">
-      <img class="flechaDerecha2" (click)="siguienteHome('home3')" src="assets/img/flechaDerecha.png"/>  
+      <img class="flechaDerecha2" (click)="siguienteHome('home3')" src="assets/vertical/FLECHA-SIGUIENTE.png"/>  
     </div>
   </div>
     
@@ -118,8 +117,7 @@
 </div>
 
 <div *ngIf="home=='home3'" class="container">
-
-  <img class="aliados" src="https://ep01.epimg.net/iconos/v1.x/v1.0/promos/promo_og_icon.png"/>
+  <img class="imagenHome" (click)="siguienteHome('home1')" src="assets/vertical/NOMBRE-DLE-FILTRO-HOME.png"/>
     <div class="row text-center">
       <div class="col-sm-12 ">
         <div class="btn-toolbar text-center" role="toolbar" aria-label="Toolbar with button groups">
@@ -135,16 +133,11 @@
         <img class="img-fluid ciudadEspejo3"  src="assets/img/ciudadEspejo.png"/>
       </div>
       <div class="col">
-        <img class="img-fluid mapa"  src="assets/img/mapa.png"/>
+        <img class="img-fluid mapa"  src="assets/vertical/MAPA-REFLEJADO---POR-ACTUALIZAR.png"/>
       </div>
       <div class="col-12">
-            <img class="brujula img-fluid" (click)="siguienteHome('home2')" src="assets/img/brujula.png"/>             
-        </div>
-        <div class="col-12 text-center textoBrujula">
-          Explora
-          <br>
-          los distritos
-         </div>
+            <img class="brujula img-fluid" (click)="siguienteHome('home2')" src="assets/vertical/ICONO-escoge-una-mitad.png"/>             
+        </div>      
     </div>
   
         

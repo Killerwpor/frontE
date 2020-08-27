@@ -20,7 +20,7 @@ export class HomeComponent implements AfterViewInit {
     });
   }
 
-  home: String="home2";
+  home: String="home1";
   permitirScroll=false;
   permitirMapa=false;
   cambiarCiudadEspejo: Boolean=false;
