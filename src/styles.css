@@ -4,14 +4,34 @@ html, body { height: 100%; }
 
 @media only screen and (max-width: 500px) {
     body { 
-        background-image: url('assets/img/0movil.png') !important;
+        /* background-image: url('assets/img/0movil.png') !important; */
+        background-color: #002E3D;
      }
 }
 body { 
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-image: url('assets/img/0.png');
+    background-color: #002E3D;
+    /* background-image: url('assets/img/0.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
  }
+
+ /** {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+  }
+  
+  /* Works on Chrome/Edge/Safari */
+ /* *::-webkit-scrollbar {
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    background: orange;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 20px;
+    border: 3px solid orange;
+  }*/

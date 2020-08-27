@@ -20,7 +20,7 @@ export class HomeComponent implements AfterViewInit {
     });
   }
 
-  home1: Boolean=true;
+  home: String="home1";
   permitirScroll=false;
   permitirMapa=false;
   cambiarCiudadEspejo: Boolean=false;
@@ -37,15 +37,20 @@ export class HomeComponent implements AfterViewInit {
     
   }
 
-  onWindowScroll(event){  
+  onWindowScroll(){ 
+    //alert("scroll"); 
   //   console.log(event)    
-  // $(".ciudadEspejo").addClass("animate__animated animate__fadeOut");
+   $(".ciudadEspejo").addClass("animate__animated animate__fadeOut");
   
-  //   setTimeout(()=>{
-  //      this.cambiarCiudadEspejo=true;
+     setTimeout(()=>{
+        this.cambiarCiudadEspejo=true;
       
-  //   }, 400);
+     }, 300);
    
+   }
+
+   siguienteHome(home){
+  this.home=home;
    }
 
 }

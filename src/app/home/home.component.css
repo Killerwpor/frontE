@@ -5,18 +5,89 @@ filter: invert(100%) sepia(51%) saturate(2%) hue-rotate(342deg) brightness(113%)
     right: -45%;  
 }
 
+.brujula{
+    filter: invert(100%) sepia(51%) saturate(2%) hue-rotate(342deg) brightness(113%) contrast(100%);
+        position: relative !important;
+        top: -155px !important;
+        right: 0px;  
+    }
+
+.flechaDerecha2{
+    filter: invert(100%) sepia(51%) saturate(2%) hue-rotate(342deg) brightness(113%) contrast(100%);
+    position: relative !important;
+    left: 0% !important;
+    }
+
   .texto{
-       margin-right: 30%;
-       margin-left: 30%;
+       margin-right: 20%;
+       margin-left: 20%;
        color: white !important;
-       font-size: 2vh;
+       font-size: 2.5vh;
    }
+
+   .texto2{
+    margin-top: 40%;
+     margin-right: 20%;
+     margin-left: 20%;
+     color: white !important;
+     font-size: 2.5vh;
+ }
 
    .container{
        position: relative;
-       top: 35%;
+       top: 250px;
        right:0%;
    }
+   .container2{
+    position: relative;
+    top: 150px !important;
+    right:0%;
+}
+
+
+   .ciudadEspejo{
+       position: relative;
+       left: 0%;
+       top: 0%;
+       max-width: 500px;
+   }
+
+   .ciudadEspejo2{
+    position: fixed;
+    left: 32%;
+    top: 35%;
+    max-width: 500px;
+}
+
+.mapa{
+    position: relative;
+    left: 0%;
+    top: 0%;
+    max-width: 500px;
+}
+
+   .aliados{
+       position: fixed;
+       left: 30%;
+       top: 5.5%;
+    max-width: 100px;
+    margin-left: 800px;
+  }
+
+   .home2{
+       position: relative;
+       top: 50px;
+   }
+
+   .textoBrujula{
+    color: white;
+    font-size: 2vh;
+    position: relative !important;
+    top: -160px !important;
+    right: -510px; 
+}
+
+   
 
    @media only screen and (max-width: 500px) {
     .texto{
@@ -25,12 +96,71 @@ filter: invert(100%) sepia(51%) saturate(2%) hue-rotate(342deg) brightness(113%)
         font-size: 2vh !important;
     }
     .container{
-        top: 70% !important;
+        top: 250px !important;
     }
 
     .flechaDerecha{
-         right: 0% !important;  
+         right: 0px !important;  
+         top: 0px !important;
         }
+
+        .aliados{
+            position: fixed;
+            left: 5% !important;
+            top: 3% !important;
+         max-width: 60px;
+         margin-left: 250px !important;
+        }
+
+        .home2{
+            position: relative;
+            top: 100px;
+        }
+
+        .ciudadEspejo{
+            max-width: 300px !important;
+            left: 0px !important;
+
+        }
+
+        .ciudadEspejo2{
+            max-width: 300px !important;
+            left: 30px !important;
+
+        }
+
+        .texto2{
+            margin-top: 40%;
+             margin-right: 10% !important;
+             margin-left: 10% !important;
+             color: white !important;
+             font-size: 2.5vh;
+         }
+
+         .brujula{
+            filter: invert(100%) sepia(51%) saturate(2%) hue-rotate(342deg) brightness(113%) contrast(100%);
+                position: relative !important;
+                top: 0px !important;
+                right: 0px;  
+            }
+
+            .mapa{
+                position: relative;
+                left: 0px;
+                top: 100px;
+                max-width: 320px;
+            }
+
+            .textoBrujula{
+                color: white;
+                font-size: 1vh;
+                text-align: justify;
+                position: relative !important;
+                top: 0px !important;
+                right: -145px; 
+            }
+         
+       
  
 }
 
