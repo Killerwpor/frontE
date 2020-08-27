@@ -43,10 +43,10 @@
 
 <div class="text-center home2" *ngIf="home=='home2'" (window:scroll)="onWindowScroll()">
   
-        <div class="row">
+        <div class="row text-center">
           <div class="col">
      <img class="img-fluid ciudadEspejo2"  src="assets/img/ciudadEspejo.png"/>
-    <img *ngIf="cambiarCiudadEspejo" class="img-fluid ciudadEspejo2"  src="assets/img/ciudadEspejo2.jpg"/>
+    <img *ngIf="cambiarCiudadEspejo" class="img-fluid ciudadEspejo3"  src="assets/img/ciudadEspejo2.jpg"/>
      </div>
      </div>   
 
@@ -117,28 +117,38 @@
 </div>  
 </div>
 
-<div *ngIf="home=='home3'" class="container text-center">
+<div *ngIf="home=='home3'" class="container">
+
   <img class="aliados" src="https://ep01.epimg.net/iconos/v1.x/v1.0/promos/promo_og_icon.png"/>
-    <div class="row">
+    <div class="row text-center">
+      <div class="col-sm-12 ">
+        <div class="btn-toolbar text-center" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group mr-2 mx-auto" role="group" aria-label="First group">
+              <button mdbBtn type="button" color="default" class="waves-light" mdbWavesEffect><div class="textoBoton">HOME</div></button>
+              <button mdbBtn type="button" color="default" class="waves-light" mdbWavesEffect>MEDELLIN</button>
+              <button mdbBtn type="button" color="default" class="waves-light" mdbWavesEffect>NÍ˥˥ƎpƎW</button>
+              <button mdbBtn type="button" color="default" class="waves-light" mdbWavesEffect>FISURAS</button>
+          </div> 
+        </div>
+      </div>
+      <div class="col-12">
+        <img class="img-fluid ciudadEspejo3"  src="assets/img/ciudadEspejo.png"/>
+      </div>
       <div class="col">
         <img class="img-fluid mapa"  src="assets/img/mapa.png"/>
       </div>
-    </div>
-      <div class="row">
-      <div class="col">
-      
-    </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
+      <div class="col-12">
             <img class="brujula img-fluid" (click)="siguienteHome('home2')" src="assets/img/brujula.png"/>             
         </div>
-        <div class="col- text-center textoBrujula">
+        <div class="col-12 text-center textoBrujula">
           Explora
           <br>
           los distritos
          </div>
     </div>
+  
+        
+    
   
  
 </div>

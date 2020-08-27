@@ -20,7 +20,7 @@ export class HomeComponent implements AfterViewInit {
     });
   }
 
-  home: String="home1";
+  home: String="home2";
   permitirScroll=false;
   permitirMapa=false;
   cambiarCiudadEspejo: Boolean=false;
@@ -40,12 +40,12 @@ export class HomeComponent implements AfterViewInit {
   onWindowScroll(){ 
     //alert("scroll"); 
   //   console.log(event)    
-   $(".ciudadEspejo").addClass("animate__animated animate__fadeOut");
+   $(".ciudadEspejo2").addClass("animate__animated animate__fadeOut");
   
      setTimeout(()=>{
         this.cambiarCiudadEspejo=true;
       
-     }, 300);
+     }, 400);
    
    }
 
