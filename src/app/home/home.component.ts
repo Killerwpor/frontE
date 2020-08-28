@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, HostListener } from '@angular/core';
 
 import * as $ from "jquery";
 import 'jarallax';
@@ -21,6 +21,7 @@ export class HomeComponent implements AfterViewInit {
   }
 
   home: String="home1";
+  topPosition: number=0;
   permitirScroll=false;
   permitirMapa=false;
   cambiarCiudadEspejo: Boolean=false;
@@ -37,20 +38,30 @@ export class HomeComponent implements AfterViewInit {
     
   }
 
-  onWindowScroll(){ 
-    //alert("scroll"); 
-  //   console.log(event)    
-   $(".ciudadEspejo2").addClass("animate__animated animate__fadeOut");
-  
-     setTimeout(()=>{
-        this.cambiarCiudadEspejo=true;
-      
-     }, 400);
-   
-   }
+ 
+
 
    siguienteHome(home){
+    this.topPosition=0; //se reinicia la barra scroll del home2
   this.home=home;
    }
+
+   @HostListener("window:scroll", ["$event"])
+onWindowScroll() {
+  $(".ciudadEspejo2").addClass("animate__animated animate__fadeOut");
+  
+  setTimeout(()=>{
+     this.cambiarCiudadEspejo=true;
+   
+  }, 400);
+//In chrome and some browser scroll is given to body tag
+let pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
+let max = document.documentElement.scrollHeight;
+// pos/max will give you the distance between scroll bottom and and bottom of screen in percentage.
+//alert(pos);
+ if(pos == max )   {
+ alert("botton");
+ }
+}
 
 }

@@ -23,13 +23,7 @@
       <div class="row">
       <div class="col">
           <div class="texto">
-        Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro, cumque
-        provident
-        rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet, veritatis
-        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
-        cumque
-        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
-        veritatis
+            Esta Medellín imaginada es una reflexión sobre nuestros futuros posibles. Conviven en este espacio las pesadillas de las narraciones distópicas y el esplendor verde y sostenible que propone el solar punk más reciente. La ciencia ficción, como una casa de los espejos, toma elementos de la realidad y los deforma hasta el horror o la belleza.
       </div>
     </div>
     </div>
@@ -46,12 +40,14 @@
         <div class="row text-center">
           <div class="col">
      <img class="img-fluid ciudadEspejo2"  src="assets/vertical/CABEZOTE-GRANDE.png"/>
-    <img *ngIf="cambiarCiudadEspejo" class="img-fluid ciudadEspejo3"  src="assets/vertical/CABEZOTE-GRANDE-EN-CONTORNOS.png"/>
+    <img *ngIf="cambiarCiudadEspejo" class="img-fluid ciudadEspejoFade"  src="assets/vertical/CABEZOTE-GRANDE-EN-CONTORNOS.png"/>
      </div>
      </div>   
 
  <div class="container2">
-  
+
+  <img class="img-fluid barraScroll" src="assets/vertical/BARRA-SCROLL.png"/>
+ <img class="img-fluid botonScroll" [style.top.px]="topPosition" src="assets/vertical/SCROLL-EN-PROCESO.png"/>
   <div class="row">  
     <div class="col-md-12 my-5">
       <h5 class="h1 font-bold mb-5 texto2">Lorem ipsum dolor sit amet, consectetur quis elit.
