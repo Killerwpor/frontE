@@ -6,10 +6,10 @@
 }
 
 .brujula{
-    filter: invert(100%) sepia(51%) saturate(2%) hue-rotate(342deg) brightness(113%) contrast(100%);
-        position: relative !important;
-        top: -230px !important;
-        right: 0px;  
+        position: absolute !important;
+        top: 100px !important;
+        right: 45%;  
+        max-width: 100px;
     }
 
 .flechaDerecha2{    
@@ -66,17 +66,15 @@
 }
 
 .ciudadEspejo3{
-    position: fixed;
-    left: 32%;
-    top: 35%;
-    max-width: 500px;
-    z-index: -100;
+    position: relative;
+    top: -100px;
+    max-width: 360px;
 }
 
 .mapa{
-    position: relative;
-    left: 0px;
-    top: -60px;
+    position: absolute;
+    left: 28%;
+    top: -100px;
     max-width: 500px;
 }
 
@@ -99,12 +97,6 @@
        top: 50px;
    }
 
-   .textoBrujula{
-    color: white;
-    font-size: 2vh;
-    position: relative !important;
-    top: -235px !important;
-}
 
 
 .btn-group{
@@ -174,10 +166,11 @@
         }
 
         .ciudadEspejo3{
-            max-width: 300px !important;
-            left: 30px !important;
-
+            position: relative;
+            top: -100px;
+            max-width: 180px;
         }
+
         .texto2{
             margin-top: 40%;
              margin-right: 10% !important;
@@ -187,27 +180,20 @@
              z-index: 1;
          }
 
-         .brujula{
-            filter: invert(100%) sepia(51%) saturate(2%) hue-rotate(342deg) brightness(113%) contrast(100%);
-                position: relative !important;
-                top: -220px !important;
-                right: 0px;  
+         .brujula{            
+                position: absolute !important;
+                top: 200px !important;
+                right: 120px;
+                max-width: 80px;  
             }
 
             .mapa{
-                position: relative;
-                left: 0px;
-                top: -70px;
-                max-width: 320px;
-            }
-
-            .textoBrujula{
-                color: white;
-                font-size: 2vh;
-                text-align: justify;
-                position: relative !important;
-                top: -220px !important;
-            }
+                position: absolute;
+                left: -20px;
+                top: 0px;
+                max-width: 380px;
+            }        
+        
          
             button{
                 width: 60px !important;     
@@ -220,6 +206,12 @@
             }         
 
             
+            .imagenHome{
+                position: fixed;
+                top: 20px;
+             max-width: 130px;
+             margin-left: 40px;
+            }
  
 }
 
