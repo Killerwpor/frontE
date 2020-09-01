@@ -11,7 +11,7 @@
 
 .brujula{
         position: absolute !important;
-        top: 210px !important;
+        top: 180px !important;
         right: 47.8%;  
         max-width: 70px;
     }
@@ -31,18 +31,18 @@
        margin-right: 23%;
        margin-left: 23%;
        color: #F8EBE3 !important;
-       font-size: 2.5vh;
+       font-size: 1.41vw;
        position: absolute;
-       top: -90px;
+       top: -80px;
+       font-family: 'sweet-sans-pro';
    }
 
    .texto2{
     margin-top: 40%;
-     margin-right: 20%;
-     margin-left: 20%;
      color: white !important;
-     font-size: 2.5vh;
+     font-size: 5vw;
      z-index: -1;
+     font-family: 'ambroise-std';
  }
 
    .container{
@@ -83,14 +83,14 @@
 
 .ciudadEspejo3{
     position: relative;
-    top: -100px;
+    top: -120px;
     max-width: 270px;
 }
 
 .mapa{
     position: absolute;
     left: 24%;
-    top: -100px;
+    top: -125px;
     max-width: 585px;
 }
 
@@ -127,7 +127,11 @@ cursor: pointer;
 .btn-group{
    position: relative;
    top: -120px;
+   width: 60%;
 }
+.btn-group:hover{
+  cursor: pointer;
+ }
 
 .barraScroll{
     position: fixed;
@@ -142,6 +146,11 @@ cursor: pointer;
     right: -5.9%;
 }
 
+area:hover{
+    cursor: pointer
+    
+}
+
    
 
    @media only screen and (max-width: 500px) {
@@ -149,8 +158,9 @@ cursor: pointer;
     .texto{
         margin-right: 5% !important;
         margin-left: 5% !important;
-        font-size: 1.5vh !important;
-        top: 95px;
+        font-size: 3.1vw !important;
+        top: 110px;
+        font-family: 'sweet-sans-pro';
     }
     .container{
         top: 250px !important;
@@ -214,8 +224,9 @@ cursor: pointer;
              margin-right: 10% !important;
              margin-left: 10% !important;
              color: white !important;
-             font-size: 2.5vh;
+             font-size: 3vh;
              z-index: 1;
+             font-family: 'ambroise-std';
          }
 
          .brujula{            
@@ -233,17 +244,7 @@ cursor: pointer;
             }        
         
          
-            button{
-                width: 60px !important;     
-                height: autopx;           
-                font-size: 1.5vh !important;           
-                display: flex;
-                justify-content: center;
-                color: black;
-                /* background-color: white !important; */
-            }         
-
-            
+                       
             .imagenHome{
                 position: fixed;
                 top: 20px;
@@ -255,10 +256,22 @@ cursor: pointer;
                 position: fixed;
                 top: 150px;
                 width: auto;
-                height: 530px;
+                height: 580px;
                 
-                right: 0px !important;
+                right: 0px;
             }
-
+            .botonScroll{
+                position: absolute;
+                width: 50px;
+                right: -5.9%;
+            }
+            
+            .btn-group{
+                position: relative;
+                top: -120px;
+                width: 100%;
+             }
+          
+            
 }
 

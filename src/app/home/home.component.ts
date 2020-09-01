@@ -1,4 +1,6 @@
-import { AfterViewInit, Component, OnInit, HostListener } from '@angular/core';
+import { AfterViewInit, Component, OnInit, HostListener, EventEmitter, Output } from '@angular/core';
+
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 import * as $ from "jquery";
 import 'jarallax';
@@ -13,7 +15,7 @@ declare var jarallax: any;
 })
 export class HomeComponent implements AfterViewInit {
 
-  constructor() { }
+  constructor(private deviceService: DeviceDetectorService) { }
   ngAfterViewInit(): void {
     jarallax(document.querySelectorAll('.jarallax'), {
       speed: 0.2
@@ -21,10 +23,13 @@ export class HomeComponent implements AfterViewInit {
   }
 
   home: String="home1";
-  topPosition: number=0;
+  topPosition: Number=0;
   permitirScroll=false;
   permitirMapa=false;
   cambiarCiudadEspejo: Boolean=false;
+  permitirAutores: Boolean=false;
+
+  @Output() navegador = new EventEmitter<string>();
  
   arrancarAnimacion(){
     $(".ciudadEspejo").addClass("animate__animated animate__fadeOut");
@@ -54,14 +59,41 @@ onWindowScroll() {
      this.cambiarCiudadEspejo=true;
    
   }, 400);
-//In chrome and some browser scroll is given to body tag
-let pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
-let max = document.documentElement.scrollHeight;
-// pos/max will give you the distance between scroll bottom and and bottom of screen in percentage.
-//alert(pos);
- if(pos == max )   {
- alert("botton");
- }
+  let isMobile = this.deviceService.isMobile();
+
+var windowHeight = window.innerHeight;
+var scrollArea = 1000 - windowHeight;
+var scrollTop = window.pageYOffset || window.scrollY;
+var scrollPercent = scrollTop/scrollArea || 0;
+if(!isMobile){
+  this.topPosition = scrollPercent*window.innerHeight*0.34; //el 0.35 es el multiplicador que le da la velocidad para acompañar el texto
+  if( this.topPosition>2600)   {   //si se pasa de 2500 se asigna un valor fijo para que la bolita no baje de cierto punto
+   this.topPosition = 2600;
+  } 
+}
+else{
+  this.topPosition = scrollPercent*window.innerHeight*0.59;
+}
+
+
+ 
+
+
+
+//alert(isMobile);
+//this.topPosition = scrollPercent*window.innerWidth;
+
+}
+
+clickMapa(lado){
+  switch(lado){
+    case '1':
+      this.navegador.emit("autores");
+      break;
+    case '2':
+      this.navegador.emit("autores");
+      break;    
+  }
 }
 
 }

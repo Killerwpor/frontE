@@ -1,0 +1,33 @@
+<div class="container-flex">
+    <img class="aliados" src="assets/autores/NOMBRE-FILTRO.png"/>
+    <div class="row text-center">
+        <div class="col-12">
+          <img class="img-fluid btn-group"  src="assets/vertical/MENÚ-HORIZONTAL---HOME.png"/>
+        </div>      
+      </div>
+      <div class="row">
+          <div class="col-12">
+            <div class="modalbox" id="text">
+                <div class="box">
+                  <img *ngIf="botonMas" class="botonMasMenos" src="assets/autores/MAS-TEXTO.jpg" (click)="clickPopUp()"/>              
+                  <img *ngIf="!botonMas" class="botonMasMenos" src="assets/autores/MENOS-TEXTO.jpg" (click)="clickPopUp()"/> 
+                  <div class="content" *ngIf="abrirPopUp">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+                  </div>
+                </div>
+              </div>             
+            </div>
+            <div class="col-12 ">
+              <img class="mapa text-center" src="assets/autores/REPSONSIVE HORIZONTAL/MAPA-TAMAÑO-1.png"/>
+              <!-- <img *ngIf="botonMas" class="botonMasMenos" src="assets/autores/MAS-TEXTO.jpg" (click)="clickPopUp()"/> -->
+            </div>
+            <div class="col-12 d-flex flex-column">
+              <img class="brujula" src="assets/autores/MÁS-HISTORIAS.png"/> 
+            </div>
+          </div>
+    
+        
+      
+
+      
+</div>

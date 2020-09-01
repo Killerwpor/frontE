@@ -9,14 +9,19 @@ import { AfterViewInit, Component } from '@angular/core';
 })
 export class AppComponent implements AfterViewInit {
 
-  ngAfterViewInit(): void {
- 
+  ngAfterViewInit(): void { 
 
     
   }
 
 
+  navegador="autores";
+
   title = 'test';  
  
+
+  funcionNavegador(lugar: string){
+    this.navegador=lugar;
+  }
 
 }

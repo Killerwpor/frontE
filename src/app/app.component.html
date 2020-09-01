@@ -10,10 +10,19 @@
      
 </div> 
 
-<div class="container">
+
+<div *ngIf="navegador=='home'" class="container">
     <div class="row">
         <div class="col">
-            <app-home></app-home>
+            <app-home (navegador)="funcionNavegador($event)"></app-home>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="navegador=='autores'" class="container">
+    <div class="row">
+        <div class="col">
+            <app-autores></app-autores>
         </div>
     </div>
 </div>

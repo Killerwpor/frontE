@@ -50,54 +50,7 @@
  <img class="img-fluid botonScroll" [style.top.px]="topPosition" src="assets/vertical/SCROLL-EN-PROCESO.png"/>
   <div class="row">  
     <div class="col-md-12 my-5">
-      <h5 class="h1 font-bold mb-5 texto2">Lorem ipsum dolor sit amet, consectetur quis elit.
-     Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro, cumque
-        provident
-        rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet, veritatis
-        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
-        cumque
-        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
-        veritatis
-        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
-        cumque
-        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
-        veritatis
-        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
-        cumque
-        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
-        veritatis
-        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
-        cumque
-        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
-        veritatis
-        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
-        cumque
-        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
-        veritatis
-        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
-        cumque
-        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
-        veritatis
-        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
-        cumque
-        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
-        veritatis
-        cupiditate reprehenderit.
-        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
-        veritatis
-        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
-        cumque
-        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
-        veritatis
-        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
-        cumque
-        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
-        veritatis
-        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
-        cumque
-        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
-        veritatis
-        cupiditate reprehenderit.</h5>
+      <h5 class="h1 font-bold mb-5 texto2">¡Bienvenido, forastero, a Ciudad Espejo!  Recorre sus calles, descubre sus secretos, pero lee primero esta amable advertencia —y no suelo ser una mujer amable—: lo que ves ya no existe. Es la imagen residual de un pasado lejano. Un espejismo que he rescatado —yo, viajera del tiempo, saltadora de dimensiones, ladrona de sueños y pesadillas— de una época en que Ciudad Espejo era una ciudad como cualquiera y sus partes se conectaban  unas con otras: estaba completa, sin fisuras. Sus residentes tenían vidas caóticas y tranquilas, felices y tristes, pobres y abundantes. Es decir, ¡aburridas! Hay ahora dos versiones sobre ese pasado distante y el momento en que todo cambió y la partió en dos. ¡Y compiten las historias! ¡Y se confuden! ... ¿Podrás tú, forastero, comprender la verdad que se oculta en Ciudad Espejo? Pues, ¡adelante!</h5>
     </div>
    
    
@@ -116,20 +69,17 @@
   <img class="imagenHome" (click)="siguienteHome('home1')" src="assets/vertical/NOMBRE-DLE-FILTRO-HOME.png"/>
     <div class="row text-center">
       <div class="col-sm-12 ">
-        <div class="btn-toolbar text-center" role="toolbar" aria-label="Toolbar with button groups">
-          <div class="btn-group mr-2 mx-auto" role="group" aria-label="First group">
-              <button mdbBtn type="button" color="default" class="waves-light" mdbWavesEffect><div class="textoBoton">HOME</div></button>
-              <button mdbBtn type="button" color="default" class="waves-light" mdbWavesEffect>MEDELLIN</button>
-              <button mdbBtn type="button" color="default" class="waves-light" mdbWavesEffect>NÍ˥˥ƎpƎW</button>
-              <button mdbBtn type="button" color="default" class="waves-light" mdbWavesEffect>FISURAS</button>
-          </div> 
-        </div>
+        <img class="img-fluid btn-group"  src="assets/vertical/MENÚ-HORIZONTAL---HOME.png"/>
       </div>
       <div class="col-12">
         <img class="img-fluid ciudadEspejo3"  src="assets/vertical/CABEZOTE-PEQUEÑO.png"/>
       </div>
       <div class="col-12">
-        <img class="img-fluid mapa"  src="assets/vertical/MAPA-REFLEJADO---POR-ACTUALIZAR.png"/>
+        <img class="img-fluid mapa" usemap="#workmap" src="assets/vertical/MAPA-REFLEJADO---POR-ACTUALIZAR.png"/>
+        <map name="workmap">
+          <area shape="rect" coords="0,0,298,407" (click)="clickMapa('1')" >
+          <area shape="rect" coords="298,0,560,407" (click)="clickMapa('2')" >
+        </map>
       </div>
        <div class="col-12">
             <img class="brujula img-fluid" (click)="siguienteHome('home2')" src="assets/vertical/ICONO-escoge-una-mitad.png"/>             
