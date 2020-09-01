@@ -3,6 +3,7 @@
     margin-top: 0%;
     position: fixed;
     background-color: #09313D;
+    z-index: 999;
 }
 
   .icono1{
