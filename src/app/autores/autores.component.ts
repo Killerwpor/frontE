@@ -54,7 +54,7 @@ export class AutoresComponent implements OnInit {
   }
 
   siguienteFragmento(siguiente){
-    if(siguiente){
+    if(siguiente=="true"){
       if(this.contadorFragmento<9){
         this.fragmentoActual=fragmentos[this.contadorFragmento+1];
         this.contadorFragmento++;
@@ -63,7 +63,11 @@ export class AutoresComponent implements OnInit {
       
     }
     else{
-
+      if(this.contadorFragmento>0){
+        this.fragmentoActual=fragmentos[this.contadorFragmento-1];
+        this.contadorFragmento--;
+        window.scroll(0,0); //scrollea hasta arriba al salir el nuevo fragmento
+      }
     }
   }
 }

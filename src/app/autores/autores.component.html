@@ -43,8 +43,8 @@
             <div class="container-fluid footer">
               <div class="row">
                   <div class="col-lg-3 col-sm-2">
-                      <img *ngIf="!movil" class="anterior" src="assets/autores/REPSONSIVE HORIZONTAL/ANTERIOR.png"/>
-                      <img *ngIf="movil" class="anteriorMovil" src="assets/autores/ANTERIOR.png"/>
+                      <img *ngIf="!movil" class="anterior" (click)="siguienteFragmento('false')"  src="assets/autores/REPSONSIVE HORIZONTAL/ANTERIOR.png"/>
+                      <img *ngIf="movil" class="anteriorMovil" (click)="siguienteFragmento('false')"  src="assets/autores/ANTERIOR.png"/>
                   </div>
                   <div class="col-lg-2 col-sm-3 bullets">
                     <img class="bullet" src="assets/autores/BULLET-VACIO.png"/>
