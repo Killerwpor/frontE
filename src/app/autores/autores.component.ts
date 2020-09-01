@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { DeviceDetectorService } from 'ngx-device-detector';
 
+import { fragmentos } from '../modelos/fragmentos'
+import { Fragmento } from '../modelos/fragmento';
+
 @Component({
   selector: 'app-autores',
   templateUrl: './autores.component.html',
@@ -12,7 +15,10 @@ export class AutoresComponent implements OnInit {
 
     abrirPopUp: Boolean=true;
     movil: Boolean=false;
-    relatos: Boolean=true;
+    relatos: Boolean=false;
+    contadorFragmento: number=0;
+    fragmentoActual: Fragmento=fragmentos[0];
+
   constructor(private deviceService: DeviceDetectorService) { }
 
   ngOnInit(): void {
@@ -44,6 +50,20 @@ export class AutoresComponent implements OnInit {
     }
     else{
       this.relatos=true;
+    }
+  }
+
+  siguienteFragmento(siguiente){
+    if(siguiente){
+      if(this.contadorFragmento<9){
+        this.fragmentoActual=fragmentos[this.contadorFragmento+1];
+        this.contadorFragmento++;
+        window.scroll(0,0); //scrollea hasta arriba al salir el nuevo fragmento
+      }
+      
+    }
+    else{
+
     }
   }
 }

@@ -11,7 +11,7 @@
 
 .btn-group{
     position: relative;
-    top: 20px;
+    top: 140px;
     width: 60%;
  }
 
@@ -83,7 +83,7 @@ width: 18%;
 
 .mapa{
     position: relative;
-    margin-top: 0%;
+    margin-top: 10%;
     right: -280px;
     width: 43%;
 }
@@ -129,6 +129,10 @@ width: 18%;
 }
 
 .anterior:hover{
+    cursor:pointer;
+}
+
+.anterior2:hover{
     cursor:pointer;
 }
 

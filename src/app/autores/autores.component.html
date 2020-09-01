@@ -2,15 +2,15 @@
     <img class="aliados" src="assets/autores/NOMBRE-FILTRO.png"/>
     <div class="row text-center">
         <div class="col-12">
-          <img class="img-fluid btn-group"  src="assets/vertical/MENÚ-HORIZONTAL---HOME.png"/>
+          <img class="img-fluid btn-group"  src="assets/vertical/MENU-HORIZONTAL---HOME.png"/>
         </div>      
       </div>
       <div class="row">
           <div class="col-12">
             <div class="modalbox" id="text">
                 <div class="box">
-                  <img *ngIf="botonMas" class="botonMasMenos" src="assets/autores/MAS-TEXTO.jpg" (click)="clickPopUp()"/>              
-                  <img *ngIf="!botonMas" class="botonMasMenos" src="assets/autores/MENOS-TEXTO.jpg" (click)="clickPopUp()"/> 
+                  <img *ngIf="botonMas" class="botonMasMenos" src="assets/autores/MENOS-TEXTO.jpg" (click)="clickPopUp()"/>              
+                  <img *ngIf="!botonMas" class="botonMasMenos" src="assets/autores/MAS-TEXTO.jpg" (click)="clickPopUp()"/> 
                   <div class="content" *ngIf="abrirPopUp">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
                   </div>
@@ -18,11 +18,11 @@
               </div>             
             </div>
             <div class="col-12 ">
-              <img class="mapa text-center" src="assets/autores/REPSONSIVE HORIZONTAL/MAPA-TAMAÑO-1.png"/>
+              <img class="mapa text-center" src="assets/autores/REPSONSIVE HORIZONTAL/MAPA-TAMANO-1.png"/>
               <!-- <img *ngIf="botonMas" class="botonMasMenos" src="assets/autores/MAS-TEXTO.jpg" (click)="clickPopUp()"/> -->
             </div>
             <div class="col-12 d-flex flex-column">
-              <img class="brujula" (click)="permitirRelatos()" src="assets/autores/MÁS-HISTORIAS.png"/> 
+              <img class="brujula" (click)="permitirRelatos()" src="assets/autores/MAS-HISTORIAS.png"/> 
             </div>
           </div> 
         </div>
@@ -32,12 +32,11 @@
           <img class="aliados" src="assets/autores/NOMBRE-FILTRO.png"/>
           <div class="row text-center">
               <div class="col-4">
-                <img class="img-fluid imagenRelatos"  src="assets/autores/REPSONSIVE HORIZONTAL/IMAGE-TAMAÑO1.png"/>
+                <img class="img-fluid imagenRelatos"  src="assets/autores/REPSONSIVE HORIZONTAL/IMAGE-TAMANO1.png"/>
               </div>      
               <div class="row">  
                 <div class="col-8 my-5">
-                  <p class="font-weight-bold textoCitado">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." <br>-Autor </p>
-                  <p class="font-weight-bold textoCitado"></p>               
+                  <p class="font-weight-bold textoCitado">{{fragmentoActual.textoOriginal}}<br><br>{{fragmentoActual.textoCitado}}<br><br><br>              
                 </div>            
                 </div>
             </div>
@@ -48,26 +47,26 @@
                       <img *ngIf="movil" class="anteriorMovil" src="assets/autores/ANTERIOR.png"/>
                   </div>
                   <div class="col-lg-2 col-sm-3 bullets">
-                    <img class="bullet" src="assets/autores/BULLET-VACÍO.png"/>
-                    <img class="bullet" src="assets/autores/BULLET-VACÍO.png"/>
-                    <img class="bullet" src="assets/autores/BULLET-VACÍO.png"/>
-                    <img class="bullet" src="assets/autores/BULLET-VACÍO.png"/>
-                    <img class="bullet" src="assets/autores/BULLET-VACÍO.png"/>
+                    <img class="bullet" src="assets/autores/BULLET-VACIO.png"/>
+                    <img class="bullet" src="assets/autores/BULLET-VACIO.png"/>
+                    <img class="bullet" src="assets/autores/BULLET-VACIO.png"/>
+                    <img class="bullet" src="assets/autores/BULLET-VACIO.png"/>
+                    <img class="bullet" src="assets/autores/BULLET-VACIO.png"/>
                   </div>    
                   
                   <div class="col-lg-2 col-sm-2">
                     <img class="brujulaHome" src="assets/autores/REPSONSIVE HORIZONTAL/ICONO-HOME-COMPLETO.png"/>
                 </div>  
                 <div class="col-lg-2 col-sm-3 bullets2">
-                  <img class="bullet2" src="assets/autores/BULLET-VACÍO.png"/>
-                  <img class="bullet2" src="assets/autores/BULLET-VACÍO.png"/>
-                  <img class="bullet2" src="assets/autores/BULLET-VACÍO.png"/>
-                  <img class="bullet2" src="assets/autores/BULLET-VACÍO.png"/>
-                  <img class="bullet2" src="assets/autores/BULLET-VACÍO.png"/>
+                  <img class="bullet2" src="assets/autores/BULLET-VACIO.png"/>
+                  <img class="bullet2" src="assets/autores/BULLET-VACIO.png"/>
+                  <img class="bullet2" src="assets/autores/BULLET-VACIO.png"/>
+                  <img class="bullet2" src="assets/autores/BULLET-VACIO.png"/>
+                  <img class="bullet2" src="assets/autores/BULLET-VACIO.png"/>
                 </div>     
                 <div class="col-lg-3 col-sm-2">
-                  <img *ngIf="!movil" class="anterior2" src="assets/autores/REPSONSIVE HORIZONTAL/SIGUIENTE.png"/>
-                  <img *ngIf="movil" class="anteriorMovil2" src="assets/autores/SIGUIENTE.png"/>
+                  <img *ngIf="!movil" class="anterior2" (click)="siguienteFragmento('true')" src="assets/autores/REPSONSIVE HORIZONTAL/SIGUIENTE.png"/>
+                  <img *ngIf="movil" class="anteriorMovil2" (click)="siguienteFragmento('true')" src="assets/autores/SIGUIENTE.png"/>
               </div>   
               </div>
                
