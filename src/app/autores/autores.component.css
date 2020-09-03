@@ -3,8 +3,23 @@
     padding: 0px,0px,0px,0px !important;
 }
 
+.header{
+    position: relative;
+    top: 200px;
+}
+
 .logo1{
     width: 40%;
+}
+
+.logo1Home{
+    width: 30%;
+}
+
+.logo2Home{
+    float: right;
+    margin-left: 800px;
+    width: 15%;
 }
 
 .logo2{
@@ -123,13 +138,22 @@ width: 18%;
     width: 10%;
 }
 
+
 .mapa{
-    position: relative;
-    margin-top: 10%;
-    right: -280px;
-    width: 43%;
+   width: 100%;
+   margin-top: -182px;
+   box-sizing: margin-box;
 }
 
+.menu{
+    margin-left: 100%;
+  width: 30px;
+
+}
+
+.menu:hover{
+  cursor: pointer;
+}
 
 
 .imagenRelatos{

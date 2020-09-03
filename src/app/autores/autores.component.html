@@ -1,53 +1,76 @@
 <!--Main Navigation-->
-<header>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="row">
-      <div class="col-6">
-        <img class="img-fluid logo1" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png"/>
-      </div>
-      <div class="col-6">
-        <img class="img-fluid logo2 pull-right" src="assets/autores/WEB/NOMBRE FILTRO_SNL.png"/>
-      </div>
-  
-    </div>
-
-  </nav>
-
-</header>
 <!--Main Navigation-->
 
-<div *ngIf="!relatos" class="container-flex">
-    <div class="row text-center">
-        <div class="col-12">
-          <img class="img-fluid btn-group"  src="assets/vertical/MENU-HORIZONTAL---HOME.png"/>
-        </div>      
-      </div>
+<div *ngIf="!relatos" class="">
+
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
       <div class="row">
-          <div class="col-12">
-            <div class="modalbox" id="text">
-                <div class="box">
-                  <img *ngIf="botonMas" class="botonMasMenos" src="assets/autores/MENOS-TEXTO.jpg" (click)="clickPopUp()"/>              
-                  <img *ngIf="!botonMas" class="botonMasMenos" src="assets/autores/MAS-TEXTO.jpg" (click)="clickPopUp()"/> 
-                  <div class="content" *ngIf="abrirPopUp">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
-                  </div>
+        <div class="col-6">
+          <img class="img-fluid logo1Home" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png"/>
+        </div>
+        <div class="col-6">
+          <img class="img-fluid logo2Home pull-right" src="assets/autores/WEB/LOGO-SNL.png"/>
+        </div>    
+      </div>  
+    </nav>  
+  </header> 
+
+    <div class="container-fluid">
+
+      <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-1 text-right">
+                <div class="col-12 text-justify">
+                  <img class="img-fluid" src="assets/autores/WEB/NOMBRE FILTRO_PT.png"/>
                 </div>
-              </div>             
+                <div class="col-12 text-justify">
+                  <img class="img-fluid" src="assets/autores/WEB/BARRA HORIZONTAL.png"/>
+                </div>
+                <div class="col-12 ">
+                  <div class="textoFragmento text-justify">Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!</div>
+                </div>
+              </div>
+                <div class="col-sm-7 col-sm-offset-1 text-right">
+                  <img class="img-fluid mapa" src="assets/autores/WEB/MAPAWEB.png"/>   
+                </div>
+            
+           
+                <div class="col-sm-1 col-sm-offset-1">
+                  <img class="img-fluid menu" src="assets/autores/WEB/MENU.png"/>  
+                </div>
             </div>
-            <div class="col-12 ">
-              <img class="mapa text-center" src="assets/autores/REPSONSIVE HORIZONTAL/MAPA-TAMANO-1.png"/>
-              <!-- <img *ngIf="botonMas" class="botonMasMenos" src="assets/autores/MAS-TEXTO.jpg" (click)="clickPopUp()"/> -->
-            </div>
-            <div class="col-12 d-flex flex-column">
-              <img class="brujula" (click)="permitirRelatos()" src="assets/autores/MAS-HISTORIAS.png"/> 
-            </div>
-          </div> 
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+    
         </div>
 
 
-        <div *ngIf="relatos" class="">     
-            <!-- <img class="" src="assets/autores/WEB/DECOR1.png"/> -->
+        <div *ngIf="relatos" class="">  
+          <header>
+
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+              <div class="row">
+                <div class="col-6">
+                  <img class="img-fluid logo1" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png"/>
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid logo2 pull-right" src="assets/autores/WEB/NOMBRE FILTRO_SNL.png"/>
+                </div>
+            
+              </div>
+          
+            </nav>
+          
+          </header>   
            <div class="text-justify contenedorRelatos">
           
             
