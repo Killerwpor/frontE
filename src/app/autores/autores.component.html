@@ -1,5 +1,23 @@
+<!--Main Navigation-->
+<header>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="row">
+      <div class="col-6">
+        <img class="img-fluid logo1" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png"/>
+      </div>
+      <div class="col-6">
+        <img class="img-fluid logo2 pull-right" src="assets/autores/WEB/NOMBRE FILTRO_SNL.png"/>
+      </div>
+  
+    </div>
+
+  </nav>
+
+</header>
+<!--Main Navigation-->
+
 <div *ngIf="!relatos" class="container-flex">
-    <img class="aliados" src="assets/autores/NOMBRE-FILTRO.png"/>
     <div class="row text-center">
         <div class="col-12">
           <img class="img-fluid btn-group"  src="assets/vertical/MENU-HORIZONTAL---HOME.png"/>
@@ -28,29 +46,27 @@
         </div>
 
 
-        <div *ngIf="relatos" class="container-fluid">
-          <div class="row">
-            <div class="col">              
-            </div>            
-          </div>
-            <img class="aliados" src="assets/autores/NOMBRE-FILTRO.png"/> 
-           <div class="row text-justify contenedorRelatos">
-            <div class="col-12">
-              <img class="img-fluid imagenRelatos"  src="assets/autores/REPSONSIVE HORIZONTAL/IMAGE-TAMANO1.png"/>
-            </div>
+        <div *ngIf="relatos" class="">     
+            <!-- <img class="" src="assets/autores/WEB/DECOR1.png"/> -->
+           <div class="text-justify contenedorRelatos">
+          
+            
+            
             <div class="row">
-
-             <div class="col-5">
+              <div class="col-5">
+                <img class="img-fluid"  src="{{fragmentoActual.urlImagen}}"/>
+              </div>
+             <div class="col-3">
                   <div class="col-12">
-                    <div class="font-weight-bold textoOriginal">{{fragmentoActual.textoOriginal}}</div>
+                    <div class="font-weight-bold textoOriginal font-italic">{{fragmentoActual.textoOriginal}}</div>
                   </div>                
                   <div class="col-12">                   
                     <div class="nombre">{{fragmentoActual.nombre}}</div>
-                    <div class="apellido">{{fragmentoActual.apellido}}</div>
+                    <div class="apellido font-italic">{{fragmentoActual.apellido}}</div>
                   </div>
                   <div class="col-12">
                    
-                    <div class="d-flex fuenteBibliografia">{{fragmentoActual.fuenteBibliografia}}</div>
+                    <div class="d-flex fuenteBibliografia font-weight-bold">{{fragmentoActual.fuenteBibliografia}}</div>
                   </div>             
                 </div>
                 <div class="col-1">                 
@@ -59,13 +75,15 @@
                   
                 </div> 
 
-                <div class="col-6">                 
+                <div class="col-3">                 
                                                
                     <div class="textoFragmento">{{fragmentoActual.textoFragmento}}</div>
                      
                 </div> 
-
-              </div>      
+            
+              </div> 
+              
+              
                   </div>
 
                     <!-- FOOTER WEB -->

@@ -4,4 +4,5 @@ export class Fragmento {
     fuenteBibliografia: string;
     textoOriginal: string;
     textoFragmento: string;
+    urlImagen: string;
 }

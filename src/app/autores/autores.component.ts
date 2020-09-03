@@ -15,7 +15,7 @@ export class AutoresComponent implements OnInit {
   topPosition: Number=170; //170
     abrirPopUp: Boolean=true;
     movil: Boolean=false;
-    relatos: Boolean=true;
+    relatos: Boolean=false;
     contadorFragmento: number=0;
     fragmentoActual: Fragmento=fragmentos[0];
     bulletVacio=[false,false,false,false,false,false,false,false,false,false]
@@ -76,6 +76,7 @@ export class AutoresComponent implements OnInit {
     else{
       if(this.contadorFragmento>0){
         this.fragmentoActual=fragmentos[this.contadorFragmento-1];
+        this.bulletVacio[this.contadorFragmento-1]=false;
         this.contadorFragmento--;
         if(isMobile) {
         window.scroll(0,0); //scrollea hasta arriba al salir el nuevo fragmento
