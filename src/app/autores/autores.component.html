@@ -29,17 +29,26 @@
 
 
         <div *ngIf="relatos" class="container-fluid contenedorRelatos">
-           <img class="aliados" src="assets/autores/NOMBRE-FILTRO.png"/>
-           <div class="row text-center">
-            <div class="col-4">
+           <!-- <img class="aliados" src="assets/autores/NOMBRE-FILTRO.png"/> -->
+           <div class="row text-justify">
+            <div class="col-12">
               <img class="img-fluid imagenRelatos"  src="assets/autores/REPSONSIVE HORIZONTAL/IMAGE-TAMANO1.png"/>
-            </div>      
-            <div class="row">  
-              <div class="col-8 my-5">
-                <p class="font-weight-bold textoOriginal">{{fragmentoActual.textoOriginal}}<br><br>              
-              </div>            
-              </div>
-          </div>
+            </div>  
+                  <div class="col-12">
+                    <div class="font-weight-bold textoOriginal">{{fragmentoActual.textoOriginal}}</div>
+                  </div>                
+                  <div class="col-12">                   
+                    <div class="nombre">{{fragmentoActual.nombre}}</div>
+                    <div class="apellido">{{fragmentoActual.apellido}}</div>
+                  </div>
+                
+                  <div class="col-12">
+                    <div class="d-flex fuenteBibliografia">{{fragmentoActual.fuenteBibliografia}}</div>
+                  </div>
+                  <div class="col-12">
+                    <div class="textoFragmento">{{fragmentoActual.textoFragmento}}</div>
+                  </div>              
+                  </div>
 
             
             <div class="container-fluid footer">
