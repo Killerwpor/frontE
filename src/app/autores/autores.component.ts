@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 import { DeviceDetectorService } from 'ngx-device-detector';
 
@@ -12,12 +12,13 @@ import { Fragmento } from '../modelos/fragmento';
 })
 export class AutoresComponent implements OnInit {
 
-
+  topPosition: Number=170; //170
     abrirPopUp: Boolean=true;
     movil: Boolean=false;
     relatos: Boolean=false;
     contadorFragmento: number=0;
     fragmentoActual: Fragmento=fragmentos[0];
+    bulletVacio=[false,false,false,false,false,false,false,false,false,false]
 
   constructor(private deviceService: DeviceDetectorService) { }
 
@@ -55,11 +56,18 @@ export class AutoresComponent implements OnInit {
 
   siguienteFragmento(siguiente){
     if(siguiente=="true"){
+      if(this.contadorFragmento==9){
+        this.bulletVacio[this.contadorFragmento]=true;
+      }
       if(this.contadorFragmento<9){
         this.fragmentoActual=fragmentos[this.contadorFragmento+1];
-        this.contadorFragmento++;
+        this.bulletVacio[this.contadorFragmento]=true;
+        this.contadorFragmento++;    
+       
+     
         window.scroll(0,0); //scrollea hasta arriba al salir el nuevo fragmento
       }
+      
       
     }
     else{
@@ -70,4 +78,32 @@ export class AutoresComponent implements OnInit {
       }
     }
   }
+
+
+  @HostListener("window:scroll", ["$event"])
+onWindowScroll() {
+ 
+//   let isMobile = this.deviceService.isMobile();
+// var windowHeight = window.innerHeight;
+// var scrollArea = 1000 - windowHeight;
+// var scrollTop = window.pageYOffset || window.scrollY;
+// var scrollPercent = scrollTop/scrollArea || 0;
+// if(!isMobile){
+//   this.topPosition = scrollPercent*window.innerHeight*1; //el 0.35 es el multiplicador que le da la velocidad para acompañar el texto
+//   if( this.topPosition<170)   {   
+//     this.topPosition = 170;
+//    } 
+//   if( this.topPosition>720)   {
+//        //si se pasa de 2500 se asigna un valor fijo para que la bolita no baje de cierto punto
+//    //this.topPosition = 800;
+//    //alert("3000");
+//   } 
+//   console.log(this.topPosition);
+// }
+// else{
+//   this.topPosition = scrollPercent*window.innerHeight*0.59;
+// }
+
+ }
+
 }

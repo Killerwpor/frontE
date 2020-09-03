@@ -1,5 +1,7 @@
 export class Fragmento {
-    textoCitado: string;
+    nombre: string;
+    apellido: string;
+    fuenteBibliografia: string;
     textoOriginal: string;
     textoFragmento: string;
 }

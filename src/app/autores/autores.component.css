@@ -97,18 +97,44 @@ width: 18%;
     left: 0%;
 }
 
-.textoCitado{
-    position: relative;
-    left: 60%;
+.nombre{
     font-family: 'krete';
-    margin-top: 48%;
-    font-size: 50px;
+    font-size: 35px;
+    color:#92B7CB;
+    z-index: -1;
+
+
+ 
+}
+
+.apellido{
+    font-family: 'krete';
+    font-size: 35px;
     color:#92B7CB;
     z-index: -1;
 
  
 }
 
+.fuenteBibliografia{
+    font-family: 'krete';
+    font-size: 35px;
+    color:#92B7CB;
+    z-index: -1; 
+}
+.textoOriginal{
+    position: relative;
+    left: 60%;
+    font-family: 'krete';
+    margin-top: 48%;
+    font-size: 60px;
+    color:#92B7CB;
+    z-index: -1;
+    text-align: justify;
+    margin-right: 50px;
+
+ 
+}
  .footer{
     background-color: #09313D;
     position: fixed;
@@ -167,6 +193,32 @@ width: 18%;
 .brujulaHome:hover{
     cursor: pointer   
 } 
+
+.barraScroll{
+    position: fixed;
+    top: 150px;
+    width: auto;
+    height: 520px;
+    
+    right: 100px;
+}
+
+.botonScroll{
+    position: absolute;
+    top: 30%;
+    right: -4.5%;
+}
+
+.textoFragmento{
+    font-family: "sweet-sans-pro";
+    font-size: 45px;
+    color:  #F8EBE3;
+    position: relative;
+    left: 60%;
+    z-index: -1;
+    text-align: justify;
+    margin-right: 50px;
+}
 
 
 
@@ -242,7 +294,7 @@ width: 18%;
     }
     .mapa{
         position: relative;
-        margin-top: 20%;
+        margin-top: 40%;
         right: 25px;
         width: 370px;
     }
@@ -267,11 +319,23 @@ width: 18%;
         left: 32%;
         font-family: 'krete';
         margin-top: 100%;
-        font-size: 20px;
+        font-size: 15px;
         color:#92B7CB;
         z-index: -1;    
      
     }
+
+     .textoOriginal{
+        position: relative;
+        top: 7%;
+        left: 32%;
+        font-family: 'krete';
+        margin-top: 100%;
+        font-size: 60px;
+        color:#92B7CB;
+        z-index: -1;    
+     
+    } 
 
     .aliados{
         position: fixed;
@@ -307,7 +371,7 @@ width: 18%;
     
     .bullets{
         position: absolute;
-        left: 210px;
+        left: 70px;
         top: 17px;
         margin-left: 0%;
     }
@@ -318,7 +382,7 @@ width: 18%;
     
     .bullets2{
         position: absolute;
-        left: 70px;
+        left: 210px;
         top: 19px;
         margin-top: 2.8%;
         
@@ -335,6 +399,14 @@ width: 18%;
         width: 60px;
     }
     
+    .barraScroll{
+        position: fixed;
+        top: 150px;
+        width: auto;
+        height: 580px;
+        
+        right: 0px;
+    }
     
    
 
