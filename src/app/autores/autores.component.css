@@ -1,9 +1,11 @@
 .contenedorRelatos{
-    margin-top: 40%;
+    margin-top: 22%;
+    margin-left: 40%;
 }
 
 .aliados{
     position: fixed;
+    top: 2%;
     left: 65%;
     width: 35%;
     z-index: 999;
@@ -37,6 +39,31 @@ width: 18%;
     cursor: pointer;
 }
 
+.barraSeparadora{
+    width: auto;
+    height: 400px;
+    padding-right: 40%;
+}
+
+.brujulaHomeWeb{
+    margin-top: 2%;
+    width: 50%;
+}
+
+.anteriorWeb{
+    padding-left: 0%;
+    margin-top: 10%;
+    width: 40%;
+}
+
+.siguienteWeb{
+    margin-top: 10%;
+    width: 40%;
+}
+
+.medellin{
+    width: 10%;
+}
 
 /* POPUP  */
 .modalbox .box {
@@ -154,6 +181,11 @@ display: inline-block;
 
 .bullet{
     width: 20px;
+}
+
+.bulletWeb{
+    margin-right: 10px;
+    width: 15px;
 }
 
 .bullets2{

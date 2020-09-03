@@ -28,12 +28,19 @@
         </div>
 
 
-        <div *ngIf="relatos" class="container-fluid contenedorRelatos">
-           <!-- <img class="aliados" src="assets/autores/NOMBRE-FILTRO.png"/> -->
-           <div class="row text-justify">
+        <div *ngIf="relatos" class="container-fluid">
+          <div class="row">
+            <div class="col">              
+            </div>            
+          </div>
+            <img class="aliados" src="assets/autores/NOMBRE-FILTRO.png"/> 
+           <div class="row text-justify contenedorRelatos">
             <div class="col-12">
               <img class="img-fluid imagenRelatos"  src="assets/autores/REPSONSIVE HORIZONTAL/IMAGE-TAMANO1.png"/>
-            </div>  
+            </div>
+            <div class="row">
+
+             <div class="col-5">
                   <div class="col-12">
                     <div class="font-weight-bold textoOriginal">{{fragmentoActual.textoOriginal}}</div>
                   </div>                
@@ -41,20 +48,72 @@
                     <div class="nombre">{{fragmentoActual.nombre}}</div>
                     <div class="apellido">{{fragmentoActual.apellido}}</div>
                   </div>
-                
                   <div class="col-12">
+                   
                     <div class="d-flex fuenteBibliografia">{{fragmentoActual.fuenteBibliografia}}</div>
-                  </div>
-                  <div class="col-12">
+                  </div>             
+                </div>
+                <div class="col-1">                 
+                                             
+                    <img class="img-fluid barraSeparadora"  src="assets/autores/WEB/BARRA VERTICAL.png"/>
+                  
+                </div> 
+
+                <div class="col-6">                 
+                                               
                     <div class="textoFragmento">{{fragmentoActual.textoFragmento}}</div>
-                  </div>              
+                     
+                </div> 
+
+              </div>      
                   </div>
 
-            
-            <div class="container-fluid footer">
+                    <!-- FOOTER WEB -->
+                  <div class="container-fluid"  *ngIf="!movil">
+                    <div class="row text-center">
+                      <div class="col-12 ">
+                    <img *ngIf="bulletVacio[0]" class="bulletWeb" src="assets/autores/BULLET-LLENO.png"/>
+                    <img *ngIf="bulletVacio[1]" class="bulletWeb" src="assets/autores/BULLET-LLENO.png"/>
+                    <img *ngIf="bulletVacio[2]" class="bulletWeb" src="assets/autores/BULLET-LLENO.png"/>
+                    <img *ngIf="bulletVacio[3]" class="bulletWeb" src="assets/autores/BULLET-LLENO.png"/>
+                    <img *ngIf="bulletVacio[4]" class="bulletWeb" src="assets/autores/BULLET-LLENO.png"/>
+                    <img *ngIf="bulletVacio[5]" class="bulletWeb" src="assets/autores/BULLET-LLENO.png"/>
+                    <img *ngIf="bulletVacio[6]" class="bulletWeb" src="assets/autores/BULLET-LLENO.png"/>
+                    <img *ngIf="bulletVacio[7]" class="bulletWeb" src="assets/autores/BULLET-LLENO.png"/>
+                    <img *ngIf="bulletVacio[8]" class="bulletWeb" src="assets/autores/BULLET-LLENO.png"/>
+                    <img *ngIf="bulletVacio[9]" class="bulletWeb" src="assets/autores/BULLET-LLENO.png"/>
+                    <img *ngIf="!bulletVacio[0]" class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+                    <img *ngIf="!bulletVacio[1]" class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+                    <img *ngIf="!bulletVacio[2]" class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+                    <img *ngIf="!bulletVacio[3]" class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+                    <img *ngIf="!bulletVacio[4]" class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>                 
+                    <img *ngIf="!bulletVacio[5]" class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+                    <img *ngIf="!bulletVacio[6]" class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+                    <img *ngIf="!bulletVacio[7]" class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+                    <img *ngIf="!bulletVacio[8]" class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+                    <img *ngIf="!bulletVacio[9]" class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+                      </div>
+                      <div class="col-5">
+                        <img class="anteriorWeb float-right" (click)="siguienteFragmento('false')" src="assets/autores/WEB/ANTERIOR_FLECHA.png"/>
+                      </div>
+                      <div class="col-2 ">
+                        <img class="brujulaHomeWeb" src="assets/autores/WEB/ROSA.png"/>
+                      </div>
+                      <div class="col-5">
+                        <img class="siguienteWeb float-left" (click)="siguienteFragmento('true')" src="assets/autores/WEB/SIGUIENTE_FLECHA.png"/>
+                      </div>
+                      <div class="col-12">
+                        <img class="medellin" src="assets/autores/WEB/NOMBRE FILTRO_PT.png"/>
+                      </div>
+                    </div>
+
+                  </div>
+                      <!-- FIN FOOTER WEB -->
+          
+                  <!-- FOOTER MOVIL -->
+            <div class="container-fluid footer"  *ngIf="movil">
               <div class="row">
                   <div class="col-lg-3 col-sm-2">
-                      <img *ngIf="!movil" class="anterior" (click)="siguienteFragmento('false')"  src="assets/autores/REPSONSIVE HORIZONTAL/ANTERIOR.png"/>
                       <img *ngIf="movil" class="anteriorMovil" (click)="siguienteFragmento('false')"  src="assets/autores/ANTERIOR.png"/>
                   </div>
                   <div class="col-lg-2 col-sm-3 bullets">
@@ -86,11 +145,13 @@
                   <img *ngIf="!bulletVacio[9]" class="bullet" src="assets/autores/BULLET-VACIO.png"/>
                 </div>     
                 <div class="col-lg-3 col-sm-2">
-                  <img *ngIf="!movil" class="anterior2" (click)="siguienteFragmento('true')" src="assets/autores/REPSONSIVE HORIZONTAL/SIGUIENTE.png"/>
                   <img *ngIf="movil" class="anteriorMovil2" (click)="siguienteFragmento('true')" src="assets/autores/SIGUIENTE.png"/>
               </div>   
               </div>
                
           </div> 
+
+           <!-- FIN FOOTER MOVIL -->
+
             </div>
            

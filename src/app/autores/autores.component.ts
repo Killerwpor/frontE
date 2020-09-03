@@ -55,6 +55,7 @@ export class AutoresComponent implements OnInit {
   }
 
   siguienteFragmento(siguiente){
+    let isMobile = this.deviceService.isMobile();
     if(siguiente=="true"){
       if(this.contadorFragmento==9){
         this.bulletVacio[this.contadorFragmento]=true;
@@ -65,7 +66,9 @@ export class AutoresComponent implements OnInit {
         this.contadorFragmento++;    
        
      
-        window.scroll(0,0); //scrollea hasta arriba al salir el nuevo fragmento
+        if(isMobile) {
+          window.scroll(0,0); //scrollea hasta arriba al salir el nuevo fragmento
+        }
       }
       
       
@@ -74,7 +77,9 @@ export class AutoresComponent implements OnInit {
       if(this.contadorFragmento>0){
         this.fragmentoActual=fragmentos[this.contadorFragmento-1];
         this.contadorFragmento--;
+        if(isMobile) {
         window.scroll(0,0); //scrollea hasta arriba al salir el nuevo fragmento
+        }
       }
     }
   }
