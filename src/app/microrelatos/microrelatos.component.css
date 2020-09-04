@@ -205,6 +205,11 @@ margin-left: 1%;
 
  
 }
+
+.microRelatoGenerado{
+    margin-top: -60px;
+}
+
  .footer{
     background-color: #09313D;
     position: fixed;

@@ -1,0 +1,19 @@
+.container-fluid{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+     min-width: 100%;
+     background-image: url("/assets/microRelatos/WEB/GLOBO-TEXTO-INTRO.png");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 100% 100%; 
+}
+
+.texto{
+    height: 100px;
+    overflow: scroll;
+}
+
+.icono{
+
+}

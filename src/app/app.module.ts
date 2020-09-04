@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { AutoresComponent } from './autores/autores.component';
 import { MicrorelatosComponent } from './microrelatos/microrelatos.component';
+import { MicroRelatoGeneradoComponent } from './micro-relato-generado/micro-relato-generado.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AutoresComponent,
-    MicrorelatosComponent
+    MicrorelatosComponent,
+    MicroRelatoGeneradoComponent
   ],
   imports: [
     BrowserModule,
