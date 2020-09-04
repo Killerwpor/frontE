@@ -58,6 +58,9 @@
       top: 41em;
   }
 
+  .brujulaVolver:hover{
+    cursor: pointer;
+  }
   .degradado{
       position: absolute;
       height: 49em;
@@ -194,7 +197,7 @@ margin-left: 1%;
 }
 .textoOriginal{
     font-family: "krete";
-    color: #92B7CB;
+    color: #94515B;
 
  
 }
@@ -282,6 +285,22 @@ margin-left: 1%;
     font-family: "sweet-sans-pro";
     font-size: 1vw;
 }
+
+input[type="text"]
+{
+    background: rgba(0, 0, 0, 0);
+    border-color: #94515B;
+
+}
+
+.form-control:focus {
+    border-color: #94515B;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(148, 81, 91, 1);
+  }
+
+
+
+
 
 
 

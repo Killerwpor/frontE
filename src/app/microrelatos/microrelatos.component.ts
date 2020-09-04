@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { fragmentos } from '../modelos/fragmentos'
-import { Fragmento } from '../modelos/fragmento';
+import { MicroRelato } from '../modelos/microRelato';
+import { microRelatos } from '../modelos/microRelatos'
+
 
 @Component({
   selector: 'app-microrelatos',
@@ -10,6 +11,8 @@ import { Fragmento } from '../modelos/fragmento';
 })
 export class MicrorelatosComponent implements OnInit {
 
+  
+
   constructor() { }
 
   microRelatos: Boolean=true;
@@ -17,7 +20,7 @@ export class MicrorelatosComponent implements OnInit {
   abrirPopUp: Boolean=true;
   movil: Boolean=false;
   contadorFragmento: number=0;
-  fragmentoActual: Fragmento=fragmentos[0];
+  microRelatoActual: MicroRelato=microRelatos[0];
   bulletVacio=[false,false,false,false,false,false,false,false,false,false]
 
   ngOnInit(): void {
@@ -30,7 +33,7 @@ export class MicrorelatosComponent implements OnInit {
         this.bulletVacio[this.contadorFragmento]=true;
       }
       if(this.contadorFragmento<9){
-        this.fragmentoActual=fragmentos[this.contadorFragmento+1];
+        this.microRelatoActual=microRelatos[this.contadorFragmento+1];
         this.bulletVacio[this.contadorFragmento]=true;
         this.contadorFragmento++;    
        
@@ -44,7 +47,7 @@ export class MicrorelatosComponent implements OnInit {
     }
     else{
       if(this.contadorFragmento>0){
-        this.fragmentoActual=fragmentos[this.contadorFragmento-1];
+        this.microRelatoActual=microRelatos[this.contadorFragmento-1];
         this.bulletVacio[this.contadorFragmento-1]=false;
         this.contadorFragmento--;
         /*if(isMobile) {
@@ -53,5 +56,15 @@ export class MicrorelatosComponent implements OnInit {
       }
     }
   }
+
+  permitirRelatos(){
+    if(this.microRelatos){    
+      this.microRelatos=false;
+    }
+    else{
+      this.microRelatos=true;
+    }
+  }
+
 
 }

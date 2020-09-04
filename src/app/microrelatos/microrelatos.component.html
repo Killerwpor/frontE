@@ -12,7 +12,7 @@
         </div>  
       </nav>  
     </header> 
-  
+    <img class="degradado" src="assets/microRelatos/WEB/DEGRADADO.png"/>
       <div class="container-fluid">
   
         <div class="header">
@@ -69,19 +69,17 @@
               
               <div class="row">
                 <div class="col-4">
-                  <img class="img-fluid"  src="{{fragmentoActual.urlImagen}}"/>
+                  <img class="img-fluid"  src="{{microRelatoActual.urlImagen}}"/>
                 </div>
                <div class="col-3">
                     <div class="col-12">
-                      <div class="font-weight-bold textoOriginal font-italic text-right">{{fragmentoActual.textoOriginal}}</div>
+                      <div class="font-weight-bold textoOriginal font-italic text-right">{{microRelatoActual.fraseDeTeoria}}</div>
                     </div>                
                     <div class="col-12">                   
-                      <div class="nombre ">{{fragmentoActual.nombre}}</div>
-                      <div class="apellido font-italic float-right">{{fragmentoActual.apellido}}</div>
+                      <div class="text-right"><img src="assets/microRelatos/WEB/CORONDEL.png"/></div>                     
                     </div>
-                    <div class="col-12">
-                     
-                      <div class="d-flex fuenteBibliografia font-weight-bold float-right text-right">{{fragmentoActual.fuenteBibliografia}}</div>
+                    <div class="col-12">                     
+                      <div class="img-fluid text-right"><img src="assets/microRelatos/WEB/ECUALIZADOR-OFF.png"/></div>
                     </div>             
                   </div>
                   <div class="col-1">                 
@@ -91,8 +89,22 @@
                   </div> 
   
                   <div class="col-4">                 
-                                                 
-                      <div class="textoFragmento text-left">{{fragmentoActual.textoFragmento}}</div>
+                      <div class="col-12">
+                        <div class="textoFragmento text-left">{{microRelatoActual.texto}}</div>
+                      </div>                        
+                      <div class="col-12">
+                        <div class="textoOriginal"><br>Visita todos los microrrelatos para construir el tuyo.</div>                        
+                      </div>
+                      <div class="col-12">
+                        <div class="textoFragmento font-weight-bold">¿Cómo se llama la ciudad en la que nació tu personaje?</div>                        
+                      </div>
+                      <div class="col-12">
+                        <div class="textoFragmento font-weight-bold"><br><input type="text" class="form-control"></div>                        
+                      </div>
+                      <div class="col-12">
+                        <br><div class="text-right"><img src="assets/microRelatos/WEB/0_.png"/></div>                        
+                      </div>
+                      
                        
                   </div> 
               
@@ -108,7 +120,7 @@
                           <img class="anteriorWeb float-right" (click)="siguienteFragmento('false')" src="assets/autores/WEB/ANTERIOR_FLECHA.png"/>
                         </div>
                         <div class="col-2 ">
-                          <img class="" src="assets/microRelatos/WEB/VOLVER-MAPA-MEDELLÍN-CON-ÍCONO.png"/>
+                          <img class="brujulaVolver" (click)="permitirRelatos()" src="assets/microRelatos/WEB/VOLVER-MAPA-MEDELLÍN-CON-ÍCONO.png"/>
                         </div>
                         <div class="col-5">
                           <img class="siguienteWeb float-left" (click)="siguienteFragmento('true')" src="assets/autores/WEB/SIGUIENTE_FLECHA.png"/>
