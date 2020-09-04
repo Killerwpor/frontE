@@ -15,7 +15,7 @@ export class AutoresComponent implements OnInit {
   topPosition: Number=170; //170
     abrirPopUp: Boolean=true;
     movil: Boolean=false;
-    relatos: Boolean=false;
+    relatos: Boolean=true;
     contadorFragmento: number=0;
     fragmentoActual: Fragmento=fragmentos[0];
     bulletVacio=[false,false,false,false,false,false,false,false,false,false]
@@ -83,6 +83,10 @@ export class AutoresComponent implements OnInit {
         }
       }
     }
+  }
+
+  clickMapa(lado){
+alert(lado);
   }
 
 

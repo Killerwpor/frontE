@@ -1,0 +1,122 @@
+<div *ngIf="!microRelatos" class="">
+
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <div class="row">
+          <div class="col-6">
+            <img class="img-fluid logo1Home" src="assets/microRelatos/WEB/LOGO-FEST.png"/>
+          </div>
+          <div class="col-6">
+            <img class="img-fluid logo2Home pull-right" src="assets/microRelatos/WEB/SNL-2.png"/>
+          </div>    
+        </div>  
+      </nav>  
+    </header> 
+  
+      <div class="container-fluid">
+  
+        <div class="header">
+          <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4 col-sm-offset-1 text-right">
+                  <div class="col-12 text-justify">
+                    <img class="img-fluid" src="assets/microRelatos/WEB/CABEZOTE-CON-CORONDEL.png"/>
+                  </div>                 
+                  <div class="col-12 ">
+                    <div class="textoFragmento text-justify">Esto sucedío  un día de este lado del espejo: grandes fragmentos de ciudad desaparecieron de repente. Sus existencias fueron borradas del tiempo y del espacio. Son ausencias que nadie nota. Nadie extraña a la abuela que perdió, porque no sabe que la ha perdido. Ni le hace falta recorrer las calles que ya no existen ni los barrios ni las montañas, porque su recuerdo ha sido devorado. Han saltado al otro lado del espejo, a vivir su propio fin del mundo en el olvido. Si no eres capaz de guardar silencio, forastero, escribe tu historia e intenta que esta ciudad recuerde lo que le ha sido arrebatado.</div>
+                  </div>
+                </div>
+                  <div class="col-sm-7 col-sm-offset-1">
+                     <img class="img-fluid mapa" src="assets/microRelatos/WEB/MAPA-CON-ELEMENTOS.png" usemap="#workmap"/>                  
+                    </div>
+              
+             
+                  <div class="col-sm-1 col-sm-offset-1">
+                    <img class="img-fluid menu" src="assets/microRelatos/WEB/MENÚ-MEDELLÍN-INVERTIDO.png" /> 
+                   
+                  </div>
+              </div>
+          </div>
+      </div>  
+      </div>      
+          </div>
+
+          <div *ngIf="microRelatos" class="">  
+            <header>
+  
+              <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+                <div class="row">
+                  <div class="col-6">
+                    <img class="img-fluid logo1" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png"/>
+                  </div>
+                  <div class="col-5">
+                    <img class="img-fluid logo2 pull-right" src="assets/microRelatos/WEB/MEDELLÍN-FILTRO.png"/>
+                  </div>
+                  <div class="col-1">
+                    <img class="img-fluid logo3 text-l" src="assets/microRelatos/WEB/SNL-2.png"/>
+                  </div>
+              
+                </div>
+            
+              </nav>
+            
+            </header>   
+            <img class="degradado" src="assets/microRelatos/WEB/DEGRADADO.png"/>
+             <div class="text-justify contenedorRelatos">
+            
+              
+              
+              
+              <div class="row">
+                <div class="col-4">
+                  <img class="img-fluid"  src="{{fragmentoActual.urlImagen}}"/>
+                </div>
+               <div class="col-3">
+                    <div class="col-12">
+                      <div class="font-weight-bold textoOriginal font-italic text-right">{{fragmentoActual.textoOriginal}}</div>
+                    </div>                
+                    <div class="col-12">                   
+                      <div class="nombre ">{{fragmentoActual.nombre}}</div>
+                      <div class="apellido font-italic float-right">{{fragmentoActual.apellido}}</div>
+                    </div>
+                    <div class="col-12">
+                     
+                      <div class="d-flex fuenteBibliografia font-weight-bold float-right text-right">{{fragmentoActual.fuenteBibliografia}}</div>
+                    </div>             
+                  </div>
+                  <div class="col-1">                 
+                                               
+                      <img class="img-fluid barraSeparadora"  src="assets/autores/WEB/BARRA VERTICAL.png"/>
+                    
+                  </div> 
+  
+                  <div class="col-4">                 
+                                                 
+                      <div class="textoFragmento text-left">{{fragmentoActual.textoFragmento}}</div>
+                       
+                  </div> 
+              
+                </div> 
+                
+                
+                    </div>
+  
+                      <!-- FOOTER WEB -->
+                    <div class="container-fluid contenedorFooter" *ngIf="!movil">
+                      <div class="row text-center">                       
+                        <div class="col-5">
+                          <img class="anteriorWeb float-right" (click)="siguienteFragmento('false')" src="assets/autores/WEB/ANTERIOR_FLECHA.png"/>
+                        </div>
+                        <div class="col-2 ">
+                          <img class="" src="assets/microRelatos/WEB/VOLVER-MAPA-MEDELLÍN-CON-ÍCONO.png"/>
+                        </div>
+                        <div class="col-5">
+                          <img class="siguienteWeb float-left" (click)="siguienteFragmento('true')" src="assets/autores/WEB/SIGUIENTE_FLECHA.png"/>
+                        </div>                      
+                      </div>
+  
+                    </div>
+                        <!-- FIN FOOTER WEB -->
+            
+              
+              </div>

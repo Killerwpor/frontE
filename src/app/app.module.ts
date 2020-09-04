@@ -6,12 +6,14 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { AutoresComponent } from './autores/autores.component';
+import { MicrorelatosComponent } from './microrelatos/microrelatos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AutoresComponent
+    AutoresComponent,
+    MicrorelatosComponent
   ],
   imports: [
     BrowserModule,

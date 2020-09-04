@@ -262,6 +262,14 @@ area:hover{
                 
                 right: 0px;
             }
+
+            .degradado{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            
             .botonScroll{
                 position: absolute;
                 width: 50px;

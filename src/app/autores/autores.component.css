@@ -1,5 +1,7 @@
 .contenedorRelatos{
-    margin-top: 15%;
+    position: relative;
+    top: 200px;
+    margin-top: 0%;
     padding: 0px,0px,0px,0px !important;
 }
 
@@ -9,23 +11,23 @@
 }
 
 .logo1{
-    width: 40%;
+    width: 20%;
 }
 
 .logo1Home{
-    width: 30%;
+    width: 20%;
 }
 
 .logo2Home{
     float: right;
     margin-left: 800px;
-    width: 15%;
+    width: 10%;
 }
 
 .logo2{
     float: right;
     margin-left: 200px;
-    width: 70%;
+    width: 50%;
 }
 
 .aliados{
@@ -75,6 +77,10 @@ width: 18%;
     width: 45%;
 }
 
+.brujulaHomeWeb:hover{
+    cursor: pointer;
+}
+
 .anteriorWeb{
     padding-left: 0%;
     margin-top: 10%;
@@ -89,6 +95,14 @@ width: 18%;
 .medellin{
     width: 9%;
     margin-top: -10px;
+}
+
+.footerWeb{
+
+      position: fixed;
+      left: 0em;
+      top: 38em;
+
 }
 
 /* POPUP  */
@@ -140,8 +154,9 @@ width: 18%;
 
 
 .mapa{
-   width: 100%;
-   margin-top: -182px;
+    position: absolute;
+    width: 90%;
+   top: -170px; 
    box-sizing: margin-box;
 }
 
@@ -164,11 +179,11 @@ width: 18%;
 color: #92B7CB;
 display: inline-block;
 font-family: "sweet-sans-pro";
+margin-left: 1%;
 }
 
 .apellido{
     color: #92B7CB;
-    margin-left: 0.5%;
     display: inline-block;
     font-family: "sweet-sans-pro";
 }
@@ -230,6 +245,14 @@ font-family: "sweet-sans-pro";
     margin-top: 2.8%;
     
 }
+
+.degradado{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 49em;
+}
+
 
 .bullet2{
     width: 20px;
@@ -342,7 +365,6 @@ font-family: "sweet-sans-pro";
     }
     .mapa{
         position: relative;
-        margin-top: 40%;
         right: 25px;
         width: 370px;
     }
