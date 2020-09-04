@@ -21,38 +21,35 @@ export class MicrorelatosComponent implements OnInit {
   movil: Boolean=false;
   contadorFragmento: number=0;
   microRelatoActual: MicroRelato=microRelatos[0];
-  bulletVacio=[false,false,false,false,false,false,false,false,false,false]
+  bulletVacio=[true,false,false,false,false,false,false,false,false,false]
 
   ngOnInit(): void {
   }
 
   siguienteFragmento(siguiente){
     //let isMobile = this.deviceService.isMobile();
-    if(siguiente=="true"){
-      if(this.contadorFragmento==9){
-        this.bulletVacio[this.contadorFragmento]=true;
-      }
-      if(this.contadorFragmento<9){
-        this.microRelatoActual=microRelatos[this.contadorFragmento+1];
-        this.bulletVacio[this.contadorFragmento]=true;
-        this.contadorFragmento++;    
-       
-     
-        /*if(isMobile) {
-          window.scroll(0,0); //scrollea hasta arriba al salir el nuevo fragmento
-        }*/
-      }
-      
-      
+    if(siguiente=="true"){ 
+      if(this.contadorFragmento!=9){
+        this.contadorFragmento++;
+      }      
+      this.bulletVacio[this.contadorFragmento]=true;
+      this.apagarBullets(this.contadorFragmento);      
     }
     else{
-      if(this.contadorFragmento>0){
-        this.microRelatoActual=microRelatos[this.contadorFragmento-1];
-        this.bulletVacio[this.contadorFragmento-1]=false;
-        this.contadorFragmento--;
-        /*if(isMobile) {
-        window.scroll(0,0); //scrollea hasta arriba al salir el nuevo fragmento
-        }*/
+      
+      this.bulletVacio[this.contadorFragmento]=false;
+      if(this.contadorFragmento!=0){
+        this.contadorFragmento--; 
+      }           
+      this.bulletVacio[this.contadorFragmento]=true;
+      this.apagarBullets(this.contadorFragmento);      
+    }
+  }
+
+  apagarBullets(bullet){
+    for(var i in this.bulletVacio){
+      if(i!=bullet){
+        this.bulletVacio[i]=false;
       }
     }
   }

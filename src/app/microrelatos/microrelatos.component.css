@@ -25,8 +25,12 @@
 }
 
 .logo2{
-    float: right;
-    margin-left: 650px;
+    margin-left: 17em;
+    min-width: 300px;
+}
+
+.logo3{
+    min-width: 20%;
 }
 
 .aliados{
@@ -197,7 +201,7 @@ margin-left: 1%;
 }
 .textoOriginal{
     font-family: "krete";
-    color: #94515B;
+    color: #F8EBE3;
 
  
 }
