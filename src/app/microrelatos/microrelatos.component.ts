@@ -66,5 +66,8 @@ export class MicrorelatosComponent implements OnInit {
     }
   }
 
+    playAudio(url) {
+    new Audio(url).play();
+  }
 
 }
