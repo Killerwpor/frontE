@@ -15,7 +15,7 @@ export class MicrorelatosComponent implements OnInit {
 
   constructor() { }
 
-  microRelatos: Boolean=true;
+  microRelatos: Boolean=false;
   topPosition: Number=170; //170
   abrirPopUp: Boolean=true;
   movil: Boolean=false;

@@ -1,3 +1,36 @@
+.header{
+    margin-top: 1%;
+}
+
+.contenedorPrincipal{
+    margin-top: 10%;
+}
+
+.logo1HomeWeb{
+width: 60%;
+}
+
+.logo2HomeWeb{
+    width: 20%;
+    }
+
+    .logo2HomeWeb:hover{
+        cursor: pointer;
+        }
+    
+    .logo3HomeWeb{
+        width: 40%;
+        }
+
+       
+        
+    
+
+
+
+
+
+
 .flechaDerecha{
     position: relative !important;
     top: 0px !important;
@@ -28,13 +61,27 @@
         }
 
   .texto{
-       margin-right: 23%;
-       margin-left: 23%;
+       margin-right: 5%;
+       margin-left: 45%;
        color: #F8EBE3 !important;
-       font-size: 1.41vw;
+       font-size: 0.95vw;
        position: absolute;
-       top: -80px;
+       bottom: 100px;
        font-family: 'sweet-sans-pro';
+   }
+
+   .flechaSiguienteWeb{
+       left: 0px;
+       position: absolute;
+       bottom: 80px;
+   }
+
+   .patrocinadoresFooter{
+       width: 20%;
+   }
+
+   .flechaSiguienteWeb:hover{
+ cursor: pointer;
    }
 
    .texto2{
@@ -59,10 +106,21 @@
 
 
    .ciudadEspejo{
+       position: absolute;
+       top: 40%;
+       left: 50%;
+   }
+
+   .menuHomeVertical{
        position: relative;
-       left: 0%;
-       top: 130px;
-       max-width: 550px;
+       top: 15%;
+   }
+
+   .eligeMitad{
+  position: absolute;
+  bottom: 48%;
+  left: 47%;
+  width: 8%;
    }
 
    .ciudadEspejo2{
@@ -88,10 +146,9 @@
 }
 
 .mapa{
-    position: absolute;
-    left: 24%;
-    top: -125px;
-    max-width: 585px;
+    position: relative;
+    top: 2%;
+max-width: 118%;
 }
 
    .aliados{

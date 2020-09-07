@@ -22,7 +22,7 @@ export class HomeComponent implements AfterViewInit {
     });
   }
 
-  home: String="home1";
+  home: String="home3";
   topPosition: Number=0;
   permitirScroll=false;
   permitirMapa=false;
@@ -49,16 +49,19 @@ export class HomeComponent implements AfterViewInit {
    siguienteHome(home){
     this.topPosition=0; //se reinicia la barra scroll del home2
   this.home=home;
+  console.log(this.home);
    }
 
+   
    @HostListener("window:scroll", ["$event"])
 onWindowScroll() {
   $(".ciudadEspejo2").addClass("animate__animated animate__fadeOut");
   
-  setTimeout(()=>{
-     this.cambiarCiudadEspejo=true;
+  // setTimeout(()=>{
+  //    this.cambiarCiudadEspejo=false;
    
-  }, 400);
+  // }, 400);
+
   let isMobile = this.deviceService.isMobile();
 
 var windowHeight = window.innerHeight;

@@ -14,7 +14,50 @@
 
 
 <div *ngIf="home=='home1'" class="container-fluid text-center">
-  <img class="aliados" src="assets/vertical/CREDITOS.png"/>
+  <!--INICIO ESCRITORIO-->
+  <header>
+      <div class="row navbar header fixed-top">
+        <div class="col-2">
+          <img class="logo1HomeWeb" src="assets/microRelatos/WEB/LOGO-FEST.png"/>
+        </div>   
+        <div class="col-8">
+          <img class="logo2HomeWeb float-right" src="assets/Home/ELEMENTOS TRSVLS/CREDITOS-BOTON.png"/>
+        </div>   
+        <div class="col-2">
+          <img class="logo3HomeWeb" src="assets/Home/ELEMENTOS TRSVLS/LOGO-SNL.png"/>
+        </div>          
+      </div>     
+  </header> 
+
+    <div class="row contenedorPrincipal">
+      <div class="col-12">
+        <img class="img-fluid"  src="assets/Home/ELEMENTOS TRSVLS/CABEZOTE-CON-ELEMENTOS.png"/>
+      </div>  
+      <div class="row container-fluid">
+
+         
+      <div class="col-10">
+        <div class="texto text-left">
+          Esta Medellín imaginada es una reflexión sobre nuestros futuros posibles. Conviven en este espacio las pesadillas de las narraciones distópicas y el esplendor verde y sostenible que propone el solar punk más reciente. La ciencia ficción, como una casa de los espejos, toma elementos de la realidad y los deforma hasta el horror o la belleza.
+    </div>   
+    </div>
+    <div class="col-2">
+        <img class="flechaSiguienteWeb float-left" (click)="siguienteHome('home2')" src="assets/microRelatos/gifs/flecha_siguiente.gif"/>  
+  </div>
+</div>
+<div class="row container-fluid">         
+  <div class="col-12">
+      <img class="patrocinadoresFooter" src="assets/Home/ELEMENTOS TRSVLS/LOGO-BPP-Y-ALCALDIA.png"/>   
+</div>
+</div>
+</div>
+</div>
+  <!--FIN ESCRITORIO-->
+
+
+
+  <!--INICIO MOVIL-->
+  <!-- <img class="aliados" src="assets/vertical/CREDITOS.png"/>
     <div class="row">
       <div class="col">
         <img class="img-fluid ciudadEspejo"  src="assets/vertical/CABEZOTE-MEDIANO-CON-ELEMENTO.png"/>
@@ -31,12 +74,25 @@
         <div class="col">
             <img class="flechaDerecha" (click)="siguienteHome('home2')" src="assets/vertical/FLECHA-SIGUIENTE.png"/>   
         </div>
-    </div>
-</div>
+    </div> -->
+    <!--FIN MOVIL-->
+
 
 
 <div class="text-center home2" *ngIf="home=='home2'" (window:scroll)="onWindowScroll()">
-  <img class="imagenHome" (click)="siguienteHome('home1')" src="assets/vertical/NOMBRE-DLE-FILTRO-HOME.png"/>
+  <header>
+    <div class="row navbar header fixed-top">
+      <div class="col-2">
+        <img class="logo1HomeWeb" src="assets/microRelatos/WEB/LOGO-FEST.png"/>
+      </div>   
+      <div class="col-8">
+       
+      </div>   
+      <div class="col-2">
+        <img class="logo3HomeWeb" src="assets/Home/ELEMENTOS TRSVLS/LOGO-SNL.png"/>
+      </div>          
+    </div>     
+</header>  
         <div class="row text-center">
           <div class="col">
      <img class="img-fluid ciudadEspejo2"  src="assets/vertical/CABEZOTE-GRANDE.png"/>
@@ -57,7 +113,7 @@
   </div>
   <div class="row">
     <div class="col">
-      <img class="flechaDerecha2" (click)="siguienteHome('home3')" src="assets/vertical/FLECHA-SIGUIENTE.png"/>  
+      <img class="flechaDerecha2" (click)="siguienteHome('home3')" src="assets/microRelatos/gifs/flecha_siguiente.gif"/>  
     </div>
   </div>
     
@@ -65,29 +121,31 @@
 </div>  
 </div>
 
-<div *ngIf="home=='home3'" class="container text-center">
-  <img class="imagenHome" (click)="siguienteHome('home1')" src="assets/vertical/NOMBRE-DLE-FILTRO-HOME.png"/>
-    <div class="row text-center">
-      <div class="col-sm-12 ">
-        <img class="img-fluid btn-group"  src="assets/vertical/MENU-HORIZONTAL---HOME.png"/>
-      </div>
-      <div class="col-12">
-        <img class="img-fluid ciudadEspejo3"  src="assets/vertical/CABEZOTE-PEQUENO.png"/>
-      </div>
-      <div class="col-12">
-        <img class="img-fluid mapa" usemap="#workmap" src="assets/vertical/MAPA-REFLEJADO---POR-ACTUALIZAR.png"/>
-        <map name="workmap">
-          <area shape="rect" coords="0,0,298,407" (click)="clickMapa('1')" >
-          <area shape="rect" coords="298,0,560,407" (click)="clickMapa('2')" >
-        </map>
-      </div>
-       <div class="col-12">
-            <img class="brujula img-fluid" (click)="siguienteHome('home2')" src="assets/vertical/ICONO-escoge-una-mitad.png"/>             
-        </div>
-    </div>
-  
-        
-    
-  
- 
+<div *ngIf="home=='home3'" class="container-fluid">
+  <header>
+    <div class="row navbar header fixed-top">
+      <div class="col-2">
+        <img class="logo1HomeWeb" src="assets/microRelatos/WEB/LOGO-FEST.png"/>
+      </div>   
+      <div class="col-9">
+        <img class="logo2HomeWeb float-right" src="assets/Home/ELEMENTOS TRSVLS/NOMBRE-FILTRO.png"/>
+      </div>   
+      <div class="col-1">
+        <img class="float-left" src="assets/Home/ELEMENTOS TRSVLS/LOGO-SNL.png"/>
+      </div>          
+    </div>     
+</header> 
+
+<div class="row ">
+  <div class="col-2">
+    <img class="ciudadEspejo img-fluid" src="assets/Home/ELEMENTOS TRSVLS/CABEZOTE-CON-CORONDEL.png"/>
+  </div>
+  <div class="col-8">
+    <img class="mapa" src="assets/Home/ELEMENTOS TRSVLS/MAPA-CON-ELEMENTOS.png"/>
+  </div>
+  <div class="col-2">
+    <img class="menuHomeVertical img-fluid float-right" src="assets/Home/ELEMENTOS TRSVLS/MENU-TABS.png"/>
+  </div>
+  <div class="col-12 text-center"><img class="eligeMitad" src="assets/microRelatos/gifs/elige_la_mitad.gif"/></div>
+</div>
 </div>
