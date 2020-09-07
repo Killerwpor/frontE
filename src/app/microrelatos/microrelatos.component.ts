@@ -31,16 +31,23 @@ export class MicrorelatosComponent implements OnInit {
     if(siguiente=="true"){ 
       if(this.contadorFragmento!=9){
         this.contadorFragmento++;
-      }      
+        this.microRelatoActual=microRelatos[this.contadorFragmento];
+      } 
+      else{
+        this.contadorFragmento++;
+      }
+      
       this.bulletVacio[this.contadorFragmento]=true;
       this.apagarBullets(this.contadorFragmento);      
     }
     else{
       
       this.bulletVacio[this.contadorFragmento]=false;
-      if(this.contadorFragmento!=0){
+      if(this.contadorFragmento!=0){        
         this.contadorFragmento--; 
+        this.microRelatoActual=microRelatos[this.contadorFragmento];
       }           
+      
       this.bulletVacio[this.contadorFragmento]=true;
       this.apagarBullets(this.contadorFragmento);      
     }

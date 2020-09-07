@@ -12,8 +12,22 @@
 .texto{
     height: 100px;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
-.icono{
-
+.iconoOtro{
+position: absolute;
+left: 0;
 }
+
+.iconoOtro2{
+    position: absolute;
+    left: -30px;
+    }
+
+    .iconSubeTuHistoria{
+ margin-left: -25px;
+          }  
+        .iconoCompartir{  
+            margin-left: -45px;    
+            }

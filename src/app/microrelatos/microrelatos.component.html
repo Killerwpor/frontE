@@ -68,39 +68,37 @@
               
               
               <div class="row">
-                <div class="col-4">
-                  <img class="img-fluid"  src="{{microRelatoActual.urlImagen}}"/>
+                <div class="col-6">
+                  <img class="img-fluid imagenMicrorelato"  src="{{microRelatoActual.urlImagen}}"/>
                 </div>
                <!--INICIO SECCIÓN -->
                   <!--COMENTAR ESTA SECCIÓN Y DESCOMENTAR LA OTRA PARA VOLVER A LA NORMALIDAD -->
-                <div class="col-3">
+               
+                  <div class="col-1" *ngIf="bulletVacio[10]">
 
                 </div>
-                <div class="col-5">
+                <div class="col-5" *ngIf="bulletVacio[10]">
                   <app-micro-relato-generado></app-micro-relato-generado>
                 </div>
+                
               <!--  FIN SECCIÓN -->
 
-               <!-- <div class="col-3">
+             
+                <div class="col-2" *ngIf="!bulletVacio[10]">
                     <div class="col-12">
-                      <div class="textoOriginal font-italic text-right">{{microRelatoActual.fraseDeTeoria}}</div>
+                      <div class="textoTeoria font-italic text-right">{{microRelatoActual.fraseDeTeoria}}</div>
                     </div>                
                     <div class="col-12">                   
                       <div class="text-right"><img src="assets/microRelatos/WEB/CORONDEL.png"/></div>                     
                     </div>
                     <div class="col-12">                     
-                      <div class="img-fluid text-right" (click)="playAudio('assets/song.mp3')"><img src="assets/microRelatos/WEB/ECUALIZADOR-OFF.png"/></div>
+                      <div class="img-fluid text-right" (click)="playAudio(microRelatoActual.urlAudio)"><img src="assets/microRelatos/WEB/ECUALIZADOR-OFF.png"/></div>
                     </div>             
-                  </div>
-                  <div class="col-1">                 
-                                               
-                      <img class="img-fluid barraSeparadora float-right"  src="assets/autores/WEB/BARRA VERTICAL.png"/>
-                    
-                  </div>  -->
+                  </div>           
                   
                   
                   
-                  <!-- <div class="col-4">
+                   <div class="col-4" *ngIf="!bulletVacio[10]" >
                    
                     
 
@@ -311,7 +309,7 @@
                        
                        
                   </div> 
-               -->
+           
                 </div> 
                 
                 
