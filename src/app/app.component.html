@@ -21,13 +21,13 @@
 
 <div *ngIf="navegador=='autores'" class="container-fluid">
  
-            <app-autores></app-autores> 
+            <app-autores (navegador)="funcionNavegador($event)"></app-autores> 
      
 </div>
 
 <div *ngIf="navegador=='microRelatos'" class="container-fluid microRelatos">
  
-    <app-microrelatos></app-microrelatos> 
+    <app-microrelatos (navegador)="funcionNavegador($event)"></app-microrelatos> 
 
 </div>
 

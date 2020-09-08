@@ -27,20 +27,26 @@
                   </div>
                 </div>
                   <div class="col-sm-7 col-sm-offset-1">
-                    <svg class="mapa" viewBox="0 0 1800 2200">
-                      <image class="img-fluid" xlink:href="assets/microRelatos/WEB/MAPA-CON-ELEMENTOS.png" width="100%"  />                     
-                     <a xlink:href="https://stackoverflow.com/2"><rect x="0" y="100" width="680" height="200" fill="#fff" opacity="0.5"/></a>                
-                     <a xlink:href="https://stackoverflow.com/2"><rect x="400" y="400" width="680" height="170" fill="#fff" opacity="0.5"/></a> 
-                     <a xlink:href="https://stackoverflow.com/2"><rect x="380" y="800" width="420" height="170" fill="#fff" opacity="0.5"/></a>
-                     <a xlink:href="https://stackoverflow.com/2"><rect x="900" y="680" width="500" height="300" fill="#fff" opacity="0.5"/></a>
-                     <a xlink:href="https://stackoverflow.com/2"><rect x="380" y="1020" width="420" height="290" fill="#fff" opacity="0.5"/></a>
-                     <a xlink:href="https://stackoverflow.com/2"><rect x="600" y="1450" width="310" height="290" fill="#fff" opacity="0.5"/></a>  
+                    <svg class="mapa" viewBox="0 0 1600 1650">
+                      <image class="img-fluid float-right" xlink:href="assets/microRelatos/WEB/MAPA-CON-ELEMENTOS.png" width="85%"  />                     
+                     <a xlink:href="#" (click)="permitirRelatos()"><rect x="0" y="100" width="680" height="200" fill="rgba(0,0,0,0)" opacity="0.5"/></a>                
+                     <a xlink:href="#" (click)="permitirRelatos()"><rect x="400" y="400" width="680" height="170" fill="rgba(0,0,0,0)" opacity="0.5"/></a> 
+                     <a xlink:href="#" (click)="permitirRelatos()"><rect x="380" y="800" width="420" height="170" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+                     <a xlink:href="#" (click)="permitirRelatos()"><rect x="900" y="680" width="500" height="300" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+                     <a xlink:href="#" (click)="permitirRelatos()"><rect x="380" y="1020" width="420" height="290" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+                     <a xlink:href="#" (click)="permitirRelatos()"><rect x="600" y="1450" width="310" height="290" fill="rgba(0,0,0,0)" opacity="0.5"/></a>  
                    </svg>                   
                     </div>
               
              
                   <div class="col-sm-1 col-sm-offset-1">
-                    <img class="img-fluid menu" src="assets/microRelatos/WEB/MENÚ-MEDELLÍN-INVERTIDO.png" /> 
+                    <!-- <img class="img-fluid menu" src="" />  -->
+                    <svg class="menu" viewBox="0 0 100 1800">
+                      <image class="float-right" xlink:href="assets/microRelatos/WEB/MENU-MEDELLIN-INVERTIDO.png" width="100%"  /> 
+                      <a xlink:href="#1" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+                      <a xlink:href="#2" (click)="clickMenu(2)"><rect x="0" y="325" width="320" height="470" fill="rgba(0,0,0,0)" opacity="0.5"/></a> 
+                      <a xlink:href="#3" (click)="clickMenu(3)"><rect x="0" y="800" width="320" height="520" fill="rgba(0,0,0,0)" opacity="0.5"/></a>                             
+                    </svg>        
                    
                   </div>
               </div>
@@ -330,7 +336,7 @@
                           <img class="anteriorWeb float-right" (click)="siguienteFragmento('false')" src="assets/autores/WEB/ANTERIOR_FLECHA.png"/>
                         </div>
                         <div class="col-2 ">
-                          <img class="brujulaVolver" (click)="permitirRelatos()" src="assets/microRelatos/WEB/VOLVER-MAPA-MEDELLÍN-CON-ÍCONO.png"/>
+                          <img class="brujulaVolver" (click)="permitirRelatos()" src="assets/microRelatos/WEB/VOLVER-MAPA-MEDELLIN-CON-ICONO.png"/>
                         </div>
                         <div class="col-5">
                           <img class="siguienteWeb float-left" (click)="siguienteFragmento('true')" src="assets/autores/WEB/SIGUIENTE_FLECHA.png"/>

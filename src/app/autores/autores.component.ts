@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Output, EventEmitter } from '@angular/core';
 
 import { DeviceDetectorService } from 'ngx-device-detector';
 
@@ -17,10 +17,13 @@ export class AutoresComponent implements OnInit {
   topPosition: Number=170; //170
     abrirPopUp: Boolean=true;
     movil: Boolean=false;
-    relatos: Boolean=true;
+    relatos: Boolean=false;
     contadorFragmento: number=0;
     fragmentoActual: Fragmento=fragmentos[0];
     bulletVacio=[false,false,false,false,false,false,false,false,false,false]
+
+    @Output() navegador = new EventEmitter<string>();
+ 
 
   constructor(private deviceService: DeviceDetectorService) { }
 
@@ -102,6 +105,23 @@ export class AutoresComponent implements OnInit {
   clickMapa(lado){
 alert(lado);
   }
+
+  clickMenu(lado){
+
+    switch(lado){
+      case 1:
+        this.navegador.emit("home");
+        break;
+      case 2:
+        this.navegador.emit("autores");
+        break;  
+        case 3:
+          this.navegador.emit("microRelatos");
+          break;     
+    }
+    
+  }
+  
 
 
   @HostListener("window:scroll", ["$event"])

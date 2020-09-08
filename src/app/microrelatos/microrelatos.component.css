@@ -191,14 +191,16 @@ width: 18%;
 
 .mapa{
     position: absolute;
-    width: 93%;
-   top: -130px; 
+   top: -200px; 
    box-sizing: margin-box;
+   max-width: 900px;
+   max-height: 900px;
 }
 
 .menu{
     position: relative;
-    top: -100px;
+    top: 10px;
+    right: 50px;
     margin-left: 100%;
   width: 40px;
 

@@ -89,8 +89,8 @@ width: 60%;
    }
 
    .texto2{
-       margin-right: 10%;
-       margin-left: 10%;
+       margin-right: 20%;
+       margin-left: 20%;
     margin-top: 40%;
      color: white !important;
      font-size: 3vw;
@@ -119,7 +119,7 @@ width: 60%;
 
    .menuHomeVertical{
        position: relative;
-       top: 15%;
+       top: 220px;
    }
 
    .eligeMitad{
@@ -154,6 +154,8 @@ width: 60%;
 .mapa{
 margin-top: 1.2% !important;
 z-index: 999;
+max-width: 1800px;
+max-height: 1550px;
 }
 
    .aliados{

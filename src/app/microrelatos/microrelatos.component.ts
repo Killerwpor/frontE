@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 import { MicroRelato } from '../modelos/microRelato';
 import { microRelatos } from '../modelos/microRelatos'
@@ -15,13 +15,15 @@ export class MicrorelatosComponent implements OnInit {
 
   constructor() { }
 
-  microRelatos: Boolean=true;
+  microRelatos: Boolean=false;
   topPosition: Number=170; //170
   abrirPopUp: Boolean=true;
   movil: Boolean=false;
   contadorFragmento: number=0;
   microRelatoActual: MicroRelato=microRelatos[0];
   bulletVacio=[true,false,false,false,false,false,false,false,false,false]
+
+  @Output() navegador = new EventEmitter<string>();
 
   ngOnInit(): void {
   }
@@ -68,6 +70,22 @@ export class MicrorelatosComponent implements OnInit {
     else{
       this.microRelatos=true;
     }
+  }
+
+  clickMenu(lado){
+
+    switch(lado){
+      case 1:
+        this.navegador.emit("home");
+        break;
+      case 2:
+        this.navegador.emit("autores");
+        break;  
+        case 3:
+          this.navegador.emit("microRelatos");
+          break;     
+    }
+    
   }
 
     playAudio(url) {

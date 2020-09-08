@@ -402,6 +402,13 @@ margin-left: 1%;
         position: relative;
         right: 25px;
         width: 370px;
+        max-width: 1800px;
+        max-height: 1700px;
+    }
+
+    .textoPrincipal{
+        position: relative;
+        right: 600px !important;
     }
 
     .brujula{
