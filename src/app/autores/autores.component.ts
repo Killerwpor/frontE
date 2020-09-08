@@ -5,6 +5,8 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 import { fragmentos } from '../modelos/fragmentos'
 import { Fragmento } from '../modelos/fragmento';
 
+  import * as $ from "jquery";
+
 @Component({
   selector: 'app-autores',
   templateUrl: './autores.component.html',
@@ -15,7 +17,7 @@ export class AutoresComponent implements OnInit {
   topPosition: Number=170; //170
     abrirPopUp: Boolean=true;
     movil: Boolean=false;
-    relatos: Boolean=false;
+    relatos: Boolean=true;
     contadorFragmento: number=0;
     fragmentoActual: Fragmento=fragmentos[0];
     bulletVacio=[false,false,false,false,false,false,false,false,false,false]
@@ -45,22 +47,34 @@ export class AutoresComponent implements OnInit {
     }
   }
 
-  permitirRelatos(){
+
+
+  permitirRelatos(numero){
+  
     if(this.relatos){    
       this.relatos=false;
     }
     else{
+       this.fragmentoActual=fragmentos[numero];
+       $( document ).ready(function() {
+        $("#bullet3").attr('src','assets/autores/BULLET-LLENO.png');
+    });
+           this.bulletVacio[numero]=true;
+         this.contadorFragmento=numero;
+  
+     
       this.relatos=true;
     }
   }
 
   siguienteFragmento(siguiente){
+
     let isMobile = this.deviceService.isMobile();
     if(siguiente=="true"){
       if(this.contadorFragmento==9){
         this.bulletVacio[this.contadorFragmento]=true;
       }
-      if(this.contadorFragmento<9){
+      if(this.contadorFragmento<9){        
         this.fragmentoActual=fragmentos[this.contadorFragmento+1];
         this.bulletVacio[this.contadorFragmento]=true;
         this.contadorFragmento++;    

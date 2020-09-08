@@ -11,7 +11,12 @@
 }
 
 .imagenMicroRelato{
-    width: 300px;
+   max-width: 650px !important;
+   max-height: 600px !important;
+}
+
+.fixed-top{
+    margin-top: 2%;
 }
 
 .header{
@@ -33,13 +38,30 @@
     width: 15%;
 }
 
+.textoSecundario{
+    position: relative;
+    top: 50px;
+    right: 40px;
+}
+
+.textoPrincipal{
+    position: relative;
+    top: 50px;
+    right: 60px;
+}
+
+.centrar{
+    margin-right: 45%;
+}
+
 .logo2{
-    margin-left: 17em;
+    margin-left: 22em;
     min-width: 300px;
 }
 
 .logo3{
     min-width: 20%;
+   padding-left: 0%;
 }
 
 .aliados{
@@ -76,7 +98,7 @@
   }
   .degradado{
       position: absolute;
-      height: 49em;
+      height: 100%;
       top: 0px;
       left: 0px;
   }

@@ -4,7 +4,7 @@
 }
 
 .contenedorPrincipal{
-    margin-top: 10%;
+    margin-top: 4%;
 }
 
 .logo1HomeWeb{
@@ -67,7 +67,7 @@ width: 60%;
        color: #F8EBE3 !important;
        font-size: 0.95vw;
        position: absolute;
-       bottom: 100px;
+       bottom: 190px;
        font-family: 'sweet-sans-pro';
    }
 
@@ -78,6 +78,9 @@ width: 60%;
    }
 
    .patrocinadoresFooter{
+       position: absolute;
+       bottom: 50px;
+       left: 45%;
        width: 20%;
    }
 
@@ -86,9 +89,11 @@ width: 60%;
    }
 
    .texto2{
+       margin-right: 10%;
+       margin-left: 10%;
     margin-top: 40%;
      color: white !important;
-     font-size: 5vw;
+     font-size: 3vw;
      z-index: -1;
      font-family: 'ambroise-std';
  }
@@ -147,6 +152,7 @@ width: 60%;
 }
 
 .mapa{
+margin-top: 1.2% !important;
 z-index: 999;
 }
 

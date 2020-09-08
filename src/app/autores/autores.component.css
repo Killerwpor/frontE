@@ -23,12 +23,24 @@
    padding-top: 20%;
 }
 .logo1{
+    margin-left: 6%;
     width: 20%;
+}
+
+.navbar{
+    margin-top: 1.5%;
+}
+
+.columnaTextoSecundario{
+    position: relative;
+    left: 5%;
 }
 
 .logo1Home{
     width: 20%;
 }
+
+
 
 .logo2Home{
     float: right;
@@ -113,8 +125,15 @@ width: 18%;
 
       position: fixed;
       left: 0em;
-      top: 38em;
+      top: 78%;
 
+}
+
+.imagenFragmento{
+    position: relative;
+    bottom: 50px;
+    max-width: 600px;
+    max-height: 600px;
 }
 
 /* POPUP  */
@@ -264,7 +283,7 @@ margin-left: 1%;
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 49em;
+    height: 100%;
 }
 
 
@@ -300,6 +319,8 @@ margin-left: 1%;
 }
 
 .textoFragmento{
+    position: relative;
+    right: 16%;
     color:  #F8EBE3;
     font-family: "sweet-sans-pro";
     font-size: 1vw;

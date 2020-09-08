@@ -61,7 +61,7 @@
                     <img class="logo2 pull-right" src="assets/microRelatos/WEB/MEDELLIN-FILTRO.png"/>
                   </div>
                   <div class="col-2">
-                    <img class="img-fluid logo3 text-l" src="assets/microRelatos/WEB/SNL-2.png"/>
+                    <img class="img-fluid logo3" src="assets/microRelatos/WEB/SNL-2.png"/>
                   </div>
               
                 </div>
@@ -77,7 +77,7 @@
               
               <div class="row">
                 <div class="col-6">
-                  <img class="img-fluid imagenMicrorelato"  src="{{microRelatoActual.urlImagen}}"/>
+                  <img class="imagenMicroRelato float-right"  src="{{microRelatoActual.urlImagen}}"/>
                 </div>
                <!--INICIO SECCIÓN -->
                   <!--COMENTAR ESTA SECCIÓN Y DESCOMENTAR LA OTRA PARA VOLVER A LA NORMALIDAD -->
@@ -92,7 +92,7 @@
               <!--  FIN SECCIÓN -->
 
              
-                <div class="col-2" *ngIf="!bulletVacio[10]">
+                <div class="col-2 textoSecundario" *ngIf="!bulletVacio[10]">
                     <div class="col-12">
                       <div class="textoTeoria font-italic text-right">{{microRelatoActual.fraseDeTeoria}}</div>
                     </div>                
@@ -106,7 +106,7 @@
                   
                   
                   
-                   <div class="col-4" *ngIf="!bulletVacio[10]" >
+                   <div class="col-4 textoPrincipal" *ngIf="!bulletVacio[10]" >
                    
                     
 
@@ -303,21 +303,21 @@
                       </div>
                       <div class="col-12">
                         <br>
-                        <div *ngIf="bulletVacio[0]" class="text-right"><img src="assets/microRelatos/WEB/0_.png"/></div>
-                        <div *ngIf="bulletVacio[1]" class="text-right"><img src="assets/microRelatos/WEB/10_.png"/></div>
-                        <div *ngIf="bulletVacio[2]" class="text-right"><img src="assets/microRelatos/WEB/20_.png"/></div>
-                        <div *ngIf="bulletVacio[3]" class="text-right"><img src="assets/microRelatos/WEB/30_.png"/></div>
-                        <div *ngIf="bulletVacio[4]" class="text-right"><img src="assets/microRelatos/WEB/40_.png"/></div>
-                        <div *ngIf="bulletVacio[5]" class="text-right"><img src="assets/microRelatos/WEB/50_.png"/></div>
-                        <div *ngIf="bulletVacio[6]" class="text-right"><img src="assets/microRelatos/WEB/60_.png"/></div>
-                        <div *ngIf="bulletVacio[7]" class="text-right"><img src="assets/microRelatos/WEB/70_.png"/></div>
-                        <div *ngIf="bulletVacio[8]" class="text-right"><img src="assets/microRelatos/WEB/80_.png"/></div>
-                        <div *ngIf="bulletVacio[9]" class="text-right"><img src="assets/microRelatos/WEB/90_.png"/></div>                        
+                        <div *ngIf="bulletVacio[0]" class="text-left"><img src="assets/microRelatos/WEB/0_.png"/></div>
+                        <div *ngIf="bulletVacio[1]" class="text-left"><img src="assets/microRelatos/WEB/10_.png"/></div>
+                        <div *ngIf="bulletVacio[2]" class="text-left"><img src="assets/microRelatos/WEB/20_.png"/></div>
+                        <div *ngIf="bulletVacio[3]" class="text-leftt"><img src="assets/microRelatos/WEB/30_.png"/></div>
+                        <div *ngIf="bulletVacio[4]" class="text-left"><img src="assets/microRelatos/WEB/40_.png"/></div>
+                        <div *ngIf="bulletVacio[5]" class="text-left"><img src="assets/microRelatos/WEB/50_.png"/></div>
+                        <div *ngIf="bulletVacio[6]" class="text-left"><img src="assets/microRelatos/WEB/60_.png"/></div>
+                        <div *ngIf="bulletVacio[7]" class="text-left"><img src="assets/microRelatos/WEB/70_.png"/></div>
+                        <div *ngIf="bulletVacio[8]" class="text-left"><img src="assets/microRelatos/WEB/80_.png"/></div>
+                        <div *ngIf="bulletVacio[9]" class="text-left"><img src="assets/microRelatos/WEB/90_.png"/></div>                        
                       </div>
                        
                        
                   </div> 
-           
+         
                 </div> 
                 
                 

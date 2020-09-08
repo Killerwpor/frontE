@@ -17,12 +17,10 @@ export class HomeComponent implements AfterViewInit {
 
   constructor(private deviceService: DeviceDetectorService) { }
   ngAfterViewInit(): void {
-    jarallax(document.querySelectorAll('.jarallax'), {
-      speed: 0.2
-    });
+   
   }
 
-  home: String="home3";
+  home: String="home1";
   topPosition: Number=0;
   permitirScroll=false;
   permitirMapa=false;
@@ -32,7 +30,7 @@ export class HomeComponent implements AfterViewInit {
   @Output() navegador = new EventEmitter<string>();
  
   arrancarAnimacion(){
-    $(".ciudadEspejo").addClass("animate__animated animate__fadeOut");
+    //$(".ciudadEspejo").addClass("animate__animated animate__fadeOut");
     setTimeout(()=>{
       this.permitirScroll=true;
       setTimeout(()=>{
@@ -56,6 +54,7 @@ export class HomeComponent implements AfterViewInit {
    @HostListener("window:scroll", ["$event"])
 onWindowScroll() {
   $(".ciudadEspejo2").addClass("animate__animated animate__fadeOut");
+  
   
   // setTimeout(()=>{
   //    this.cambiarCiudadEspejo=false;
