@@ -94,7 +94,7 @@ clickMapa(lado){
       this.navegador.emit("autores");
       break;
     case '2':
-      this.navegador.emit("autores");
+      this.navegador.emit("microRelatos");
       break;    
   }
 }

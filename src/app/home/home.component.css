@@ -1,4 +1,5 @@
 .header{
+    z-index: -999;
     margin-top: 1%;
 }
 
@@ -146,9 +147,7 @@ width: 60%;
 }
 
 .mapa{
-    position: relative;
-    top: 2%;
-max-width: 118%;
+z-index: 999;
 }
 
    .aliados{

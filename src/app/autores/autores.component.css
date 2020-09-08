@@ -5,11 +5,23 @@
     padding: 0px,0px,0px,0px !important;
 }
 
+.contenedorPrincipal{
+    margin-top: 2%;
+}
+
+.colMapa{
+    margin-top: 1%;
+}
+
 .header{
     position: relative;
     top: 200px;
+    left: 100px;
 }
 
+.texto{
+   padding-top: 20%;
+}
 .logo1{
     width: 20%;
 }
@@ -154,15 +166,17 @@ width: 18%;
 
 
 .mapa{
-    position: absolute;
-    width: 90%;
-   top: -170px; 
-   box-sizing: margin-box;
+position: relative;
+top: 2%;
+right: -16%;
 }
 
-.menu{
-    margin-left: 100%;
-  width: 30px;
+.barraHorizontal{
+    width: 60%;
+}
+.menu{ 
+    padding-top: 150%;
+    width: 30%;
 
 }
 

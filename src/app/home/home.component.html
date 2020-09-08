@@ -122,7 +122,6 @@
 </div>
 
 <div *ngIf="home=='home3'" class="container-fluid">
-  <header>
     <div class="row navbar header fixed-top">
       <div class="col-2">
         <img class="logo1HomeWeb" src="assets/microRelatos/WEB/LOGO-FEST.png"/>
@@ -134,18 +133,25 @@
         <img class="float-left" src="assets/Home/ELEMENTOS TRSVLS/LOGO-SNL.png"/>
       </div>          
     </div>     
-</header> 
+
 
 <div class="row ">
   <div class="col-2">
     <img class="ciudadEspejo img-fluid" src="assets/Home/ELEMENTOS TRSVLS/CABEZOTE-CON-CORONDEL.png"/>
   </div>
   <div class="col-8">
-    <img class="mapa" src="assets/Home/ELEMENTOS TRSVLS/MAPA-CON-ELEMENTOS.png"/>
+    <svg viewBox="0 0 1800 1550">
+      <image class="mapa" xlink:href="assets/Home/ELEMENTOS TRSVLS/MAPA-CON-ELEMENTOS.png" width="120%"  />   
+      <a xlink:href="#"><rect x="100" y="0" width="850" height="1550" fill="rgba(0,0,0,0.1)" opacity="0" (click)="clickMapa('1')" /></a>
+      <a xlink:href="#"><rect x="950" y="0" width="850" height="1550" fill="rgba(0,0,0,0.1)" opacity="0" (click)="clickMapa('2')"/></a> 
+                   
+  </svg> 
   </div>
   <div class="col-2">
     <img class="menuHomeVertical img-fluid float-right" src="assets/Home/ELEMENTOS TRSVLS/MENU-TABS.png"/>
   </div>
-  <div class="col-12 text-center"><img class="eligeMitad" src="assets/microRelatos/gifs/elige_la_mitad.gif"/></div>
+  <div class="col-12 text-center">
+    <img class="eligeMitad" src="assets/microRelatos/gifs/elige_la_mitad.gif"/>
+  </div>
 </div>
 </div>
