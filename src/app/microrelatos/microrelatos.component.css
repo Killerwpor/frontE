@@ -1,6 +1,3 @@
-.noScroll{
-   
-}
 
 
 .contenedorRelatos{
@@ -26,6 +23,10 @@
 
 .logo1{
     width: 20%;
+}
+
+.medellin{
+    margin-bottom: 100px;
 }
 
 .logo1Home{
@@ -90,11 +91,16 @@
    cursor: pointer !important;
   }
 
+  .decoracion{
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+}
 
   .contenedorFooter{
       position: fixed;
       left: 0em;
-      top: 84%;
+      top: 83%;
   }
 
   .brujulaVolver:hover{
@@ -132,12 +138,12 @@ width: 18%;
 .anteriorWeb{
     padding-left: 0%;
     margin-top: 10%;
-    width: 40%;
+    width: 25%;
 }
 
 .siguienteWeb{
     margin-top: 10%;
-    width: 40%;
+    width: 25%;
 }
 
 .medellinInverso{
@@ -337,7 +343,14 @@ margin-left: 1%;
 }
 
 .textoFragmento{
-    padding-top: 140px;
+    color:  #F8EBE3;
+    font-family: "sweet-sans-pro";
+    font-size: 1vw;
+}
+
+.textoFragmento2{
+        position: relative;
+        top: 150px;
     color:  #F8EBE3;
     font-family: "sweet-sans-pro";
     font-size: 1vw;

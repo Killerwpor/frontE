@@ -38,15 +38,30 @@
 .logo1{
     margin-left: 6%;
     width: 20%;
+    z-index: 999 !important;
 }
+
 
 .navbar{
     margin-top: 1.5%;
+    z-index: -999 !important;
 }
 
 .columnaTextoSecundario{
     position: relative;
+    top: 12px;
     left: 5%;
+}
+
+.logoFiltro{
+    position: relative;
+    right: 100px;
+}
+
+.decoracion{
+    z-index: -999;
+    width: 100%;
+    height: 100%;
 }
 
 .logo1Home{
@@ -113,7 +128,7 @@ width: 18%;
 }
 
 .brujulaHomeWeb{
-    margin-top: 5%;
+    margin-top: 8%;
     width: 30%;
 }
 
@@ -122,9 +137,8 @@ width: 18%;
 }
 
 .anteriorWeb{
-    padding-left: 0%;
     margin-top: 10%;
-    width: 30%;
+    width: 27%;
 }
 
 .siguienteWeb{
@@ -134,22 +148,24 @@ width: 18%;
 
 .medellin{
     width: 6%;
-    margin-top: -55px;
+    margin-top: -30px;
 }
 
 .footerWeb{
 
       position: fixed;
       left: 0em;
-      top: 82%;
+      top: 83%;
 
 }
 
 .imagenFragmento{
     position: relative;
     bottom: 50px;
+    width: 100%;
     max-width: 600px;
-    max-height: 600px;
+    max-height: 650px;
+    z-index: -999;
 }
 
 /* POPUP  */
@@ -233,14 +249,12 @@ width: 18%;
 
 .nombre{
 color: #92B7CB;
-display: inline-block;
 font-family: "sweet-sans-pro";
-margin-left: 1%;
+margin-right: 7px;
 }
 
 .apellido{
     color: #92B7CB;
-    display: inline-block;
     font-family: "sweet-sans-pro";
 }
 
@@ -307,8 +321,13 @@ margin-left: 1%;
     top: 0px;
     left: 0px;
     height: 100%;
+    z-index: 1;
 }
 
+.contenedorTextoFragmento{
+    position: relative;
+    right: 50px;
+}
 
 .bullet2{
     width: 20px;

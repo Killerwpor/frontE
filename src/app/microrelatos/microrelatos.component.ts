@@ -55,6 +55,34 @@ export class MicrorelatosComponent implements OnInit {
     }
   }
 
+  // siguienteFragmento(siguiente){
+
+  //   if(siguiente=="true"){
+  //     if(this.contadorFragmento==9){
+  //      this.contadorFragmento=-1;
+  //     }
+  //     if(this.contadorFragmento<9){        
+  //       this.microRelatoActual=microRelatos[this.contadorFragmento+1];
+  //       this.bulletVacio[this.contadorFragmento]=true;
+  //       this.contadorFragmento++;   
+        
+        
+       
+     
+       
+  //     }
+      
+      
+  //   }
+  //   else{
+  //     if(this.contadorFragmento>0){
+  //       this.microRelatoActual=microRelatos[this.contadorFragmento-1];
+  //       this.bulletVacio[this.contadorFragmento-1]=false;
+  //       this.contadorFragmento--;
+  //     }
+  //   }
+  // }
+
   apagarBullets(bullet){
     for(var i in this.bulletVacio){
       if(i!=bullet){
@@ -63,11 +91,16 @@ export class MicrorelatosComponent implements OnInit {
     }
   }
 
-  permitirRelatos(){
+  permitirRelatos(numero){
+  
     if(this.microRelatos){    
       this.microRelatos=false;
+      this.apagarBullets(0);
     }
     else{
+       this.microRelatoActual=microRelatos[numero];   
+           this.bulletVacio[numero]=true;
+         this.contadorFragmento=numero;     
       this.microRelatos=true;
     }
   }

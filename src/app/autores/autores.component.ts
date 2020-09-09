@@ -60,7 +60,7 @@ export class AutoresComponent implements OnInit {
     else{
        this.fragmentoActual=fragmentos[numero];
        $( document ).ready(function() {
-        $("#bullet3").attr('src','assets/autores/BULLET-LLENO.png');
+        $("#bullet"+numero).attr('src','assets/autores/BULLET-LLENO.png');
     });
            this.bulletVacio[numero]=true;
          this.contadorFragmento=numero;
@@ -75,12 +75,13 @@ export class AutoresComponent implements OnInit {
     let isMobile = this.deviceService.isMobile();
     if(siguiente=="true"){
       if(this.contadorFragmento==9){
-        this.bulletVacio[this.contadorFragmento]=true;
+       this.contadorFragmento=-1;
       }
       if(this.contadorFragmento<9){        
         this.fragmentoActual=fragmentos[this.contadorFragmento+1];
-        this.bulletVacio[this.contadorFragmento]=true;
-        this.contadorFragmento++;    
+        this.contadorFragmento++; 
+        $("#bullet"+this.contadorFragmento).attr('src','assets/autores/BULLET-LLENO.png');
+           
        
      
         if(isMobile) {

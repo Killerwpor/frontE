@@ -2,17 +2,17 @@ import { MicroRelato } from './microRelato';
 
 export const microRelatos: MicroRelato[] = [
     {
-    texto: "Sobre una pila de esculturas regordetas y olvidadas se encontraba un hombre sin naturaleza. De la columna que sostenía su cabeza, nacían cables que conectaban sus ideas con las de la serpiente recta y oxidada que recorría el valle del olvido.El hombre cansado del tono que tenía el valle, un gris profundo y falto de valor, optó por la decisión. ¿Qué es la decisión? Aquello que le devolvería la naturaleza al hombre muerto. Desconectó los cables que lo ataban y el gris profundo se transformó en el color del recuerdo",
+    texto: 'Sobre una pila de esculturas regordetas y olvidadas se encontraba un hombre sin naturaleza. De la columna que sostenía su cabeza, nacían cables que conectaban sus ideas con las de la serpiente recta y oxidada que recorría el valle del olvido. El hombre cansado del tono que tenía el valle, un gris profundo y falto de valor, optó por la decisión. ¿Qué es la decisión? Aquello que le devolvería la naturaleza al hombre muerto. Desconectó los cables que lo ataban y el gris profundo se transformó en el color del recuerdo.',
     autor: "Tomás \n JC",
     urlAudio: "https://parada2020.s3.us-east-1.amazonaws.com/Microrrelatos/audiorrelatos/audiorelato%201.mp3",
-    fraseDeTeoria: "El ciberpunk reúne una visión pesimista y desencantada de un futuro dominado por la tecnología y por el capitalismo salvaje con un ideario rebelde y subversivo, frecuentemente anarquista. ",
+    fraseDeTeoria: "Las distopías ciberpunk reúnen una visión pesimista y desencantada de un futuro dominado por la tecnología y por el capitalismo salvaje con un ideario rebelde y subversivo, frecuentemente anarquista.",
     urlImagen: "assets/microRelatos/Ilustraciones/Cuento1.png"
 },
 {
     texto: "Se encontró de repente en una habitación de aspecto antiguo, bajó de su pequeña cápsula y vio a una mujer mayor sentada frente a un caballete. En el lienzo se observaba el bosquejo de seis monjas apreciando a un bello pájaro enjaulado. La mujer sobresaltada se dio la vuelta y… notó que un hombre le sonreía. El hombre se introdujo de nuevo en su cápsula y desapareció sin notar que un papel doblado había escapado de su bolsillo. Una expresión de asombro se adueñó del rostro de la mujer al descubrir su imagen plasmada en un billete.",
     autor: "José David Villegas",
     urlAudio: "https://parada2020.s3.us-east-1.amazonaws.com/Microrrelatos/audiorrelatos/audiorelato%202.mp3",
-    fraseDeTeoria: "Somos solarpunks porque nos han arrebatado el optimismo y tratamos de recuperarlo.",
+    fraseDeTeoria: "El solarpunk parte de la consciencia de que nos han arrebatado el optimismo y es necesario tratar de recuperarlo.",
     urlImagen: "assets/microRelatos/Ilustraciones/Cuento2.png"
 },
 {
@@ -26,7 +26,7 @@ export const microRelatos: MicroRelato[] = [
     texto: "Yadira vio a Zhan cerrar los ojos con el trago aún en la mano y esperó. Después tomó la pastilla del microbolsillo de su sostén y emergió de la borrachera como nueva. Se conectó a la unidad interna de Zhan y copió todo. Se vistió y salió a ver a don Pablo. Al llegar pasó a la sala privada y a pareció el holo del Patrón. La negociación fue rápida. En el hotel Nutibara Accor, Zhan despertó y comprobó la copia de los files. A esta hora la IA conocida como Pablo ya estaría hackeada. Los Luen tendrían que ascenderlo, mínimo.",
     autor: "Juan Arellano",
     urlAudio: "https://parada2020.s3.us-east-1.amazonaws.com/Microrrelatos/musicarelatos/musicarelato4.mp3",
-    fraseDeTeoria: "Las distopías suelen ser metáforas bastante precisas del presente. Nos hablan de nuestro mundo hoy a base de mostrarnos el futuro deshumanizado que estamos construyendo.",
+    fraseDeTeoria: "En una distopía, el individuo está, por lo general, alienado. Las singularidades, los rasgos únicos de personalidad, son indicios de rebeldía, de algo que debe ser eliminado. ",
     urlImagen: "assets/microRelatos/Ilustraciones/Cuento4.png"
 },
 {
@@ -53,14 +53,14 @@ export const microRelatos: MicroRelato[] = [
     texto: "La criogenización había sido un éxito. Fue teletransportada hasta Santa Elena para comprobar si también lo fue su diseño. Sin rastro de contaminación, pudo vislumbrar los edificios convertidos en bosques verticales, en el marco de florecidos jardines colgantes. Medellín era ahora una silleta monumental.",
     autor: "Una de Una",
     urlAudio: "https://parada2020.s3.us-east-1.amazonaws.com/Microrrelatos/audiorrelatos/audiorelato%208.mp3",
-    fraseDeTeoria: "Solarpunk puede ser utópico, optimista, o centrado en las luchas por un mundo mejor, pero nunca distópico.",
+    fraseDeTeoria: "El solarpunk puede ser utópico, optimista, o centrado en las luchas por un mundo mejor, pero nunca distópico.",
     urlImagen: "assets/microRelatos/Ilustraciones/Cuento8.png"
 }
 , {
     texto: "Uso para leer luz del día, mi transporte es una vieja bicicleta, nunca he visto más allá de la delimitada área metropolitana, mis pocos ahorros están destinados a la siembra de un árbol al mes. En mi era, con el nacimiento de cada nuevo ser, se entrega un chip implantado que calcula la posición y la huella de carbono generada por el portador, obligándolo a compensarla si excede el límite permitido, los más ricos normalmente lo compensan con dinero, y los demás, pensamos más de dos veces antes de tomar un trago de agua.",
     autor: "Sin punto de fuga",
     urlAudio: "https://parada2020.s3.us-east-1.amazonaws.com/Microrrelatos/audiorrelatos/audiorelato%209.mp3",
-    fraseDeTeoria: "Solarpunk es un movimiento de ficción especulativa, arte, moda y activismo que busca responder “¿cómo es una civilización sostenible y cómo podemos llegar ella?",
+    fraseDeTeoria: 'El solarpunk es un movimiento de ficción especulativa, arte, moda y activismo que busca responder “¿cómo es una civilización sostenible y cómo podemos llegar ella?".',
     urlImagen: "assets/microRelatos/Ilustraciones/Cuento9.png"
 }
 , {

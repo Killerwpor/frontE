@@ -13,8 +13,9 @@
       </nav>  
     </header> 
     <img class="degradado" src="assets/microRelatos/WEB/DEGRADADO.png"/>
-      <div class="container-fluid">
-  
+    <img class="fixed-bottom decoracion" src="assets/autores/WEB/DECOR1.png"/>
+   
+      <div class="container-fluid">  
         <div class="header">
           <div class="container-fluid">
               <div class="row">
@@ -23,18 +24,23 @@
                     <img class="img-fluid fixed-top medellinInverso" src="assets/microRelatos/WEB/CABEZOTE-CON-ELEMENTOS.png"/>
                   </div>                 
                   <div class="col-12 ">
-                    <div class="textoFragmento text-justify">Esto sucedío  un día de este lado del espejo: grandes fragmentos de ciudad desaparecieron de repente. Sus existencias fueron borradas del tiempo y del espacio. Son ausencias que nadie nota. Nadie extraña a la abuela que perdió, porque no sabe que la ha perdido. Ni le hace falta recorrer las calles que ya no existen ni los barrios ni las montañas, porque su recuerdo ha sido devorado. Han saltado al otro lado del espejo, a vivir su propio fin del mundo en el olvido. Si no eres capaz de guardar silencio, forastero, escribe tu historia e intenta que esta ciudad recuerde lo que le ha sido arrebatado.</div>
+                    <div class="textoFragmento2 text-left">Esto sucedío  un día de este lado del espejo: grandes fragmentos de ciudad desaparecieron de repente. Sus existencias fueron borradas del tiempo y del espacio. Son ausencias que nadie nota. Nadie extraña a la abuela que perdió, porque no sabe que la ha perdido. Ni le hace falta recorrer las calles que ya no existen ni los barrios ni las montañas, porque su recuerdo ha sido devorado. Han saltado al otro lado del espejo, a vivir su propio fin del mundo en el olvido. Si no eres capaz de guardar silencio, forastero, escribe tu historia e intenta que esta ciudad recuerde lo que le ha sido arrebatado.</div>
                   </div>
                 </div>
                   <div class="col-sm-7">
                     <svg class="mapa" viewBox="-300 0 1600 1650">
                       <image class="img-fluid float-right" xlink:href="assets/microRelatos/WEB/MAPA-CON-ELEMENTOS.png" width="85%"  />                     
-                     <a xlink:href="#" (click)="permitirRelatos()"><rect x="0" y="100" width="680" height="200" fill="rgba(0,0,0,0)" opacity="0.5"/></a>                
-                     <a xlink:href="#" (click)="permitirRelatos()"><rect x="400" y="400" width="680" height="170" fill="rgba(0,0,0,0)" opacity="0.5"/></a> 
-                     <a xlink:href="#" (click)="permitirRelatos()"><rect x="380" y="800" width="420" height="170" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
-                     <a xlink:href="#" (click)="permitirRelatos()"><rect x="900" y="680" width="500" height="300" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
-                     <a xlink:href="#" (click)="permitirRelatos()"><rect x="380" y="1020" width="420" height="290" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
-                     <a xlink:href="#" (click)="permitirRelatos()"><rect x="600" y="1450" width="310" height="290" fill="rgba(0,0,0,0)" opacity="0.5"/></a>  
+                     <a xlink:href="#Algoritmo" (click)="permitirRelatos(6)"><rect x="90" y="20" width="400" height="280" fill="rgba(0,0,0,0)" opacity="0"/></a> 
+                     <a xlink:href="#Esculturas" (click)="permitirRelatos(0)"><rect x="340" y="300" width="430" height="180" fill="rgba(0,0,0,0)" opacity="0"/></a>
+                     <a xlink:href="#Secomia" (click)="permitirRelatos(4)"><rect x="280" y="600" width="320" height="140" fill="rgba(0,0,0,0)" opacity="0"/></a>
+                     <a xlink:href="#flores" (click)="permitirRelatos(7)"><rect x="380" y="770" width="200" height="240" fill="rgba(0,0,0,0)" opacity="0"/></a>
+                     <a xlink:href="#Nanolab" (click)="permitirRelatos(5)"><rect x="620" y="600" width="190" height="140" fill="rgba(0,0,0,0)" opacity="0"/></a>  
+                     <a xlink:href="#NanoLab" (click)="permitirRelatos(5)"><rect x="720" y="480" width="180" height="110" fill="rgba(0,0,0,0)" opacity="0"/></a>
+                     <a xlink:href="#Bicicleta" (click)="permitirRelatos(8)"><rect x="820" y="600" width="260" height="195" fill="rgba(0,0,0,0)" opacity="0"/></a> 
+                     <a xlink:href="#señorSentado" (click)="permitirRelatos(1)"><rect x="480" y="1070" width="200" height="350" fill="rgba(0,0,0,0)" opacity="0"/></a>
+                     <a xlink:href="#mecedora" (click)="permitirRelatos(2)"><rect x="690" y="1070" width="260" height="240" fill="rgba(0,0,0,0)" opacity="0"/></a>
+                     <a xlink:href="#viejita" (click)="permitirRelatos(9)"><rect x="690" y="1320" width="300" height="250" fill="rgba(0,0,0,0)" opacity="0"/></a>
+                     <a xlink:href="#cerebros" (click)="permitirRelatos(3)"><rect x="1000" y="1320" width="300" height="450" fill="rgba(0,0,0,0)" opacity="0"/></a>                   
                    </svg>                   
                     </div>
               
@@ -76,6 +82,8 @@
             
             </header>   
             <img class="degradado" src="assets/microRelatos/WEB/DEGRADADO.png"/>
+            <img class="fixed-bottom decoracion" src="assets/autores/WEB/DECOR2.png"/>
+   
              <div class="text-justify contenedorRelatos">
             
               
@@ -149,7 +157,9 @@
                         <div class="custom-control custom-radio">
                         <input type="radio" class="custom-control-input" id="opcion2" name="defaultExampleRadios" mdbInput>
                         <label class="custom-control-label textoFragmento" for="opcion2">las estrellas</label>
-                        </div>   
+                        </div> 
+                        
+                      
                         
                         <div class="custom-control custom-radio">
                           <input type="radio" class="custom-control-input" id="opcion3" name="defaultExampleRadios" mdbInput>
@@ -330,20 +340,27 @@
                     </div>
   
                       <!-- FOOTER WEB -->
-                    <div class="container-fluid contenedorFooter" *ngIf="!movil">
+                     <div class="container-fluid contenedorFooter" *ngIf="!movil">
                       <div class="row text-center">                       
                         <div class="col-5">
                           <img class="anteriorWeb float-right" (click)="siguienteFragmento('false')" src="assets/autores/WEB/ANTERIOR_FLECHA.png"/>
                         </div>
                         <div class="col-2 ">
-                          <img class="brujulaVolver" (click)="permitirRelatos()" src="assets/microRelatos/WEB/VOLVER-MAPA-MEDELLIN-CON-ICONO.png"/>
+                          <img class="brujulaVolver" (click)="permitirRelatos(0)" src="assets/microRelatos/gifs/rosa.png"/>
                         </div>
                         <div class="col-5">
                           <img class="siguienteWeb float-left" (click)="siguienteFragmento('true')" src="assets/autores/WEB/SIGUIENTE_FLECHA.png"/>
-                        </div>                      
+                        </div> 
+                        <div class="col-12">
+                          <img class="" src="assets/microRelatos/WEB/MEDELLIN-INVERTIDO-PEQUENO.png"/>
+                        </div>                     
                       </div>
   
-                    </div>
+                    </div> 
+
+                   
+  
+                   
                         <!-- FIN FOOTER WEB -->
             
               
