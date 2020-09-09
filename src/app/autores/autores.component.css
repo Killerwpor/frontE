@@ -14,9 +14,22 @@
 }
 
 .header{
+   padding-top: 250px;
+   padding-left: 200px;
+}
+
+.Medellin{
     position: relative;
-    top: 200px;
-    left: 100px;
+    right: 40px;
+    top: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+.separador{
+    position: relative;
+    right: 100px;
+    width: 340px;
 }
 
 .texto{
@@ -76,6 +89,9 @@
    cursor: pointer !important;
   }
 
+  .separador{
+      height: 10px;
+  }
 
 
 
@@ -97,8 +113,8 @@ width: 18%;
 }
 
 .brujulaHomeWeb{
-    margin-top: 2%;
-    width: 45%;
+    margin-top: 5%;
+    width: 30%;
 }
 
 .brujulaHomeWeb:hover{
@@ -108,24 +124,24 @@ width: 18%;
 .anteriorWeb{
     padding-left: 0%;
     margin-top: 10%;
-    width: 40%;
+    width: 30%;
 }
 
 .siguienteWeb{
     margin-top: 10%;
-    width: 40%;
+    width: 30%;
 }
 
 .medellin{
-    width: 9%;
-    margin-top: -10px;
+    width: 6%;
+    margin-top: -55px;
 }
 
 .footerWeb{
 
       position: fixed;
       left: 0em;
-      top: 78%;
+      top: 82%;
 
 }
 
@@ -183,19 +199,26 @@ width: 18%;
     width: 10%;
 }
 
+.contenedorMapa{
+    padding-top: 1px;
+
+}
 
 .mapa{
-position: relative;
-top: 2%;
-right: -16%;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .barraHorizontal{
     width: 60%;
 }
 .menu{ 
-    padding-top: 150%;
-    width: 30%;
+    min-width: 30%;
+    max-width: 30%;
+    height: auto;
+    padding-top: 150px;
+    width: 50px;
 
 }
 
@@ -319,8 +342,7 @@ margin-left: 1%;
 }
 
 .textoFragmento{
-    position: relative;
-    right: 16%;
+    margin-top: 10px;
     color:  #F8EBE3;
     font-family: "sweet-sans-pro";
     font-size: 1vw;
@@ -407,8 +429,7 @@ margin-left: 1%;
     }
 
     .textoPrincipal{
-        position: relative;
-        right: 600px !important;
+     position: relative;
     }
 
     .brujula{

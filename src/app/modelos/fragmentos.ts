@@ -4,7 +4,7 @@ import { Fragmento } from './fragmento';
 
     export const fragmentos: Fragmento[] = [
     {
-        urlImagen: "assets/autores/FEST-HUMO/HUMO_FMAPA.png",
+        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/HUMO_COMP_FVERDE.png",
         nombre: 'GONZALO' ,
         apellido: 'ARANGO',
         fuenteBibliografia: '"Medellín a solas contigo"',
@@ -13,7 +13,7 @@ import { Fragmento } from './fragmento';
         
     },
     {   
-        urlImagen: "assets/autores/FEST-EXPERIMENTACION/EXPERIMENTACION_mapa.png",
+        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/EXPERIMENTACION_COMP_ILUSTRACION.png",
         nombre: 'INÉS',
         apellido: 'POSADA',
         fuenteBibliografia:'"El duro silencio de las cosas". En: Lo lento, lo pequeño, lo cercano. Editorial Atarraya, Medellín, 2018.',
@@ -22,7 +22,7 @@ import { Fragmento } from './fragmento';
 
     },
     {
-        urlImagen: "assets/autores/FEST-MICO/MICO_FMAPA.png",
+        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/MICO_COMP_ILUSTRACION.png",
         nombre: 'JOSÉ MANUEL',
         apellido: 'ARANGO',
         fuenteBibliografia: '"El sueño rencoroso"',
@@ -31,7 +31,7 @@ import { Fragmento } from './fragmento';
 
     },
     {
-        urlImagen: "assets/autores/FEST-LUNA/LUNA_FMAPA.png",
+        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/LUNA_COMP_naranja.png",
         nombre: 'JAIME',
         apellido: 'JARAMILLO ESCOBAR',
         fuenteBibliografia: '""En la luna"". En: Poemas para hoy. Editorial Universidad de Antioquia. Medellín, 2019."',
@@ -40,7 +40,7 @@ import { Fragmento } from './fragmento';
 
     },
     {
-        urlImagen: "assets/autores/FEST-PATIO/PATIO_COMP_mapa.png",
+        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/PATIO_COMP_ILLUSTRACION.png",
         nombre: 'MANUELA',
         apellido: 'GÓMEZ',
         fuenteBibliografia: '"El cemento de una casa". En: La vida como era. Editorial Atarraya, 2017."',
@@ -49,7 +49,7 @@ import { Fragmento } from './fragmento';
 
     },
     {
-        urlImagen: "assets/autores/FEST-NINA/NINA_mapa.png",
+        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/NINA_COMP_ILUSTRACION.png",
         nombre: '"YENNY',
         apellido: 'LEÓN',
         fuenteBibliografia: 'De Entre árboles y piedras. Planeta, 2013."',
@@ -58,7 +58,7 @@ import { Fragmento } from './fragmento';
 
     },
     {
-        urlImagen: "assets/autores/FEST-ECOS/ECOS_mapa.png",
+        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/ECOS_COMP_ILUSTRACION.png",
         nombre: 'JORGE MARIO',
         apellido:  'BETANCUR',
         fuenteBibliografia: 'Moscas de todos los colres: barrio Guayaquil de Medellín, 1894-1034. Editorial Universidad de Antioquia. Medellín, 2006',
@@ -67,7 +67,7 @@ import { Fragmento } from './fragmento';
 
     },
     {
-        urlImagen: "assets/autores/FEST-GARDEL/GARDEL_MAPA.png",
+        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/GARDEL_COMP_ILUSTRACION.png",
         nombre: 'MANUEL',
         apellido: 'MEJÍA VALLEJO',
         fuenteBibliografia:'Aire de tango. Editorial Eafit. Medellín, 2008. "',
@@ -76,7 +76,7 @@ import { Fragmento } from './fragmento';
 
     },
     {
-        urlImagen: "assets/autores/FEST-RIO/RIO_mapa.png",
+        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/RIO_COMP_ILUSTRACION.png",
         nombre: '"TOMÁS',
         apellido: 'CARRASQUILLA',
         fuenteBibliografia: 'Fragmento de ""Medellín"" citado por Reinaldo Spitaletta. En ""El Medellín que vio Tomás Carrasquilla"". Url: https://spitaletta.wordpress.com/tag/tomas-carrasquilla/ "',
@@ -84,7 +84,7 @@ import { Fragmento } from './fragmento';
         textoFragmento: '"Sigo estas instrucciones: 1. En la fecha del solsticio de verano, diez minutos antes de terminar el día, entro a la canalización que solía ser el río. 2. Miro al norte. 3. Camino sin afán. 4. Debo pensar en la vida pasada, en la gente que perdí. Debo tener siempre en mente sus imágenes. Sus gestos pequeños. 5. Debería ver, unos segundos antes de la puesta del sol, mi silueta reflejada como al final de un túnel. 6. Es necesario conservar la calma. Avanzar con la misma tranquilidad, con las mismas imágenes en la cabeza, aferrarme a ellas como a una cuerda que guía en la oscuridad de la cueva. 7. Las veo: las viejas calles paralelas al río, los puentes que lo atraviesan, las vías del metro. 8. La siento: el agua filtrándose en mis zapatos. La fuerza de la corriente que no existe desde hace diez años. 9. Los huelo: los químicos vertidos al río Medellín, la podredumbre usual de las casas. 10. Pero a un paso de cruzar el umbral, de alcanzar a mi silueta, suelto de nuevo la cuerda, las imágenes, los pequeños gestos, porque siento que no estoy listo todavía. 11. Todo se desvanece repentinamente: las viejas calles, los puentes, el agua, el olor. 12. Y no me frustro porque estas instrucciones son para hombres que consideran que han sufrido suficiente. 13. Intentaré el año que viene. "'
     },
     {
-        urlImagen: "assets/autores/FEST-CULTO/CULTO_mapa.png",
+        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/CULTO_ILUSTRACION.png",
         nombre: '"Sofía',
         apellido: 'Ospina de Navarro',
         fuenteBibliografia: '"La buena mesa"',
