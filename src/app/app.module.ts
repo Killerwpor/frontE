@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { AutoresComponent } from './autores/autores.component';
 import { MicrorelatosComponent } from './microrelatos/microrelatos.component';
 import { MicroRelatoGeneradoComponent } from './micro-relato-generado/micro-relato-generado.component';
+import { CreditosComponent } from './creditos/creditos.component';
+import { FisurasComponent } from './fisuras/fisuras.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { MicroRelatoGeneradoComponent } from './micro-relato-generado/micro-rela
     HomeComponent,
     AutoresComponent,
     MicrorelatosComponent,
-    MicroRelatoGeneradoComponent
+    MicroRelatoGeneradoComponent,
+    CreditosComponent,
+    FisurasComponent
   ],
   imports: [
     BrowserModule,

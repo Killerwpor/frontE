@@ -4,11 +4,11 @@
 
 <div *ngIf="!relatos" class="">
 
-  <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+  <header class="">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
       <div class="row container-fluid">
         <div class="col-6">
-          <img class="img-fluid logo1" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png"/>
+          <img class="img-fluid logo1Atras " (click)="clickMenu(1)" src="assets/autores/ciudad espejo press autores.png"/>
         </div>
         <div class="col-6">
           <img class="img-fluid logo2Home" src="assets/autores/WEB/LOGO-SNL.png"/>
@@ -16,14 +16,14 @@
       </div>  
     </nav>  
   </header> 
-  <img class="degradado" src="assets/autores/WEB/DEGRADADO.png"/>
+   <img class="degradado" src="assets/autores/WEB/DEGRADADO.png"/>
   <img class="fixed-bottom decoracion" src="assets/autores/WEB/DECOR1.png"/>
    
 
      
         
-            <div class="row">
-              <div class="col-5 header">           
+             <div class="row zBajo">
+              <div class="col-5 header zBajo">           
                   <div class="col-12 Medellin">
                   <img class="img-fluid" src="assets/autores/WEB/NOMBRE FILTRO_PT.png"/>
                 </div>
@@ -32,12 +32,24 @@
                 </div>
                 <div class="col-12">
                   <div class="text-left textoFragmento">Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!</div>
-                </div>             
+                </div>   
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-4">
+                      <img class="img-fluid rosa" src="assets/microRelatos/gifs/rosa2.png"/>
+                    </div>
+                    <div class="col-3">
+                      <br>
+                      <img class="img-fluid eligeUnFragmento" src="assets/autores/ELIGE UN FRAGMENTO.png"/>
+                    </div>
+                  </div>                  
+                  
+                </div>          
               </div>             
                 <div class="col-6">          
                                   
-                   <svg class="img-fluid mapa" viewBox="-100 -50 1800 2000">
-                  <image class="" xlink:href="assets/autores/WEB/MAPAWEB.png" width="85%"  />
+                   <svg class="mapa" viewBox="-100 -50 1800 2200">
+                  <image class="" xlink:href="assets/autores/WEB/MAPAWEB.png"/>
                   <a xlink:href="#experimentacion" (click)="permitirRelatos(1)"><rect x="700" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0"/></a>
                   <a xlink:href="#ecos" (click)="permitirRelatos(6)"><rect x="950" y="270" width="550" height="210" fill="rgba(0,0,0,0)" opacity="0"/></a>
                   <a xlink:href="#gardel" (click)="permitirRelatos(7)"><rect x="810" y="500" width="280" height="280" fill="rgba(0,0,0,0)" opacity="0"/></a>                                      
@@ -58,7 +70,7 @@
             
            
                 <div class="col-1">
-                  <svg class="menu img-fluid" viewBox="0 -250 100 2000">
+                  <svg class="menu" viewBox="0 -250 100 2000">
                     <image class="float-right" xlink:href="assets/autores/WEB/MENU.png" width="100%"  /> 
                     <a xlink:href="#1" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
                     <a xlink:href="#2" (click)="clickMenu(2)"><rect x="0" y="325" width="320" height="470" fill="rgba(0,0,0,0)" opacity="0.5"/></a> 
@@ -67,9 +79,6 @@
                 </div>
               
             </div>
-        
-    
-
 
 
 
@@ -85,11 +94,14 @@
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
               <div class="row container-fluid">
                 <div class="col-6">
-                  <img class="img-fluid logo1" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png"/>
+                  <img class="img-fluid logo1" (click)="permitirRelatos('0')" src="assets/autores/medellin unpress autores.png"/>
                 </div>
-                <div class="col-6">
-                  <img class="img-fluid logo2 float-right" src="assets/autores/WEB/NOMBRE FILTRO_SNL.png"/>
+                <div class="col-5">
+                   <img class="img-fluid logoCiudadEspejo float-right" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png"/>
                 </div>
+                <div class="col-1">
+                  <img class="img-fluid" src="assets/autores/WEB/LOGO-SNL.png"/>
+               </div>
             
               </div>
           

@@ -52,6 +52,8 @@ export class AutoresComponent implements OnInit {
 
 
 
+ 
+
   permitirRelatos(numero){
   
     if(this.relatos){    

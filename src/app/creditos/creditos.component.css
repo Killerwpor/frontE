@@ -1,0 +1,33 @@
+.contenedorPrincipal{
+    position:fixed;
+    background: rgba(216,150,96);
+    color: white;
+    height: 100%;
+    left: 0%;
+}
+
+.margenTop{
+    margin-top: 14%;
+}
+
+.fila{
+    margin-top: 10%;
+}
+
+.flecha{
+    position: relative;
+    bottom: 160px;
+    margin-right: 2%;
+}
+
+.flecha:hover{
+    cursor: pointer;
+}
+
+.columnaCentral{
+    width: 100%;
+}
+
+.barraSeparadora{
+    height: 75%;
+}

@@ -95,6 +95,11 @@ clickMapa(lado){
     case '2':
       this.navegador.emit("microRelatos");
       break;    
+
+    case '3':
+      this.navegador.emit("creditos");
+      break; 
+
   }
 }
 

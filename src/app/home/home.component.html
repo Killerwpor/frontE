@@ -16,12 +16,12 @@
 <div *ngIf="home=='home1'" class="container-fluid text-center">
   <!--INICIO ESCRITORIO-->
   <header>
-      <div class="row navbar header fixed-top">
+      <div class="row navbar header fixed-top zSuperior">
         <div class="col-2">
           <img class="logo1HomeWeb" src="assets/microRelatos/WEB/LOGO-FEST.png"/>
         </div>   
         <div class="col-8">
-          <img class="logo2HomeWeb float-right" src="assets/Home/ELEMENTOS TRSVLS/CREDITOS-BOTON.png"/>
+          <img class="logo2HomeWeb  float-right" (click)="clickMapa('3')" src="assets/Home/ELEMENTOS TRSVLS/CREDITOS-BOTON.png"/>
         </div>   
         <div class="col-2">
           <img class="logo3HomeWeb" src="assets/Home/ELEMENTOS TRSVLS/LOGO-SNL.png"/>
@@ -31,7 +31,7 @@
 
     <div class="row contenedorPrincipal">
       <div class="col-12">
-        <img class="img-fluid"  src="assets/Home/ELEMENTOS TRSVLS/CABEZOTE-CON-ELEMENTOS.png"/>
+        <img class="img-fluid zInferior"  src="assets/Home/ELEMENTOS TRSVLS/CABEZOTE-CON-ELEMENTOS.png"/>
       </div>  
       <div class="row container-fluid">
 
@@ -110,7 +110,7 @@
   </div>
   <div class="row">
     <div class="col">
-      <img class="flechaDerecha2" (click)="siguienteHome('home3')" src="assets/microRelatos/gifs/flecha_siguiente.gif"/>  
+      <img class="flechaDerecha2" (click)="siguienteHome('home3')" src="assets/microRelatos/gifs/flecha.png"/>  
     </div>
   </div>
     
@@ -124,7 +124,7 @@
         <img class="logo1HomeWeb" src="assets/microRelatos/WEB/LOGO-FEST.png"/>
       </div>   
       <div class="col-9">
-        <img class="logo2HomeWeb float-right" (click)="siguienteHome('home1')" src="assets/Home/ELEMENTOS TRSVLS/NOMBRE-FILTRO.png"/>
+
       </div>   
       <div class="col-1">
         <img class="float-left" src="assets/Home/ELEMENTOS TRSVLS/LOGO-SNL.png"/>

@@ -12,6 +12,14 @@
    max-height: 600px !important;
 }
 
+.form-control{
+    color: #F8EBE3;
+}
+
+.textoFragmento3{
+    color: rgb(205,208,130);
+}
+
 .fixed-top{
     margin-top: 2%;
 }
@@ -19,6 +27,15 @@
 .header{
     position: relative;
     top: 200px;
+}
+
+.logo1Atras{
+    margin-left: 6%;
+    z-index: 999 !important;
+}
+
+.logo1Atras:hover{
+   cursor: pointer;
 }
 
 .logo1{
@@ -148,6 +165,7 @@ width: 18%;
 
 .medellinInverso{
     margin-left: 100px;
+    z-index: -999;
 }
 
 .medellin{
@@ -253,6 +271,13 @@ margin-left: 1%;
  
 }
 
+.textoOriginal2{
+    font-family: "krete";
+    color: rgb(205,208,130);
+
+ 
+}
+
 .textoTeoria{
     font-family: "krete";
     color: #F8EBE3;
@@ -260,7 +285,8 @@ margin-left: 1%;
 }
 
 .microRelatoGenerado{
-    margin-top: -60px;
+    margin-left: 20% !important;
+    margin-right: 20% !important;
 }
 
  .footer{
@@ -353,19 +379,34 @@ margin-left: 1%;
         top: 150px;
     color:  #F8EBE3;
     font-family: "sweet-sans-pro";
-    font-size: 1vw;
+    font-size: 0.8vw;
 }
+
+.eligeUnFragmento{
+   margin-top: 50%;
+}
+
+.textoFragmento{
+    position: relative;
+    right: 30px;
+
+}
+
+.rosa2{
+    width: 100%;
+}
+
 
 input[type="text"]
 {
     background: rgba(0, 0, 0, 0);
-    border-color: #94515B;
+    border-color: rgb(205,208,130);
 
 }
 
 .form-control:focus {
-    border-color: #94515B;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(148, 81, 91, 1);
+    border-color: rgb(205,208,130);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(205,208,130)
   }
 
 

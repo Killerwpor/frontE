@@ -24,6 +24,7 @@ width: 60%;
         }
 
        
+       
         
     
 
@@ -188,7 +189,13 @@ cursor: pointer;
        top: 50px;
    }
 
+.zInferior{
+    z-index: -999;
+}
 
+.zSuperior{
+    z-index: 999;
+}
 
 .btn-group{
    position: relative;

@@ -25,6 +25,10 @@
     margin-left: 800px;
   }
 
+  .zBajo{
+z-index: -999;
+  }
+
   .container-fluid{
     
   }
