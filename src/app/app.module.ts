@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { MDBBootstrapModule, InputsModule } from 'angular-bootstrap-md';
+import { MDBBootstrapModule, InputsModule,CarouselModule, WavesModule } from 'angular-bootstrap-md';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { AutoresComponent } from './autores/autores.component';
@@ -25,6 +25,7 @@ import { FisurasComponent } from './fisuras/fisuras.component';
     BrowserModule,
     InputsModule.forRoot(),
     MDBBootstrapModule.forRoot(),
+    CarouselModule.forRoot(),
     BrowserAnimationsModule
   ],
   providers: [],

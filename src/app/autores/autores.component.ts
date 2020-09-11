@@ -121,6 +121,9 @@ alert(lado);
         case 3:
           this.navegador.emit("microRelatos");
           break;     
+          case 4:
+            this.navegador.emit("fisuras");
+            break;    
     }
     
   }
