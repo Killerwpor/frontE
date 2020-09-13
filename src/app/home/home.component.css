@@ -122,7 +122,13 @@ width: 60%;
        position: relative;
        top: 220px;
    }
+   .menu{
+    position: relative;
+    top: 230px;
+    left: 120px;
+  width: 35px;
 
+}
    .eligeMitad{
   position: absolute;
   bottom: 48%;

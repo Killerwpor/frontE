@@ -116,7 +116,10 @@ export class MicrorelatosComponent implements OnInit {
         break;  
         case 3:
           this.navegador.emit("microRelatos");
-          break;     
+          break;   
+          case 4:
+            this.navegador.emit("fisuras");
+            break;     
     }
     
   }

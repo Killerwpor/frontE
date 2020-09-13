@@ -145,7 +145,14 @@
   </svg> 
   </div>
   <div class="col-2">
-    <img class="menuHomeVertical img-fluid float-right" src="assets/Home/ELEMENTOS TRSVLS/MENU-TABS.png"/>
+    <svg class="menu" viewBox="0 0 100 1800">
+      <image class="float-right" xlink:href="assets/Home/ELEMENTOS TRSVLS/MENU-TABS.png" width="100%"  /> 
+      <a xlink:href="#home" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+      <a xlink:href="#autores" (click)="clickMenu(2)"><rect x="0" y="325" width="320" height="470" fill="rgba(0,0,0,0)" opacity="0.5"/></a> 
+      <a xlink:href="#microRelatos" (click)="clickMenu(3)"><rect x="0" y="690" width="320" height="400" fill="rgba(0,0,0,0)" opacity="0.5"/></a> 
+      <a xlink:href="#fisuras" (click)="clickMenu(4)"><rect x="0" y="1340" width="320" height="390" fill="rgba(0,0,0,0)" opacity="0.5"/></a>                              
+    </svg> 
+    
   </div>
   <div class="col-12 text-center">
     <img class="eligeMitad" src="assets/microRelatos/gifs/escoje.png"/>

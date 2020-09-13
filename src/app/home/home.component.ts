@@ -20,7 +20,7 @@ export class HomeComponent implements AfterViewInit {
    
   }
 
-  home: String="home1";
+  home: String="home3";
   topPosition: Number=0;
   permitirScroll=false;
   permitirMapa=false;
@@ -101,6 +101,25 @@ clickMapa(lado){
       break; 
 
   }
+}
+
+clickMenu(lado){
+
+  switch(lado){
+    case 1:
+      this.navegador.emit("home");
+      break;
+    case 2:
+      this.navegador.emit("autores");
+      break;  
+      case 3:
+        this.navegador.emit("microRelatos");
+        break;   
+        case 4:
+          this.navegador.emit("fisuras");
+          break;     
+  }
+  
 }
 
 }

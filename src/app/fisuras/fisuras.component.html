@@ -1,46 +1,105 @@
-<div class="slider">
-	<div class="slide-track">
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+<div *ngIf="!relatos" class="">
+<div class="row contenedor">
+	<div class="col-xl-4 col-md-4 col-sm-4 col-4">
+
+	</div>
+	<div class="col-xl-4 col-md-4 col-sm-4 col-4">
+		<div class="col-xl-12 col-md-12 col-sm-12 col-12">
+			<img class="img-fluid logoFisuras" src="assets/Fisuras/WEB/NOMBRE FISURAS.png"/>
 		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+		<div class="col-xl-12 col-md-12 col-sm-12 col-12 texto">
+			<br>
+			Una fisura es el espacio entre las piezas de un cristal roto. Pero en Ciudad Espejo las fisuras son portales de encuentro entre las dos ciudades.
+			Habitan en las fisuras los testimonios de quienes han transitado por los dos mundos --como tú, forastero-- y han sobrevivido para contarlo.
 		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+		<div class="col-xl-12 col-md-12 col-sm-12 col-12">
+			<img class="float-right flecha" (click)="permitirRelatos()" src="assets/microRelatos/gifs/flecha.png"/> 
 		</div>
 	</div>
+	<div class="col-xl-4 col-md-4 col-sm-4 col-4">
+
+	</div>
+</div>
+<img class="degradado" src="assets/Fisuras/WEB/DEGRADADO.png"/>
+<img class="fixed-bottom decoracion" src="assets/Fisuras/WEB/DECOR-10.png"/>
+
+<svg class="menu" viewBox="0 -250 100 2000">
+	<image class="float-right" xlink:href="assets/Fisuras/WEB/MENU.png" width="100%"  /> 
+	<a xlink:href="#1" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+	<a xlink:href="#2" (click)="clickMenu(2)"><rect x="0" y="325" width="320" height="470" fill="rgba(0,0,0,0)" opacity="0.5"/></a> 
+	<a xlink:href="#3" (click)="clickMenu(3)"><rect x="0" y="800" width="320" height="520" fill="rgba(0,0,0,0)" opacity="0.5"/></a>                             
+  </svg>   
+
+
+</div>
+
+
+
+
+<div *ngIf="relatos" class="">
+<div class="container-fluid">
+	<header>
+		<nav class="fixed-top">
+		  <div class="row">
+			<div class="col-xl-6 col-md-4 col-sm-4 col-4">
+			
+		  </div>
+			<div class="col-xl-4 col-md-4 col-sm-4 col-4">
+			  
+			</div>  
+			<div class="col-xl-2 col-md-3 col-sm-3 col-3">
+				<img class="img-fluid logo" src="assets/microRelatos/WEB/SNL-2.png"/>
+			  </div>    
+		  </div>  
+		</nav>  
+	  </header> 
+</div>
+
+<div class="row">
+	<div class="col-4">
+		<div class="slider">
+			<div class="slide-track">
+				<ng-container *ngFor="let microRelato of microRelatoSGenerados">
+					<div class="slide">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+					</div>
+				</ng-container>	
+			</div>
+			
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="slider">
+			<div class="slide-track">
+				<ng-container *ngFor="let microRelato of microRelatoSGenerados">
+					<div class="slide">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+					</div>
+				</ng-container>				
+			</div>
+			
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="slider">
+			<div class="slide-track">
+				<ng-container *ngFor="let microRelato of microRelatoSGenerados">
+					<div class="slide">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+					</div>
+				</ng-container>	
+			</div>
+			
+		</div>
+	</div>
+	<div class="container">
+		<svg class="menu" viewBox="0 -250 100 2000">
+			<image class="float-right" xlink:href="assets/Fisuras/WEB/MENU.png" width="100%"  /> 
+			<a xlink:href="#1" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+			<a xlink:href="#2" (click)="clickMenu(2)"><rect x="0" y="325" width="320" height="470" fill="rgba(0,0,0,0)" opacity="0.5"/></a> 
+			<a xlink:href="#3" (click)="clickMenu(3)"><rect x="0" y="800" width="320" height="520" fill="rgba(0,0,0,0)" opacity="0.5"/></a>                             
+		  </svg>   
+		</div>
+	
+</div>
 </div>
