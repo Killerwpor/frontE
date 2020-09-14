@@ -1,6 +1,12 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import * as $ from "jquery";
 
+
+import { fisuras } from '../modelos/fisuras'
+import { Fisura } from '../modelos/fisura';
+
+
+
 @Component({
   selector: 'app-fisuras',
   templateUrl: './fisuras.component.html',
@@ -8,9 +14,12 @@ import * as $ from "jquery";
 })
 export class FisurasComponent implements OnInit {
 
-  microRelatoSGenerados=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+  fisuras1: Fisura[]=fisuras;
+  fisuras2: Fisura[]=fisuras;
+  fisuras3: Fisura[]=fisuras;
+
   @Output() navegador = new EventEmitter<string>();
-  relatos: Boolean=false;
+  relatos: Boolean=true;
 
   constructor() { }
 

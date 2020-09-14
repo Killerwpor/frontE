@@ -3,6 +3,12 @@
 	top: 300px;
 }
 
+.imagen{
+	margin-top: 5%;
+	width: 100%;
+	height: auto;
+}
+
 .logoFisuras{
 	width: 60%;
 }
@@ -89,7 +95,7 @@ $animationSpeed: 40s;
 	}
 	
 	.slide {
-		height: 100px;
-		width: 250px;
+		height: auto;
+		width: 500px;
 	}
 }
