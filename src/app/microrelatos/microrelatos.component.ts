@@ -161,7 +161,7 @@ export class MicrorelatosComponent implements OnInit {
   siguienteFragmento(siguiente){
     //let isMobile = this.deviceService.isMobile();
     
-   
+    console.log(this.contadorRespuestas);
 
     if(siguiente){
     
@@ -229,9 +229,16 @@ export class MicrorelatosComponent implements OnInit {
     }
   }
 
+  focusFunction(){
+    alert("alert");
+  }
+
   clickMenu(lado){
 
     switch(lado){
+        case 0:  
+        this.navegador.emit("home");
+        break;
       case 1:
         this.navegador.emit("home");
         break;

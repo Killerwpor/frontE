@@ -1,3 +1,7 @@
+.logoAtras:hover{
+cursor: pointer;
+}
+
 
 
 .contenedorRelatos{
@@ -37,6 +41,8 @@
 .logo1Atras:hover{
    cursor: pointer;
 }
+
+
 
 .logo1{
     width: 20%;

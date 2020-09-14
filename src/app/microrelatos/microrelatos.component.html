@@ -4,7 +4,7 @@
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
         <div class="row">
           <div class="col-6">
-          <img class="img-fluid logo1Atras" (click)="clickMenu(1)" src="assets/autores/ciudad espejo press autores.png"/>
+          <img class="img-fluid logo1Atras" (click)="clickMenu(0)" src="assets/microRelatos/WEB/ciudad espejo unpress.png"/>
         </div>
           <div class="col-6">
             <img class="img-fluid logo2Home pull-right" src="assets/microRelatos/WEB/SNL-2.png"/>
@@ -80,7 +80,7 @@
               <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
                 <div class="row container-fluid">
                   <div class="col-6">
-                    <img class="img-fluid logo1" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png"/>
+                    <img class="img-fluid logoAtras" (click)="clickMenu(1)" src="assets/microRelatos/WEB/ciudad espejo unpress.png"/>
                   </div>
                   <div class="col-4-offset-2">
                     <img class="logo2 pull-right" src="assets/microRelatos/WEB/MEDELLIN-FILTRO.png"/>
@@ -120,8 +120,8 @@
                 
               <!--  FIN SECCIÓN -->
 
-            
-                <div class="col-2 textoSecundario" *ngIf="contadorRespuestas!=10">
+            <ng-container *ngIf="contadorRespuestas!=10">
+                <div class="col-2 textoSecundario" >
                     <div class="col-12">
                       <div class="textoTeoria font-italic text-right">{{microRelatoActual.fraseDeTeoria}}</div>
                     </div>                
@@ -347,7 +347,8 @@
                       </div>
                        
                        
-                  </div> 
+                  </div>
+                </ng-container> 
          
                 </div> 
                 

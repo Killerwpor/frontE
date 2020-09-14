@@ -19,7 +19,7 @@ export class FisurasComponent implements OnInit {
   fisuras3: Fisura[]=fisuras;
 
   @Output() navegador = new EventEmitter<string>();
-  relatos: Boolean=true;
+  relatos: Boolean=false;
 
   constructor() { }
 
