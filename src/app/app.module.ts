@@ -11,6 +11,8 @@ import { MicroRelatoGeneradoComponent } from './micro-relato-generado/micro-rela
 import { CreditosComponent } from './creditos/creditos.component';
 import { FisurasComponent } from './fisuras/fisuras.component';
 
+import {HttpClientModule} from '@angular/common/http'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,8 @@ import { FisurasComponent } from './fisuras/fisuras.component';
     InputsModule.forRoot(),
     MDBBootstrapModule.forRoot(),
     CarouselModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

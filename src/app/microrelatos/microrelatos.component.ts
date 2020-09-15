@@ -3,6 +3,11 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { MicroRelato } from '../modelos/microRelato';
 import { microRelatos } from '../modelos/microRelatos'
 
+import {
+  MicrorelatosService
+} from "./microrelatos.service";
+
+
 import * as $ from "jquery";
 
 @Component({
@@ -14,7 +19,9 @@ export class MicrorelatosComponent implements OnInit {
 
   
 
-  constructor() { }
+  constructor(public microRelatoServicio: MicrorelatosService) { }
+
+  textoGenerado: string="";
   respuestas={
     respuesta0: "",
     respuesta1: "",
@@ -42,6 +49,13 @@ export class MicrorelatosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  generarMicroRelato(data){
+    data={ respuesta0: "f", respuesta1: "la nube de gases que cubre la ciudad", respuesta2: "Renace", respuesta3: "No necesita trabajar", respuesta4: "en una moto de alto cilindraje", respuesta5: "ff", respuesta6: "Dictador (a)", respuesta7: "ff", respuesta8: "un gato", respuesta9: "Una sobrepoblación mundial" }
+    this.microRelatoServicio.postChartPanel(data).subscribe(result => {
+     this.textoGenerado=result;
+    });
+  }
 
 
   next(valor){
@@ -145,17 +159,20 @@ export class MicrorelatosComponent implements OnInit {
                               this.respuestas.respuesta9=String($('input:checked').val());
                               this.contadorRespuestas++;
                               this.siguienteFragmento(true);
-                              console.log(this.respuestas);
+                              //console.log(this.respuestas);
                             }
                             break;
 
             
       }
+      
     }
     else{
       this.siguienteFragmento(false);
     }
- 
+ if(this.contadorRespuestas==10){
+   this.generarMicroRelato("data");
+ }
   }
 
   siguienteFragmento(siguiente){
