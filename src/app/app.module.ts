@@ -11,7 +11,8 @@ import { MicroRelatoGeneradoComponent } from './micro-relato-generado/micro-rela
 import { CreditosComponent } from './creditos/creditos.component';
 import { FisurasComponent } from './fisuras/fisuras.component';
 
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { FisuraGeneradaComponent } from './fisura-generada/fisura-generada.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {HttpClientModule} from '@angular/common/http'
     MicrorelatosComponent,
     MicroRelatoGeneradoComponent,
     CreditosComponent,
-    FisurasComponent
+    FisurasComponent,
+    FisuraGeneradaComponent
   ],
   imports: [
     BrowserModule,
