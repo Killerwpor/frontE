@@ -11,6 +11,10 @@
      width: 50px;
 }
 
+textarea{
+    background-color: #F8EBE3;
+}
+
 .texto{
     height: 320px;
     overflow: scroll;

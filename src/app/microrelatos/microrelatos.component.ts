@@ -21,18 +21,22 @@ export class MicrorelatosComponent implements OnInit {
 
   constructor(public microRelatoServicio: MicrorelatosService) { }
 
+
+  test={
+    "test": "test"
+  }
   textoGenerado: string="";
   respuestas={
-    respuesta0: "",
-    respuesta1: "",
-    respuesta2: "",
-    respuesta3: "",
-    respuesta4: "",
-    respuesta5: "",
-    respuesta6: "",
-    respuesta7: "",
-    respuesta8: "",
-    respuesta9: "",
+    "respuesta0": "",
+    "respuesta1": "",
+    "respuesta2": "",
+    "respuesta3": "",
+    "respuesta4": "",
+    "respuesta5": "",
+    "respuesta6": "",
+    "respuesta7": "",
+    "respuesta8": "",
+    "respuesta9": "",
   }
 
   microRelatos: Boolean=false;
