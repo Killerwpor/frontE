@@ -2,6 +2,11 @@
 cursor: pointer;
 }
 
+.logoAtras{
+    position: relative;
+    left: 6%;
+    }
+
 
 
 .contenedorRelatos{
@@ -34,6 +39,7 @@ cursor: pointer;
 }
 
 .logo1Atras{
+    width: 28%;
     margin-left: 6%;
     z-index: 999 !important;
 }
@@ -83,8 +89,9 @@ cursor: pointer;
 }
 
 .logo2{
-    margin-left: 22em;
-    min-width: 300px;
+    width: 35%;
+    margin-left: 27.5em;
+    min-width: 250px;
 }
 
 .logo3{
@@ -123,11 +130,18 @@ cursor: pointer;
   .contenedorFooter{
       position: fixed;
       left: 0em;
-      top: 83%;
+      top: 83.5%;
   }
 
   .brujulaVolver:hover{
     cursor: pointer;
+  }
+
+  .brujulaVolver{
+   width: 40%;
+  }
+  .hide{
+      display: none;
   }
   .degradado{
       position: absolute;
@@ -170,8 +184,14 @@ width: 18%;
 }
 
 .medellinInverso{
-    margin-left: 100px;
-    z-index: -999;
+  margin-left: 5%;
+ 
+}
+
+.medellinInverso2{
+    position: relative;
+    bottom: 20%;
+ 
 }
 
 .medellin{
@@ -384,15 +404,15 @@ margin-left: 1%;
         position: relative;
         top: 150px;
     color:  #F8EBE3;
-    font-family: "sweet-sans-pro";
-    font-size: 0.8vw;
+    font-family: "krete";
+    font-size: 0.85vw;
 }
 
 .eligeUnFragmento{
    margin-top: 50%;
 }
 
-.textoFragmento{
+.textoFragmentoimg{
     position: relative;
     right: 30px;
 

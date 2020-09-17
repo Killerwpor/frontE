@@ -24,16 +24,17 @@
                     <img class="img-fluid fixed-top medellinInverso" src="assets/microRelatos/WEB/CABEZOTE-CON-ELEMENTOS.png"/>
                   </div>                 
                   <div class="col-12 ">
-                    <div class="textoFragmento2 text-left">Esto sucedío  un día de este lado del espejo: grandes fragmentos de ciudad desaparecieron de repente. Sus existencias fueron borradas del tiempo y del espacio. Son ausencias que nadie nota. Nadie extraña a la abuela que perdió, porque no sabe que la ha perdido. Ni le hace falta recorrer las calles que ya no existen ni los barrios ni las montañas, porque su recuerdo ha sido devorado. Han saltado al otro lado del espejo, a vivir su propio fin del mundo en el olvido. Si no eres capaz de guardar silencio, forastero, escribe tu historia e intenta que esta ciudad recuerde lo que le ha sido arrebatado.</div>
+                    <div class="textoFragmento2 text-left">Esto sucedío un día de este lado del espejo: grandes fragmentos de ciudad desaparecieron de repente. Sus existencias fueron borradas del tiempo y del espacio. Son ausencias que nadie nota. Nadie extraña a la abuela que perdió, porque no sabe que la ha perdido. Ni le hace falta recorrer las calles que ya no existen ni los barrios ni las montañas, porque su recuerdo ha sido devorado. Han saltado al otro lado del espejo, a vivir su propio fin del mundo en el olvido. Si no eres capaz de guardar silencio, forastero, escribe tu historia e intenta que esta ciudad recuerde lo que le ha sido arrebatado.</div>
                   </div>
                   <div class="col-12 ">
+                    <br>
                     <div class="row eligeUnFragmento">
                       <div class="col-4">
                         <img class="rosa2" src="assets/microRelatos/gifs/rosa.png"/>
                       </div>
                       <div class="col-3">
                         <br>
-                        <img class="textoFragmento" src="assets/autores/ELIGE UN FRAGMENTO.png"/>
+                        <img class="textoFragmentoimg" src="assets/autores/ELIGE UN FRAGMENTO.png"/>
                       </div>
                     </div>   
                   </div>
@@ -113,7 +114,7 @@
 
                 <div class="col-6" *ngIf="contadorRespuestas==10">
                   <div class="microRelatoGenerado">
-                    <app-micro-relato-generado textoGenerado="{{textoGenerado}}" [porcentajeSolarPunk]="porcentajeSolarPunk" [porcentajeDistopico]="porcentajeDistopico" [respuestas]="respuestas"></app-micro-relato-generado>
+                    <app-micro-relato-generado textoGenerado="{{textoGenerado}}" [porcentajeSolarPunk]="porcentajeSolarPunk" [porcentajeDistopico]="porcentajeDistopico" [urlImagen]="urlImagen" [respuestas]="respuestas"></app-micro-relato-generado>
                   </div>
                   
                 </div>
@@ -368,7 +369,7 @@
                           <img class="siguienteWeb float-left" (click)="next(true)" src="assets/autores/WEB/SIGUIENTE_FLECHA.png"/>
                         </div> 
                         <div class="col-12">
-                          <img class="" src="assets/microRelatos/WEB/MEDELLIN-INVERTIDO-PEQUENO.png"/>
+                          <img class="medellinInverso2" src="assets/microRelatos/WEB/MEDELLIN-INVERTIDO-PEQUENO.png"/>
                         </div>                     
                       </div>
   

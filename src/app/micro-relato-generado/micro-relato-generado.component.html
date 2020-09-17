@@ -1,7 +1,7 @@
-<div class="container-fluid">
+<div class="container-fluid" *ngIf="!compartir">
     <div class="row">
         <div class="col-12">
-            <img class="img-fluid logo1" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png"/>
+            <img class="img-fluid logo1" src="{{urlImagen}}"/>
         </div>
         <div class="col-12">
             <img class="img-fluid botonEditar" (click)="clickEditar()" src="assets/microRelatos/WEB/EDITAR-BOTON.png"/>
@@ -39,4 +39,57 @@
 </div>
         </div>
     </div>    
+</div>
+
+
+
+
+<div  class="container-fluid negativo" *ngIf="compartir">
+    
+    <div class="row">
+        <div id="negativo">
+        <div class="col-12">
+            <img class="img-fluid logo1" src="{{urlImagen}}"/>
+        </div>
+        <div class="col-12">
+            <img class="img-fluid" src="assets/microRelatos/WEB/CORONDEL-CAFE.png"/>
+        </div>       
+        <div class="col-12">
+            <ng-container>
+           Texto
+            </ng-container>          
+        </div>  
+        <div class="col-12">
+            <img class="img-fluid" src="assets/microRelatos/WEB/BULLET-SEPARADOR.png"/> 
+        </div>
+        <div class="col-12">
+            <div class="float-right">{{porcentajeSolarPunk}}</div>                   
+        </div>  
+        <div class="col-12">
+            <div class="float-right">{{porcentajeDistopico}}</div>                   
+        </div>  
+    </div>   
+        <div class="col-12 d-flex justify-content-center">
+            <div class="col-2 icono">
+                <img class="img-responsive iconoOtro float-left" (click)="clickOtro()" src="assets/microRelatos/WEB/OTRO-RELATO-ICONO.png"/>
+            </div>            
+        <div class="col-3">
+            <img class="img-responsive iconoOtro2" (click)="clickOtro()" src="assets/microRelatos/WEB/OTRO-RELATO.png"/>  
+        </div>
+        <div class="col-4">
+            <img (click)="guardarImagen()" class="img-responsive iconSubeTuHistoria" src="assets/microRelatos/WEB/SUBE-TU-HISTORIA-BOTON.png"/>  
+        </div>
+       
+    <div class="col-2 icono">
+        <img class="img-responsive iconoCompartir" src="assets/microRelatos/WEB/COMPARTIR-TEXTO.png"/>
+    </div>            
+<div class="col-1">
+    <img class="img-responsive iconoCompartir2" src="assets/microRelatos/WEB/COMPARTIR-ICONO.png"/>  
+</div>
+        </div>
+     
+</div> 
+    <div class="hide" id="imagenNueva">
+
+    </div>
 </div>

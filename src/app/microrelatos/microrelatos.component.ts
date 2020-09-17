@@ -48,6 +48,7 @@ export class MicrorelatosComponent implements OnInit {
   contadorFragmento: number=0;
   contadorRespuestas: number=0;
   microRelatoActual: MicroRelato=microRelatos[0];
+  urlImagen: String;
   bulletVacio=[false,false,false,false,false,false,false,false,false,false]
 
   @Output() navegador = new EventEmitter<string>();
@@ -58,9 +59,12 @@ export class MicrorelatosComponent implements OnInit {
 
   generarMicroRelato(data){
     this.microRelatoServicio.generarMicroRelato(data).subscribe(result => {
+      console.log(result);
      this.textoGenerado=result.texto;
      this.porcentajeDistopico=result.porcentajeDistopico;
      this.porcentajeSolarPunk=result.porcentajeSolarPunk;
+     this.porcentajeSolarPunk=result.porcentajeSolarPunk;
+     this.urlImagen=result.urlImagen;
     });
   }
 

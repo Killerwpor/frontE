@@ -8,11 +8,17 @@
 }
 
 .logo1HomeWeb{
-width: 60%;
+width: 50%;
 }
 
+.logo1HomeWeb3{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    }
+
 .logo2HomeWeb{
-    width: 20%;
+    width: 15%;
     }
 
     .logo2HomeWeb:hover{
@@ -20,7 +26,7 @@ width: 60%;
         }
     
     .logo3HomeWeb{
-        width: 40%;
+        width: 30%;
         }
 
        
@@ -63,12 +69,12 @@ width: 60%;
         }
 
   .texto{
-       margin-right: 5%;
+       margin-right: 15%;
        margin-left: 45%;
        color: #F8EBE3 !important;
        font-size: 0.95vw;
        position: absolute;
-       bottom: 190px;
+       bottom: 170px;
        font-family: 'sweet-sans-pro';
    }
 
@@ -82,7 +88,7 @@ width: 60%;
        position: absolute;
        bottom: 50px;
        left: 45%;
-       width: 20%;
+       width: 15%;
    }
 
    .flechaSiguienteWeb:hover{
@@ -90,8 +96,8 @@ width: 60%;
    }
 
    .texto2{
-       margin-right: 20%;
-       margin-left: 20%;
+       margin-right: 28%;
+       margin-left: 28%;
     margin-top: 40%;
      color: white !important;
      font-size: 3vw;
@@ -125,14 +131,14 @@ width: 60%;
    .menu{
     position: relative;
     top: 230px;
-    left: 120px;
+    left: 160px;
   width: 35px;
 
 }
    .eligeMitad{
   position: absolute;
   bottom: 48%;
-  left: 47%;
+  left: 48%;
   width: 8%;
    }
 
@@ -197,6 +203,10 @@ cursor: pointer;
 
 .zInferior{
     z-index: -999;
+}
+
+.imagenPrincipal{
+width: 95%;
 }
 
 .zSuperior{

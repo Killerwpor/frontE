@@ -1,3 +1,9 @@
+.negativo{
+     mask-image: linear-gradient(rgba(255, 255, 126, 1), transparent);
+    mask-image: url("/assets/microRelatos/WEB/OPACIDAD-VERDE.png");
+    mask-repeat: no-repeat;
+}
+
 .container-fluid{
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -7,7 +13,7 @@
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-size: 100% 100%; 
-     height: 600px;
+     height: 670px;
      width: 50px;
 }
 
@@ -16,9 +22,14 @@ textarea{
 }
 
 .texto{
-    height: 320px;
+    height: 250px;
     overflow: scroll;
     overflow-x: hidden;
+}
+
+.logo1{
+width: 100%;
+height: 90%;
 }
 
 .iconoOtro{

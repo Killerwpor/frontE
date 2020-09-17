@@ -35,6 +35,17 @@
 .texto{
    padding-top: 20%;
 }
+
+.logo1Atras{
+    position: relative;
+    left: 7%;
+    width: 28%;
+}
+
+.logo1Atras:hover{
+    cursor: pointer;    
+}
+
 .logo1{
     margin-left: 6%;
     z-index: 999 !important;
@@ -389,7 +400,7 @@ margin-right: 7px;
 .textoFragmento{
     margin-top: 10px;
     color:  #F8EBE3;
-    font-family: "sweet-sans-pro";
+    font-family: "krete";
     font-size: 1vw;
 }
 
