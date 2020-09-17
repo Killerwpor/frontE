@@ -267,6 +267,8 @@ width: 18%;
     width: 60%;
 }
 .menu{ 
+    position: relative;
+    left: 10%;
     min-width: 30%;
     max-width: 30%;
     height: auto;

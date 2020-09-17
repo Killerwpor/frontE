@@ -15,7 +15,7 @@ export class AppComponent implements AfterViewInit {
   }
 
 
-  navegador="microRelatos";
+  navegador="home";
 
   title = 'test';  
  
