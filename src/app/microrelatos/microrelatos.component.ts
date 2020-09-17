@@ -26,6 +26,8 @@ export class MicrorelatosComponent implements OnInit {
     "test": "test"
   }
   textoGenerado: string="";
+  porcentajeSolarPunk: string="";
+  porcentajeDistopico: string="";
   respuestas={
     "respuesta0": "",
     "respuesta1": "",
@@ -55,9 +57,10 @@ export class MicrorelatosComponent implements OnInit {
 
 
   generarMicroRelato(data){
-    data={ respuesta0: "f", respuesta1: "la nube de gases que cubre la ciudad", respuesta2: "Renace", respuesta3: "No necesita trabajar", respuesta4: "en una moto de alto cilindraje", respuesta5: "ff", respuesta6: "Dictador (a)", respuesta7: "ff", respuesta8: "un gato", respuesta9: "Una sobrepoblación mundial" }
-    this.microRelatoServicio.postChartPanel(data).subscribe(result => {
-     this.textoGenerado=result;
+    this.microRelatoServicio.generarMicroRelato(data).subscribe(result => {
+     this.textoGenerado=result.texto;
+     this.porcentajeDistopico=result.porcentajeDistopico;
+     this.porcentajeSolarPunk=result.porcentajeSolarPunk;
     });
   }
 
@@ -175,7 +178,7 @@ export class MicrorelatosComponent implements OnInit {
       this.siguienteFragmento(false);
     }
  if(this.contadorRespuestas==10){
-   this.generarMicroRelato("data");
+   this.generarMicroRelato(this.respuestas);
  }
   }
 

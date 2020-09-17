@@ -11,7 +11,7 @@
             {{textoGenerado}}
             </ng-container>
            <ng-container *ngIf="editar">
-           <textarea rows="30" cols="45" class="texto">
+           <textarea [(ngModel)]="textoGenerado" rows="30" cols="45" class="texto">
             {{textoGenerado}}
             </textarea>
         </ng-container>
@@ -28,7 +28,7 @@
             <img class="img-responsive iconoOtro2" (click)="clickOtro()" src="assets/microRelatos/WEB/OTRO-RELATO.png"/>  
         </div>
         <div class="col-4">
-            <img class="img-responsive iconSubeTuHistoria" src="assets/microRelatos/WEB/SUBE-TU-HISTORIA-BOTON.png"/>  
+            <img (click)="guardarMicroRelato()" class="img-responsive iconSubeTuHistoria" src="assets/microRelatos/WEB/SUBE-TU-HISTORIA-BOTON.png"/>  
         </div>
        
     <div class="col-2 icono">

@@ -12,6 +12,8 @@ import {
 export class MicroRelatoGeneradoComponent implements OnInit {
 
  @Input() textoGenerado: String;
+ @Input() porcentajeSolarPunk: String;
+ @Input() porcentajeDistopico: String;
  @Input() respuestas;
 
  editar: boolean=false;
@@ -26,10 +28,20 @@ export class MicroRelatoGeneradoComponent implements OnInit {
   }
 
   clickOtro(){   
-    console.log(this.respuestas);
-     this.microRelatoServicio.postChartPanel(this.respuestas).subscribe(result => {
-       this.textoGenerado=result;
+     this.microRelatoServicio.generarMicroRelato(this.respuestas).subscribe(result => {
+       this.textoGenerado=result.texto;
       });
+  }
+
+  guardarMicroRelato(){
+    var data={
+      texto: this.textoGenerado,
+      porcentajeDistopico: this.porcentajeDistopico,
+      porcentajeSolarPunk: this.porcentajeSolarPunk
+    }
+    this.microRelatoServicio.guardarMicroRelato(data).subscribe(result => {
+     alert("Se ha guardado exitosamente su microrelato");
+     });
   }
 
 }
