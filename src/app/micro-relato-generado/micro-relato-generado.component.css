@@ -4,6 +4,24 @@
     mask-repeat: no-repeat;
 }
 
+.centrar{
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+.footer{
+    background-color: 	#cdd083;
+    margin-top: 5%;
+}
+
+.centrarImagen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .container-fluid{
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -15,6 +33,30 @@
      background-size: 100% 100%; 
      height: 670px;
      width: 50px;
+}
+
+.iconosCompartir{
+    z-index: 999;
+    position: absolute;
+    top: 70%;
+    left: 73%;
+}
+
+.iconoFb:hover{
+    cursor: pointer;
+}
+
+
+.iconoTw:hover{
+    cursor: pointer;
+}
+
+
+.iconoIg:hover{
+    cursor: pointer;
+}
+.container-fluid2{
+
 }
 
 textarea{
@@ -31,6 +73,11 @@ textarea{
 width: 100%;
 height: 90%;
 }
+
+.logoCompartir{
+    width: 50%;
+    height: auto;
+    }
 
 .iconoOtro{
 position: absolute;

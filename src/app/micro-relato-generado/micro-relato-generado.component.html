@@ -1,3 +1,4 @@
+<meta property="og:image" content="https://www.facebook.com/sharer.php?u=www.google.com&picture=https://media.revistagq.com/photos/5ca5f6a77a3aec0df5496c59/16:9/w_1920,c_limit/bob_esponja_9564.png">
 <div class="container-fluid" *ngIf="!compartir">
     <div class="row">
         <div class="col-12">
@@ -32,64 +33,80 @@
         </div>
        
     <div class="col-2 icono">
-        <img class="img-responsive iconoCompartir" src="assets/microRelatos/WEB/COMPARTIR-TEXTO.png"/>
+        <img class="img-responsive iconoCompartir" (click)="habilitarCompartir()" src="assets/microRelatos/WEB/COMPARTIR-TEXTO.png"/>
     </div>            
 <div class="col-1">
-    <img class="img-responsive iconoCompartir2" src="assets/microRelatos/WEB/COMPARTIR-ICONO.png"/>  
+    <img class="img-responsive iconoCompartir2" (click)="habilitarCompartir()" src="assets/microRelatos/WEB/COMPARTIR-ICONO.png"/>  
 </div>
         </div>
-    </div>    
+    </div> 
+    <div class="iconosCompartir" *ngIf="compartirRedes">
+    <div>
+    <img class="img-fluid iconoFb" (click)="compartirFb()" src="assets/microRelatos/ELEMENTOS TRSVLS/ICONO-FB.png"/> 
+</div>
+<div>
+    <img class="img-fluid iconoTw" (click)="compartirTw()" src="assets/microRelatos/ELEMENTOS TRSVLS/TWITTER-ICONO.png"/> 
+</div>
+<div>
+    <img class="img-fluid iconoIg" src="assets/microRelatos/ELEMENTOS TRSVLS/ICONO-IG.png"/> 
+</div>
+</div>
 </div>
 
 
 
 
-<div  class="container-fluid negativo" *ngIf="compartir">
-    
-    <div class="row">
-        <div id="negativo">
+
+   
+    <div  id="test" class="row container-fluid2 hide">
+
+            <div class="col-12">
+                <div class="row mt-2">
+
+               
+                <div class="col-5">
+                    <img class="img-fluid" src="assets/microRelatos/ELEMENTOS TRSVLS/CABEZOTE-CIUDAD-ESPEJO.png"/>
+                </div>
+                <div class="col-7">
+                    <!-- <img class="img-fluid logocompartir" src="{{urlImagen}}"/> -->
+                    <img class="img-fluid" src="assets/microRelatos/ELEMENTOS TRSVLS/BANNER-LOGOS.png"/>
+                    
+                </div>
+            </div>
+            </div>
         <div class="col-12">
-            <img class="img-fluid logo1" src="{{urlImagen}}"/>
+            <!-- <img class="img-fluid logocompartir" src="{{urlImagen}}"/> -->
+            <img class="img-fluid" src="assets/microRelatos/ELEMENTOS TRSVLS/IMAGEN-EJEMPLO.png"/>
         </div>
         <div class="col-12">
             <img class="img-fluid" src="assets/microRelatos/WEB/CORONDEL-CAFE.png"/>
         </div>       
-        <div class="col-12">
-            <ng-container>
-           Texto
-            </ng-container>          
+        <div class="col-12">        
+           <div class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                 
         </div>  
         <div class="col-12">
-            <img class="img-fluid" src="assets/microRelatos/WEB/BULLET-SEPARADOR.png"/> 
+            <img class="img-fluid centrarImagen" src="assets/microRelatos/WEB/BULLET-SEPARADOR.png"/> 
         </div>
         <div class="col-12">
-            <div class="float-right">{{porcentajeSolarPunk}}</div>                   
+            <br>
+            <div class="centrar">{{porcentajeSolarPunk + '% solarpunk'}}</div>                   
         </div>  
         <div class="col-12">
-            <div class="float-right">{{porcentajeDistopico}}</div>                   
+            <div class="centrar">{{porcentajeDistopico + '% distópico'}}</div>                   
         </div>  
-    </div>   
-        <div class="col-12 d-flex justify-content-center">
-            <div class="col-2 icono">
-                <img class="img-responsive iconoOtro float-left" (click)="clickOtro()" src="assets/microRelatos/WEB/OTRO-RELATO-ICONO.png"/>
-            </div>            
-        <div class="col-3">
-            <img class="img-responsive iconoOtro2" (click)="clickOtro()" src="assets/microRelatos/WEB/OTRO-RELATO.png"/>  
+ 
+    <div class="col-12 footer">
+        <div class="row">
+            <div class="col-12">
+                <img class="img-fluid" src="assets/microRelatos/ELEMENTOS TRSVLS/PATA-TEXTO.png"/>
+            </div>
+        
         </div>
-        <div class="col-4">
-            <img (click)="guardarImagen()" class="img-responsive iconSubeTuHistoria" src="assets/microRelatos/WEB/SUBE-TU-HISTORIA-BOTON.png"/>  
-        </div>
-       
-    <div class="col-2 icono">
-        <img class="img-responsive iconoCompartir" src="assets/microRelatos/WEB/COMPARTIR-TEXTO.png"/>
-    </div>            
-<div class="col-1">
-    <img class="img-responsive iconoCompartir2" src="assets/microRelatos/WEB/COMPARTIR-ICONO.png"/>  
-</div>
+    </div>
+    
         </div>
      
-</div> 
-    <div class="hide" id="imagenNueva">
 
-    </div>
-</div>
+
+
