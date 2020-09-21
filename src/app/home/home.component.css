@@ -247,6 +247,15 @@ area:hover{
 
    @media only screen and (max-width: 500px) {
 
+    .ciudadEspejoMovil{      
+   
+            position: fixed;
+            left: -15%;
+            top: 30%;
+            max-width: 440px;
+                
+    }
+
     .menuHorizontal{
       position: relative;
       top: 90px;     
