@@ -240,15 +240,38 @@ area:hover{
     
 }
 
+.logo2{
+    width: 100%;
+}
    
 
    @media only screen and (max-width: 500px) {
 
+    .menuHorizontal{
+      position: relative;
+      top: 90px;     
+    
+    }
+
+    .eligeMitad{
+        position: absolute;
+        top: 350px !important;
+        left: 40%;
+        width: 25%;
+         }
+
+    .logo2{
+        position: absolute;
+        left: 250px;
+        top: -60px;
+        width: 80px !important;
+    }
+
     .texto{
-        margin-right: 5% !important;
-        margin-left: 5% !important;
-        font-size: 3.1vw !important;
-        top: 110px;
+        margin-right: 7% !important;
+        margin-left: 9% !important;
+        font-size: 3.2vw !important;
+        top: 470px;
         font-family: 'sweet-sans-pro';
     }
     .container{
@@ -257,11 +280,38 @@ area:hover{
 
     .flechaDerecha{
          right: 0px !important;  
-         top: 15em !important;
+         top: 40em !important;
          width: 100px !important;
 
         }
 
+    .logo1HomeWeb{
+        width: 90px !important;
+    }
+
+    .logo2HomeWeb{
+        width: 90px !important;
+    }
+
+    .logo3HomeWeb{
+        width: 90px !important;
+    }
+
+
+    .logo1HomeWeb3{
+        position: relative;
+        left: 25%;
+        width: 100px !important;
+        }
+
+        .logo3{
+            position: relative;
+            top: -57px;
+            left: 220px;
+            width: 90px;
+        }
+   
+    
         .flechaDerecha2{
             right: 0px !important;  
             top: -3em !important;
@@ -283,12 +333,14 @@ area:hover{
         }
 
         .ciudadEspejo{
-            max-width: 320px !important;
-            left: 0px !important;
-            top: 240px !important;
-            margin-left: -48px !important;
+            max-width: 170px !important;
+            display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 180px;
 
         }
+        
 
         .ciudadEspejo2{
             max-width: 300px !important;
@@ -327,9 +379,8 @@ area:hover{
 
             .mapa{
                 position: absolute;
-                left: -20px;
-                top: 0px;
-                max-width: 380px;
+                left: 0px;
+                top: 320px;
             }        
         
          

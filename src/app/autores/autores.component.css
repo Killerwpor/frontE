@@ -478,12 +478,13 @@ margin-right: 7px;
     .botonMasMenos{
         width: 10%;
     }
+
+    
     .mapa{
         position: relative;
         right: 25px;
         width: 370px;
-        max-width: 1800px;
-        max-height: 1700px;
+       
     }
 
     .textoPrincipal{

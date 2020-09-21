@@ -20,12 +20,13 @@ export class MicroRelatoGeneradoComponent implements OnInit {
  @Input() porcentajeDistopico: String;
  @Input() respuestas;
  @Input() urlImagen;
- @Input() numeroFisura;
+ numeroFisura: String="";
 
 
  compartir: boolean=false;
  editar: boolean=false;
  compartirRedes: boolean=false;
+ post: boolean=false;
 
   constructor(public microRelatoServicio: MicrorelatosService) { }
 
@@ -38,7 +39,10 @@ export class MicroRelatoGeneradoComponent implements OnInit {
   }
 
   habilitarCompartir(){
+    
+
     this.compartirRedes=true;
+
   }
 
   clickOtro(){   
@@ -54,6 +58,8 @@ export class MicroRelatoGeneradoComponent implements OnInit {
   }
 
   guardarMicroRelato(){
+ 
+
     var data={
       texto: this.textoGenerado,
       porcentajeDistopico: this.porcentajeDistopico,
@@ -62,31 +68,39 @@ export class MicroRelatoGeneradoComponent implements OnInit {
     this.microRelatoServicio.guardarMicroRelato(data).subscribe(result => {
      alert("Se ha guardado exitosamente su microrelato");
      });
+     //$(".container-fluid2").addClass("hide");
   }
 
- async compartirFb(){
- $(".container-fluid2").removeClass("hide");
-    var node = document.getElementById('test');
-    var img = new Image();
-await domtoimage.toPng(node)
-    .then(function (dataUrl) {
-       
-        img.src = dataUrl;
-        $(".container-fluid2").addClass("hide");
-      //  document.getElementById('imagenNueva').appendChild(img);
-    })
-    
-    .catch(function (error) {
-      alert("error");
-        console.error('oops, something went wrong!', error);    });
 
-    
-    var timestamp = new Date().getTime().toString(); //esto es para tener un nombre unico de archivo
-    var file = this.dataURLtoFile(img.src, timestamp);
-   var url=this.guardarS3(file);
-   console.log("https://imagenes-generadas.s3.amazonaws.com/"+timestamp);
-    this.compartirFacebook("https://imagenes-generadas.s3.amazonaws.com/"+timestamp);
-    
+
+
+ async compartirFb(){
+  $(".container-fluid2").removeClass("hide");
+  var node = document.getElementById('test');
+  var img = new Image();
+await domtoimage.toPng(node)
+  .then(function (dataUrl) {
+     
+      img.src = dataUrl;
+      $(".container-fluid2").addClass("hide");
+    //  document.getElementById('imagenNueva').appendChild(img);
+  })
+  
+  .catch(function (error) {
+    alert("error");
+      console.error('oops, something went wrong!', error);    });
+
+  
+  var timestamp = new Date().getTime().toString(); //esto es para tener un nombre unico de archivo
+  var file = this.dataURLtoFile(img.src, timestamp);
+ var url=this.guardarS3(file);
+ console.log("https://imagenes-generadas.s3.amazonaws.com/"+timestamp);
+       this.compartirFacebook("https://imagenes-generadas.s3.amazonaws.com/"+timestamp);  
+       $(".container-fluid2").addClass("hide");
+
+ 
+ 
+
   }
 
   async compartirTw(){
@@ -120,6 +134,7 @@ await domtoimage.toPng(node)
   var t="descripcion";
   window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(url)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
   //window.open('https://www.facebook.com/sharer.php?u=www.google.com&picture=https://media.revistagq.com/photos/5ca5f6a77a3aec0df5496c59/16:9/w_1920,c_limit/bob_esponja_9564.png', 'ventanacompartir', 'toolbar=0, status=0, width=650, height=450');
+  this.post=false;
 }
 
 compartirTwitter(url) {

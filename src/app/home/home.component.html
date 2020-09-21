@@ -14,8 +14,9 @@
 
 
 <div *ngIf="home=='home1'" class="container-fluid text-center">
+  <ng-container *ngIf="!movil">
   <!--INICIO ESCRITORIO-->
-  <header>
+   <header>
       <div class="row navbar header fixed-top zSuperior">
         <div class="col-2">
           <img class="logo1HomeWeb" src="assets/microRelatos/WEB/LOGO-FEST.png"/>
@@ -51,21 +52,34 @@
 </div>
 </div>
 </div>
-</div>
+</ng-container>
   <!--FIN ESCRITORIO-->
 
 
 
   <!--INICIO MOVIL-->
-  <!-- <img class="aliados" src="assets/vertical/CREDITOS.png"/>
+  <ng-container *ngIf="movil">
+  <header>
+    <div class="row navbar header fixed-top zSuperior">
+      <div class="col-4">
+        <img class="logo1HomeWeb" src="assets/microRelatos/WEB/LOGO-FEST.png"/>
+      </div>   
+      <div class="col-3">
+        <img class="logo2HomeWeb " (click)="clickMapa('3')" src="assets/Home/ELEMENTOS TRSVLS/CREDITOS-BOTON.png"/>
+      </div>   
+      <div class="col-5">
+        <img class="logo3HomeWeb" src="assets/Home/ELEMENTOS TRSVLS/LOGO-SNL.png"/>
+      </div>          
+    </div>     
+</header> 
     <div class="row">
       <div class="col">
-        <img class="img-fluid ciudadEspejo"  src="assets/vertical/CABEZOTE-MEDIANO-CON-ELEMENTO.png"/>
+        <img class="img-fluid ciudadEspejo"  src="assets/Home/ELEMENTOS TRSVLS/CABEZOTE-CON-ELEMENTOS.png"/>
       </div>
     </div>
       <div class="row">
       <div class="col">
-          <div class="texto">
+          <div class="texto text-left">
             Esta Medellín imaginada es una reflexión sobre nuestros futuros posibles. Conviven en este espacio las pesadillas de las narraciones distópicas y el esplendor verde y sostenible que propone el solar punk más reciente. La ciencia ficción, como una casa de los espejos, toma elementos de la realidad y los deforma hasta el horror o la belleza.
       </div>
     </div>
@@ -74,21 +88,22 @@
         <div class="col">
             <img class="flechaDerecha" (click)="siguienteHome('home2')" src="assets/vertical/FLECHA-SIGUIENTE.png"/>   
         </div>
-    </div> -->
+    </div>
+  </ng-container>
     <!--FIN MOVIL-->
-
+</div>
 
 
 <div class="text-center home2" *ngIf="home=='home2'" (window:scroll)="onWindowScroll()">
   <header>
     <div class="row navbar header fixed-top">
-      <div class="col-2">
+      <div class="col-2 col-xl-2 col-sm-2">
         <img class="logo1HomeWeb" src="assets/microRelatos/WEB/LOGO-FEST.png"/>
       </div>   
-      <div class="col-8">
+      <div class="col-6 col-sm-6 col-xl-8">
        
       </div>   
-      <div class="col-2">
+      <div class="col-4 col-sm-4 col-xl-2">
         <img class="logo3HomeWeb" src="assets/Home/ELEMENTOS TRSVLS/LOGO-SNL.png"/>
       </div>          
     </div>     
@@ -121,30 +136,39 @@
 <div *ngIf="home=='home3'" class="container-fluid">
     <div class="row navbar header fixed-top">
       <div class="col-2">
-        <img class="img-fluid logo1HomeWeb3" src="assets/microRelatos/WEB/LOGO-FEST.png"/>
+        <img class="logo1HomeWeb3" src="assets/microRelatos/WEB/LOGO-FEST.png"/>
       </div>   
       <div class="col-9">
 
       </div>   
       <div class="col-1">
-        <img class="img-fluid float-left" src="assets/Home/ELEMENTOS TRSVLS/LOGO-SNL.png"/>
+        <img class="logo2 float-left" src="assets/Home/ELEMENTOS TRSVLS/LOGO-SNL.png"/>
       </div>          
     </div>     
 
 
 <div class="row ">
-  <div class="col-2">
-    <img class="ciudadEspejo img-fluid" src="assets/Home/ELEMENTOS TRSVLS/CABEZOTE-CON-CORONDEL.png"/>
+  <div class="col-6 col-xl-2 col-sm-6 col-lg-2">
+    <img class="img-fluid ciudadEspejo" src="assets/Home/ELEMENTOS TRSVLS/CABEZOTE-CON-CORONDEL.png"/>
   </div>
-  <div class="col-8">
+  <div class="col-12 col-xl-8 col-lg-8 col-md-8 col-sm-8">
+    <ng-container *ngIf="!movil">
     <svg class="mapa" viewBox="0 0 1800 1550">
       <image class="" xlink:href="assets/Home/ELEMENTOS TRSVLS/MAPA-CON-ELEMENTOS.png" width="120%"  />   
       <a xlink:href="#"><rect x="100" y="0" width="850" height="1550" fill="rgba(0,0,0,0.1)" opacity="0" (click)="clickMapa('1')" /></a>
       <a xlink:href="#"><rect x="950" y="0" width="680" height="1550" fill="rgba(0,0,0,0.1)" opacity="0" (click)="clickMapa('2')"/></a> 
-                   
-  </svg> 
+       </svg> 
+</ng-container>  
+<ng-container *ngIf="movil">
+  <svg class="mapa" viewBox="-4 0 1800 1550">
+    <image class="" xlink:href="assets/Home/ELEMENTOS TRSVLS/MAPA-CON-ELEMENTOS.png" width="120%"  />   
+    <a xlink:href="#"><rect x="100" y="0" width="850" height="1550" fill="rgba(0,0,0,0.1)" opacity="0" (click)="clickMapa('1')" /></a>
+    <a xlink:href="#"><rect x="950" y="0" width="680" height="1550" fill="rgba(0,0,0,0.1)" opacity="0" (click)="clickMapa('2')"/></a> 
+     </svg> 
+</ng-container>  
   </div>
-  <div class="col-2">
+  <div class="col-12 col-xl-2 col-lg-2 col-md-2 col-sm-2">
+    <ng-container *ngIf="!movil">
     <svg class="menu" viewBox="0 0 100 1800">
       <image class="float-right" xlink:href="assets/Home/ELEMENTOS TRSVLS/MENU-TABS.png" width="100%"  /> 
       <a xlink:href="#home" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
@@ -152,9 +176,18 @@
       <a xlink:href="#microRelatos" (click)="clickMenu(3)"><rect x="0" y="690" width="320" height="400" fill="rgba(0,0,0,0)" opacity="0.5"/></a> 
       <a xlink:href="#fisuras" (click)="clickMenu(4)"><rect x="0" y="1340" width="320" height="390" fill="rgba(0,0,0,0)" opacity="0.5"/></a>                              
     </svg> 
-    
+    </ng-container>
+    <ng-container *ngIf="movil">
+      <!-- <svg class="menu" viewBox="0 0 200 200">
+        <image class="" xlink:href="assets/Home/RESPONSIVE VERTICAL/MENU-HORIZONTAL---HOME.png"/>
+                                      
+      </svg>  -->
+      <svg class="menuHorizontal" viewBox="0 0 2000 1550">
+        <image class="" xlink:href="assets/Home/RESPONSIVE VERTICAL/MENU-HORIZONTAL---HOME.png" width="100%"  />
+      </svg> 
+      </ng-container>
   </div>
-  <div class="col-12 text-center">
+  <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
     <img class="eligeMitad" src="assets/microRelatos/gifs/escoje.png"/>
   </div>
 </div>
