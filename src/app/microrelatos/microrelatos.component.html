@@ -1,5 +1,5 @@
 <div *ngIf="!microRelatos" class="noScroll">
-
+ <div *ngIf="!movil">
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
         <div class="row">
@@ -72,10 +72,90 @@
               </div>
           </div>
       </div>  
-      </div>      
+      </div>
+      
+      
+
+
+
+    </div>
+
+
+    <div *ngIf="movil">
+
+
+      <header class="">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
+          <div class="row container-fluid">
+            <div class="col-6">
+              <img class="img-fluid logo1Atras" src="assets/autores/ciudad espejo press autores.png"/>
+            </div>
+            <div class="col-6">
+              <img class="img-fluid logo2Home" src="assets/autores/WEB/LOGO-SNL.png"/>
+            </div>    
+          </div>  
+        </nav>  
+      </header> 
+
+
+      <div class="dropdown">
+        <img class="botonMasMenos" (click)="abrirTexto()" src="assets\microRelatos\RESPONSIVE VERTICAL/MENOS-TEXTO.jpg" *ngIf="permitirTexto">
+        <img class="botonMasMenos" (click)="abrirTexto()" src="assets\microRelatos\RESPONSIVE VERTICAL/MAS-TEXTP.jpg" *ngIf="!permitirTexto">
+        <div class="textoDesplegable text-left" *ngIf="permitirTexto">
+          Esto sucedío un día de este lado del espejo: grandes fragmentos de ciudad desaparecieron de repente. Sus existencias fueron borradas del tiempo y del espacio. Son ausencias que nadie nota. Nadie extraña a la abuela que perdió, porque no sabe que la ha perdido. Ni le hace falta recorrer las calles que ya no existen ni los barrios ni las montañas, porque su recuerdo ha sido devorado. Han saltado al otro lado del espejo, a vivir su propio fin del mundo en el olvido. Si no eres capaz de guardar silencio, forastero, escribe tu historia e intenta que esta ciudad recuerde lo que le ha sido arrebatado.
           </div>
+      </div> 
+
+     
+       <img class="degradado fixed-bottom" src="assets/autores/RESPONSIVE VERTICAL/DEGRADADO-AZUL.png"/>
+      <!-- <img class="fixed-bottom decoracion" src="assets/autores/WEB/DECOR1.png"/> -->
+
+     <div class="row">
+       <div class="col-12">
+        <svg class="menuHorizontal" viewBox="0 0 2000 1550">
+          <image class="" xlink:href="assets/microRelatos/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/MENU-MEDELLIN-INVERTIDO.png" width="100%"  />
+         
+        </svg> 
+       </div>
+       <div class="col-12">
+        <svg class="mapaMovil" viewBox="0 0 2000 2600">
+          <image class="" xlink:href="assets/microRelatos/WEB/MAPA-CON-ELEMENTOS.png" width="2000"/> 
+          <a xlink:href="#Algoritmo" (click)="permitirRelatos(6)"><rect x="90" y="20" width="600" height="380" fill="rgba(0,0,0,0)" opacity="0.5"/></a>     
+          <a xlink:href="#Esculturas" (click)="permitirRelatos(0)"><rect x="640" y="400" width="500" height="180" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+          <a xlink:href="#Bicicleta" (click)="permitirRelatos(8)"><rect x="1000" y="800" width="700" height="300" fill="rgba(0,0,0,0)" opacity="0.5"/></a> 
+          <a xlink:href="#Secomia" (click)="permitirRelatos(4)"><rect x="450" y="800" width="380" height="350" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+          <a xlink:href="#flores" (click)="permitirRelatos(7)"><rect x="550" y="1200" width="200" height="240" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+          <a xlink:href="#señorSentado" (click)="permitirRelatos(1)"><rect x="640" y="1670" width="300" height="450" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+          <a xlink:href="#viejita" (click)="permitirRelatos(9)"><rect x="1000" y="1900" width="300" height="250" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+          <a xlink:href="#mecedora" (click)="permitirRelatos(2)"><rect x="1100" y="1600" width="260" height="240" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+          <a xlink:href="#cerebros" (click)="permitirRelatos(3)"><rect x="1500" y="1820" width="300" height="450" fill="rgba(0,0,0,0)" opacity="0.5"/></a>    
+        </svg> 
+       </div>
+       <div class="rosaMovil">
+       <div class="col-12">
+        <img class="img-fluid rosa2Movil" src="assets/microRelatos/gifs/rosa.png"/>
+      </div>
+      <div class="col-12">
+        <img class="img-fluid" src="assets/autores/ELIGE UN FRAGMENTO.png"/>
+      </div>
+    </div>
+     </div>
+
+  
+
+
+    </div>
+    
+        
+  
+  
+  
+      </div>
+
+         
 
           <div *ngIf="microRelatos" class="">  
+            <div *ngIf="!movil">
             <header>
   
               <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
@@ -375,10 +455,287 @@
   
                     </div> 
 
+
                    
   
                    
                         <!-- FIN FOOTER WEB -->
             
+              </div>
+
+
+
+
+              <div *ngIf="movil">
+                <header class="">
+                  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
+                    <div class="row container-fluid">
+                      <div class="col-5">
+                        <img class="logo1Atras" src="assets/autores/ciudad espejo press autores.png"/>
+                      </div>
+                      <div class="col-4">
+                        <img class="medellinMovil" src="assets/microRelatos/WEB/MEDELLIN-FILTRO.png"/>
+                      </div>
+                      <div class="col-3">
+                        <img class="logosDivididos" src="assets/autores/WEB/LOGO-SNL.png"/>
+                      </div>       
+                    </div>  
+                  </nav>  
+                </header>    
+                
+                <img class="degradado fixed-bottom" src="assets/microRelatos/RESPONSIVE VERTICAL/DEGRADADO-MICRO.png"/>
+  
+
+
+                <div class="text-justify contenedorRelatos">
+            
               
+              
+              
+                  <div class="row">
+                    <div class="col-12">
+                      <img class="imagenMicroRelato"  src="{{microRelatoActual.urlImagen}}"/>
+                    </div>
+                   <!--INICIO SECCIÓN -->
+                      <!--COMENTAR ESTA SECCIÓN Y DESCOMENTAR LA OTRA PARA VOLVER A LA NORMALIDAD -->
+                   
+                     
+    
+                    <div class="col-12" *ngIf="contadorRespuestas==10">
+                      <div class="microRelatoGenerado">
+                        <app-micro-relato-generado textoGenerado="{{textoGenerado}}" [porcentajeSolarPunk]="porcentajeSolarPunk" [porcentajeDistopico]="porcentajeDistopico" [urlImagen]="urlImagen" [respuestas]="respuestas"></app-micro-relato-generado>
+                      </div>
+                      
+                    </div>
+                    
+                  <!--  FIN SECCIÓN -->
+    
+                <ng-container *ngIf="contadorRespuestas!=10">                  
+                      
+                      
+                      
+                       <div class="col-12 textoPrincipal" *ngIf="!bulletVacio[10]" >
+                       
+                        
+    
+                          <div class="col-12">
+                            <div class="textoFragmento text-left">{{microRelatoActual.texto}}</div>
+                          </div>                        
+                          <div class="col-12">
+                            <div class="textoOriginal2"><br>Visita todos los microrrelatos para construir el tuyo.</div>                        
+                          </div>
+                          <div class="col-12">
+                            <div *ngIf="bulletVacio[0]" class="textoFragmento3 font-weight-bold">¿Cómo se llama tu personaje? (una palabra)</div>
+                            <div *ngIf="bulletVacio[1]" class="textoFragmento3 font-weight-bold">Al  mirar al cielo, qué ve tu personaje:</div> 
+                            <div *ngIf="bulletVacio[2]" class="textoFragmento3 font-weight-bold">¿Cómo terminaría tu personaje su historia?</div>
+                            <div *ngIf="bulletVacio[3]" class="textoFragmento3 font-weight-bold">¿Dónde trabaja tu personaje?</div>                        
+                           <div *ngIf="bulletVacio[4]" class="textoFragmento3 font-weight-bold">¿En qué se transporta tu personaje?</div> 
+                           <div *ngIf="bulletVacio[5]" class="textoFragmento3 font-weight-bold">¿Cómo se llama la ciudad en la que nació tu personaje? (una palabra)</div>                        
+                           <div *ngIf="bulletVacio[6]" class="textoFragmento3 font-weight-bold">El interés romántico de tu personaje sería:</div> 
+                           <div *ngIf="bulletVacio[7]" class="textoFragmento3 font-weight-bold">La comida preferida de tu personaje es (una palabra):</div>
+                           <div *ngIf="bulletVacio[8]" class="textoFragmento3 font-weight-bold">¿Cuál sería la mascota de tu personaje?</div> 
+                           <div *ngIf="bulletVacio[9]" class="textoFragmento3 font-weight-bold">Tu personaje enfrenta este problema: </div>
+                            
+                          </div>
+                          <div class="col-12">
+                            <br>
+                            <div *ngIf="bulletVacio[0]" class="textoFragmento3 font-weight-bold"><input id="pregunta0" type="text" class="form-control"></div>
+                            <div *ngIf="bulletVacio[1]"> 
+                              <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="opcion1" value="la nube de gases que cubre la ciudad"  name="defaultExampleRadios" mdbInput>
+                                <label class="custom-control-label textoFragmento3" for="opcion1">la nube de gases que cubre la ciudad</label>
+                                </div>
+    
+                            
+                            <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" value="las estrellas" id="opcion2" value="las estrellas" name="defaultExampleRadios" mdbInput>
+                            <label class="custom-control-label textoFragmento3" for="opcion2">las estrellas</label>
+                            </div> 
+                            
+                          
+                            
+                            <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" id="opcion3" value="los paneles solares flotando sobre la ciudad" name="defaultExampleRadios" mdbInput>
+                              <label class="custom-control-label textoFragmento3" for="opcion3">los paneles solares flotando sobre la ciudad</label>
+                              </div>
+    
+                              <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="opcion4" value="los satélites vigilantes" name="defaultExampleRadios" mdbInput>
+                                <label class="custom-control-label textoFragmento3" for="opcion4">los satélites vigilantes"</label>
+                                </div>
+                          </div>       
+                          
+                          <div *ngIf="bulletVacio[2]"> 
+                            <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" id="opcion1" value="Muere" name="defaultExampleRadios"  mdbInput>
+                              <label class="custom-control-label textoFragmento3" for="opcion1">Muere</label>
+                              </div>
+    
+                          
+                          <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" id="opcion2" value="Desaparece" name="defaultExampleRadios" mdbInput>
+                          <label class="custom-control-label textoFragmento3" for="opcion2">Desaparece</label>
+                          </div>   
+                          
+                          <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="opcion3" value="Escapa" name="defaultExampleRadios" mdbInput>
+                            <label class="custom-control-label textoFragmento3" for="opcion3">Escapa</label>
+                            </div>
+    
+                            <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" id="opcion4" value="Renace" name="defaultExampleRadios" mdbInput>
+                              <label class="custom-control-label textoFragmento3" for="opcion4">Renace</label>
+                              </div>
+                        </div>    
+                        
+                        <div *ngIf="bulletVacio[3]"> 
+                          <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="opcion1" value="En un hospital que modifica humanos" name="defaultExampleRadios"  mdbInput>
+                            <label class="custom-control-label textoFragmento3" for="opcion1">En un hospital que modifica humanos</label>
+                            </div>
+    
+                        
+                        <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="opcion2" value="En una cantera radioactiva" name="defaultExampleRadios" mdbInput>
+                        <label class="custom-control-label textoFragmento3" for="opcion2">En una cantera radioactiva</label>
+                        </div>   
+                        
+                        <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" id="opcion3" value="En una granja orgánica" name="defaultExampleRadios" mdbInput>
+                          <label class="custom-control-label textoFragmento3" for="opcion3">En una granja orgánica</label>
+                          </div>
+    
+                          <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="opcion4" value="No necesita trabajar" name="defaultExampleRadios" mdbInput>
+                            <label class="custom-control-label textoFragmento3" for="opcion4">No necesita trabajar</label>
+                            </div>
+                      </div>   
+    
+                      <div *ngIf="bulletVacio[4]"> 
+                        <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" id="opcion1" value="una camioneta con motor envenado" name="defaultExampleRadios"  mdbInput>
+                          <label class="custom-control-label textoFragmento3" for="opcion1">una camioneta con motor envenenado</label>
+                          </div>
+    
+                      
+                      <div class="custom-control custom-radio">
+                      <input type="radio" class="custom-control-input" id="opcion2" value="a caballo" name="defaultExampleRadios" mdbInput>
+                      <label class="custom-control-label textoFragmento3" for="opcion2">a caballo</label>
+                      </div>   
+                      
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="opcion3" value="en una moto de alto cilindraje" name="defaultExampleRadios" mdbInput>
+                        <label class="custom-control-label textoFragmento3" for="opcion3">en una moto de alto cilindraje</label>
+                        </div>
+    
+                        <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" id="opcion4" value="en bicicleta" name="defaultExampleRadios" mdbInput>
+                          <label class="custom-control-label textoFragmento3" for="opcion4">en bicicleta</label>
+                          </div>
+                    </div>          
+                              
+                            <div *ngIf="bulletVacio[5]" class="textoFragmento3 font-weight-bold"><br><input id="pregunta5" type="text" class="form-control"></div>                        
+                         
+                            <div *ngIf="bulletVacio[6]"> 
+                              <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="opcion1" value="Dictador (a)" name="defaultExampleRadios"  mdbInput>
+                                <label class="custom-control-label textoFragmento3" for="opcion1">Dictador (a)</label>
+                                </div>
+          
+                            
+                            <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="opcion2" value="Esclavo (a)" name="defaultExampleRadios" mdbInput>
+                            <label class="custom-control-label textoFragmento3" for="opcion2">Esclavo (a)</label>
+                            </div>   
+                            
+                            <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" id="opcion3" value="Campesino (a)" name="defaultExampleRadios" mdbInput>
+                              <label class="custom-control-label textoFragmento3" for="opcion3">Campesino (a)</label>
+                              </div>
+          
+                              <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="opcion4" value="Activista ambiental" name="defaultExampleRadios" mdbInput>
+                                <label class="custom-control-label textoFragmento3" for="opcion4">Activista ambiental</label>
+                                </div>
+                          </div>
+    
+                          <div *ngIf="bulletVacio[7]" class="textoFragmento3 font-weight-bold"><br><input type="text" id="pregunta7" class="form-control"></div>
+    
+                          
+    
+                        <div *ngIf="bulletVacio[8]"> 
+                          <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="opcion1" value="un gato" name="defaultExampleRadios"  mdbInput>
+                            <label class="custom-control-label textoFragmento3" for="opcion1">un gato</label>
+                            </div>
+      
+                        
+                        <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="opcion2" value="una oveja eléctrica" name="defaultExampleRadios" mdbInput>
+                        <label class="custom-control-label textoFragmento3" for="opcion2">una oveja eléctrica</label>
+                        </div>   
+                        
+                        <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" id="opcion3" value="un androide" name="defaultExampleRadios" mdbInput>
+                          <label class="custom-control-label textoFragmento3" for="opcion3">un androide</label>
+                          </div>
+      
+                          <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="opcion4" value="una gallina feliz criada al aire libre" name="defaultExampleRadios" mdbInput>
+                            <label class="custom-control-label textoFragmento3" for="opcion4">una gallina feliz criada al aire libre</label>
+                            </div>
+                      </div>
+    
+                      <div *ngIf="bulletVacio[9]"> 
+                        <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" id="opcion1" value="Sistema totalitario y opresor" name="defaultExampleRadios"  mdbInput>
+                          <label class="custom-control-label textoFragmento3" for="opcion1">Sistema totalitario y opresor</label>
+                          </div>
+    
+                      
+                      <div class="custom-control custom-radio">
+                      <input type="radio" class="custom-control-input" id="opcion2" value="Virus mortal" name="defaultExampleRadios" mdbInput>
+                      <label class="custom-control-label textoFragmento3" for="opcion2">Virus mortal</label>
+                      </div>   
+                      
+                      <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="opcion3" value="Escasez de recursos naturales" name="defaultExampleRadios" mdbInput>
+                        <label class="custom-control-label textoFragmento3" for="opcion3">Escasez de recursos naturales</label>
+                        </div>
+    
+                        <div class="custom-control custom-radio">
+                          <input type="radio" class="custom-control-input" id="opcion4" value="Una sobrepoblación mundial" name="defaultExampleRadios" mdbInput>
+                          <label class="custom-control-label textoFragmento3" for="opcion4">Una sobrepoblación mundial</label>
+                          </div>
+                    </div>
+                         
+                          </div>
+                          <div class="col-12">
+                            <br>
+                            <div *ngIf="contadorRespuestas==0" class="text-left"><img src="assets/microRelatos/WEB/0_.png"/></div>
+                            <div *ngIf="contadorRespuestas==1" class="text-left"><img src="assets/microRelatos/WEB/10_.png"/></div>
+                            <div *ngIf="contadorRespuestas==2" class="text-left"><img src="assets/microRelatos/WEB/20_.png"/></div>
+                            <div *ngIf="contadorRespuestas==3" class="text-leftt"><img src="assets/microRelatos/WEB/30_.png"/></div>
+                            <div *ngIf="contadorRespuestas==4" class="text-left"><img src="assets/microRelatos/WEB/40_.png"/></div>
+                            <div *ngIf="contadorRespuestas==5" class="text-left"><img src="assets/microRelatos/WEB/50_.png"/></div>
+                            <div *ngIf="contadorRespuestas==6" class="text-left"><img src="assets/microRelatos/WEB/60_.png"/></div>
+                            <div *ngIf="contadorRespuestas==7" class="text-left"><img src="assets/microRelatos/WEB/70_.png"/></div>
+                            <div *ngIf="contadorRespuestas==8" class="text-left"><img src="assets/microRelatos/WEB/80_.png"/></div>
+                            <div *ngIf="contadorRespuestas==9" class="text-left"><img src="assets/microRelatos/WEB/90_.png"/></div>                        
+                          </div>
+                           
+                           
+                      </div>
+                    </ng-container> 
+             
+                    </div> 
+                    
+                    
+                        </div>
+                
+                  </div>
+
+
+
+
               </div>

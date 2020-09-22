@@ -443,189 +443,184 @@ input[type="text"]
 
 @media only screen and (max-width: 500px) {
 
-
-    .aliados{
+    .textoPrincipal{
         position: relative;
-        margin-top: 5% !important;
-        width: 40%;
+        top: 50px;
+        right: 0px;
     }
 
-    .btn-group{
-        width: 100%;
+    .contenedorRelatos{
+        position: relative;
+        top: 7em;
+        margin-top: 0%;
+        padding: 0px,0px,0px,0px !important;
+    }
+
+    .imagenMicroRelato{
+      width: 100%;
      }
 
-     .brujula{
+    .mapaMovil{
         position: relative;
-        top: 440px;
-        left: 76%;
-        width: 25%;
+        top: -70px;
+       
     }
 
-    .modalbox .box {
-        background-color: rgba(9, 49, 61, 0.5);
-        margin: 0 auto;
-        min-width: 340px;
-        padding: 40px;
-        width: 30%;
-        margin-top: 210px;
-        margin-left: 120px;
-        }
-        .modalbox .content {
-        display: block;
-        font-family: Verdana;
-        font-size: 16px;
-        line-height: 18px;
-        padding: 10px 0 0;
-        color: #fff;
-            }
-        .modalbox .close {
-        color: #fff;
-        display: block;
-        float: left;
-        font-family: Verdana;
-        font-size: 22px;
-        height: 25px;
-        text-decoration: none;
-            }
+    .textoFragmento{
+        margin-top: 10px;
+        color:  #F8EBE3;
+        font-family: "krete";
+        font-size: 5vw;
+    }
+    
 
-        .botonMasMenos{
-            width: 100px;
-        }
-    
-    
-    .modalbox{ /*Caja Total del POPOPUP*/
-        position: fixed;
-        z-index: 9999;
+    .contenedorTextoFragmento{
+        position: relative;
+        right: 0px;
+        top: 100px;
+    }
+
+    .columnaTextoSecundario{
+        position: relative;
+        top: 80px;
+        left: 5%;
+    }
+
+    .imagenFragmento{
+        position: relative;
+        top: 80px;
         width: 100%;
-        height: 100%;
-        top: 0;
-        left: -30%;
-        color:#333333;
-        }
+        max-width: 600px;
+        max-height: 300px;
+        z-index: -999;
+    }
+
+    .medellin{
+        position: relative;
+        top: 0px !important;
+        width: 25%;
+
+    }
+
+    .brujulaHomeWeb{
+        position: relative;
+        right: 1%;
+        margin-top: 0% !important;
+        width: 20%;
+    }
+
+    .siguienteWeb{
+        position: relative;
+        left: 40%;
+        bottom: 68px;
+        margin-top: 0%;
+        width: 50% !important;
+    }
+
+    .anteriorWeb{
+        position: relative;
+        left: -52%;
+        bottom: 68px;
+        margin-top: 0%;
+        width: 50% !important;
+    }
+
+    .bulletWeb{       
+        width: 10px;
+    }
+
+    .footerWeb{
+        background-color: #012D39;
+        position: fixed;
+        left: 0em;
+        top: 85%;  
+  }
+
+    .logoCiudadEspejo{
+        width: 80%;
+    }
     
-    .modalbox:target {
-        display: block;
-        outline: none;
+
+    .logo1Atras{
+        width: 100%;
+    }
+
+    .logo2Home{
+        width: 50%;
+    }
+
+    .logosDivididos{
+   width: 100%;
+    }
+    
+    .medellinMovil{
+        width: 100%;
+    }
+
+    .degradado{
+        position: fixed;
+        top: 90%;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        z-index: -999;
+    }
+
+    .degradado{
+        position: fixed;
+        top: 90%;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        z-index: -999;
     }
 
     .botonMasMenos{
+        position: relative;
+        top: 200px;
+        left: 300px;
         width: 10%;
-    }
-    .mapa{
-        position: relative;
-        right: 25px;
-        width: 370px;
-    }
-
-    .brujula{
-        position: relative;
-        top: 0px;
-        left: 76%;
-        width: 25% !important;
-    }
-
-    .imagenRelatos{
-        top: 10% !important;
-        left: 10%;
-        width: 80%;
-        z-index: -1;
-    }
-
-    .textoCitado{
-        position: relative;
-        top: 7%;
-        left: 32%;
-        font-family: 'krete';
-        margin-top: 100%;
-        font-size: 15px;
-        color:#92B7CB;
-        z-index: -1;    
-     
-    }
-
-     .textoOriginal{
-        position: relative;
-        top: 7%;
-        left: 32%;
-        font-family: 'krete';
-        margin-top: 100%;
-        font-size: 60px;
-        color:#92B7CB;
-        z-index: -1;    
-     
-    } 
-
-    .aliados{
-        position: fixed;
-        left: 60%;
-        width: 35%;
         z-index: 999;
     }
 
-    .footer{
-        background-color: #09313D;
+    .textoDesplegable{
+        position: absolute;
+        top: 232px;
+        background-color: #F8EBE3;
+        z-index: 999;
+        font-size: 4vw;
+font-family: "sweet-sans-pro";
+    }
+
+    
+    .botonMasMenos:hover{
+        cursor: pointer;
+    }
+
+    .degradado2{
         position: fixed;
+        top: 80%;
+        width: 100%;
+        height: 10%;
         left: 0px;
-        top: 87%;
-        height: 110px;
+        z-index: -999;
     }
-    
-    .anteriorMovil{
-        margin-top: 10%;
-        width: 50px;
-    }
-    
-    .anteriorMovil2{
-        position: absolute;
-        top: -42px;
-        right: 10px;
-        margin-left: 0px;
-        width: 50px;
-    }
-    
-    .anterior:hover{
-        cursor:pointer;
-    }
-    
-    .bullets{
-        position: absolute;
-        left: 70px;
-        top: 17px;
-        margin-left: 0%;
-    }
-    
-    .bullet{
-        width: 12px;
-    }
-    
-    .bullets2{
-        position: absolute;
-        left: 210px;
-        top: 19px;
-        margin-top: 2.8%;
-        
-    }
-    
-    .bullet2{
-        width: 12px;
-    }
-    
-    .brujulaHome{
-        position: absolute;
-        left: 155px;
-        top: -50px;
-        width: 60px;
-    }
-    
-    .barraScroll{
-        position: fixed;
-        top: 150px;
-        width: auto;
-        height: 580px;
-        
-        right: 0px;
-    }
-    
+
+    .menuHorizontal{
+        position: relative;
+        top: 90px;     
+      
+      }
+
+      .rosaMovil{
+       position: relative;
+       bottom: 110px;
+       left: 65%;
+      }
+
+      .rosa2Movil{
+   width: 80%;
+       }
    
 
     

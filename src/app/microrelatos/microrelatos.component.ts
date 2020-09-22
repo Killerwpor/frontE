@@ -9,6 +9,7 @@ import {
 
 
 import * as $ from "jquery";
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-microrelatos',
@@ -19,9 +20,10 @@ export class MicrorelatosComponent implements OnInit {
 
   
 
-  constructor(public microRelatoServicio: MicrorelatosService) { }
 
+  constructor(public microRelatoServicio: MicrorelatosService, private deviceService: DeviceDetectorService ) { }
 
+  permitirTexto: Boolean=false;
   test={
     "test": "test"
   }
@@ -41,7 +43,7 @@ export class MicrorelatosComponent implements OnInit {
     "respuesta9": "",
   }
 
-  microRelatos: Boolean=false;
+  microRelatos: Boolean=true;
   topPosition: Number=170; //170
   abrirPopUp: Boolean=true;
   movil: Boolean=false;
@@ -54,8 +56,17 @@ export class MicrorelatosComponent implements OnInit {
   @Output() navegador = new EventEmitter<string>();
 
   ngOnInit(): void {
+   this.movil= this.deviceService.isMobile();
   }
 
+  abrirTexto(){
+    if(this.permitirTexto){
+      this.permitirTexto=false;
+    }
+    else{
+      this.permitirTexto=true;
+    }
+  }
 
   generarMicroRelato(data){
     this.microRelatoServicio.generarMicroRelato(data).subscribe(result => {
