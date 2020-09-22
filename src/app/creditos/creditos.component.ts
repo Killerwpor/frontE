@@ -1,18 +1,21 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-
+import { DeviceDetectorService } from 'ngx-device-detector';
 @Component({
   selector: 'app-creditos',
   templateUrl: './creditos.component.html',
   styleUrls: ['./creditos.component.css']
 })
 export class CreditosComponent implements OnInit {
+  movil: Boolean=false;
+  @Output() navegador = new EventEmitter<string>();
 
-  constructor() { }
+  constructor(private deviceService: DeviceDetectorService) { }
 
   ngOnInit(): void {
+    this.movil= this.deviceService.isMobile();
   }
 
-  @Output() navegador = new EventEmitter<string>();
+ 
 
   clickMenu(lado){
 

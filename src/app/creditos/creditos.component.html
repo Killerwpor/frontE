@@ -1,4 +1,4 @@
-<div class="container-fluid contenedorPrincipal">
+<div class="container-fluid contenedorPrincipal" *ngIf="!movil">
    <div class="margenTop"> 
     <div class="row ">
 
@@ -68,3 +68,74 @@
     </div>
 </div>
 </div>
+
+
+<div class="container-fluid contenedorPrincipal" *ngIf="movil">
+    <div class="margenTop"> 
+     <div class="row ">
+ 
+         <div class="col-12 text-center">
+             <div class="col-12">            
+                     <img class="imagen1 mx-auto" src="assets/Home/ELEMENTOS TRSVLS/HOME_WEB-07.png"/>
+             </div>
+           
+             <div class="col-12">
+                 <img class="imagen1 mx-auto" src="assets/Home/ELEMENTOS TRSVLS/SNL-Y-FEST.png"/>
+            
+             </div>
+         </div>
+ 
+ 
+         <!-- <div class="col-xl-1 col-md-1 col-sm-1 ">
+             <img class="img-fluid barraSeparadora" src="assets/Home/ELEMENTOS TRSVLS/separador creditos.png"/>     
+         </div>
+  -->
+ 
+         <div class="col-xl-5 col-md-5 col-sm-12 col-12">  
+            <img class="barraSeparadora" src="assets/Home/ELEMENTOS TRSVLS/separador creditos.png"/> 
+             <div class="col-12 text-center texto">
+                 <br>
+                 Este Salón es el resultado del trabajo colaborativo entre <br>
+                 las siguientes instituciones
+             </div>   
+             <div class="row">                
+                 <div class="col-6">
+                 <img class="imagen2 mx-auto" src="assets/Home/ELEMENTOS TRSVLS/UDEA.png"/>      
+                </div>
+                <div class="col-6">
+                 <img class="imagen2 mx-auto" src="assets/Home/ELEMENTOS TRSVLS/COMFENALCO.png"/>      
+                </div>
+                <div class="col-6">
+                    <img class="imagen3 mx-auto" src="assets/Home/ELEMENTOS TRSVLS/CATUL.png"/>      
+                   </div>
+                   <div class="col-6">
+                    <img class="imagen2 mx-auto" src="assets/Home/ELEMENTOS TRSVLS/logo explora.png"/>      
+                   </div>
+                   <div class="col-6">
+                    <img class="imagen2 mx-auto align-middle" src="assets/Home/ELEMENTOS TRSVLS/LUIS-AMIGO.png"/>      
+                   </div>
+                   <div class="col-6">
+                    <img class="imagen3 mx-auto align-middle" src="assets/Home/ELEMENTOS TRSVLS/UPB.png"/>      
+                   </div>
+                   <div class="col-6">
+                    <img class="imagen2 mx-auto align-middle" src="assets/Home/ELEMENTOS TRSVLS/logo sistema de bibliotecas.png"/>      
+                   </div>
+                   <div class="col-6">
+                    <img class="imagen2 mx-auto align-middle" src="assets/Home/ELEMENTOS TRSVLS/texto y separador creditos.png"/>      
+                   </div>
+              
+            </div>  
+            
+         </div>
+ 
+ 
+     </div>
+ 
+ 
+     <div class="row">
+         <div class="col">
+              <img class="float-right flecha" (click)="clickMenu(1)" src="assets/microRelatos/gifs/flecha.png"/>
+         </div>
+     </div>
+ </div>
+ </div>

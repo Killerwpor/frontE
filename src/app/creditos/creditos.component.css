@@ -31,3 +31,56 @@
 .barraSeparadora{
     height: 75%;
 }
+
+@media only screen and (max-width: 500px) {
+
+    .flecha{
+        position: relative;
+        bottom: 770px;
+        margin-right: 0%;
+        width: 40%;
+    }
+
+    .texto{
+        font-size: 15px;
+    }
+
+    .imagen1{
+        width: 85%;
+    }
+
+    img{
+        display: block;
+        width: 100%;
+        margin-top: 8.5%;
+    }
+
+    .imagen2{
+        width: 90%;
+    }
+
+    .imagen3{
+        width: 65% !important;
+    }
+
+    .imagen3{
+        width: 80%;
+    }
+    
+    .margenTop{
+        margin-top: 5% !important;
+    }
+
+    .fila{
+        margin-top: 0% !important;
+    }
+
+    .barraSeparadora{
+        position: absolute;
+        right: 46%;
+        top: 20%;
+        height: 70%;
+        width: 3.5%;
+    }
+
+}
