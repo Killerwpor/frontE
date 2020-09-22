@@ -3,7 +3,7 @@
 <!--Main Navigation-->
 
 <div *ngIf="!relatos" class="">
-
+<div *ngIf="!movil">
   <header class="">
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
       <div class="row container-fluid">
@@ -79,18 +79,86 @@
                     <a xlink:href="#4" (click)="clickMenu(4)"><rect x="0" y="1310" width="320" height="520" fill="rgba(0,0,0,0)" opacity="0.5"/></a>                              
                   </svg>                  
                 </div>
-              
+
+             
             </div>
 
 
 
 
     
-    
+          </div>
+
+
+          <div *ngIf="movil">
+
+
+            <header class="">
+              <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
+                <div class="row container-fluid">
+                  <div class="col-6">
+                    <img class="img-fluid logo1Atras" (click)="clickMenu(1)" src="assets/autores/ciudad espejo press autores.png"/>
+                  </div>
+                  <div class="col-6">
+                    <img class="img-fluid logo2Home" src="assets/autores/WEB/LOGO-SNL.png"/>
+                  </div>    
+                </div>  
+              </nav>  
+            </header> 
+
+
+            <div class="dropdown">
+              <img class="botonMasMenos" (click)="abrirTexto()" src="assets/autores/MENOS-TEXTO.jpg " *ngIf="permitirTexto">
+              <img class="botonMasMenos" (click)="abrirTexto()" src="assets/autores/MAS-TEXTO.jpg " *ngIf="!permitirTexto">
+              <div class="textoDesplegable text-left" *ngIf="permitirTexto">
+                Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!
+                </div>
+            </div> 
+
+           
+             <img class="degradado fixed-bottom" src="assets/autores/RESPONSIVE VERTICAL/DEGRADADO-AZUL.png"/>
+            <!-- <img class="fixed-bottom decoracion" src="assets/autores/WEB/DECOR1.png"/> -->
+
+           <div class="row">
+             <div class="col-12">
+              <svg class="menuHorizontal" viewBox="0 0 2000 1550">
+                <image class="" xlink:href="assets/autores/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/MENU-MEDELLIN.png" width="100%"  />
+              </svg> 
+             </div>
+             <div class="col-12">
+              <svg class="mapaMovil" viewBox="0 0 2000 2600">
+                <image class="" xlink:href="assets/autores/WEB/MAPAWEB.png" width="2000"/> 
+                <a xlink:href="#experimentacion" (click)="permitirRelatos(1)"><rect x="900" y="0" width="500" height="300" fill="rgba(0,0,0,0)" opacity="0"/></a>  
+                <a xlink:href="#ecos" (click)="permitirRelatos(6)"><rect x="1300" y="300" width="600" height="240" fill="rgba(0,0,0,0)" opacity="0" /></a>  
+                <a xlink:href="#gardel" (click)="permitirRelatos(7)"><rect x="1000" y="700" width="350" height="280" fill="rgba(0,0,0,0)" opacity="0"/></a> 
+                <a xlink:href="#luna" (click)="permitirRelatos(3)"><rect x="730" y="700" width="280" height="420" fill="rgba(0,0,0,0)" opacity="0"/></a>    
+                <a xlink:href="#culto" (click)="permitirRelatos(9)"><rect x="1150" y="1150" width="390" height="270" fill="rgba(0,0,0,0)" opacity="0"/></a>   
+                <a xlink:href="#rio" (click)="permitirRelatos(8)"><rect x="880" y="2100" width="430" height="430" fill="rgba(0,0,0,0)" opacity="0"/></a> 
+                <a xlink:href="#patio" (click)="permitirRelatos(4)"><rect x="0" y="1800" width="600" height="300" fill="rgba(0,0,0,0)" opacity="0"/></a>
+                <a xlink:href="#mico" (click)="permitirRelatos(2)"><rect x="750" y="1100" width="450" height="300" fill="rgba(0,0,0,0)" opacity="0"/></a> 
+                <a xlink:href="#mico" (click)="permitirRelatos(2)"><rect x="900" y="1500" width="450" height="400" fill="rgba(0,0,0,0)" opacity="0"/></a> 
+                <a xlink:href="#niña" (click)="permitirRelatos(5)"><rect x="600" y="1400" width="250" height="250" fill="rgba(0,0,0,0)" opacity="0"/></a>      
+            </svg> 
+             </div>
+             <div class="rosaMovil">
+             <div class="col-12">
+              <img class="img-fluid rosa2Movil" src="assets/microRelatos/gifs/rosa2.png"/>
+            </div>
+            <div class="col-12">
+              <img class="img-fluid" src="assets/autores/ELIGE UN FRAGMENTO.png"/>
+            </div>
+          </div>
+           </div>
+
+        
+
+
+          </div>
         </div>
 
 
         <div *ngIf="relatos" class="">  
+          <div *ngIf="!movil">
           <header>
 
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
@@ -222,11 +290,105 @@
                 <div class="col-lg-3 col-sm-2">
                   <img *ngIf="movil" class="anteriorMovil2" (click)="siguienteFragmento('true')" src="assets/autores/SIGUIENTE.png"/>
               </div>   
-              </div>
-               
+              </div>               
           </div> 
 
            <!-- FIN FOOTER MOVIL -->
+          </div>
 
+
+
+          <div *ngIf="movil">
+
+          
+
+
+            <header>
+
+              <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+                <div class="row container-fluid">
+                  <div class="col-5">
+                    <img class="img-fluid logo1" (click)="permitirRelatos('0')" src="assets/autores/medellin unpress autores.png"/>
+                  </div>
+                  <div class="col-4">
+                     <img class="img-fluid logoCiudadEspejo float-right" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png"/>
+                  </div>
+                  <div class="col-3">
+                    <img class="img-fluid" src="assets/autores/WEB/LOGO-SNL.png"/>
+                 </div>
+              
+                </div>
+            
+              </nav>
+            
+            </header>   
+
+            <img class="degradado2" src="assets/autores/WEB/DEGRADADO.png"/>
+
+
+            <div class="row">
+              <div class="col-12">
+                <img class="img-fluid imagenFragmento"  src="{{fragmentoActual.urlImagen}}"/>
+              </div>
+              <div class="col-12 columnaTextoSecundario">
+                  <div class="col-12">
+                    <div class="font-weight-bold textoOriginal font-italic text-left">{{fragmentoActual.textoOriginal}}</div>
+                  </div>                
+                  <div class="col-12">
+                    <div class="">                  
+                    <span class="nombre">{{fragmentoActual.nombre}}</span>
+                    <span class="apellido font-italic">{{fragmentoActual.apellido}}</span>
+                  </div>
+                  </div>               
+                </div>                
+
+                <div class="col-12 contenedorTextoFragmento">                 
+                                               
+                    <div class="textoFragmento text-left">{{fragmentoActual.textoFragmento}}</div>
+                     
+                </div> 
+            
+              </div> 
+
+            <div class="container-fluid footerWeb">
+              <div class="row text-center">
+                <div class="col-12">               
+              <img id="bullet0"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+              <img id="bullet1"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+              <img id="bullet2"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+              <img id="bullet3"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+              <img id="bullet4"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+              <img class="brujulaHomeWeb" (click)="permitirRelatos('1')" src="assets/microRelatos/gifs/rosa2.png"/>
+           
+              <img id="bullet5"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+              <img id="bullet6"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+              <img id="bullet7"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+              <img id="bullet8"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+              <img id="bullet9"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
+                </div>
+                <div class="col-12">
+                  <img class="medellin" src="assets/autores/WEB/NOMBRE FILTRO_PT.png"/>            
+                </div>
+                <div class="col-5">
+                  <img class="anteriorWeb float-right" (click)="siguienteFragmento('false')" src="assets/autores/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/ANTERIOR.png"/>
+                </div>
+                <div class="col-2 ">
+                
+                </div>
+                <div class="col-5">
+                  <img class="siguienteWeb float-left" (click)="siguienteFragmento('true')" src="assets/autores/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/SIGUIENTE.png"/>
+                </div>
+                <div class="col-12">
+
+                </div>
+              </div>
+
+            </div>
+           
+
+
+
+
+          </div>
             </div>
            

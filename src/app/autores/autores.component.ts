@@ -18,6 +18,7 @@ export class AutoresComponent implements OnInit {
     abrirPopUp: Boolean=true;
     movil: Boolean=false;
     relatos: Boolean=false;
+    permitirTexto: Boolean=false;
     contadorFragmento: number=0;
     fragmentoActual: Fragmento=fragmentos[0];
     bulletVacio=[false,false,false,false,false,false,false,false,false,false]
@@ -105,8 +106,19 @@ export class AutoresComponent implements OnInit {
     }
   }
 
+ 
+
   clickMapa(lado){
 alert(lado);
+  }
+
+  abrirTexto(){
+    if(this.permitirTexto){
+      this.permitirTexto=false;
+    }
+    else{
+      this.permitirTexto=true;
+    }
   }
 
   clickMenu(lado){
