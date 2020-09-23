@@ -443,6 +443,65 @@ input[type="text"]
 
 @media only screen and (max-width: 500px) {
 
+    .subeTuHistoria{
+        width: 100% !important;
+    }
+
+    .microRelatoGenerado{
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
+
+    .brujulaVolver{
+        position: relative;
+        left: 20px;
+        width: 80%;
+       }
+
+    .porcentaje{
+        position: relative;
+        right: 10px;
+        width: 120px;
+    }
+
+    .footerWeb{
+        background-color: #012D39;
+        position: fixed;
+        left: 0em;
+        top: 85%;  
+  }
+
+    .brujulaHomeWeb{
+        position: relative;
+        right: 1%;
+        margin-top: 0% !important;
+        width: 20%;
+    }
+
+    .siguienteWeb{
+        position: relative;
+        left: 40%;
+        bottom: 68px;
+        margin-top: 0%;
+        width: 50% !important;
+    }
+
+    .anteriorMovil{
+        position: relative;
+        top: 15px;
+        width: 200% !important;
+    }
+
+    .anteriorMovil2{
+        position: relative;
+        top: 15px;
+        right: 30px;
+        width: 200% !important;
+    }
+    .textoFragmento3{
+        font-size: 20px !important;
+    }
+
     .textoPrincipal{
         position: relative;
         top: 50px;
@@ -502,29 +561,10 @@ input[type="text"]
 
     }
 
-    .brujulaHomeWeb{
-        position: relative;
-        right: 1%;
-        margin-top: 0% !important;
-        width: 20%;
-    }
+ 
 
-    .siguienteWeb{
-        position: relative;
-        left: 40%;
-        bottom: 68px;
-        margin-top: 0%;
-        width: 50% !important;
-    }
-
-    .anteriorWeb{
-        position: relative;
-        left: -52%;
-        bottom: 68px;
-        margin-top: 0%;
-        width: 50% !important;
-    }
-
+ 
+  
     .bulletWeb{       
         width: 10px;
     }

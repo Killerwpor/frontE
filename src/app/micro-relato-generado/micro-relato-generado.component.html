@@ -1,4 +1,5 @@
 <meta property="og:image" content="https://www.facebook.com/sharer.php?u=www.google.com&picture=https://media.revistagq.com/photos/5ca5f6a77a3aec0df5496c59/16:9/w_1920,c_limit/bob_esponja_9564.png">
+<ng-container *ngIf="!movil">
 <div class="container-fluid" *ngIf="!compartir">
     <div class="row">
         <div class="col-12">
@@ -53,8 +54,39 @@
 </div>
 </div>
 
->
 
+</ng-container>
+
+
+<ng-container *ngIf="movil">
+    <div class="container-fluid" *ngIf="!compartir">
+        <div class="row">
+            <!-- <div class="col-12">
+             <img class="img-fluid logo1" src="{{urlImagen}}"/> 
+            </div> -->
+            <div class="col-12">
+                <img class="img-fluid botonEditar" (click)="clickEditar()" src="assets/microRelatos/WEB/EDITAR-BOTON.png"/>
+            </div>
+            <div class="col-12 texto">
+                <ng-container *ngIf="!editar">
+                {{textoGenerado}}
+                </ng-container>
+               <ng-container *ngIf="editar">
+               <textarea [(ngModel)]="textoGenerado" rows="30" cols="45" class="texto">
+                {{textoGenerado}}
+                </textarea>
+            </ng-container>
+            </div>  
+            <div class="col-12">
+                <img class="img-fluid" src="assets/microRelatos/WEB/CORONDEL-CAFE.png"/>
+            </div>
+            
+           
+    </div>
+    </div>
+
+
+</ng-container>
 
    
     <div  id="test" class="row container-fluid2 hide">

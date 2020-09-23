@@ -8,6 +8,8 @@ import domtoimage from 'dom-to-image';
 
 import { saveAs } from 'file-saver';
 
+import { DeviceDetectorService } from 'ngx-device-detector';
+
 @Component({
   selector: 'app-micro-relato-generado',
   templateUrl: './micro-relato-generado.component.html',
@@ -21,6 +23,7 @@ export class MicroRelatoGeneradoComponent implements OnInit {
  @Input() respuestas;
  @Input() urlImagen;
  numeroFisura: String="";
+ movil: Boolean=false;
 
 
  compartir: boolean=false;
@@ -28,10 +31,11 @@ export class MicroRelatoGeneradoComponent implements OnInit {
  compartirRedes: boolean=false;
  post: boolean=false;
 
-  constructor(public microRelatoServicio: MicrorelatosService) { }
+  constructor(public microRelatoServicio: MicrorelatosService, private deviceService: DeviceDetectorService) { }
 
   ngOnInit(): void {
-    this.porcentajeSolarPunk=""
+    this.porcentajeSolarPunk="";
+    this.movil= this.deviceService.isMobile();
   }
 
   clickEditar(){

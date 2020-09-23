@@ -493,12 +493,14 @@
               
               
                   <div class="row">
-                    <div class="col-12">
+                    <div class="col-12" *ngIf="contadorRespuestas!=10">
                       <img class="imagenMicroRelato"  src="{{microRelatoActual.urlImagen}}"/>
                     </div>
                    <!--INICIO SECCIÓN -->
                       <!--COMENTAR ESTA SECCIÓN Y DESCOMENTAR LA OTRA PARA VOLVER A LA NORMALIDAD -->
-                   
+                      <div class="col-12" *ngIf="contadorRespuestas==10">
+                        <img class="imagenMicroRelato"  src="{{urlImagen}}"/>
+                      </div>
                      
     
                     <div class="col-12" *ngIf="contadorRespuestas==10">
@@ -507,6 +509,23 @@
                       </div>
                       
                     </div>
+
+                    <div class="container-fluid footer" *ngIf="contadorRespuestas==10">
+                      <div class="row">
+                          <div class="col-4">
+                              <img *ngIf="movil" class="img-fluid" src="assets/microRelatos/RESPONSIVE VERTICAL/otros-relatos.png"/>
+                          </div>
+                        
+                          <div class="col-4">
+                            <div><img class="subeTuHistoria" src="assets/microRelatos/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/SUBE-TU-HISTORIA-.png"/></div>
+                        </div>  
+                        <div class="col-4">
+                          <img class="img-fluid" src="assets/microRelatos/RESPONSIVE VERTICAL/COMPARTIR.png"/>
+                      </div>                     
+                         
+                     
+                      </div>               
+                  </div> 
                     
                   <!--  FIN SECCIÓN -->
     
@@ -524,7 +543,7 @@
                           <div class="col-12">
                             <div class="textoOriginal2"><br>Visita todos los microrrelatos para construir el tuyo.</div>                        
                           </div>
-                          <div class="col-12">
+                          <div class="col-12">                           
                             <div *ngIf="bulletVacio[0]" class="textoFragmento3 font-weight-bold">¿Cómo se llama tu personaje? (una palabra)</div>
                             <div *ngIf="bulletVacio[1]" class="textoFragmento3 font-weight-bold">Al  mirar al cielo, qué ve tu personaje:</div> 
                             <div *ngIf="bulletVacio[2]" class="textoFragmento3 font-weight-bold">¿Cómo terminaría tu personaje su historia?</div>
@@ -537,9 +556,10 @@
                            <div *ngIf="bulletVacio[9]" class="textoFragmento3 font-weight-bold">Tu personaje enfrenta este problema: </div>
                             
                           </div>
+                          
                           <div class="col-12">
                             <br>
-                            <div *ngIf="bulletVacio[0]" class="textoFragmento3 font-weight-bold"><input id="pregunta0" type="text" class="form-control"></div>
+                            <div *ngIf="bulletVacio[0]" class="textoFragmento3 font-weight-bold"><input id="pregunta0" type="text" class="form-control"> <br> <br> <br> <br> <br></div>
                             <div *ngIf="bulletVacio[1]"> 
                               <div class="custom-control custom-radio">
                                 <input type="radio" class="custom-control-input" id="opcion1" value="la nube de gases que cubre la ciudad"  name="defaultExampleRadios" mdbInput>
@@ -563,6 +583,7 @@
                                 <input type="radio" class="custom-control-input" id="opcion4" value="los satélites vigilantes" name="defaultExampleRadios" mdbInput>
                                 <label class="custom-control-label textoFragmento3" for="opcion4">los satélites vigilantes"</label>
                                 </div>
+                                <br> <br> <br> <br> <br>
                           </div>       
                           
                           <div *ngIf="bulletVacio[2]"> 
@@ -586,6 +607,7 @@
                               <input type="radio" class="custom-control-input" id="opcion4" value="Renace" name="defaultExampleRadios" mdbInput>
                               <label class="custom-control-label textoFragmento3" for="opcion4">Renace</label>
                               </div>
+                              <br> <br> <br> <br> <br>
                         </div>    
                         
                         <div *ngIf="bulletVacio[3]"> 
@@ -609,6 +631,7 @@
                             <input type="radio" class="custom-control-input" id="opcion4" value="No necesita trabajar" name="defaultExampleRadios" mdbInput>
                             <label class="custom-control-label textoFragmento3" for="opcion4">No necesita trabajar</label>
                             </div>
+                            <br> <br> <br> <br> <br>
                       </div>   
     
                       <div *ngIf="bulletVacio[4]"> 
@@ -632,9 +655,10 @@
                           <input type="radio" class="custom-control-input" id="opcion4" value="en bicicleta" name="defaultExampleRadios" mdbInput>
                           <label class="custom-control-label textoFragmento3" for="opcion4">en bicicleta</label>
                           </div>
+                          <br> <br> <br> <br> <br>
                     </div>          
                               
-                            <div *ngIf="bulletVacio[5]" class="textoFragmento3 font-weight-bold"><br><input id="pregunta5" type="text" class="form-control"></div>                        
+                            <div *ngIf="bulletVacio[5]" class="textoFragmento3 font-weight-bold"><input id="pregunta5" type="text" class="form-control"><br> <br> <br> <br> <br></div>                        
                          
                             <div *ngIf="bulletVacio[6]"> 
                               <div class="custom-control custom-radio">
@@ -656,10 +680,12 @@
                               <div class="custom-control custom-radio">
                                 <input type="radio" class="custom-control-input" id="opcion4" value="Activista ambiental" name="defaultExampleRadios" mdbInput>
                                 <label class="custom-control-label textoFragmento3" for="opcion4">Activista ambiental</label>
+
                                 </div>
+                                <br> <br> <br> <br> <br>
                           </div>
     
-                          <div *ngIf="bulletVacio[7]" class="textoFragmento3 font-weight-bold"><br><input type="text" id="pregunta7" class="form-control"></div>
+                          <div *ngIf="bulletVacio[7]" class="textoFragmento3 font-weight-bold"><br><input type="text" id="pregunta7" class="form-control">    <br> <br> <br> <br> <br></div>
     
                           
     
@@ -684,6 +710,7 @@
                             <input type="radio" class="custom-control-input" id="opcion4" value="una gallina feliz criada al aire libre" name="defaultExampleRadios" mdbInput>
                             <label class="custom-control-label textoFragmento3" for="opcion4">una gallina feliz criada al aire libre</label>
                             </div>
+                            <br> <br> <br> <br> <br>
                       </div>
     
                       <div *ngIf="bulletVacio[9]"> 
@@ -707,25 +734,43 @@
                           <input type="radio" class="custom-control-input" id="opcion4" value="Una sobrepoblación mundial" name="defaultExampleRadios" mdbInput>
                           <label class="custom-control-label textoFragmento3" for="opcion4">Una sobrepoblación mundial</label>
                           </div>
+                          <br> <br> <br> <br> <br>
                     </div>
                          
-                          </div>
-                          <div class="col-12">
-                            <br>
-                            <div *ngIf="contadorRespuestas==0" class="text-left"><img src="assets/microRelatos/WEB/0_.png"/></div>
-                            <div *ngIf="contadorRespuestas==1" class="text-left"><img src="assets/microRelatos/WEB/10_.png"/></div>
-                            <div *ngIf="contadorRespuestas==2" class="text-left"><img src="assets/microRelatos/WEB/20_.png"/></div>
-                            <div *ngIf="contadorRespuestas==3" class="text-leftt"><img src="assets/microRelatos/WEB/30_.png"/></div>
-                            <div *ngIf="contadorRespuestas==4" class="text-left"><img src="assets/microRelatos/WEB/40_.png"/></div>
-                            <div *ngIf="contadorRespuestas==5" class="text-left"><img src="assets/microRelatos/WEB/50_.png"/></div>
-                            <div *ngIf="contadorRespuestas==6" class="text-left"><img src="assets/microRelatos/WEB/60_.png"/></div>
-                            <div *ngIf="contadorRespuestas==7" class="text-left"><img src="assets/microRelatos/WEB/70_.png"/></div>
-                            <div *ngIf="contadorRespuestas==8" class="text-left"><img src="assets/microRelatos/WEB/80_.png"/></div>
-                            <div *ngIf="contadorRespuestas==9" class="text-left"><img src="assets/microRelatos/WEB/90_.png"/></div>                        
-                          </div>
+                          </div>                     
                            
                            
                       </div>
+                      <div class="container-fluid footer">
+                        <div class="row">
+                            <div class="col-2">
+                                <img *ngIf="movil" class="anteriorMovil" (click)="next(false)"  src="assets/microRelatos/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/ANTERIOR.png"/>
+                            </div>
+                          
+                            <div class="col-2">
+                              <div class="img-fluid text-right" (click)="playAudio(microRelatoActual.urlAudio)"><img src="assets/microRelatos/WEB/ECUALIZADOR-OFF.png"/></div>
+                          </div>  
+                          <div class="col-3">
+                            <img class="brujulaVolver" (click)="permitirRelatos(0)" src="assets/microRelatos/gifs/rosa.png"/>
+                        </div>  
+                        <div class="col-3">
+                            <div *ngIf="contadorRespuestas==0" class="text-left"><img class="porcentaje" src="assets/microRelatos/WEB/0_.png"/></div>
+                            <div *ngIf="contadorRespuestas==1" class="text-left"><img class="porcentaje" src="assets/microRelatos/WEB/10_.png"/></div>
+                            <div *ngIf="contadorRespuestas==2" class="text-left"><img class="porcentaje" src="assets/microRelatos/WEB/20_.png"/></div>
+                            <div *ngIf="contadorRespuestas==3" class="text-leftt"><img class="porcentaje" src="assets/microRelatos/WEB/30_.png"/></div>
+                            <div *ngIf="contadorRespuestas==4" class="text-left"><img class="porcentaje" src="assets/microRelatos/WEB/40_.png"/></div>
+                            <div *ngIf="contadorRespuestas==5" class="text-left"><img class="porcentaje" src="assets/microRelatos/WEB/50_.png"/></div>
+                            <div *ngIf="contadorRespuestas==6" class="text-left"><img class="porcentaje" src="assets/microRelatos/WEB/60_.png"/></div>
+                            <div *ngIf="contadorRespuestas==7" class="text-left"><img class="porcentaje" src="assets/microRelatos/WEB/70_.png"/></div>
+                            <div *ngIf="contadorRespuestas==8" class="text-left"><img class="porcentaje" src="assets/microRelatos/WEB/80_.png"/></div>
+                            <div *ngIf="contadorRespuestas==9" class="text-left"><img class="porcentaje" src="assets/microRelatos/WEB/90_.png"/></div>    
+                      </div>  
+                           
+                          <div class="col-2">
+                            <img *ngIf="movil" class="anteriorMovil2" (click)="next(true)" src="assets/microRelatos/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/SIGUIENTE.png"/>
+                        </div>   
+                        </div>               
+                    </div> 
                     </ng-container> 
              
                     </div> 
