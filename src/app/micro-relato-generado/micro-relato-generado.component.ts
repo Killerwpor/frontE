@@ -17,6 +17,7 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 })
 export class MicroRelatoGeneradoComponent implements OnInit {
 
+@Input() primerParrafo: String;
  @Input() textoGenerado: String;
  @Input() porcentajeSolarPunk: String;
  @Input() porcentajeDistopico: String;
@@ -24,6 +25,7 @@ export class MicroRelatoGeneradoComponent implements OnInit {
  @Input() urlImagen;
  @Input() numeroFisura: String;
  movil: Boolean=false;
+ relatoGuardado: Boolean=false;
 
 
  compartir: boolean=false;
@@ -75,6 +77,7 @@ export class MicroRelatoGeneradoComponent implements OnInit {
     this.microRelatoServicio.guardarMicroRelato(this.respuestas).subscribe(result => {
       this.numeroFisura=result.numeroFisura;
       this.urlImagen=result.urlImagen;
+      this.relatoGuardado=true;
     //  console.log(this.numeroFisura);
      });
 
@@ -87,6 +90,9 @@ export class MicroRelatoGeneradoComponent implements OnInit {
 
 
  async compartirFb(){ 
+if(this.relatoGuardado){
+
+
   $(".container-fluid2").removeClass("hide");
   var node = document.getElementById('test');
   var img = new Image();
@@ -112,10 +118,18 @@ await domtoimage.toPng(node)
 
  
  
-
+  }
+  else{
+    alert("Primero debe guardar su relato.");
+  }
   }
 
   async compartirTw(){
+    if(this.relatoGuardado){
+    
+    if(this.numeroFisura==undefined){
+      this.guardarMicroRelato();
+    }
     $(".container-fluid2").removeClass("hide");
        var node = document.getElementById('test');
        var img = new Image();
@@ -137,7 +151,10 @@ await domtoimage.toPng(node)
       var url=this.guardarS3(file);
       console.log("https://imagenes-generadas.s3.amazonaws.com/"+timestamp);
        this.compartirTwitter("https://imagenes-generadas.s3.amazonaws.com/"+timestamp);
-       
+      }
+      else{
+        alert("Primero debe guardar su relato.");
+      }
      }
   
 

@@ -27,6 +27,7 @@ export class MicrorelatosComponent implements OnInit {
   test={
     "test": "test"
   }
+  primerParrafo: string="";
   textoGenerado: string="";
   porcentajeSolarPunk: string="";
   porcentajeDistopico: string="";
@@ -76,6 +77,7 @@ export class MicrorelatosComponent implements OnInit {
      this.porcentajeSolarPunk=result.porcentajeSolarPunk;
      this.porcentajeSolarPunk=result.porcentajeSolarPunk;
      this.urlImagen=result.urlImagen;
+     this.primerParrafo=result.primerParrafo;
     });
   }
 
