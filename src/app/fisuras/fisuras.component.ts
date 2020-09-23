@@ -4,6 +4,8 @@ import * as $ from "jquery";
 
 import { Fisura } from '../modelos/fisura';
 
+import { DeviceDetectorService } from 'ngx-device-detector';
+
 import {
   MicrorelatosService
 } from '../microrelatos/microrelatos.service';
@@ -16,7 +18,7 @@ import {
   styleUrls: ['./fisuras.component.scss']
 })
 export class FisurasComponent implements OnInit {
-
+  movil: Boolean=false;
   fisuras1: Fisura[];
   fisuras2: Fisura[];
   fisuras3: Fisura[];
@@ -25,11 +27,19 @@ export class FisurasComponent implements OnInit {
   relatos: Boolean=false;
   numeroFisura: string;
 
-  constructor(public microRelatoServicio: MicrorelatosService) { }
+  constructor(public microRelatoServicio: MicrorelatosService, private deviceService: DeviceDetectorService) { }
 
   ngOnInit(): void {
+    let isMobile = this.deviceService.isMobile();
+    if(isMobile){
+      this.movil=true;
+    }
+    else{
+      this.movil=false;
+    }
+
     this.microRelatoServicio.traerMicroRelatos().subscribe(result => {
-      
+      console.log(result);
      this.fisuras1=result[0];
      this.fisuras2=result[1];
      this.fisuras3=result[2];

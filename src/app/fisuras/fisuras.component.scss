@@ -117,4 +117,33 @@ $animationSpeed: 40s;
 
 
    
-  
+@media only screen and (max-width: 500px) {
+	.degradado{
+        position: fixed;
+        top: 90%;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        z-index: 999;
+	}
+	
+	.logo1Atras{
+		position: relative;
+		left: 7%;
+		width: 70%;
+	}
+
+	.menuHorizontal{
+        position: relative;
+        top: 90px;     
+      
+	  }
+	  
+	  .imagen{
+		  z-index: -1;
+	  }
+
+	 
+
+
+}
