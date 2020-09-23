@@ -79,5 +79,13 @@ async uploadFile(file) {
       return respuesta;
 }
 
+ async guardarAux(data) {
+  const body = new HttpParams().set(`data`, JSON.stringify(data));    
+      
+return this.http.post<any>(this.urlGuardar, body.toString(), {
+    headers: this.httpHeaders 
+  })
+}
+
 
 }

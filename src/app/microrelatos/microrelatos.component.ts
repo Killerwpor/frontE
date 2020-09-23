@@ -43,7 +43,7 @@ export class MicrorelatosComponent implements OnInit {
     "respuesta9": "",
   }
 
-  microRelatos: Boolean=false;
+  microRelatos: Boolean=true;
   topPosition: Number=170; //170
   abrirPopUp: Boolean=true;
   movil: Boolean=false;

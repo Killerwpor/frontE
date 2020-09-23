@@ -22,7 +22,7 @@ export class MicroRelatoGeneradoComponent implements OnInit {
  @Input() porcentajeDistopico: String;
  @Input() respuestas;
  @Input() urlImagen;
- numeroFisura: String="";
+ @Input() numeroFisura: String;
  movil: Boolean=false;
 
 
@@ -52,7 +52,10 @@ export class MicroRelatoGeneradoComponent implements OnInit {
   clickOtro(){   
      this.microRelatoServicio.generarMicroRelato(this.respuestas).subscribe(result => {
        this.textoGenerado=result.texto;
+       console.log(this.textoGenerado);
       });
+      console.log(this.textoGenerado);
+
   }
 
   async guardarS3(img){
@@ -61,7 +64,7 @@ export class MicroRelatoGeneradoComponent implements OnInit {
     return datos;
   }
 
-  guardarMicroRelato(){
+  async guardarMicroRelato(){
  
 
     var data={
@@ -69,16 +72,21 @@ export class MicroRelatoGeneradoComponent implements OnInit {
       porcentajeDistopico: this.porcentajeDistopico,
       porcentajeSolarPunk: this.porcentajeSolarPunk
     }
-    this.microRelatoServicio.guardarMicroRelato(data).subscribe(result => {
-     alert("Se ha guardado exitosamente su microrelato");
+    this.microRelatoServicio.guardarMicroRelato(this.respuestas).subscribe(result => {
+      this.numeroFisura=result.numeroFisura;
+      this.urlImagen=result.urlImagen;
+    //  console.log(this.numeroFisura);
      });
+
+    //console.log(this.numeroFisura);
+   
      //$(".container-fluid2").addClass("hide");
   }
 
 
 
 
- async compartirFb(){
+ async compartirFb(){ 
   $(".container-fluid2").removeClass("hide");
   var node = document.getElementById('test');
   var img = new Image();
@@ -86,7 +94,7 @@ await domtoimage.toPng(node)
   .then(function (dataUrl) {
      
       img.src = dataUrl;
-      $(".container-fluid2").addClass("hide");
+   
     //  document.getElementById('imagenNueva').appendChild(img);
   })
   

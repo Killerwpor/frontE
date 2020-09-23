@@ -17,10 +17,37 @@
     margin-top: 5%;
 }
 
+.imagenCompartir{
+    position: relative;
+   left: 15px;
+}
+
 .centrarImagen{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.textoFisura{
+    position: absolute;
+    left: 18%;
+    top: 10%;
+}
+
+.textoTextoFisura{
+    color: #ccd084;
+    font-size: 60px;
+}
+
+.numeroFisura{
+    position: absolute;
+    left: 15%;
+    top: 18%;
+}
+
+.textoNumeroFisura{
+    color: #ccd084;
+    font-size: 80px;
 }
 .container-fluid{
     -webkit-border-radius: 10px;
