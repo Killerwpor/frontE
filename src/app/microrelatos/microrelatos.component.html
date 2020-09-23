@@ -88,7 +88,7 @@
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
           <div class="row container-fluid">
             <div class="col-6">
-              <img class="img-fluid logo1Atras" src="assets/autores/ciudad espejo press autores.png"/>
+              <img class="img-fluid logo1Atras" (click)="clickMenu(1)" src="assets/autores/ciudad espejo press autores.png"/>
             </div>
             <div class="col-6">
               <img class="img-fluid logo2Home" src="assets/autores/WEB/LOGO-SNL.png"/>
@@ -114,6 +114,10 @@
        <div class="col-12">
         <svg class="menuHorizontal" viewBox="0 0 2000 1550">
           <image class="" xlink:href="assets/microRelatos/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/MENU-MEDELLIN-INVERTIDO.png" width="100%"  />
+          <a xlink:href="#home" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+          <a xlink:href="#autores" (click)="clickMenu(2)"><rect x="400" y="0" width="500" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+          <a xlink:href="#microRelatos" (click)="clickMenu(3)"><rect x="950" y="0" width="500" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
+          <a xlink:href="#fisuras" (click)="clickMenu(4)"><rect x="1500" y="0" width="500" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
          
         </svg> 
        </div>
@@ -471,7 +475,7 @@
                   <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
                     <div class="row container-fluid">
                       <div class="col-5">
-                        <img class="logo1Atras" src="assets/autores/ciudad espejo press autores.png"/>
+                        <img class="logo1Atras" (click)="clickMenu(1)" src="assets/autores/ciudad espejo press autores.png"/>
                       </div>
                       <div class="col-4">
                         <img class="medellinMovil" src="assets/microRelatos/WEB/MEDELLIN-FILTRO.png"/>

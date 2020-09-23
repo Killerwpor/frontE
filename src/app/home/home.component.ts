@@ -103,7 +103,11 @@ clickMapa(lado){
 
     case '3':
       this.navegador.emit("creditos");
-      break; 
+      break;
+
+      case '4':
+        this.navegador.emit("fisuras");
+        break; 
 
   }
 }
