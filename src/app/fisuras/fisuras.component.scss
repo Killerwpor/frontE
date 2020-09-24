@@ -1,7 +1,13 @@
+
 .contenedor{
 	position: relative;
 	top: 300px;
+
+
+	
 }
+
+
 
 .imagen{
 	margin-top: 5%;
@@ -30,7 +36,7 @@
 }
 
 .degradado2{
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     height: 100%;
@@ -47,66 +53,66 @@ cursor: pointer;
 }
 
 .menu{
-	position: absolute;
+	position: fixed;
 	left: 93%;
 	top: 15%;
 	width: 2%;
 	min-width: 20px !important;
 }
 
-@mixin white-gradient {
-	background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 100%);
-}
+// @mixin white-gradient {
+// 	background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 100%);
+// }
 
-$animationSpeed: 40s;
+// $animationSpeed: 40s;
 
-// Animation
-@keyframes scroll {
-	0% { transform: translateY(0px); }
-	100% { transform: translateY(calc(-800px*0.7))}
-}
+// // Animation
+// @keyframes scroll {
+// 	0% { transform: translateY(0px); }
+// 	100% { transform: translateY(calc(-800px*0.7))}
+// }
 
 
-// Styling
-.slider {
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 930px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	width: 100%;
+// // Styling
+// .slider {
+// 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+// 	height: 930px;
+// 	margin: auto;
+// 	overflow:hidden;
+// 	position: relative;
+// 	width: 100%;
 	
-	&::before,
-	&::after {
-		@include white-gradient;
-		content: "";
-		height: 100px;
-		position: absolute;
-		width: 200px;
-		z-index: 2;
-	}
+// 	&::before,
+// 	&::after {
+// 		@include white-gradient;
+// 		content: "";
+// 		height: 100px;
+// 		position: absolute;
+// 		width: 200px;
+// 		z-index: 2;
+// 	}
 	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
+// 	&::after {
+// 		right: 0;
+// 		top: 0;
+// 		transform: rotateZ(180deg);
+// 	}
 
-	&::before {
-		left: 0;
-		top: 0;
-	}
+// 	&::before {
+// 		left: 0;
+// 		top: 0;
+// 	}
 	
-	.slide-track {
-		animation: scroll $animationSpeed  linear infinite;
-		width: calc(250px * 14);
-	}
+// 	.slide-track {
+// 		animation: scroll $animationSpeed  linear infinite;
+// 		width: calc(250px * 14);
+// 	}
 	
-	.slide {
-		height: auto;
-		width: 500px;
-	}
-}
+// 	.slide {
+// 		height: auto;
+// 		width: 500px;
+// 	}
+// }
 
 .hide{
 	display: none;

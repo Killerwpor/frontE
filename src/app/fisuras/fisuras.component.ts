@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, OnInit, Output } from '@angular/core';
 import * as $ from "jquery";
 
 
@@ -24,12 +24,19 @@ export class FisurasComponent implements OnInit {
   fisuras3: Fisura[];
 
   @Output() navegador = new EventEmitter<string>();
-  relatos: Boolean=false;
+  relatos: Boolean=true;
   numeroFisura: string;
 
   constructor(public microRelatoServicio: MicrorelatosService, private deviceService: DeviceDetectorService) { }
 
   ngOnInit(): void {
+
+    $(document).ready(function(){ 
+      $(window).scroll(function(){
+        $('.right').css('transform', 'translate3d(0,' + $(this).scrollTop()*2 + 'px, 0)'); 
+     }).scroll();
+ });  
+
     let isMobile = this.deviceService.isMobile();
     if(isMobile){
       this.movil=true;
@@ -92,4 +99,18 @@ hide(){
   $(".hide").hide();
   $(".imagen").show();
 }
+
+
+@HostListener("window:scroll", ["$event"])
+onWindowScroll() {
+  $(document).ready(function(){ 
+    $(window).scroll(function(){
+      $('.right').css('transform', 'translate3d(0,' + $(this).scrollTop()*0.19 + 'px, 0)'); 
+      $('.left').css('transform', 'translate3d(0,'+$(this).scrollTop()*0.01 +'px, 0)'); 
+   }).scroll();
+});  
+
+}
+
+
 }
