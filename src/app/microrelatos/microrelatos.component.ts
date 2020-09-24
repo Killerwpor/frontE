@@ -23,6 +23,7 @@ export class MicrorelatosComponent implements OnInit {
 
   constructor(public microRelatoServicio: MicrorelatosService, private deviceService: DeviceDetectorService ) { }
 
+  audio = new Audio();
   permitirTexto: Boolean=false;
   test={
     "test": "test"
@@ -44,7 +45,7 @@ export class MicrorelatosComponent implements OnInit {
     "respuesta9": "",
   }
 
-  microRelatos: Boolean=true;
+  microRelatos: Boolean=false;
   topPosition: Number=170; //170
   abrirPopUp: Boolean=true;
   movil: Boolean=false;
@@ -88,6 +89,9 @@ export class MicrorelatosComponent implements OnInit {
         case 0:
           if($("#pregunta0").val()==""){
             alert("Debe responder la pregunta para continuar");
+          }
+          else if($("#pregunta0").val().toString().indexOf(' ')>=0){
+            alert("Solo debe ingresar una palabra");
           }
           else{
             this.respuestas.respuesta0=String($("#pregunta0").val());
@@ -139,6 +143,9 @@ export class MicrorelatosComponent implements OnInit {
                     if($("#pregunta5").val()==""){
                       alert("Debe responder la pregunta para continuar");
                     }
+                    else if($("#pregunta5").val().toString().indexOf(' ')>=0){
+                      alert("Solo debe ingresar una palabra");
+                    }
                     else{
                       this.respuestas.respuesta5=String($("#pregunta5").val());
                       this.contadorRespuestas++;
@@ -158,6 +165,9 @@ export class MicrorelatosComponent implements OnInit {
                       case 7:
                         if($("#pregunta7").val()==""){
                           alert("Debe responder la pregunta para continuar");
+                        }
+                        else if($("#pregunta7").val().toString().indexOf(' ')>=0){
+                          alert("Solo debe ingresar una palabra");
                         }
                         else{
                           this.respuestas.respuesta7=String($("#pregunta7").val());
@@ -200,6 +210,7 @@ export class MicrorelatosComponent implements OnInit {
   }
 
   siguienteFragmento(siguiente){
+    this.stopAudio();
     //let isMobile = this.deviceService.isMobile();
     
     console.log(this.contadorRespuestas);
@@ -275,7 +286,7 @@ export class MicrorelatosComponent implements OnInit {
   }
 
   clickMenu(lado){
-
+this.stopAudio();
     switch(lado){
         case 0:  
         this.navegador.emit("home");
@@ -296,8 +307,16 @@ export class MicrorelatosComponent implements OnInit {
     
   }
 
+  stopAudio(){
+    this.audio.pause();
+  }
+
     playAudio(url) {
-    new Audio(url).play();
+      this.audio.pause();
+    this.audio.src=url;
+    this.audio.play();
+    
+   
   }
 
 }

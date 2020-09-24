@@ -24,7 +24,7 @@ export class HomeComponent implements AfterViewInit {
    this.movil= this.deviceService.isMobile();
   }
 
-  home: String="home1";
+  home: String="home3";
   topPosition: Number=0;
   permitirScroll=false;
   permitirMapa=false;

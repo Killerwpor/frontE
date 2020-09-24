@@ -17,7 +17,7 @@ import { Fragmento } from './fragmento';
         nombre: 'INÉS',
         apellido: 'POSADA',
         fuenteBibliografia:'"El duro silencio de las cosas". En: Lo lento, lo pequeño, lo cercano. Editorial Atarraya, Medellín, 2018.',
-        textoOriginal: '"Una señal dirige nuestros pasos y se enreda en las sílabas de un nombre que deja sobre el vacío del cuerpo impresiones y ausencias."',
+        textoOriginal: 'Una señal dirige nuestros pasos y se enreda en las sílabas de un nombre que deja sobre el vacío del cuerpo impresiones y ausencias.',
         textoFragmento: 'Cuando desperté, no sentía nada diferente. Era la misma sala, las mismas camillas, los mismos desconocidos con que había sido anestesiada. Oí la señal y sabía lo que debía hacer. Me lo dijeron dos días antes de la cirugía. Sentí una mano en mi hombro. Era Mariana. Sonrió. Avanzamos hacia la salida como en una legión de sonámbulos. Fuera, un muro de llamaradas para el que se supone que ya éramos inmunes. Vi seis personas consumirse hasta las cenizas antes de que alguien gritara victorioso más allá del fuego. Mariana y yo nos tomamos de la mano y saltamos. Su mano se aferró a la mía incluso después de muerta. Arrastré su cadáver carbonizado por entre las llamas con la esperanza de que, más allá del fuego, hubiera alguna posibilidad de vida. '
 
     },
@@ -50,7 +50,7 @@ import { Fragmento } from './fragmento';
     },
     {
         urlImagen: "assets/autores/ILUSTRACIONES PARA APP/NINA_COMP_ILUSTRACION.png",
-        nombre: '"YENNY',
+        nombre: 'YENNY',
         apellido: 'LEÓN',
         fuenteBibliografia: 'De Entre árboles y piedras. Planeta, 2013."',
         textoOriginal: 'la niña se hunde\nen el cuarto silencio más largo de la tierra',
@@ -77,7 +77,7 @@ import { Fragmento } from './fragmento';
     },
     {
         urlImagen: "assets/autores/ILUSTRACIONES PARA APP/RIO_COMP_ILUSTRACION.png",
-        nombre: '"TOMÁS',
+        nombre: 'TOMÁS',
         apellido: 'CARRASQUILLA',
         fuenteBibliografia: 'Fragmento de ""Medellín"" citado por Reinaldo Spitaletta. En ""El Medellín que vio Tomás Carrasquilla"". Url: https://spitaletta.wordpress.com/tag/tomas-carrasquilla/ "',
         textoOriginal: 'No tiene leyendas como el Rhin, ni sacros misterios como el Ganges; genios y ondinas desdeñaron sus aguas; ningún poeta le ha dedicado una estrofa.',
@@ -85,11 +85,11 @@ import { Fragmento } from './fragmento';
     },
     {
         urlImagen: "assets/autores/ILUSTRACIONES PARA APP/CULTO_ILUSTRACION.png",
-        nombre: '"Sofía',
-        apellido: 'Ospina de Navarro',
+        nombre: 'SOFÍA',
+        apellido: 'OSPINA de NAVARRO',
         fuenteBibliografia: '"La buena mesa"',
         textoOriginal: 'Se matan los pichones, ahogándolos o cortándoles la cabeza; se limpian bien y se frotan por dentro y por fuera con una mezcla de aceite, jugo de naranja agria, sal y pimienta.',
-        textoFragmento: 'Hoy te toca, Clara”, dijo madre temprano. En la primera luna nueva de mis dieciséis años, abandonaría la casa y volvería como una persona diferente. Ya no sé cuántas amigas he perdido en luna nueva. Vuelven otras, aunque traten de ser las mismas. Avanzo hacia el área de cultivos. Han armado un círculo y me han dicho: “Quédate en el centro”. Madre tiene un pichón en sus manos y lo decapita con una cuchilla fulgurante. Dice: “Abre la boca, niña. Cierra los ojos”.  Y trago la sangre todavía tibia del pichón. Oigo entonces una voz que no es de este mundo: “en la pared agrietada del solar de la abuela, se ven las ramas de un guayabo que germina en el cemento”. No estoy triste. Abrazo a esa otra yo que me desplaza e imagino mientras tanto que viajo a la luna a encontrarme con las amigas que ya no están.'
+        textoFragmento: '"Hoy te toca, Clara", dijo madre temprano. En la primera luna nueva de mis dieciséis años, abandonaría la casa y volvería como una persona diferente. Ya no sé cuántas amigas he perdido en luna nueva. Vuelven otras, aunque traten de ser las mismas. Avanzo hacia el área de cultivos. Han armado un círculo y me han dicho: “Quédate en el centro”. Madre tiene un pichón en sus manos y lo decapita con una cuchilla fulgurante. Dice: “Abre la boca, niña. Cierra los ojos”.  Y trago la sangre todavía tibia del pichón. Oigo entonces una voz que no es de este mundo: “en la pared agrietada del solar de la abuela, se ven las ramas de un guayabo que germina en el cemento”. No estoy triste. Abrazo a esa otra yo que me desplaza e imagino mientras tanto que viajo a la luna a encontrarme con las amigas que ya no están.'
     }
 
 ]
