@@ -14,6 +14,7 @@ import { Fragmento } from '../modelos/fragmento';
 })
 export class AutoresComponent implements OnInit {
 
+  orientacion: String;
   topPosition: Number=170; //170
     abrirPopUp: Boolean=true;
     movil: Boolean=false;
@@ -29,6 +30,18 @@ export class AutoresComponent implements OnInit {
   constructor(private deviceService: DeviceDetectorService) { }
 
   ngOnInit(): void {
+
+
+    if (window.outerWidth > window.outerHeight) {
+      this.orientacion="landscape";
+      
+  
+  }
+  else{
+   
+    this.orientacion="portrait";
+  }
+
     let isMobile = this.deviceService.isMobile();
     if(isMobile){
       this.movil=true;
@@ -140,7 +153,18 @@ alert(lado);
     
   }
   
-
+  @HostListener('window:orientationchange', ['$event'])
+  onOrientationChange(event) {
+    if (window.outerWidth > window.outerHeight) {
+      this.orientacion="portrait";
+  
+  }
+  else{
+   
+    this.orientacion="landscape";
+  }
+  //alert(this.orientacion);
+  }
 
   @HostListener("window:scroll", ["$event"])
 onWindowScroll() {

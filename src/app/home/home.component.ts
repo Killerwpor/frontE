@@ -37,7 +37,7 @@ else{
   }
 
   orientacion: String;
-  home: String="home3";
+  home: String="home1";
   topPosition: Number=0;
   permitirScroll=false;
   permitirMapa=false;

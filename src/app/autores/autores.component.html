@@ -95,7 +95,7 @@
 
           <div *ngIf="movil">
 
-
+<ng-container *ngIf="orientacion=='portrait'">
             <header class="">
               <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
                 <div class="row container-fluid">
@@ -159,7 +159,58 @@
 
         
 
+          </ng-container>
 
+
+          <ng-container *ngIf="orientacion=='landscape'">
+            <header class="">
+              <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
+                <div class="row container-fluid">
+                  <div class="col-6">
+                    <img class="img-fluid logo1AtrasLand" (click)="clickMenu(1)" src="assets/autores/ciudad espejo press autores.png"/>
+                  </div>
+                  <div class="col-6">
+                    <img class="img-fluid logo2HomeLand" src="assets/autores/WEB/LOGO-SNL.png"/>
+                  </div>    
+                </div>  
+              </nav>  
+            </header> 
+
+            <div class="dropdownLand">
+              <img class="botonMasMenosLand" (click)="abrirTexto()" src="assets/autores/MENOS-TEXTO.jpg " *ngIf="permitirTexto">
+              <img class="botonMasMenosLand" (click)="abrirTexto()" src="assets/autores/MAS-TEXTO.jpg " *ngIf="!permitirTexto">
+              <div class="textoDesplegableLand text-left" *ngIf="permitirTexto">
+                Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!
+                </div>
+            </div> 
+
+
+            <!-- <img class="degradado fixed-bottom" src="assets/autores/RESPONSIVE VERTICAL/DEGRADADO-AZUL.png"/> -->
+
+
+            <div class="row">
+              <div class="col-12">  
+              </div>
+              <div class="col-12">
+                <svg class="mapaMovilLand" viewBox="0 0 200 200">
+                  <image class="" xlink:href="assets/autores/WEB/MAPAWEB.png" width="50%"/> 
+                  <!-- <a xlink:href="#experimentacion" (click)="permitirRelatos(1)"><rect x="900" y="0" width="500" height="300" fill="rgba(0,0,0,0)" opacity="0"/></a>  
+                  <a xlink:href="#ecos" (click)="permitirRelatos(6)"><rect x="1300" y="300" width="600" height="240" fill="rgba(0,0,0,0)" opacity="0" /></a>  
+                  <a xlink:href="#gardel" (click)="permitirRelatos(7)"><rect x="1000" y="700" width="350" height="280" fill="rgba(0,0,0,0)" opacity="0"/></a> 
+                  <a xlink:href="#luna" (click)="permitirRelatos(3)"><rect x="730" y="700" width="280" height="420" fill="rgba(0,0,0,0)" opacity="0"/></a>    
+                  <a xlink:href="#culto" (click)="permitirRelatos(9)"><rect x="1150" y="1150" width="390" height="270" fill="rgba(0,0,0,0)" opacity="0"/></a>   
+                  <a xlink:href="#rio" (click)="permitirRelatos(8)"><rect x="880" y="2100" width="430" height="430" fill="rgba(0,0,0,0)" opacity="0"/></a> 
+                  <a xlink:href="#patio" (click)="permitirRelatos(4)"><rect x="0" y="1800" width="600" height="300" fill="rgba(0,0,0,0)" opacity="0"/></a>
+                  <a xlink:href="#mico" (click)="permitirRelatos(2)"><rect x="750" y="1100" width="450" height="300" fill="rgba(0,0,0,0)" opacity="0"/></a> 
+                  <a xlink:href="#mico" (click)="permitirRelatos(2)"><rect x="900" y="1500" width="450" height="400" fill="rgba(0,0,0,0)" opacity="0"/></a> 
+                  <a xlink:href="#niña" (click)="permitirRelatos(5)"><rect x="600" y="1400" width="250" height="250" fill="rgba(0,0,0,0)" opacity="0"/></a>       -->
+              </svg> 
+              </div>
+            
+            </div>
+
+
+          </ng-container>
           </div>
         </div>
 
