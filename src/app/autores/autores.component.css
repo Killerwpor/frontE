@@ -628,3 +628,79 @@ position: relative;
 
 
 }
+
+.footerWebLand{
+    background-color: #09313D;
+    position: fixed;
+    left: 0em;
+    top: 5%;
+
+}
+
+.brujulaHomeWebLand{
+   position: relative;
+   top: 0px;
+    width: 10%;
+}
+
+.anteriorWebLand{
+    position: relative;
+    top: 230px;
+    right: 50%;
+    width: 30%;
+}
+
+.siguienteWebLand{
+    position: relative;
+    left: 50%;
+    top: 230px;
+    width: 35%;
+}
+
+.medellin{
+    position: relative;
+    top: 310px;
+    width: 10%;
+}
+
+.contenedorBulletWeb{
+position: relative;
+top: 300px;
+}
+
+.logo1Land{
+    position: relative;
+    top: -20px;
+    width: 50%;
+}
+
+.logoCiudadEspejoLand{
+    position: relative;
+    top: -10px;
+    width: 50%;
+}
+
+.contenedorLand{
+    position: relative;
+    top: 150px;
+}
+
+.textoFragmento{
+    font-size: 1.5vw;
+}
+.imagenFragmentoLand{
+    position: fixed;
+    top: 80px;
+    width: 40%;
+    max-width: 600px;
+    max-height: 300px;
+    z-index: -999;
+}
+
+.barraSeparadoraLand{
+ 
+        width: auto;
+        height: 100%;
+        padding-right: 80%;
+
+}

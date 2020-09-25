@@ -18,7 +18,7 @@ export class AutoresComponent implements OnInit {
   topPosition: Number=170; //170
     abrirPopUp: Boolean=true;
     movil: Boolean=false;
-    relatos: Boolean=false;
+    relatos: Boolean=true;
     permitirTexto: Boolean=false;
     contadorFragmento: number=0;
     fragmentoActual: Fragmento=fragmentos[0];
