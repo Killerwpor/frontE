@@ -749,3 +749,148 @@ padding-left: 20%;
 
 
 }
+
+.logo1AtrasLand{
+    position: relative;
+    bottom: 20px;
+    width: 60%;
+    margin-left: 9%;
+    z-index: 999 !important;
+}
+
+.medellinMovilLand{
+    position: relative;
+    bottom: 20px;
+    left: 160px;
+    width: 60%;
+}
+
+.logosDivididosLand{
+    position: relative;
+    left: 80px;
+    bottom: 8px;
+    width: 70%;
+     }
+
+
+     .footerWebLand{
+        background-color: #09313D;
+        position: fixed;
+        left: 0em;
+        top: 5%;
+    
+    }
+    
+    .brujulaHomeWebLand{
+       position: relative;
+       top: 0px;
+        width: 10%;
+    }
+    
+    .anteriorWebLand{
+        position: relative;
+        top: 230px;
+        right: 50%;
+        width: 30%;
+    }
+    
+    .siguienteWebLand{
+        position: relative;
+        left: 50%;
+        top: 230px;
+        width: 35%;
+    }
+    
+    .medellinLand{
+        position: relative;
+        top: 290px;
+        width: 10%;
+    }
+
+    .anteriorMovilLand{
+        position: relative;
+        top: 15px;
+        width: 100% !important;
+    }
+    .anteriorMovil2Land{
+        position: relative;
+        top: 15px;
+        width: 100% !important;
+    }
+    .porcentajeLand{
+        width: 100%;
+    }
+
+    .brujulaVolverLand{
+        position: relative;
+        bottom: 35px;
+        left: 40px;
+        width: 50%;
+    }
+
+    .contenedorRelatosLand{
+        position: relative;
+        top: 2em;
+        margin-top: 0%;
+        padding: 0px,0px,0px,0px !important;
+    }   
+    
+    .imagenMicroRelatoLand{
+        position: fixed;
+        top: 18%;
+        width: 50%;
+       }
+
+       .imagenMicroRelatoLand2{
+        position: fixed;
+        top: 18%;
+        right: 45%;
+        width: 25%;
+       }
+
+       .textoPrincipalLand{
+       
+
+    }
+
+     .textoFragmentoLand{
+         z-index: -999;
+         position: relative;
+         left: 380px;
+        margin-top: 80px;
+        color:  #F8EBE3;
+        font-family: "krete";
+        font-size: 2vw;
+    }
+
+    .textoOriginal2Land{
+        position: relative;
+        left: 370px;
+        font-family: "krete";
+        color: rgb(205,208,130);
+        font-size: 2vw;
+    
+     
+    }
+
+    .textoFragmento3Land{
+        position: absolute;
+        left: 380px;
+        color: rgb(205,208,130);
+        font-size: 15px !important;
+    }
+
+    .inputLand{
+        position: absolute;
+        left: 360px;
+        width: 50%;
+    }
+
+    .custom-control{
+        margin-left: 60%;
+    }
+
+    .microRelatoGeneradoLand{
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }

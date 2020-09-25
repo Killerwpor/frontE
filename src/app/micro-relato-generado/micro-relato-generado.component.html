@@ -59,6 +59,7 @@
 
 
 <ng-container *ngIf="movil">
+    <ng-container *ngIf="orientacion=='portrait'">
     <div class="container-fluid" *ngIf="!compartir">
         <div class="row">
             <!-- <div class="col-12">
@@ -84,7 +85,11 @@
            
     </div>
     </div>
+</ng-container>
 
+<ng-container *ngIf="orientacion=='landscape'">
+
+</ng-container>
 
 </ng-container>
 

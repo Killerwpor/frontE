@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import {
   MicrorelatosService
 } from '../microrelatos/microrelatos.service';
@@ -17,6 +17,7 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 })
 export class MicroRelatoGeneradoComponent implements OnInit {
 
+orientacion: String;
 @Input() primerParrafo: String;
  @Input() textoGenerado: String;
  @Input() porcentajeSolarPunk: String;
@@ -35,7 +36,33 @@ export class MicroRelatoGeneradoComponent implements OnInit {
 
   constructor(public microRelatoServicio: MicrorelatosService, private deviceService: DeviceDetectorService) { }
 
+
+  @HostListener('window:orientationchange', ['$event'])
+  onOrientationChange(event) {
+    if (window.outerWidth > window.outerHeight) {
+      this.orientacion="portrait";
+  
+  }
+  else{
+   
+    this.orientacion="landscape";
+  }
+  //alert(this.orientacion);
+  }
+
   ngOnInit(): void {
+
+    if (window.outerWidth > window.outerHeight) {
+      this.orientacion="landscape";
+      
+  
+  }
+  else{
+   
+    this.orientacion="portrait";
+  }
+
+
     this.porcentajeSolarPunk="";
     this.movil= this.deviceService.isMobile();
   }
