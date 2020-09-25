@@ -581,10 +581,12 @@ font-family: "sweet-sans-pro";
 .dropdownLand{
     position: relative;
     top: 100px;
+    z-index: 999;
 }
 
 .botonMasMenosLand{
     width: 5%;
+    z-index: 999;
 }
 
 .textoDesplegableLand{
@@ -597,17 +599,32 @@ font-family: "sweet-sans-pro";
 font-family: "sweet-sans-pro";
 }
 
-.degradado{
+/* .degradado{
     position: fixed;
     top: 90%;
     width: 100%;
     height: 10%;
     left: 0px;
     z-index: -999;
-}
+} */
 
 .mapaMovilLand{
-    position: relative;
-    left: 180px;
+position: relative;
+
    
+}
+
+.rosaMovilLand{
+    position: relative;
+    bottom: 40px;
+    left: 75%;
+   }
+
+   .menuLand{
+    position: fixed;
+    top: 10%;
+    left: 95%;
+    z-index: 999;
+
+
 }
