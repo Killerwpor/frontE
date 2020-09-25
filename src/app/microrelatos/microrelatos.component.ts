@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, HostListener } from '@angular/core';
 
 import { MicroRelato } from '../modelos/microRelato';
 import { microRelatos } from '../modelos/microRelatos'
@@ -23,6 +23,8 @@ export class MicrorelatosComponent implements OnInit {
 
 
   constructor(public microRelatoServicio: MicrorelatosService, private deviceService: DeviceDetectorService ) { }
+
+  orientacion: String;
   numeroFisura: String;
   relatoGuardado: Boolean=false;
   audio = new Audio();
@@ -61,6 +63,16 @@ export class MicrorelatosComponent implements OnInit {
   @Output() navegador = new EventEmitter<string>();
 
   ngOnInit(): void {
+    if (window.outerWidth > window.outerHeight) {
+      this.orientacion="landscape";
+      
+  
+  }
+  else{
+   
+    this.orientacion="portrait";
+  }
+
    this.movil= this.deviceService.isMobile();
   }
 
@@ -448,6 +460,18 @@ this.stopAudio();
       }
      }
        
+     @HostListener('window:orientationchange', ['$event'])
+     onOrientationChange(event) {
+       if (window.outerWidth > window.outerHeight) {
+         this.orientacion="portrait";
+     
+     }
+     else{
+      
+       this.orientacion="landscape";
+     }
+     //alert(this.orientacion);
+     }
       
 
 }
