@@ -7,6 +7,12 @@ cursor: pointer;
     left: 6%;
     }
 
+    .iconosCompartir{
+        position: relative;
+        bottom: 180px;
+        left: 350px;
+    z-index: 999;
+    }
 
 
 .contenedorRelatos{
@@ -487,6 +493,7 @@ input[type="text"]
         margin-top: 0% !important;
         width: 20%;
     }
+
 
     .siguienteWeb{
         position: relative;

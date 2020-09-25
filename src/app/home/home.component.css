@@ -61,6 +61,7 @@ width: 50%;
     position: relative !important;
     width: 180px;
     left: 0% !important;
+    z-index: 999;
 
     }
 
@@ -325,6 +326,7 @@ area:hover{
             right: 0px !important;  
             top: -3em !important;
             width: 100px !important;
+            z-index: 999;
    
            }
 
@@ -432,3 +434,113 @@ area:hover{
             
 }
 
+/*Landscape*/
+
+.logo1HomeWebLand{
+    position: relative;
+    bottom: 10px;
+    width: 60%;
+    }
+
+.logo3HomeWebLand{
+    position: relative;
+    right: 200px;
+    bottom: 15px;
+    width: 30%;
+    }
+
+    .logo3HomeWebLand2{
+        position: relative;
+        right: 200px;
+        bottom: 5px;
+        width: 20%;
+        }
+
+
+        .logo1HomeWebLand2{
+            position: relative;
+            bottom: 5px;
+            width: 30%;
+            }
+            
+    .logo2HomeWebLand{
+        position: relative;
+        bottom: 15px;
+        width: 80%;
+        }
+
+        .logo2HomeWebLand:hover{
+           cursor: pointer;
+            }
+
+     .ciudadEspejoMovilLand{     
+   
+                position: fixed;
+                top: 10%;
+                left: -12%;
+                max-width: 700px;
+                    
+        }
+
+        .textoLand{
+            position: relative;
+            top: 220%;
+            margin-left: 20%;
+            margin-right: 20%;
+            color: #F8EBE3 !important;
+            font-size: 1.9vw;
+            
+  
+            font-family: 'sweet-sans-pro';
+        }
+
+        .flechaDerechaLand{
+            position: relative !important;
+            top: 600% !important;
+            width: 100px;
+            right: -42%;  
+        }
+
+        .ciudadEspejo2Land{
+            display: block;
+            position: fixed;
+            top: 35%;
+            left: 35%;
+            width: 200px;
+            max-width: 200px;
+            z-index: -100;
+        }
+
+        .container2Land{
+            position: relative;
+            top: -80px !important;
+            right:0%;
+        }
+
+        .navbar{
+            z-index: -999;
+        }
+
+        .ciudadEspejoLand{
+            position: relative;
+            top: 120px;
+            right: 0px;
+            width: 150px;
+        }
+
+    .mapaLand{
+        position: relative;
+        bottom: 70px;
+        margin-top: 0% !important;
+        z-index: 999;
+        max-width: 1800px;
+        max-height: 1550px;
+        }
+
+        .menuLand{
+            position: fixed;
+            top: 10%;
+            left: 95%;
+        
+        
+        }

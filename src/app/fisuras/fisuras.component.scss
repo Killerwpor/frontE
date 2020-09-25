@@ -140,8 +140,9 @@ cursor: pointer;
 	}
 
 	.menuHorizontal{
-        position: relative;
-        top: 90px;     
+        position: fixed;
+		top: 90px;     
+		z-index: 999;
       
 	  }
 	  

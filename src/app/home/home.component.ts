@@ -20,11 +20,24 @@ export class HomeComponent implements AfterViewInit {
    
   }
 
+
+
   ngOnInit(): void {
    this.movil= this.deviceService.isMobile();
+   if (window.outerWidth > window.outerHeight) {
+    this.orientacion="landscape";
+    
+
+}
+else{
+ 
+  this.orientacion="portrait";
+}
+//alert(this.orientacion);
   }
 
-  home: String="home1";
+  orientacion: String;
+  home: String="home3";
   topPosition: Number=0;
   permitirScroll=false;
   permitirMapa=false;
@@ -52,13 +65,14 @@ export class HomeComponent implements AfterViewInit {
    siguienteHome(home){
     this.topPosition=0; //se reinicia la barra scroll del home2
   this.home=home;
-  console.log(this.home);
+  //console.log(this.home);
    }
 
    
    @HostListener("window:scroll", ["$event"])
 onWindowScroll() {
   $(".ciudadEspejo2").addClass("animate__animated animate__fadeOut");
+  $(".ciudadEspejo2Land").addClass("animate__animated animate__fadeOut");
   
   
   // setTimeout(()=>{
@@ -129,6 +143,19 @@ clickMenu(lado){
           break;     
   }
   
+}
+
+@HostListener('window:orientationchange', ['$event'])
+onOrientationChange(event) {
+  if (window.outerWidth > window.outerHeight) {
+    this.orientacion="portrait";
+
+}
+else{
+ 
+  this.orientacion="landscape";
+}
+//alert(this.orientacion);
 }
 
 }

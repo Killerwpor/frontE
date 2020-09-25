@@ -514,21 +514,36 @@
                       
                     </div>
 
+                    <div class="iconosCompartir" *ngIf="contadorRespuestas==10 && compartirRedes">
+                      <div>
+                      <img class="img-fluid iconoFb" (click)="compartirFb()"  src="assets/microRelatos/ELEMENTOS TRSVLS/ICONO-FB.png"/> 
+                  </div>
+                  <div>
+                      <img class="img-fluid iconoTw"  (click)="compartirTw()" src="assets/microRelatos/ELEMENTOS TRSVLS/TWITTER-ICONO.png"/> 
+                  </div>
+                  <div>
+                      <img class="img-fluid iconoIg" src="assets/microRelatos/ELEMENTOS TRSVLS/ICONO-IG.png"/> 
+                  </div>
+                  </div>
+
                     <div class="container-fluid footer" *ngIf="contadorRespuestas==10">
+
                       <div class="row">
                           <div class="col-4">
                               <img *ngIf="movil" class="img-fluid" src="assets/microRelatos/RESPONSIVE VERTICAL/otros-relatos.png"/>
                           </div>
                         
                           <div class="col-4">
-                            <div><img class="subeTuHistoria" src="assets/microRelatos/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/SUBE-TU-HISTORIA-.png"/></div>
+                            <div><img class="subeTuHistoria" (click)="guardarMicroRelato()" src="assets/microRelatos/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/SUBE-TU-HISTORIA-.png"/></div>
                         </div>  
                         <div class="col-4">
-                          <img class="img-fluid" src="assets/microRelatos/RESPONSIVE VERTICAL/COMPARTIR.png"/>
+                          <img class="img-fluid" (click)="habilitarCompartir()" src="assets/microRelatos/RESPONSIVE VERTICAL/COMPARTIR.png"/>
                       </div>                     
                          
                      
-                      </div>               
+                      </div>     
+                      
+                     
                   </div> 
                     
                   <!--  FIN SECCIÓN -->
