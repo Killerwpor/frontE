@@ -142,7 +142,7 @@ cursor: pointer;
 	.menuHorizontal{
         position: fixed;
 		top: 90px;     
-		z-index: 999;
+		z-index: 900;
       
 	  }
 	  
@@ -153,4 +153,93 @@ cursor: pointer;
 	 
 
 
+}
+
+.dropdownLand{
+    position: fixed;
+    top: 100px;
+	z-index: 999;
+	width: 100%;
+}
+
+.dropdown{
+    position: fixed;
+    top: 200px;
+	z-index: 999;
+	width: 100%;
+}
+
+
+.botonMasMenos{
+    width:15%;
+    z-index: 999;
+}
+
+.botonMasMenosLand{
+    width: 5%;
+    z-index: 999;
+}
+
+
+.textoDesplegable{
+    position: absolute;
+    margin-right: 10%;
+    top: 60px;
+    background-color: #F8EBE3;
+    z-index: 999;
+    font-size: 5vw;
+font-family: "sweet-sans-pro";
+}
+
+.textoDesplegableLand{
+    position: absolute;
+    margin-right: 10%;
+    top: 50px;
+    background-color: #F8EBE3;
+    z-index: 999;
+    font-size: 2.3vw;
+font-family: "sweet-sans-pro";
+}
+
+.imagenLand{
+	display: block;
+	margin-top: 5%;
+	width: 60%;
+	height: auto;
+}
+
+.menuLand{
+    position: fixed;
+    top: 10%;
+    left: 95%;
+    z-index: 999;
+
+
+}
+
+.logo1AtrasLand{
+	position: relative;
+	left: 7%;
+	width: 50%;
+}
+
+.logo2HomeLand{
+	position: relative;
+	left: 50%;
+	width: 40%;
+
+}
+
+.logo2Home{
+	position: relative;
+	left: 30%;
+	width: 100%;
+}
+
+.degradadoLand{
+		position: fixed;
+		top: 90%;
+		left: 0px;
+		height: 50%;
+		z-index: 999;	
 }

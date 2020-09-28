@@ -18,13 +18,16 @@ import {
   styleUrls: ['./fisuras.component.scss']
 })
 export class FisurasComponent implements OnInit {
+
+  permitirTexto: Boolean=false;
+  orientacion: String;
   movil: Boolean=false;
   fisuras1: Fisura[];
   fisuras2: Fisura[];
   fisuras3: Fisura[];
 
   @Output() navegador = new EventEmitter<string>();
-  relatos: Boolean=true;
+  relatos: Boolean=false;
   numeroFisura: string;
 
   constructor(public microRelatoServicio: MicrorelatosService, private deviceService: DeviceDetectorService) { }
@@ -36,6 +39,17 @@ export class FisurasComponent implements OnInit {
         $('.right').css('transform', 'translate3d(0,' + $(this).scrollTop()*2 + 'px, 0)'); 
      }).scroll();
  });  
+
+ if (window.outerWidth > window.outerHeight) {
+  this.orientacion="landscape";
+  
+
+}
+else{
+
+this.orientacion="portrait";
+}
+
 
     let isMobile = this.deviceService.isMobile();
     if(isMobile){
@@ -85,6 +99,16 @@ permitirRelatos(){
   }
 }
 
+abrirTexto(){
+  if(this.permitirTexto){
+    this.permitirTexto=false;
+  }
+  else{
+    this.permitirTexto=true;
+  }
+}
+
+
 clickCard(event){
   $(".imagen").show();
   $(".hide").hide();
@@ -110,6 +134,19 @@ onWindowScroll() {
    }).scroll();
 });  
 
+}
+
+@HostListener('window:orientationchange', ['$event'])
+onOrientationChange(event) {
+  if (window.outerWidth > window.outerHeight) {
+    this.orientacion="portrait";
+
+}
+else{
+ 
+  this.orientacion="landscape";
+}
+//alert(this.orientacion);
 }
 
 

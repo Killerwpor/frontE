@@ -118,6 +118,11 @@
 
 
 <div *ngIf="movil">
+
+
+	<ng-container *ngIf="orientacion=='portrait'">
+
+
 	<img class="degradado fixed-bottom" src="assets/Fisuras/RESPONSIVE VERTICAL/DEGRADADI-VERTICAL.png"/>
 	<header class="">
 		<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
@@ -132,6 +137,14 @@
 		</nav>  
 	  </header> 
 
+	  <div class="dropdown">
+		<img class="botonMasMenos" (click)="abrirTexto()" src="assets/autores/MENOS-TEXTO.jpg " *ngIf="permitirTexto">
+		<img class="botonMasMenos" (click)="abrirTexto()" src="assets/autores/MAS-TEXTO.jpg " *ngIf="!permitirTexto">
+		<div class="textoDesplegable text-left" *ngIf="permitirTexto">
+		  Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!
+		  </div>
+	  </div> 
+	  
 	  <svg class="menuHorizontal" viewBox="0 0 2000 1550">
         <image class="" xlink:href="assets/Fisuras/RESPONSIVE VERTICAL/MENU-HORIZONTAL.jpg" width="100%"  />
         <a xlink:href="#home" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
@@ -198,6 +211,101 @@
 	</div>
 	
 
+</ng-container>
+
+
+<ng-container *ngIf="orientacion=='landscape'">
+
+
+	  <img class="degradadoLand fixed-bottom" src="assets/Fisuras/RESPONSIVE VERTICAL/DEGRADADI-VERTICAL.png"/>
+	<header class="">
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
+		  <div class="row container-fluid">
+			<div class="col-6">
+			  <img class="img-fluid logo1AtrasLand" (click)="clickMenu(1)" src="assets/autores/ciudad espejo press autores.png"/>
+			</div>
+			<div class="col-6">
+			  <img class="img-fluid logo2HomeLand" src="assets\Fisuras\RESPONSIVE VERTICAL/NOMBRE-GILTRO.png"/>
+			</div>    
+		  </div>  
+		</nav>  
+	  </header>  
+
+	
+
+		<div class="dropdownLand">
+			<img class="botonMasMenosLand" (click)="abrirTexto()" src="assets/autores/MENOS-TEXTO.jpg " *ngIf="permitirTexto">
+			<img class="botonMasMenosLand" (click)="abrirTexto()" src="assets/autores/MAS-TEXTO.jpg " *ngIf="!permitirTexto">
+			<div class="textoDesplegableLand text-left" *ngIf="permitirTexto">
+			  Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!
+			  </div>
+			  </div>
+	
+		<svg class="menuLand" viewBox="0 0 100 1800">
+			<image class="float-right" xlink:href="assets/Fisuras/REPSONSIVE HORIZONTAL/ELEMENTOS ACTUALIZADOS/MENU-FISURAS.png" width="60%"  /> 
+			<a xlink:href="#home" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="150" fill="rgba(0,0,0,0.1)" opacity="0"/></a>
+			 <a xlink:href="#autores" (click)="clickMenu(2)"><rect x="0" y="170" width="320" height="230" fill="rgba(0,0,0,0.1)" opacity="0"/></a> 
+			<a xlink:href="#microRelatos" (click)="clickMenu(3)"><rect x="0" y="400" width="320" height="250" fill="rgba(0,0,0,0.1)" opacity="0"/></a> 
+			 <a xlink:href="#fisuras" (click)="clickMenu(4)"><rect x="0" y="650" width="320" height="220" fill="rgba(0,0,0,0.1)" opacity="0"/></a>                               --> -->
+		  </svg> 
+
+	  <div class="row">
+		<div class="col-12">
+			<div class="slider">
+				<div class="slide-track">
+					<div class="left">
+					<ng-container *ngFor="let microRelato of fisuras1">
+						<div class="slide">	
+												
+							<img (click)="clickCard($event)" class="img-fluid imagenLand mx-auto" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
+							
+							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
+						</div>
+					</ng-container>	
+				</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="slider">
+				<div class="slide-track">
+					<div class="right">	
+					<ng-container *ngFor="let microRelato of fisuras2">
+						<div class="slide">
+							
+							<img (click)="clickCard($event)" class="img-fluid imagenLand mx-auto" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
+						
+							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
+						</div>
+					</ng-container>	
+					</div>			
+				</div>
+				
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="slider">
+				<div class="slide-track">
+					<div class="left">
+					<ng-container *ngFor="let microRelato of fisuras3">
+						<div class="slide">
+					
+							<img (click)="clickCard($event)" class="img-fluid imagenLand mx-auto" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
+						
+							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
+						</div>
+					</ng-container>
+				</div>	
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+
+
+	</ng-container>
 
 
 </div>
