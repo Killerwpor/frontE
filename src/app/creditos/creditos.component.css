@@ -10,8 +10,21 @@
     margin-top: 14%;
 }
 
+.margenTopLand{
+    margin-top: 0%;
+}
+
 .fila{
     margin-top: 10%;
+}
+
+
+.filaLand{
+    margin-top: 0%;
+}
+
+.logosDoble{
+    width: 65%;
 }
 
 .flecha{
