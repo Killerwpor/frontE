@@ -88,7 +88,31 @@
 </ng-container>
 
 <ng-container *ngIf="orientacion=='landscape'">
-
+    <div class="contenedor" *ngIf="!compartir">
+        <div class="row">
+            <!-- <div class="col-12">
+             <img class="img-fluid logo1" src="{{urlImagen}}"/> 
+            </div> -->
+            <div class="col-12">
+                <img class="img-fluid botonEditar" (click)="clickEditar()" src="assets/microRelatos/WEB/EDITAR-BOTON.png"/>
+            </div>
+            <div class="col-12 textoLand">
+                <ng-container *ngIf="!editar">
+                {{textoGenerado}}
+                </ng-container>
+               <ng-container *ngIf="editar">
+               <textarea [(ngModel)]="textoGenerado" rows="30" cols="75" class="textoLand">
+                {{textoGenerado}}
+                </textarea>
+            </ng-container>
+            </div>  
+            <div class="col-12">
+                <img class="img-fluid" src="assets/microRelatos/WEB/CORONDEL-CAFE.png"/>
+            </div>
+            
+           
+    </div>
+    </div>
 </ng-container>
 
 </ng-container>

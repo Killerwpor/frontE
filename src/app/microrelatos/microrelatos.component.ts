@@ -92,14 +92,20 @@ export class MicrorelatosComponent implements OnInit {
   }
 
   async guardarMicroRelato(){
- 
-
+  
+    
     var data={
       texto: this.textoGenerado,
       porcentajeDistopico: this.porcentajeDistopico,
       porcentajeSolarPunk: this.porcentajeSolarPunk
     }
+
+    console.log(data);
+
+
+
     this.microRelatoServicio.guardarMicroRelato(this.respuestas).subscribe(result => {
+      console.log(result);
       this.numeroFisura=result.numeroFisura;
       this.urlImagen=result.urlImagen;
       this.relatoGuardado=true;
@@ -365,9 +371,9 @@ this.stopAudio();
   async compartirFb(){ 
     if(this.relatoGuardado){
     
-    
-      $(".container-fluid2").removeClass("hide");
-      var node = document.getElementById('test');
+      console.log(this.numeroFisura);
+      $(".container-fluidMovil").removeClass("hide");
+      var node = document.getElementById('testMovil');
       var img = new Image();
     await domtoimage.toPng(node)
       .then(function (dataUrl) {
@@ -387,7 +393,7 @@ this.stopAudio();
      var url=this.guardarS3(file);
      console.log("https://imagenes-generadas.s3.amazonaws.com/"+timestamp);
            this.compartirFacebook("https://imagenes-generadas.s3.amazonaws.com/"+timestamp);  
-           $(".container-fluid2").addClass("hide");
+           $(".container-fluidMovil").addClass("hide");
     
      
      
@@ -430,30 +436,32 @@ this.stopAudio();
   async compartirTw(){
     if(this.relatoGuardado){
     
-    if(this.numeroFisura==undefined){
-      this.guardarMicroRelato();
-    }
-    $(".container-fluid2").removeClass("hide");
-       var node = document.getElementById('test');
-       var img = new Image();
-   await domtoimage.toPng(node)
-       .then(function (dataUrl) {
-          
-           img.src = dataUrl;
-           $(".container-fluid2").addClass("hide");
-         //  document.getElementById('imagenNueva').appendChild(img);
-       })
+      console.log(this.numeroFisura);
+      $(".container-fluidMovil").removeClass("hide");
+      var node = document.getElementById('testMovil');
+      var img = new Image();
+    await domtoimage.toPng(node)
+      .then(function (dataUrl) {
+         
+          img.src = dataUrl;
        
-       .catch(function (error) {
-         alert("error");
-           console.error('oops, something went wrong!', error);    });
-   
-       
-       var timestamp = new Date().getTime().toString(); //esto es para tener un nombre unico de archivo
-       var file = this.dataURLtoFile(img.src, timestamp);
-      var url=this.guardarS3(file);
-      console.log("https://imagenes-generadas.s3.amazonaws.com/"+timestamp);
-       this.compartirTwitter("https://imagenes-generadas.s3.amazonaws.com/"+timestamp);
+        //  document.getElementById('imagenNueva').appendChild(img);
+      })
+      
+      .catch(function (error) {
+        alert("error");
+          console.error('oops, something went wrong!', error);    });
+    
+      
+      var timestamp = new Date().getTime().toString(); //esto es para tener un nombre unico de archivo
+      var file = this.dataURLtoFile(img.src, timestamp);
+     var url=this.guardarS3(file);
+     console.log("https://imagenes-generadas.s3.amazonaws.com/"+timestamp);
+           this.compartirTwitter("https://imagenes-generadas.s3.amazonaws.com/"+timestamp);  
+           $(".container-fluidMovil").addClass("hide");
+    
+     
+     
       }
       else{
         alert("Primero debe guardar su relato.");
