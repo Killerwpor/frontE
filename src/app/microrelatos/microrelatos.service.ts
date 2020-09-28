@@ -13,13 +13,13 @@ export class MicrorelatosService {
   constructor(private http: HttpClient) { }
 
 
-  private urlGenerar: string = "http://127.0.0.1:3000/api/microRelatos/generarMicroRelato";
-  private urlGuardar: string = "http://127.0.0.1:3000/api/microRelatos/guardarMicroRelato";
-  private urlTraer: string = "http://127.0.0.1:3000/api/microRelatos/traerMicroRelatos";
+  // private urlGenerar: string = "http://127.0.0.1:3000/api/microRelatos/generarMicroRelato";
+  // private urlGuardar: string = "http://127.0.0.1:3000/api/microRelatos/guardarMicroRelato";
+  // private urlTraer: string = "http://127.0.0.1:3000/api/microRelatos/traerMicroRelatos";
 
-  // private urlGenerar: string = "http://ec2-18-220-134-88.us-east-2.compute.amazonaws.com/api/api/microRelatos/generarMicroRelato";
-  // private urlGuardar: string = "http://ec2-18-220-134-88.us-east-2.compute.amazonaws.com/api/api/microRelatos/guardarMicroRelato";
-  // private urlTraer: string = "http://ec2-18-220-134-88.us-east-2.compute.amazonaws.com/api/api/microRelatos/traerMicroRelatos";
+  private urlGenerar: string = "http://ec2-18-220-134-88.us-east-2.compute.amazonaws.com/api/api/microRelatos/generarMicroRelato";
+  private urlGuardar: string = "http://ec2-18-220-134-88.us-east-2.compute.amazonaws.com/api/api/microRelatos/guardarMicroRelato";
+  private urlTraer: string = "http://ec2-18-220-134-88.us-east-2.compute.amazonaws.com/api/api/microRelatos/traerMicroRelatos";
 
 
   private httpHeaders = new HttpHeaders({
