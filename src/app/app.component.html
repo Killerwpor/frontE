@@ -14,7 +14,7 @@
 <div *ngIf="navegador=='home'" class="container-fluid">
     <div class="row">
         <div class="col">
-            <app-home (navegador)="funcionNavegador($event)"></app-home>
+            <app-home [home]="home" (navegador)="funcionNavegador($event)"></app-home>
         </div>
     </div>
 </div>

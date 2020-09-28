@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, HostListener, EventEmitter, Output } from '@angular/core';
+import { AfterViewInit, Component, OnInit, HostListener, EventEmitter, Output, Input } from '@angular/core';
 
 import { DeviceDetectorService } from 'ngx-device-detector';
 
@@ -37,7 +37,7 @@ else{
   }
 
   orientacion: String;
-  home: String="home1";
+  @Input() home: String;
   topPosition: Number=0;
   permitirScroll=false;
   permitirMapa=false;
@@ -45,6 +45,7 @@ else{
   permitirAutores: Boolean=false;
   movil: Boolean=false;
 
+  
   @Output() navegador = new EventEmitter<string>();
  
   arrancarAnimacion(){
@@ -63,6 +64,7 @@ else{
 
 
    siguienteHome(home){
+    window.scroll(0,0);
     this.topPosition=0; //se reinicia la barra scroll del home2
   this.home=home;
   //console.log(this.home);

@@ -14,13 +14,17 @@ export class AppComponent implements AfterViewInit {
     
   }
 
+  home: String="home1";
 
-  navegador="creditos";
+  navegador="home";
 
   title = 'test';  
  
 
   funcionNavegador(lugar: string){
+    if(lugar=="home"){
+      this.home="home3";
+    }
     this.navegador=lugar;
   }
 

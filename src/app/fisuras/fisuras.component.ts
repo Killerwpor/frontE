@@ -129,7 +129,7 @@ hide(){
 onWindowScroll() {
   $(document).ready(function(){ 
     $(window).scroll(function(){
-      $('.right').css('transform', 'translate3d(0,' + $(this).scrollTop()*0.19 + 'px, 0)'); 
+      $('.right').css('transform', 'translate3d(0,' + $(this).scrollTop()*0.4 + 'px, 0)'); 
       $('.left').css('transform', 'translate3d(0,'+$(this).scrollTop()*0.01 +'px, 0)'); 
    }).scroll();
 });  

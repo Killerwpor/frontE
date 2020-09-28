@@ -439,14 +439,14 @@ area:hover{
 .logo1HomeWebLand{
     position: relative;
     bottom: 10px;
-    width: 60%;
+    width: 50%;
     }
 
 .logo3HomeWebLand{
     position: relative;
-    right: 200px;
-    bottom: 15px;
-    width: 30%;
+    left: 45%;
+
+    width: 40%;
     }
 
     .logo3HomeWebLand2{
@@ -465,6 +465,7 @@ area:hover{
             
     .logo2HomeWebLand{
         position: relative;
+        left: 65%;
         bottom: 15px;
         width: 80%;
         }
@@ -484,7 +485,7 @@ area:hover{
 
         .textoLand{
             position: relative;
-            top: 220%;
+            top: 210%;
             margin-left: 20%;
             margin-right: 20%;
             color: #F8EBE3 !important;

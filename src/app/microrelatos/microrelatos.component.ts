@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter, HostListener } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, HostListener, ElementRef } from '@angular/core';
 
 import { MicroRelato } from '../modelos/microRelato';
 import { microRelatos } from '../modelos/microRelatos'
@@ -22,7 +22,7 @@ export class MicrorelatosComponent implements OnInit {
   
 
 
-  constructor(public microRelatoServicio: MicrorelatosService, private deviceService: DeviceDetectorService ) { }
+  constructor(public microRelatoServicio: MicrorelatosService, private deviceService: DeviceDetectorService, private myElement: ElementRef ) { }
 
   orientacion: String;
   numeroFisura: String;
@@ -132,6 +132,9 @@ export class MicrorelatosComponent implements OnInit {
 
 
   next(valor){
+    const player = this.myElement.nativeElement.querySelector('video');
+  player.load();
+  window.scroll(0,0);
     if(valor){
       switch(this.contadorFragmento){
         case 0:
