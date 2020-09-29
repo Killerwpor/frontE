@@ -1,0 +1,706 @@
+.contenedorRelatos{
+    position: relative;
+    top: 200px;
+    margin-top: 0%;
+    padding: 0px,0px,0px,0px !important;
+}
+
+.contenedorPrincipal{
+    margin-top: 2%;
+}
+
+.colMapa{
+    margin-top: 1%;
+}
+
+.logoMedellin{
+    width: 50%;
+}
+
+.header{
+   padding-top: 250px;
+   padding-left: 200px;
+}
+
+.Medellin{
+    position: relative;
+    right: 40px;
+    top: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+.separador{
+    position: relative;
+    right: 100px;
+    width: 340px;
+}
+
+.texto{
+   padding-top: 20%;
+}
+
+.logo1Atras{
+    position: relative;
+    left: 7%;
+    width: 28%;
+}
+
+.logo1Atras:hover{
+    cursor: pointer;    
+}
+
+.logo1{
+    margin-left: 6%;
+    z-index: 999 !important;
+}
+
+.logo1:hover{
+   cursor: pointer;
+}
+
+.zImportant{
+    z-index: 999;
+}
+
+.zBajo{
+    z-index: -999;
+}
+
+
+.navbar{
+    margin-top: 1.5%;
+    z-index: 999 !important;
+}
+
+.columnaTextoSecundario{
+    position: relative;
+    top: 12px;
+    left: 5%;
+}
+
+.logoFiltro{
+    position: relative;
+    right: 100px;
+}
+
+.decoracion{
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+}
+
+.logoCiudadEspejo{
+    width: 26%;
+}
+
+.eligeUnFragmento{
+    position: relative;
+    right: 80px;
+    top: 22px;
+}
+
+.logo1Home{
+    width: 20%;
+}
+
+
+
+.logo2Home{
+    position: relative;
+    left: 3%;
+    bottom: 14px;
+    float: right;
+
+    width: 11.5%;
+}
+
+.logo2{
+    float: right;
+    margin-left: 200px;
+    width: 50%;
+}
+
+.aliados{
+    position: fixed;
+    top: 2%;
+    left: 65%;
+    width: 35%;
+    z-index: 999;
+}
+
+.aliados:hover{
+    cursor: pointer;
+}
+
+.btn-group{
+    position: relative;
+    top: 140px;
+    width: 60%;
+ }
+
+ .btn-group:hover{
+   cursor: pointer !important;
+  }
+
+  .separador{
+      height: 10px;
+  }
+
+  .rosa{
+      width: 60%;
+  }
+
+
+
+  .brujula{
+      position: absolute;
+      top: -250px;
+      left: 92%;
+width: 18%;
+}
+
+.brujula:hover{
+    cursor: pointer;
+}
+
+.barraSeparadora{
+    width: auto;
+    height: 400px;
+    padding-right: 40%;
+}
+
+.brujulaHomeWeb{
+    margin-top: 8%;
+    width: 30%;
+}
+
+.brujulaHomeWeb:hover{
+    cursor: pointer;
+}
+
+.anteriorWeb{
+    margin-top: 10%;
+    width: 27%;
+}
+
+.siguienteWeb{
+    margin-top: 10%;
+    width: 30%;
+}
+
+.medellin{
+    width: 6%;
+    margin-top: -30px;
+}
+
+.footerWeb{
+
+      position: fixed;
+      left: 0em;
+      top: 83%;
+
+}
+
+.imagenFragmento{
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 650px;
+    z-index: -999;
+}
+
+/* POPUP  */
+.modalbox .box {
+    background-color: rgba(9, 49, 61, 0.5);
+    margin: 0 auto;
+    min-width: 100px;
+    padding: 40px;
+    width: 100%;
+    margin-top: 100px;
+    }
+    .modalbox .content {
+    display: block;
+    font-family: Verdana;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 0 0;
+    color: #fff;
+        }
+    .modalbox .close {
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: Verdana;
+    font-size: 22px;
+    height: 25px;
+    text-decoration: none;
+        }
+
+
+.modalbox{ /*Caja Total del POPOPUP*/
+    position: fixed;
+    z-index: 9999;
+    width: 30%;
+    height: auto;
+    top: 0;
+    left: 0%;
+    color:#333333;
+    }
+
+.modalbox:target {
+    display: block;
+    outline: none;
+}
+/* FIN POPUP */
+.botonMasMenos{
+    width: 10%;
+}
+
+.contenedorMapa{
+    padding-top: 1px;
+
+}
+
+.mapa{
+    width: 94%;
+    max-width: 94%;
+    min-width: 94%;
+    height: auto;
+}
+
+.barraHorizontal{
+    width: 60%;
+}
+.menu{ 
+    position: relative;
+    left: 10%;
+    min-width: 30%;
+    max-width: 30%;
+    height: auto;
+    padding-top: 230px;
+    width: 50px;
+
+}
+
+.menu:hover{
+  cursor: pointer;
+}
+
+
+.imagenRelatos{
+    width: 50%;
+}
+
+.nombre{
+color: #92B7CB;
+font-family: "sweet-sans-pro";
+margin-right: 7px;
+}
+
+.apellido{
+    color: #92B7CB;
+    font-family: "sweet-sans-pro";
+}
+
+.fuenteBibliografia{
+    color: #92B7CB;
+    font-family: "sweet-sans-pro";
+}
+.textoOriginal{
+    font-family: "krete";
+    color: #92B7CB;
+
+ 
+}
+ .footer{
+    background-color: #09313D;
+    position: fixed;
+    left: 0px;
+    top: 87%;
+    height: 110px;
+}
+
+.anterior{
+    margin-top: 10%;
+    width: 250px;
+}
+
+.anterior2{
+    margin-top: 9%;
+    margin-left: 80px;
+    width: 250px;
+}
+
+.anterior:hover{
+    cursor:pointer;
+}
+
+.anterior2:hover{
+    cursor:pointer;
+}
+
+.bullets{
+    margin-top: 3.2%;
+    margin-left: 0%;
+}
+
+.bullet{
+    width: 20px;
+}
+
+.bulletWeb{
+    margin-right: 10px;
+    width: 15px;
+}
+
+.bullets2{
+    position: relative;
+    left: 5%;
+    margin-top: 2.8%;
+    
+}
+
+.degradado{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: -999;
+}
+
+.contenedorTextoFragmento{
+    position: relative;
+    right: 50px;
+}
+
+.bullet2{
+    width: 20px;
+}
+
+.brujulaHome{
+    position: relative;
+    left: 50px;
+    width: 100px;
+}
+
+
+
+.brujulaHome:hover{
+    cursor: pointer   
+} 
+
+.barraScroll{
+    position: fixed;
+    top: 150px;
+    width: auto;
+    height: 520px;
+    
+    right: 100px;
+}
+
+.botonScroll{
+    position: absolute;
+    top: 30%;
+    right: -4.5%;
+}
+
+.textoFragmento{
+    margin-top: 10px;
+    color:  #F8EBE3;
+    font-family: "krete";
+    font-size: 1vw;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .mapaMovil{
+        position: relative;
+        top: -70px;
+       
+    }
+
+    .textoFragmento{
+        margin-top: 10px;
+        color:  #F8EBE3;
+        font-family: "krete";
+        font-size: 5vw;
+    }
+    
+
+    .contenedorTextoFragmento{
+        position: relative;
+        right: 0px;
+        top: 100px;
+    }
+
+    .columnaTextoSecundario{
+        position: relative;
+        top: 80px;
+        left: 5%;
+    }
+
+    .imagenFragmento{
+        position: relative;
+        top: 80px;
+        width: 100%;
+        max-width: 600px;
+        max-height: 300px;
+        z-index: -999;
+    }
+
+    .medellin{
+        position: relative;
+        top: 0px !important;
+        width: 25%;
+
+    }
+
+    .brujulaHomeWeb{
+        position: relative;
+        right: 1%;
+        margin-top: 0% !important;
+        width: 20%;
+    }
+
+    .siguienteWeb{
+        position: relative;
+        left: 40%;
+        bottom: 68px;
+        margin-top: 0%;
+        width: 50% !important;
+    }
+
+    .anteriorWeb{
+        position: relative;
+        left: -52%;
+        bottom: 68px;
+        margin-top: 0%;
+        width: 50% !important;
+    }
+
+    .bulletWeb{       
+        width: 10px;
+    }
+
+    .footerWeb{
+        background-color: #012D39;
+        position: fixed;
+        left: 0em;
+        top: 85%;  
+  }
+
+    .logoCiudadEspejo{
+        width: 80%;
+    }
+    
+
+    .logo1Atras{
+        width: 100%;
+    }
+
+    .logo2Home{
+        width: 50%;
+    }
+
+    .degradado{
+        position: fixed;
+        top: 90%;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        z-index: -999;
+    }
+
+    .botonMasMenos{
+        position: relative;
+        top: 200px;
+        width: 10%;
+        z-index: 999;
+    }
+
+    .textoDesplegable{
+        position: absolute;
+        top: 232px;
+        background-color: #F8EBE3;
+        z-index: 999;
+        font-size: 4vw;
+font-family: "sweet-sans-pro";
+    }
+
+    
+    .botonMasMenos:hover{
+        cursor: pointer;
+    }
+
+    .degradado2{
+        position: fixed;
+        top: 80%;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        z-index: -999;
+    }
+
+    .menuHorizontal{
+        position: relative;
+        top: 90px;     
+      
+      }
+
+      .rosaMovil{
+       position: relative;
+       bottom: 110px;
+       left: 65%;
+      }
+
+      .rosa2Movil{
+   width: 80%;
+       }
+    
+}
+
+.logo1AtrasLand{
+    position: relative;
+    left: 7%;
+    width: 35%;
+}
+
+.logo2HomeLand{
+    position: relative;
+    left: -33%;
+    bottom: 14px;
+    float: right;
+
+    width: 20%;
+}
+
+.dropdownLand{
+    position: relative;
+    top: 100px;
+    z-index: 999;
+}
+
+.botonMasMenosLand{
+    width: 5%;
+    z-index: 999;
+}
+
+.textoDesplegableLand{
+    position: absolute;
+    margin-right: 55%;
+    top: 35px;
+    background-color: #F8EBE3;
+    z-index: 999;
+    font-size: 2vw;
+font-family: "sweet-sans-pro";
+}
+
+/* .degradado{
+    position: fixed;
+    top: 90%;
+    width: 100%;
+    height: 10%;
+    left: 0px;
+    z-index: -999;
+} */
+
+.mapaMovilLand{
+position: relative;
+
+   
+}
+
+.rosaMovilLand{
+    position: relative;
+    bottom: 40px;
+    left: 75%;
+   }
+
+   .menuLand{
+    position: fixed;
+    top: 10%;
+    left: 95%;
+    z-index: 999;
+
+
+}
+
+.footerWebLand{
+    background-color: #09313D;
+    position: fixed;
+    left: 0em;
+    top: 5%;
+
+}
+
+.brujulaHomeWebLand{
+   position: relative;
+   top: 0px;
+    width: 10%;
+}
+
+.anteriorWebLand{
+    position: relative;
+    top: 230px;
+    right: 50%;
+    width: 30%;
+}
+
+.siguienteWebLand{
+    position: relative;
+    left: 50%;
+    top: 230px;
+    width: 35%;
+}
+
+.medellinLand{
+    position: relative;
+    top: 290px;
+    width: 10%;
+}
+
+.contenedorBulletWeb{
+position: relative;
+top: 300px;
+}
+
+.logo1Land{
+    position: relative;
+    top: -20px;
+    width: 50%;
+}
+
+.logoCiudadEspejoLand{
+    position: relative;
+    top: -10px;
+    width: 50%;
+}
+
+.contenedorLand{
+    position: relative;
+    top: 150px;
+}
+
+.textoFragmentoLand{
+    font-size: 1.5vw;
+}
+.imagenFragmentoLand{
+    position: fixed;
+    top: 80px;
+    width: 40%;
+    max-width: 600px;
+    max-height: 300px;
+    z-index: -999;
+}
+
+.barraSeparadoraLand{
+ 
+        width: auto;
+        height: 100%;
+        padding-right: 80%;
+
+}

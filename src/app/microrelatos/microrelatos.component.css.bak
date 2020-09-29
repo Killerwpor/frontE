@@ -1,0 +1,961 @@
+.logoAtras:hover{
+cursor: pointer;
+}
+
+.logoAtras{
+    position: relative;
+    left: 6%;
+    }
+
+    .iconosCompartir{
+        position: relative;
+        bottom: 180px;
+        left: 350px;
+    z-index: 999;
+    }
+
+
+.contenedorRelatos{
+    position: relative;
+    top: 10em;
+    margin-top: 0%;
+    padding: 0px,0px,0px,0px !important;
+}
+
+.imagenMicroRelato{
+   max-width: 650px !important;
+   max-height: 600px !important;
+}
+
+.form-control{
+    color: #F8EBE3;
+}
+
+.textoFragmento3{
+    color: rgb(205,208,130);
+}
+
+.fixed-top{
+    margin-top: 2%;
+}
+
+.header{
+    position: relative;
+    top: 200px;
+}
+
+.logo1Atras{
+    position: relative;
+    bottom: 10px;
+    width: 27%;
+    margin-left: 9%;
+    z-index: 999 !important;
+}
+
+.logo1Atras:hover{
+   cursor: pointer;
+}
+
+
+
+.logo1{
+    width: 20%;
+}
+
+.medellin{
+    margin-bottom: 100px;
+}
+
+.logo1Home{
+    width: 25%;
+}
+
+.logo2Home{
+    position: relative;
+    bottom: 10px;
+    float: right;
+    margin-left: 1240px;
+    width: 12%;
+}
+
+.textoSecundario{
+    position: relative;
+    top: 50px;
+    right: 40px;
+}
+
+.contenedorTextoPrincipal{
+    padding-left: 200px;
+}
+
+.textoPrincipal{
+    position: relative;
+    top: 50px;
+    right: 60px;
+}
+
+.centrar{
+    margin-right: 45%;
+}
+
+.logo2{
+    width: 35%;
+    margin-left: 27.5em;
+    min-width: 250px;
+}
+
+.logo3{
+    min-width: 20%;
+   padding-left: 0%;
+}
+
+.aliados{
+    position: fixed;
+    top: 2%;
+    left: 65%;
+    width: 35%;
+    z-index: 999;
+}
+
+.aliados:hover{
+    cursor: pointer;
+}
+
+.btn-group{
+    position: relative;
+    top: 140px;
+    width: 60%;
+ }
+
+ .btn-group:hover{
+   cursor: pointer !important;
+  }
+
+  .decoracion{
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+}
+
+  .contenedorFooter{
+      position: fixed;
+      left: 0em;
+      top: 83.5%;
+  }
+
+  .brujulaVolver:hover{
+    cursor: pointer;
+  }
+
+  .brujulaVolver{
+   width: 40%;
+  }
+  .hide{
+      display: none;
+  }
+  .degradado{
+      position: absolute;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+  }
+
+  .brujula{
+      position: absolute;
+      top: -250px;
+      left: 92%;
+width: 18%;
+}
+
+.brujula:hover{
+    cursor: pointer;
+}
+
+.barraSeparadora{
+    width: auto;
+    height: 400px;
+    padding-right: 40%;
+}
+
+.brujulaHomeWeb{
+    margin-top: 2%;
+    width: 45%;
+}
+
+.anteriorWeb{
+    padding-left: 0%;
+    margin-top: 10%;
+    width: 25%;
+}
+
+.siguienteWeb{
+    margin-top: 10%;
+    width: 25%;
+}
+
+.medellinInverso{
+  margin-top: 90px;
+  margin-left: 5%;
+  width: 40%;
+ 
+}
+
+.medellinInverso2{
+    position: relative;
+    bottom: 20%;
+ 
+}
+
+.medellin{
+    width: 9%;
+    margin-top: -10px;
+}
+
+/* POPUP  */
+.modalbox .box {
+    background-color: rgba(9, 49, 61, 0.5);
+    margin: 0 auto;
+    min-width: 100px;
+    padding: 40px;
+    width: 100%;
+    margin-top: 100px;
+    }
+    .modalbox .content {
+    display: block;
+    font-family: Verdana;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 0 0;
+    color: #fff;
+        }
+    .modalbox .close {
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: Verdana;
+    font-size: 22px;
+    height: 25px;
+    text-decoration: none;
+        }
+
+
+.modalbox{ /*Caja Total del POPOPUP*/
+    position: fixed;
+    z-index: 9999;
+    width: 30%;
+    height: auto;
+    top: 0;
+    left: 0%;
+    color:#333333;
+    }
+
+.modalbox:target {
+    display: block;
+    outline: none;
+}
+/* FIN POPUP */
+.botonMasMenos{
+    width: 10%;
+}
+
+
+.mapa{
+    position: absolute;
+   top: -200px; 
+   box-sizing: margin-box;
+   max-width: 900px;
+   max-height: 900px;
+}
+
+.menu{
+    position: relative;
+    top: 16px;
+    right: 74px;
+    margin-left: 100%;
+  width: 40px;
+
+}
+
+.menu:hover{
+  cursor: pointer;
+}
+
+
+.imagenRelatos{
+    width: 50%;
+}
+
+.nombre{
+color: #92B7CB;
+display: inline-block;
+font-family: "sweet-sans-pro";
+margin-left: 1%;
+}
+
+.apellido{
+    color: #92B7CB;
+    display: inline-block;
+    font-family: "sweet-sans-pro";
+}
+
+.fuenteBibliografia{
+    color: #92B7CB;
+    font-family: "sweet-sans-pro";
+}
+.textoOriginal{
+    font-family: "krete";
+    color: #F8EBE3;
+
+ 
+}
+
+.textoOriginal2{
+    font-family: "krete";
+    color: rgb(205,208,130);
+
+ 
+}
+
+.textoTeoria{
+    font-family: "krete";
+    color: #F8EBE3;
+    font-size: 14px; 
+}
+
+.microRelatoGenerado{
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+}
+
+ .footer{
+    background-color: #09313D;
+    position: fixed;
+    left: 0px;
+    top: 87%;
+    height: 110px;
+}
+
+.anterior{
+    margin-top: 10%;
+    width: 250px;
+}
+
+.anterior2{
+    margin-top: 9%;
+    margin-left: 80px;
+    width: 250px;
+}
+
+.anterior:hover{
+    cursor:pointer;
+}
+
+.anterior2:hover{
+    cursor:pointer;
+}
+
+.bullets{
+    margin-top: 3.2%;
+    margin-left: 0%;
+}
+
+.bullet{
+    width: 20px;
+}
+
+.bulletWeb{
+    margin-right: 10px;
+    width: 15px;
+}
+
+.bullets2{
+    position: relative;
+    left: 5%;
+    margin-top: 2.8%;
+    
+}
+
+.bullet2{
+    width: 20px;
+}
+
+.brujulaHome{
+    position: relative;
+    left: 50px;
+    width: 100px;
+}
+
+
+
+.brujulaHome:hover{
+    cursor: pointer   
+} 
+
+.barraScroll{
+    position: fixed;
+    top: 150px;
+    width: auto;
+    height: 520px;
+    
+    right: 100px;
+}
+
+.botonScroll{
+    position: absolute;
+    top: 30%;
+    right: -4.5%;
+}
+
+.textoFragmento{
+    color:  #F8EBE3;
+    font-family: "sweet-sans-pro";
+    font-size: 1vw;
+}
+
+.textoFragmento2{
+        position: relative;
+        top: 150px;
+    color:  #F8EBE3;
+    font-family: "krete";
+    font-size: 0.85vw;
+}
+
+.eligeUnFragmento{
+   margin-top: 50%;
+}
+
+.textoFragmentoimg{
+    position: relative;
+    right: 30px;
+
+}
+
+.rosa2{
+    width: 100%;
+}
+
+
+input[type="text"]
+{
+    background: rgba(0, 0, 0, 0);
+    border-color: rgb(205,208,130);
+
+}
+
+.form-control:focus {
+    border-color: rgb(205,208,130);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(205,208,130)
+  }
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .logoAtras{
+        z-index: 999;
+    }
+
+    .subeTuHistoria{
+        width: 100% !important;
+    }
+
+ 
+
+    .microRelatoGenerado{
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
+
+    .brujulaVolver{
+        position: relative;
+        left: 20px;
+        width: 80%;
+       }
+
+    .porcentaje{
+        position: relative;
+        right: 10px;
+        width: 100%;
+    }
+    .porcentajePortrait{
+        position: relative;
+        right: 10px;
+        width: 100px;
+    }
+
+    .footerWeb{
+        background-color: #012D39;
+        position: fixed;
+        left: 0em;
+        top: 85%;  
+  }
+
+    .brujulaHomeWeb{
+        position: relative;
+        right: 1%;
+        margin-top: 0% !important;
+        width: 20%;
+    }
+
+
+    .siguienteWeb{
+        position: relative;
+        left: 40%;
+        bottom: 68px;
+        margin-top: 0%;
+        width: 50% !important;
+    }
+
+    .anteriorMovil{
+        position: relative;
+        top: 15px;
+        width: 200% !important;
+    }
+
+    .anteriorMovil2{
+        position: relative;
+        top: 15px;
+        right: 30px;
+        width: 200% !important;
+    }
+    .textoFragmento3{
+        font-size: 20px !important;
+    }
+
+    .textoPrincipal{
+        position: relative;
+        top: 50px;
+        right: 0px;
+    }
+
+    .contenedorRelatos{
+        position: relative;
+        top: 7em;
+        margin-top: 0%;
+        padding: 0px,0px,0px,0px !important;
+    }
+
+    .imagenMicroRelato{
+      width: 100%;
+     }
+
+    .mapaMovil{
+        position: relative;
+        top: -70px;
+       
+    }
+
+    .textoFragmento{
+        margin-top: 10px;
+        color:  #F8EBE3;
+        font-family: "krete";
+        font-size: 5vw;
+    }
+    
+
+    .contenedorTextoFragmento{
+        position: relative;
+        right: 0px;
+        top: 100px;
+    }
+
+    .columnaTextoSecundario{
+        position: relative;
+        top: 80px;
+        left: 5%;
+    }
+
+    .imagenFragmento{
+        position: relative;
+        top: 80px;
+        width: 100%;
+        max-width: 600px;
+        max-height: 300px;
+        z-index: -999;
+    }
+
+    .medellin{
+        position: relative;
+        top: 0px !important;
+        width: 25%;
+
+    }
+
+ 
+
+ 
+  
+    .bulletWeb{       
+        width: 10px;
+    }
+
+    .footerWeb{
+        background-color: #012D39;
+        position: fixed;
+        left: 0em;
+        top: 85%;  
+  }
+
+    .logoCiudadEspejo{
+        width: 80%;
+    }
+    
+
+    .logo1Atras{
+        width: 100%;
+        z-index: 999;
+    }
+
+    .logo2Home{
+        width: 50%;
+    }
+
+    .logosDivididos{
+   width: 100%;
+    }
+    
+    .medellinMovil{
+        width: 100%;
+    }
+
+    .degradado{
+        position: fixed;
+        top: 90%;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        z-index: -999;
+    }
+
+    .degradado{
+        position: fixed;
+        top: 90%;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        z-index: -999;
+    }
+
+    .botonMasMenos{
+        position: relative;
+        top: 200px;
+        left: 300px;
+        width: 10%;
+        z-index: 999;
+    }
+
+    .textoDesplegable{
+        position: absolute;
+        top: 232px;
+        background-color: #F8EBE3;
+        z-index: 999;
+        font-size: 4vw;
+font-family: "sweet-sans-pro";
+    }
+
+    
+    .botonMasMenos:hover{
+        cursor: pointer;
+    }
+
+    .degradado2{
+        position: fixed;
+        top: 80%;
+        width: 100%;
+        height: 10%;
+        left: 0px;
+        z-index: -999;
+    }
+
+    .menuHorizontal{
+        position: relative;
+        top: 90px;     
+      
+      }
+
+      .rosaMovil{
+       position: relative;
+       bottom: 110px;
+       left: 65%;
+      }
+
+      .rosa2Movil{
+   width: 80%;
+       }
+   
+
+    
+}
+
+.logo1AtrasLand{
+    position: relative;
+    left: 7%;
+    width: 35%;
+}
+
+.logo2HomeLand{
+    position: relative;
+    left: -33%;
+    bottom: 14px;
+    float: right;
+
+    width: 20%;
+}
+
+.dropdownLand{
+    position: relative;
+    top: 100px;
+    z-index: 999;
+}
+
+.botonMasMenosLand{
+    width: 5%;
+    z-index: 999;
+}
+
+.textoDesplegableLand{
+    position: absolute;
+    margin-right: 55%;
+    top: 35px;
+    background-color: #F8EBE3;
+    z-index: 999;
+    font-size: 2vw;
+font-family: "sweet-sans-pro";
+}
+
+/* .degradado{
+    position: fixed;
+    top: 90%;
+    width: 100%;
+    height: 10%;
+    left: 0px;
+    z-index: -999;
+} */
+
+.mapaMovilLand{
+padding-left: 20%;
+
+   
+}
+
+.rosaMovilLand{
+    position: relative;
+    bottom: 40px;
+    left: 75%;
+   }
+
+   .menuLand{
+    position: fixed;
+    top: 10%;
+    left: 95%;
+    z-index: 999;
+
+
+}
+
+.logo1AtrasLand{
+    position: relative;
+    bottom: 20px;
+    width: 60%;
+    margin-left: 9%;
+    z-index: 999 !important;
+}
+
+.medellinMovilLand{
+    position: relative;
+    bottom: 20px;
+    left: 160px;
+    width: 60%;
+}
+
+.logosDivididosLand{
+    position: relative;
+    left: 80px;
+    bottom: 8px;
+    width: 70%;
+     }
+
+
+     .footerWebLand{
+        background-color: #09313D;
+        position: fixed;
+        left: 0em;
+        top: 5%;
+    
+    }
+    
+    .brujulaHomeWebLand{
+       position: relative;
+       top: 0px;
+        width: 10%;
+    }
+    
+    .anteriorWebLand{
+        position: relative;
+        top: 230px;
+        right: 50%;
+        width: 30%;
+    }
+    
+    .siguienteWebLand{
+        position: relative;
+        left: 50%;
+        top: 230px;
+        width: 35%;
+    }
+    
+    .medellinLand{
+        position: relative;
+        top: 290px;
+        width: 10%;
+    }
+
+    .anteriorMovilLand{
+        position: relative;
+        top: 15px;
+        width: 100% !important;
+    }
+    .anteriorMovil2Land{
+        position: relative;
+        top: 15px;
+        width: 100% !important;
+    }
+    .porcentajeLand{
+        width: 100%;
+    }
+
+    .brujulaVolverLand{
+        position: relative;
+        bottom: 35px;
+        left: 40px;
+        width: 50%;
+    }
+
+    .contenedorRelatosLand{
+        position: relative;
+        top: 2em;
+        margin-top: 0%;
+        padding: 0px,0px,0px,0px !important;
+    }   
+    
+    .imagenMicroRelatoLand{
+        position: fixed;
+        top: 18%;
+        width: 50%;
+       }
+
+       .imagenMicroRelatoLand2{
+        position: fixed;
+        top: 22%;
+        right: 0%;
+        width: 100%;
+        height: 20%;
+       }
+
+       .textoPrincipalLand{
+       
+
+    }
+
+     .textoFragmentoLand{
+         z-index: -999;
+         position: relative;
+         left: 380px;
+        margin-top: 80px;
+        color:  #F8EBE3;
+        font-family: "krete";
+        font-size: 2vw;
+    }
+
+    .textoOriginal2Land{
+        position: relative;
+        left: 370px;
+        font-family: "krete";
+        color: rgb(205,208,130);
+        font-size: 2vw;
+    
+     
+    }
+
+    .textoFragmento3Land{
+        position: absolute;
+        left: 380px;
+        color: rgb(205,208,130);
+        font-size: 15px !important;
+    }
+
+    .inputLand{
+        position: absolute;
+        left: 360px;
+        width: 50%;
+    }
+
+    .custom-control{
+        margin-left: 60%;
+    }
+
+    .microRelatoGeneradoLand{
+        margin-top: 20%;
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
+
+    .microRelatoGeneradoLand{
+        position: relative;
+        top: 100px;
+    }
+
+    .subeTuHistoriaLand{
+        display: block;
+        width: 50% !important;
+    }
+
+    .iconosCompartir{
+        width: 100%;
+        position: fixed;
+  padding-left: 40%;
+  top: 60%;
+    z-index: 999;
+    }
+
+    .imagenCompartir{
+        position: relative;
+       left: 15px;
+    }
+    
+    .centrarImagen{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .textoFisura{
+        position: absolute;
+        left: 20%;
+        top: 50%;
+    }
+    
+    .textoTextoFisura{
+        color: #ccd084;
+        font-size: 60px;
+    }
+    
+    .numeroFisura{
+        position: absolute;
+        left: 20%;
+        top: 68%;
+    }
+    
+    .textoNumeroFisura{
+        color: #ccd084;
+        font-size: 80px;
+    }
+
+    .footerCompartir{
+        background-color: 	#cdd083;
+        margin-top: 5%;
+    }

@@ -94,10 +94,10 @@
     width: 26%;
 }
 
-.eligeUnFragmento{
+.eligeUnFragmento {
     position: relative;
-    right: 80px;
-    top: 22px;
+    right: 70%;
+    top: 20%;
 }
 
 .logo1Home{
@@ -179,19 +179,19 @@ width: 18%;
     cursor: pointer;
 }
 
-.anteriorWeb{
+.anteriorWeb {
     margin-top: 10%;
-    width: 27%;
+    width: 18%;
 }
 
-.siguienteWeb{
+.siguienteWeb {
     margin-top: 10%;
-    width: 30%;
+    width: 18%;
 }
 
-.medellin{
+.medellin {
     width: 6%;
-    margin-top: -30px;
+    margin-top: -10px;
 }
 
 .footerWeb{
@@ -202,14 +202,19 @@ width: 18%;
 
 }
 
-.imagenFragmento{
+/* .imagenFragmento{
     position: relative;
     bottom: 50px;
     width: 100%;
     max-width: 600px;
     max-height: 650px;
     z-index: -999;
-}
+} */
+
+.imagenFragmento {
+    width: 80%;
+    z-index: -999;
+} 
 
 /* POPUP  */
 .modalbox .box {
@@ -293,27 +298,30 @@ width: 18%;
     width: 50%;
 }
 
-.nombre{
-color: #92B7CB;
-font-family: "sweet-sans-pro";
-margin-right: 7px;
+.nombre {
+    color: #92B7CB;
+    font-family: "sweet-sans-pro";
+    margin-right: 7px;
+    font-size: 1vw;
 }
 
-.apellido{
+.apellido {
+    color: #92B7CB;
+    font-family: "sweet-sans-pro";
+    font-size: 1vw;
+}
+
+.fuenteBibliografia {
     color: #92B7CB;
     font-family: "sweet-sans-pro";
 }
 
-.fuenteBibliografia{
-    color: #92B7CB;
-    font-family: "sweet-sans-pro";
-}
-.textoOriginal{
+.textoOriginal {
     font-family: "krete";
     color: #92B7CB;
-
- 
+    font-size: 1vw;
 }
+
  .footer{
     background-color: #09313D;
     position: fixed;
@@ -408,8 +416,8 @@ margin-right: 7px;
 
 .textoFragmento{
     margin-top: 10px;
-    color:  #F8EBE3;
-    font-family: "krete";
+    color: #F8EBE3;
+    font-family: "sweet-sans-pro";
     font-size: 1vw;
 }
 

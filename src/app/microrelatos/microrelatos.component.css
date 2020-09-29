@@ -23,8 +23,12 @@ cursor: pointer;
 }
 
 .imagenMicroRelato{
-   max-width: 650px !important;
-   max-height: 600px !important;
+   /* max-width: 650px !important;
+   max-height: 600px !important; */
+   position: relative;
+   top: 3em;
+   margin-left: 15%;
+   width: 80%;
 }
 
 .form-control{
@@ -32,7 +36,9 @@ cursor: pointer;
 }
 
 .textoFragmento3{
+    font-family: "sweet-sans-pro";
     color: rgb(205,208,130);
+    font-size: 1vw;
 }
 
 .fixed-top{
@@ -148,7 +154,9 @@ cursor: pointer;
   }
 
   .brujulaVolver{
-   width: 40%;
+   /* width: 40%; */
+   margin-top: 8%;
+   width: 30%;
   }
   .hide{
       display: none;
@@ -185,18 +193,23 @@ width: 18%;
 .anteriorWeb{
     padding-left: 0%;
     margin-top: 10%;
-    width: 25%;
+    /* width: 25%; */
+    width: 18%;
 }
 
 .siguienteWeb{
+    /* margin-top: 10%;
+    width: 18%; */
     margin-top: 10%;
-    width: 25%;
+    width: 18%;
 }
 
 .medellinInverso{
   margin-top: 90px;
   margin-left: 5%;
   width: 40%;
+  /* width: 6%;
+  margin-top: -10px; */
  
 }
 
@@ -312,14 +325,22 @@ margin-left: 1%;
 .textoOriginal2{
     font-family: "krete";
     color: rgb(205,208,130);
+    font-size: 1vw;
+    margin-bottom:-4%;
+}
 
- 
+.textoOriginal3{
+    font-family: "sweet-sans-pro";
+    color: rgb(205,208,130);
+    font-size: 1vw;
+    margin-bottom:-4%;
 }
 
 .textoTeoria{
     font-family: "krete";
     color: #F8EBE3;
-    font-size: 14px; 
+    /* font-size: 14px;  */
+    font-size: 1vw;
 }
 
 .microRelatoGenerado{

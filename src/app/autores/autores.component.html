@@ -3,561 +3,580 @@
 <!--Main Navigation-->
 
 <div *ngIf="!relatos" class="">
-<div *ngIf="!movil">
-  <header class="">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
-      <div class="row container-fluid">
-        <div class="col-6">
-          <img class="img-fluid logo1Atras" (click)="clickMenu(1)" src="assets/autores/ciudad espejo unpress.png"/>
+  <div *ngIf="!movil">
+    <img class="degradadoIzq" src="assets/autores/WEB/DEGRADADO.png" />
+    <img class="fixed-bottom decoracionFondo" src="assets/autores/WEB/DECOR1.png" />
+    <img class="regresoCiudadEspejo" (click)="clickMenu(1)" src="assets/autores/ciudad espejo unpress.png" />
+    <img class="logoSNL" src="assets/comun/LOGO-SNL.png" />
+    <svg class="menuBar" viewBox="0 0 36 628">
+      <image class="float-right" xlink:href="assets/comun/MENU WEB 2.png" width="100%" />
+      <a xlink:href="#home" (click)="clickMenu(1)">
+        <rect x="0" y="0" width="36" height="118" fill="rgba(0,0,0,1)" opacity="0" /></a>
+      <a xlink:href="#autores" (click)="clickMenu(2)">
+        <rect x="0" y="118" width="36" height="164" fill="rgba(0,0,0,1)" opacity="0" /></a>
+      <a xlink:href="#microRelatos" (click)="clickMenu(3)">
+        <rect x="0" y="282" width="36" height="177" fill="rgba(0,0,0,1)" opacity="0" /></a>
+      <a xlink:href="#fisuras" (click)="clickMenu(4)">
+        <rect x="0" y="459" width="36" height="156" fill="rgba(0,0,0,1)" opacity="0" /></a>
+    </svg>
+
+    <div class="row zBajo">
+      <div class="col-5 headerAmbos zBajo">
+        <div class="col-12 MedellinAmbos">
+          <img class="img-fluid logoMedellinAmbos" src="assets/autores/WEB/NOMBRE FILTRO_PT.png" />
         </div>
-        <div class="col-6">
-          <img class="img-fluid logo2Home" src="assets/autores/WEB/LOGO-SNL.png"/>
-        </div>    
-      </div>  
-    </nav>  
-  </header> 
-   <img class="degradado" src="assets/autores/WEB/DEGRADADO.png"/>
-  <img class="fixed-bottom decoracion" src="assets/autores/WEB/DECOR1.png"/>
-   
+        <div class="col-12 separadorAmbos">
+          <img class="img-fluid" src="assets/autores/WEB/BARRA HORIZONTAL.png" />
+        </div>
+        <div class="col-12">
+          <div class="text-left textoFragmentoAmbos">Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció
+            espontáneamente en toda la ciudad. Hay quienes aseguran que estuvo previsto desde hace siglos y que había
+            gente esperando la llegada del fuego como quien espera a un dios terrible. Algo es seguro para los
+            habitantes de este lado del espejo: la ciudad entera ardió aquella noche. Y cuando el fuego se extinguió por
+            completo, los sobrevivientes contemplaron la destrucción y construyeron un mundo nuevo. Quedan las
+            historias. ¡Conócelas!</div>
+        </div>
+        <div class="col-12">
+          <div class="row">
 
-     
-        
-             <div class="row zBajo">
-              <div class="col-5 header zBajo">           
-                  <div class="col-12 Medellin">
-                  <img class="img-fluid logoMedellin" src="assets/autores/WEB/NOMBRE FILTRO_PT.png"/>
-                </div>
-                <div class="col-12 separador">
-                  <img class="img-fluid" src="assets/autores/WEB/BARRA HORIZONTAL.png"/>
-                </div>
-                <div class="col-12">
-                  <div class="text-left textoFragmento">Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!</div>
-                </div>   
-                <div class="col-12">
-                  <div class="row">
-                    
-                    <div class="col-4">
-                      <br>
-                      <img class="img-fluid rosa" src="assets/microRelatos/gifs/rosa2.png"/>
-                    </div>
-                    <div class="col-3">
-                      <br>
-                      <img class="img-fluid eligeUnFragmento" src="assets/autores/ELIGE UN FRAGMENTO.png"/>
-                    </div>
-                  </div>                  
-                  
-                </div>          
-              </div>             
-                <div class="col-6">          
-                                  
-                   <svg class="mapa" viewBox="-100 -50 1900 2200">
-                  <image class="img-fluid maximo" xlink:href="assets/autores/WEB/MAPAWEB.png"/>
-                  <a xlink:href="#experimentacion" (click)="permitirRelatos(1)"><rect x="700" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0"/></a>
-                  <a xlink:href="#ecos" (click)="permitirRelatos(6)"><rect x="950" y="270" width="550" height="210" fill="rgba(0,0,0,0)" opacity="0"/></a>
-                  <a xlink:href="#gardel" (click)="permitirRelatos(7)"><rect x="810" y="500" width="280" height="280" fill="rgba(0,0,0,0)" opacity="0"/></a>                                      
-                  <a xlink:href="#luna" (click)="permitirRelatos(3)"><rect x="550" y="540" width="260" height="260" fill="rgba(0,0,0,0)" opacity="0"/></a> 
-                  <a xlink:href="#culto" (click)="permitirRelatos(9)"><rect x="850" y="840" width="360" height="210" fill="rgba(0,0,0,0)" opacity="0"/></a>  
-                  <a xlink:href="#niña" (click)="permitirRelatos(5)"><rect x="430" y="820" width="160" height="240" fill="rgba(0,0,0,0)" opacity="0"/></a> 
-                   <a xlink:href="#mico" (click)="permitirRelatos(2)"><rect x="600" y="870" width="245" height="210" fill="rgba(0,0,0,0)" opacity="0"/></a> 
-                  <a xlink:href="#humo" (click)="permitirRelatos(0)"><rect x="450" y="1100" width="140" height="210" fill="rgba(0,0,0,0)" opacity="0"/></a>  
-                   <a xlink:href="#niña" (click)="permitirRelatos(5)"><rect x="600" y="1100" width="150" height="210" fill="rgba(0,0,0,0)" opacity="0"/></a>   
-                  <a xlink:href="#mico" (click)="permitirRelatos(2)"><rect x="750" y="1050" width="350" height="400" fill="rgba(0,0,0,0)" opacity="0"/></a> 
-                  <a xlink:href="#patio" (click)="permitirRelatos(4)"><rect x="0" y="1400" width="480" height="260" fill="rgba(0,0,0,0)" opacity="0"/></a>  
-                  <a xlink:href="#rio" (click)="permitirRelatos(8)"><rect x="680" y="1500" width="430" height="430" fill="rgba(0,0,0,0)" opacity="0"/></a>              
-              </svg> 
+            <div class="col-4">
+              <br>
+              <img class="img-fluid  rosaAmbos" src="assets/microRelatos/gifs/rosa2.png" />
             </div>
-                  
-                
-             
-            
-           
-                <div class="col-1">
-                  <svg class="menu" viewBox="0 0 100 1800">
-      <image class="float-right" xlink:href="assets/autores/WEB/MENU.png" width="100%"  /> 
-      <a xlink:href="#home" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
-      <a xlink:href="#autores" (click)="clickMenu(2)"><rect x="0" y="325" width="320" height="470" fill="rgba(0,0,0,0)" opacity="0.5"/></a> 
-      <a xlink:href="#microRelatos" (click)="clickMenu(3)"><rect x="0" y="690" width="320" height="400" fill="rgba(0,0,0,0)" opacity="0.5"/></a> 
-      <a xlink:href="#fisuras" (click)="clickMenu(4)"><rect x="0" y="1340" width="320" height="390" fill="rgba(0,0,0,0)" opacity="0.5"/></a>                              
-    </svg> 
-                    <!-- <image class="float-right" xlink:href="assets/autores/WEB/MENU.png" width="100%"  />  -->
-                                
-                </div>
-
-             
-            </div>
-
-
-
-
-    
-          </div>
-
-
-          <div *ngIf="movil">
-
-<ng-container *ngIf="orientacion=='portrait'">
-            <header class="">
-              <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
-                <div class="row container-fluid">
-                  <div class="col-6">
-                    <img class="img-fluid logo1Atras" (click)="clickMenu(1)" src="assets/autores/ciudad espejo press autores.png"/>
-                  </div>
-                  <div class="col-6">
-                    <img class="img-fluid logo2Home" src="assets/autores/WEB/LOGO-SNL.png"/>
-                  </div>    
-                </div>  
-              </nav>  
-            </header> 
-
-
-            <div class="dropdown">
-              <img class="botonMasMenos" (click)="abrirTexto()" src="assets/autores/MENOS-TEXTO.jpg " *ngIf="permitirTexto">
-              <img class="botonMasMenos" (click)="abrirTexto()" src="assets/autores/MAS-TEXTO.jpg " *ngIf="!permitirTexto">
-              <div class="textoDesplegable text-left" *ngIf="permitirTexto">
-                Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!
-                </div>
-            </div> 
-
-           
-             <img class="degradado fixed-bottom" src="assets/autores/RESPONSIVE VERTICAL/DEGRADADO-AZUL.png"/>
-            <!-- <img class="fixed-bottom decoracion" src="assets/autores/WEB/DECOR1.png"/> -->
-
-           <div class="row">
-             <div class="col-12">
-              <svg class="menuHorizontal" viewBox="0 0 2000 1550">
-                <image class="" xlink:href="assets/autores/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/MENU-MEDELLIN.png" width="100%"  />
-                <a xlink:href="#home" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
-                <a xlink:href="#autores" (click)="clickMenu(2)"><rect x="400" y="0" width="500" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
-                <a xlink:href="#microRelatos" (click)="clickMenu(3)"><rect x="950" y="0" width="500" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
-                <a xlink:href="#fisuras" (click)="clickMenu(4)"><rect x="1500" y="0" width="500" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
-              </svg> 
-             </div>
-             <div class="col-12">
-              <svg class="mapaMovil" viewBox="0 0 2000 2600">
-                <image class="" xlink:href="assets/autores/WEB/MAPAWEB.png" width="2000"/> 
-                <a xlink:href="#experimentacion" (click)="permitirRelatos(1)"><rect x="900" y="0" width="500" height="300" fill="rgba(0,0,0,0)" opacity="0"/></a>  
-                <a xlink:href="#ecos" (click)="permitirRelatos(6)"><rect x="1300" y="300" width="600" height="240" fill="rgba(0,0,0,0)" opacity="0" /></a>  
-                <a xlink:href="#gardel" (click)="permitirRelatos(7)"><rect x="1000" y="700" width="350" height="280" fill="rgba(0,0,0,0)" opacity="0"/></a> 
-                <a xlink:href="#luna" (click)="permitirRelatos(3)"><rect x="730" y="700" width="280" height="420" fill="rgba(0,0,0,0)" opacity="0"/></a>    
-                <a xlink:href="#culto" (click)="permitirRelatos(9)"><rect x="1150" y="1150" width="390" height="270" fill="rgba(0,0,0,0)" opacity="0"/></a>   
-                <a xlink:href="#rio" (click)="permitirRelatos(8)"><rect x="880" y="2100" width="430" height="430" fill="rgba(0,0,0,0)" opacity="0"/></a> 
-                <a xlink:href="#patio" (click)="permitirRelatos(4)"><rect x="0" y="1800" width="600" height="300" fill="rgba(0,0,0,0)" opacity="0"/></a>
-                <a xlink:href="#mico" (click)="permitirRelatos(2)"><rect x="750" y="1100" width="450" height="300" fill="rgba(0,0,0,0)" opacity="0"/></a> 
-                <a xlink:href="#mico" (click)="permitirRelatos(2)"><rect x="900" y="1500" width="450" height="400" fill="rgba(0,0,0,0)" opacity="0"/></a> 
-                <a xlink:href="#niña" (click)="permitirRelatos(5)"><rect x="600" y="1400" width="250" height="250" fill="rgba(0,0,0,0)" opacity="0"/></a>      
-            </svg> 
-             </div>
-             <div class="rosaMovil">
-             <div class="col-12">
-              <img class="img-fluid rosa2Movil" src="assets/microRelatos/gifs/rosa2.png"/>
-            </div>
-            <div class="col-12">
-              <img class="img-fluid" src="assets/autores/ELIGE UN FRAGMENTO.png"/>
+            <div class="col-3">
+              <br>
+              <img class="img-fluid align-middle eligeUnFragmentoAmbos" src="assets/autores/ELIGE UN FRAGMENTO.png" />
             </div>
           </div>
-           </div>
 
-        
+        </div>
+      </div>
+      <div class="col-5">
 
-          </ng-container>
+        <svg class="mapaAmbos" viewBox="0 -25 830 1063">
+          <image class="img-fluid maximo" xlink:href="assets/autores/WEB/MAPAWEB.png" />
+          <a xlink:href="#experimentacion" (click)="permitirRelatos(1)">
+            <polygon points="415,0 558,0 585,64 585,95 466,180 420,144 382,40" fill="rgba(0,0,0,1)" opacity="0" /></a>
+          <a xlink:href="#ecos" (click)="permitirRelatos(6)">
+            <polygon points="550,260 516,222 528,180 676,115 788,124 830,182 750,228 588,282" fill="rgba(0,0,0,1)"
+              opacity="0" /></a>
+          <a xlink:href="#gardel" (click)="permitirRelatos(7)">
+            <polygon points="468,252 530,263 586,300 586,405 476,413 439,316" fill="rgba(0,0,0,1)" opacity="0" /></a>
+          <a xlink:href="#luna" (click)="permitirRelatos(3)">
+            <polygon points="285,336 323,290 435,323 460,400 400,450 334,449" fill="rgba(0,0,0,1)" opacity="0" /></a>
+          <a xlink:href="#culto" (click)="permitirRelatos(9)">
+            <polygon points="414,465 612,438 646,438 660,522 610,578 563,570" fill="rgba(0,0,0,1)" opacity="0" /></a>
+          <a xlink:href="#niña" (click)="permitirRelatos(5)">
+            <polygon
+              points="309,425 323,485 328,560 353,591 407,585 396,654 406,717 374,715 360,675 301,586 242,576 225,505"
+              fill="rgba(0,0,0,1)" opacity="0" /></a>
+          <a xlink:href="#mico" (click)="permitirRelatos(2)">
+            <polygon
+              points="336,518 336,518 389,461 458,503 468,575 525,640 604,689 552,790 457,748 412,685 419,567 353,576"
+              fill="rgba(0,0,0,1)" opacity="0" /></a>
+          <a xlink:href="#humo" (click)="permitirRelatos(0)">
+            <polygon points="295,590 311,617 339,654 359,683 329,703 263,688 254,604" fill="rgba(0,0,0,1)"
+              opacity="0" /></a>
+          <a xlink:href="#patio" (click)="permitirRelatos(4)">
+            <polygon points="36,749 179,764 251,778 288,813 287,854 190,917 83,874 27,787" fill="rgba(0,0,0,1)"
+              opacity="0" /></a>
+          <a xlink:href="#rio" (click)="permitirRelatos(8)">
+            <polygon points="332,825 375,764 489,842 587,983 591,1025 506,1062 405,1054 364,993 371,862S"
+              fill="rgba(0,0,0,1)" opacity="0" /></a>
+        </svg>
+      </div>
+    </div>
+  </div>
 
+  <div *ngIf="movil">
 
-          <ng-container *ngIf="orientacion=='landscape'">
-            <header class="">
-              <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
-                <div class="row container-fluid">
-                  <div class="col-6">
-                    <img class="img-fluid logo1AtrasLand" (click)="clickMenu(1)" src="assets/autores/ciudad espejo press autores.png"/>
-                  </div>
-                  <div class="col-6">
-                    <img class="img-fluid logo2HomeLand" src="assets/autores/WEB/LOGO-SNL.png"/>
-                  </div>    
-                </div>  
-              </nav>  
-            </header> 
-
-            <div class="dropdownLand">
-              <img class="botonMasMenosLand" (click)="abrirTexto()" src="assets/autores/MENOS-TEXTO.jpg " *ngIf="permitirTexto">
-              <img class="botonMasMenosLand" (click)="abrirTexto()" src="assets/autores/MAS-TEXTO.jpg " *ngIf="!permitirTexto">
-              <div class="textoDesplegableLand text-left" *ngIf="permitirTexto">
-                Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!
-                </div>
-            </div> 
-
-
-            <!-- <img class="degradado fixed-bottom" src="assets/autores/RESPONSIVE VERTICAL/DEGRADADO-AZUL.png"/> -->
-
-
-            <div class="row">
-              <div class="col-12">  
-              </div>
-              <div class="col-12 mapaMovilLand">
-                <svg class="" viewBox="0 0 10 10">
-                  <image class="" xlink:href="assets/autores/WEB/MAPAWEB.png" width="80%"/>
-                  <a xlink:href="#experimentacion" (click)="permitirRelatos(1)"><rect x="4" y="0" width="1.5" height="1.5" fill="rgba(0,0,0,0)" opacity="0"/></a>  
-                  <a xlink:href="#ecos" (click)="permitirRelatos(6)"><rect x="5.5" y="1" width="2" height="1.5" fill="rgba(0,0,0,0)" opacity="0"/></a>
-                  <a xlink:href="#gardel" (click)="permitirRelatos(7)"><rect x="4.5" y="2.3" width="1" height="2" fill="rgba(0,0,0,0)" opacity="0"/></a>
-                  <a xlink:href="#luna" (click)="permitirRelatos(3)"><rect x="3" y="2.3" width="1" height="2" fill="rgba(0,0,0,0)" opacity="0"/></a>
-                  <a xlink:href="#culto" (click)="permitirRelatos(9)"><rect x="5" y="4.2" width="1.3" height="1" fill="rgba(0,0,0,0)" opacity="0"/></a>
-                  <a xlink:href="#rio" (click)="permitirRelatos(8)"><rect x="3.5" y="8.2" width="2.2" height="3" fill="rgba(0,0,0,0)" opacity="0"/></a>
-                  <a xlink:href="#patio" (click)="permitirRelatos(4)"><rect x="0.5" y="6.7" width="2.2" height="2" fill="rgba(0,0,0,0)" opacity="0"/></a>
-                  <a xlink:href="#mico" (click)="permitirRelatos(2)"><rect x="3.5" y="5.2" width="2.2" height="3" fill="rgba(0,0,0,0)" opacity="0"/></a>
-                  <a xlink:href="#niña" (click)="permitirRelatos(5)"><rect x="2.6" y="5.2" width="1" height="1" fill="rgba(0,0,0,0)" opacity="0"/></a>
-                  
-              </svg> 
-              </div>
-            
-              <div class="rosaMovilLand">
-                <div class="col-12">
-                 <img class="img-fluid rosa2Movil" src="assets/microRelatos/gifs/rosa2.png"/>
-               </div>
-               <div class="col-12">
-                 <img class="img-fluid" src="assets/autores/ELIGE UN FRAGMENTO.png"/>
-               </div>
-             </div>
+    <ng-container *ngIf="orientacion=='portrait'">
+      <header class="">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
+          <div class="row container-fluid">
+            <div class="col-6">
+              <img class="img-fluid logo1Atras" (click)="clickMenu(1)"
+                src="assets/autores/ciudad espejo press autores.png" />
             </div>
+            <div class="col-6">
+              <img class="img-fluid logo2Home" src="assets/autores/WEB/LOGO-SNL.png" />
+            </div>
+          </div>
+        </nav>
+      </header>
 
- <svg class="menuLand" viewBox="0 0 100 1800">
-    <image class="float-right" xlink:href="assets/autores/WEB/MENU.png" width="50%"  /> 
-    <a xlink:href="#home" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="150" fill="rgba(0,0,0,0.1)" opacity="0"/></a>
-     <a xlink:href="#autores" (click)="clickMenu(2)"><rect x="0" y="170" width="320" height="230" fill="rgba(0,0,0,0.1)" opacity="0"/></a> 
-    <a xlink:href="#microRelatos" (click)="clickMenu(3)"><rect x="0" y="400" width="320" height="250" fill="rgba(0,0,0,0.1)" opacity="0"/></a> 
-     <a xlink:href="#fisuras" (click)="clickMenu(4)"><rect x="0" y="650" width="320" height="220" fill="rgba(0,0,0,0.1)" opacity="0"/></a>                               --> -->
-  </svg> 
 
-          </ng-container>
+      <div class="dropdown">
+        <img class="botonMasMenos" (click)="abrirTexto()" src="assets/autores/MENOS-TEXTO.jpg " *ngIf="permitirTexto">
+        <img class="botonMasMenos" (click)="abrirTexto()" src="assets/autores/MAS-TEXTO.jpg " *ngIf="!permitirTexto">
+        <div class="textoDesplegable text-left" *ngIf="permitirTexto">
+          Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay
+          quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como
+          quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera
+          ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la
+          destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!
+        </div>
+      </div>
+
+
+      <img class="degradado fixed-bottom" src="assets/autores/RESPONSIVE VERTICAL/DEGRADADO-AZUL.png" />
+      <!-- <img class="fixed-bottom decoracion" src="assets/autores/WEB/DECOR1.png"/> -->
+
+      <div class="row">
+        <div class="col-12">
+          <svg class="menuHorizontal" viewBox="0 0 2000 1550">
+            <image class="" xlink:href="assets/autores/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/MENU-MEDELLIN.png"
+              width="100%" />
+            <a xlink:href="#home" (click)="clickMenu(1)">
+              <rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5" /></a>
+            <a xlink:href="#autores" (click)="clickMenu(2)">
+              <rect x="400" y="0" width="500" height="270" fill="rgba(0,0,0,0)" opacity="0.5" /></a>
+            <a xlink:href="#microRelatos" (click)="clickMenu(3)">
+              <rect x="950" y="0" width="500" height="270" fill="rgba(0,0,0,0)" opacity="0.5" /></a>
+            <a xlink:href="#fisuras" (click)="clickMenu(4)">
+              <rect x="1500" y="0" width="500" height="270" fill="rgba(0,0,0,0)" opacity="0.5" /></a>
+          </svg>
+        </div>
+        <div class="col-12">
+          <svg class="mapaMovil" viewBox="0 0 2000 2600">
+            <image class="" xlink:href="assets/autores/WEB/MAPAWEB.png" width="2000" />
+            <a xlink:href="#experimentacion" (click)="permitirRelatos(1)">
+              <rect x="900" y="0" width="500" height="300" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#ecos" (click)="permitirRelatos(6)">
+              <rect x="1300" y="300" width="600" height="240" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#gardel" (click)="permitirRelatos(7)">
+              <rect x="1000" y="700" width="350" height="280" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#luna" (click)="permitirRelatos(3)">
+              <rect x="730" y="700" width="280" height="420" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#culto" (click)="permitirRelatos(9)">
+              <rect x="1150" y="1150" width="390" height="270" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#rio" (click)="permitirRelatos(8)">
+              <rect x="880" y="2100" width="430" height="430" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#patio" (click)="permitirRelatos(4)">
+              <rect x="0" y="1800" width="600" height="300" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#mico" (click)="permitirRelatos(2)">
+              <rect x="750" y="1100" width="450" height="300" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#mico" (click)="permitirRelatos(2)">
+              <rect x="900" y="1500" width="450" height="400" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#niña" (click)="permitirRelatos(5)">
+              <rect x="600" y="1400" width="250" height="250" fill="rgba(0,0,0,0)" opacity="0" /></a>
+          </svg>
+        </div>
+        <div class="rosaMovil">
+          <div class="col-12">
+            <img class="img-fluid rosa2Movil" src="assets/microRelatos/gifs/rosa2.png" />
+          </div>
+          <div class="col-12">
+            <img class="img-fluid" src="assets/autores/ELIGE UN FRAGMENTO.png" />
           </div>
         </div>
+      </div>
 
 
-        <div *ngIf="relatos" class="">  
-          <div *ngIf="!movil">
-          <header>
 
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-              <div class="row container-fluid">
-                <div class="col-6">
-                  <img class="img-fluid logo1" (click)="permitirRelatos('0')" src="assets/autores/medellin unpress autores.png"/>
-                </div>
-                <div class="col-5">
-                   <img class="img-fluid logoCiudadEspejo float-right" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png"/>
-                </div>
-                <div class="col-1">
-                  <img class="img-fluid" src="assets/autores/WEB/LOGO-SNL.png"/>
-               </div>
-            
-              </div>
-          
-            </nav>
-          
-          </header>   
-          <img class="fixed-bottom decoracion" src="assets/autores/WEB/DECOR3.png"/>
-          <img class="degradado" src="assets/autores/WEB/DEGRADADO.png"/>
-           <div class="text-justify contenedorRelatos">
-          
-            
-            
-            
-            <div class="row">
-              <div class="col-5">
-                <img class="img-fluid imagenFragmento float-right"  src="{{fragmentoActual.urlImagen}}"/>
-              </div>
-             <div class="col-3 columnaTextoSecundario">
-                  <div class="col-12">
-                    <div class="font-weight-bold textoOriginal font-italic text-right">{{fragmentoActual.textoOriginal}}</div>
-                  </div>                
-                  <div class="col-12">
-                    <div class="float-right">                  
-                    <span class="nombre">{{fragmentoActual.nombre}}</span>
-                    <span class="apellido font-italic">{{fragmentoActual.apellido}}</span>
-                  </div>
-                  </div>
-                  <div class="col-12">
-                   
-                    <!-- <div class="d-flex fuenteBibliografia font-weight-bold float-right text-right">{{fragmentoActual.fuenteBibliografia}}</div> -->
-                  </div>             
-                </div>
-                <div class="col-1">                 
-                                             
-                    <img class="img-fluid barraSeparadora float-right"  src="assets/autores/WEB/BARRA VERTICAL.png"/>
-                  
-                </div> 
+    </ng-container>
 
-                <div class="col-3 contenedorTextoFragmento">                 
-                                               
-                    <div class="textoFragmento text-left">{{fragmentoActual.textoFragmento}}</div>
-                     
-                </div> 
-            
-              </div> 
-              
-              
-                  </div>
 
-                    <!-- FOOTER WEB -->
-                  <div class="container-fluid footerWeb"  *ngIf="!movil">
-                    <div class="row text-center">
-                      <div class="col-12">               
-                    <img id="bullet0"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-                    <img id="bullet1"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-                    <img id="bullet2"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-                    <img id="bullet3"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-                    <img id="bullet4"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>                 
-                    <img id="bullet5"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-                    <img id="bullet6"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-                    <img id="bullet7"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-                    <img id="bullet8"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-                    <img id="bullet9"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-                      </div>
-                      <div class="col-5">
-                        <img class="anteriorWeb float-right" (click)="siguienteFragmento('false')" src="assets/autores/WEB/ANTERIOR_FLECHA.png"/>
-                      </div>
-                      <div class="col-2 ">
-                        <img class="brujulaHomeWeb" (click)="permitirRelatos('1')" src="assets/microRelatos/gifs/rosa2.png"/>
-                      </div>
-                      <div class="col-5">
-                        <img class="siguienteWeb float-left" (click)="siguienteFragmento('true')" src="assets/autores/WEB/SIGUIENTE_FLECHA.png"/>
-                      </div>
-                      <div class="col-12">
-                        <img class="medellin" src="assets/autores/WEB/NOMBRE FILTRO_PT.png"/>
-                      </div>
-                    </div>
+    <ng-container *ngIf="orientacion=='landscape'">
+      <header class="">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
+          <div class="row container-fluid">
+            <div class="col-6">
+              <img class="img-fluid logo1AtrasLand" (click)="clickMenu(1)"
+                src="assets/autores/ciudad espejo press autores.png" />
+            </div>
+            <div class="col-6">
+              <img class="img-fluid logo2HomeLand" src="assets/autores/WEB/LOGO-SNL.png" />
+            </div>
+          </div>
+        </nav>
+      </header>
 
-                  </div>
-                      <!-- FIN FOOTER WEB -->
-          
-                  <!-- FOOTER MOVIL -->
-            <div class="container-fluid footer"  *ngIf="movil">
-              <div class="row">
-                  <div class="col-lg-3 col-sm-2">
-                      <img *ngIf="movil" class="anteriorMovil" (click)="siguienteFragmento('false')"  src="assets/autores/ANTERIOR.png"/>
-                  </div>
-                  <div class="col-lg-2 col-sm-3 bullets">
-                    <img *ngIf="bulletVacio[0]" class="bullet" src="assets/autores/BULLET-LLENO.png"/>
-                    <img *ngIf="bulletVacio[1]" class="bullet" src="assets/autores/BULLET-LLENO.png"/>
-                    <img *ngIf="bulletVacio[2]" class="bullet" src="assets/autores/BULLET-LLENO.png"/>
-                    <img *ngIf="bulletVacio[3]" class="bullet" src="assets/autores/BULLET-LLENO.png"/>
-                    <img *ngIf="bulletVacio[4]" class="bullet" src="assets/autores/BULLET-LLENO.png"/>
-                    <img *ngIf="!bulletVacio[0]" class="bullet" src="assets/autores/BULLET-VACIO.png"/>
-                    <img *ngIf="!bulletVacio[1]" class="bullet" src="assets/autores/BULLET-VACIO.png"/>
-                    <img *ngIf="!bulletVacio[2]" class="bullet" src="assets/autores/BULLET-VACIO.png"/>
-                    <img *ngIf="!bulletVacio[3]" class="bullet" src="assets/autores/BULLET-VACIO.png"/>
-                    <img *ngIf="!bulletVacio[4]" class="bullet" src="assets/autores/BULLET-VACIO.png"/>
-                  </div>    
-                  
-                  <div class="col-lg-2 col-sm-2">
-                    <img class="brujulaHome" src="assets/autores/REPSONSIVE HORIZONTAL/ICONO-HOME-COMPLETO.png"/>
-                </div>  
-                <div class="col-lg-2 col-sm-3 bullets2">
-                  <img *ngIf="bulletVacio[5]" class="bullet" src="assets/autores/BULLET-LLENO.png"/>
-                  <img *ngIf="bulletVacio[6]" class="bullet" src="assets/autores/BULLET-LLENO.png"/>
-                  <img *ngIf="bulletVacio[7]" class="bullet" src="assets/autores/BULLET-LLENO.png"/>
-                  <img *ngIf="bulletVacio[8]" class="bullet" src="assets/autores/BULLET-LLENO.png"/>
-                  <img *ngIf="bulletVacio[9]" class="bullet" src="assets/autores/BULLET-LLENO.png"/>
-                  <img *ngIf="!bulletVacio[5]" class="bullet" src="assets/autores/BULLET-VACIO.png"/>
-                  <img *ngIf="!bulletVacio[6]" class="bullet" src="assets/autores/BULLET-VACIO.png"/>
-                  <img *ngIf="!bulletVacio[7]" class="bullet" src="assets/autores/BULLET-VACIO.png"/>
-                  <img *ngIf="!bulletVacio[8]" class="bullet" src="assets/autores/BULLET-VACIO.png"/>
-                  <img *ngIf="!bulletVacio[9]" class="bullet" src="assets/autores/BULLET-VACIO.png"/>
-                </div>     
-                <div class="col-lg-3 col-sm-2">
-                  <img *ngIf="movil" class="anteriorMovil2" (click)="siguienteFragmento('true')" src="assets/autores/SIGUIENTE.png"/>
-              </div>   
-              </div>               
-          </div> 
+      <div class="dropdownLand">
+        <img class="botonMasMenosLand" (click)="abrirTexto()" src="assets/autores/MENOS-TEXTO.jpg "
+          *ngIf="permitirTexto">
+        <img class="botonMasMenosLand" (click)="abrirTexto()" src="assets/autores/MAS-TEXTO.jpg "
+          *ngIf="!permitirTexto">
+        <div class="textoDesplegableLand text-left" *ngIf="permitirTexto">
+          Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay
+          quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como
+          quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera
+          ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la
+          destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!
+        </div>
+      </div>
 
-           <!-- FIN FOOTER MOVIL -->
+
+      <!-- <img class="degradado fixed-bottom" src="assets/autores/RESPONSIVE VERTICAL/DEGRADADO-AZUL.png"/> -->
+
+
+      <div class="row">
+        <div class="col-12">
+        </div>
+        <div class="col-12 mapaMovilLand">
+          <svg class="" viewBox="0 0 10 10">
+            <image class="" xlink:href="assets/autores/WEB/MAPAWEB.png" width="80%" />
+            <a xlink:href="#experimentacion" (click)="permitirRelatos(1)">
+              <rect x="4" y="0" width="1.5" height="1.5" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#ecos" (click)="permitirRelatos(6)">
+              <rect x="5.5" y="1" width="2" height="1.5" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#gardel" (click)="permitirRelatos(7)">
+              <rect x="4.5" y="2.3" width="1" height="2" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#luna" (click)="permitirRelatos(3)">
+              <rect x="3" y="2.3" width="1" height="2" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#culto" (click)="permitirRelatos(9)">
+              <rect x="5" y="4.2" width="1.3" height="1" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#rio" (click)="permitirRelatos(8)">
+              <rect x="3.5" y="8.2" width="2.2" height="3" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#patio" (click)="permitirRelatos(4)">
+              <rect x="0.5" y="6.7" width="2.2" height="2" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#mico" (click)="permitirRelatos(2)">
+              <rect x="3.5" y="5.2" width="2.2" height="3" fill="rgba(0,0,0,0)" opacity="0" /></a>
+            <a xlink:href="#niña" (click)="permitirRelatos(5)">
+              <rect x="2.6" y="5.2" width="1" height="1" fill="rgba(0,0,0,0)" opacity="0" /></a>
+
+          </svg>
+        </div>
+
+        <div class="rosaMovilLand">
+          <div class="col-12">
+            <img class="img-fluid rosa2Movil" src="assets/microRelatos/gifs/rosa2.png" />
+          </div>
+          <div class="col-12">
+            <img class="img-fluid" src="assets/autores/ELIGE UN FRAGMENTO.png" />
+          </div>
+        </div>
+      </div>
+
+      <svg class="menuLand" viewBox="0 0 100 1800">
+        <image class="float-right" xlink:href="assets/autores/WEB/MENU.png" width="50%" />
+        <a xlink:href="#home" (click)="clickMenu(1)">
+          <rect x="0" y="0" width="320" height="150" fill="rgba(0,0,0,0.1)" opacity="0" /></a>
+        <a xlink:href="#autores" (click)="clickMenu(2)">
+          <rect x="0" y="170" width="320" height="230" fill="rgba(0,0,0,0.1)" opacity="0" /></a>
+        <a xlink:href="#microRelatos" (click)="clickMenu(3)">
+          <rect x="0" y="400" width="320" height="250" fill="rgba(0,0,0,0.1)" opacity="0" /></a>
+        <a xlink:href="#fisuras" (click)="clickMenu(4)">
+          <rect x="0" y="650" width="320" height="220" fill="rgba(0,0,0,0.1)" opacity="0" /></a> --> -->
+      </svg>
+
+    </ng-container>
+  </div>
+</div>
+
+
+<div *ngIf="relatos" class="">
+  <div *ngIf="!movil">
+    <img class="degradadoIzq" src="assets/autores/WEB/DEGRADADO.png" />
+    <img class="fixed-bottom decoracionFondo" src="assets/autores/WEB/DECOR1.png" />
+    <img class="regresoMedellin" (click)="permitirRelatos('0')" src="assets/autores/medellin unpress autores.png" />
+    <img class="ciudadEspejoDer" src="assets/comun/LOGO_CE_PEQ.png" />
+    <img class="logoSNL" src="assets/comun/LOGO-SNL.png" />
+
+    <div class="text-justify contenedorRelatos">
+      <div class="row">
+        <div class="col-5">
+          <img class="img-fluid imagenFragmento float-right" src="{{fragmentoActual.urlImagen}}" />
+        </div>
+        <div class="col-3 columnaTextoSecundario">
+          <div class="col-12">
+            <!-- <div class="font-weight-bold textoOriginal font-italic text-right">{{fragmentoActual.textoOriginal}}</div> -->
+            <div class="textoOriginal font-italic text-right">{{fragmentoActual.textoOriginal}}</div>
+          </div>
+          <div class="col-12">
+            <div class="float-right">
+              <br>
+              <span class="nombre">{{fragmentoActual.nombre}}</span>
+              <span class="apellido font-italic">{{fragmentoActual.apellido}}</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <!-- <div class="d-flex fuenteBibliografia font-weight-bold float-right text-right">{{fragmentoActual.fuenteBibliografia}}</div> -->
+          </div>
+        </div>
+        <div class="col-1">
+          <img class="img-fluid barraSeparadora float-right" src="assets/autores/WEB/BARRA VERTICAL.png" />
+        </div>
+
+        <div class="col-3 contenedorTextoFragmento">
+          <div class="textoFragmento text-left">{{fragmentoActual.textoFragmento}}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER WEB -->
+    <div class="container-fluid footerWeb" *ngIf="!movil">
+      <div class="row text-center">
+        <div class="col-12">
+          <img id="bullet0" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+          <img id="bullet1" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+          <img id="bullet2" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+          <img id="bullet3" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+          <img id="bullet4" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+          <img id="bullet5" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+          <img id="bullet6" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+          <img id="bullet7" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+          <img id="bullet8" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+          <img id="bullet9" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+        </div>
+        <div class="col-5">
+          <img class="anteriorWeb float-right" (click)="siguienteFragmento('false')"
+            src="assets/comun/BOTON ANTERIOR_UNPRESS.png" />
+        </div>
+        <div class="col-2 ">
+          <img class="brujulaHomeWeb" (click)="permitirRelatos('1')" src="assets/microRelatos/gifs/rosa2.png" />
+        </div>
+        <div class="col-5">
+          <img class="siguienteWeb float-left" (click)="siguienteFragmento('true')"
+            src="assets/comun//BOTON SIGUIENTE UNPRESS.png" />
+        </div>
+        <div class="col-12">
+          <img class="medellin" src="assets/autores/WEB/NOMBRE FILTRO_PT.png" />
+        </div>
+      </div>
+
+    </div>
+    <!-- FIN FOOTER WEB -->
+
+    <!-- FOOTER MOVIL -->
+    <div class="container-fluid footer" *ngIf="movil">
+      <div class="row">
+        <div class="col-lg-3 col-sm-2">
+          <img *ngIf="movil" class="anteriorMovil" (click)="siguienteFragmento('false')"
+            src="assets/autores/ANTERIOR.png" />
+        </div>
+        <div class="col-lg-2 col-sm-3 bullets">
+          <img *ngIf="bulletVacio[0]" class="bullet" src="assets/autores/BULLET-LLENO.png" />
+          <img *ngIf="bulletVacio[1]" class="bullet" src="assets/autores/BULLET-LLENO.png" />
+          <img *ngIf="bulletVacio[2]" class="bullet" src="assets/autores/BULLET-LLENO.png" />
+          <img *ngIf="bulletVacio[3]" class="bullet" src="assets/autores/BULLET-LLENO.png" />
+          <img *ngIf="bulletVacio[4]" class="bullet" src="assets/autores/BULLET-LLENO.png" />
+          <img *ngIf="!bulletVacio[0]" class="bullet" src="assets/autores/BULLET-VACIO.png" />
+          <img *ngIf="!bulletVacio[1]" class="bullet" src="assets/autores/BULLET-VACIO.png" />
+          <img *ngIf="!bulletVacio[2]" class="bullet" src="assets/autores/BULLET-VACIO.png" />
+          <img *ngIf="!bulletVacio[3]" class="bullet" src="assets/autores/BULLET-VACIO.png" />
+          <img *ngIf="!bulletVacio[4]" class="bullet" src="assets/autores/BULLET-VACIO.png" />
+        </div>
+
+        <div class="col-lg-2 col-sm-2">
+          <img class="brujulaHome" src="assets/autores/REPSONSIVE HORIZONTAL/ICONO-HOME-COMPLETO.png" />
+        </div>
+        <div class="col-lg-2 col-sm-3 bullets2">
+          <img *ngIf="bulletVacio[5]" class="bullet" src="assets/autores/BULLET-LLENO.png" />
+          <img *ngIf="bulletVacio[6]" class="bullet" src="assets/autores/BULLET-LLENO.png" />
+          <img *ngIf="bulletVacio[7]" class="bullet" src="assets/autores/BULLET-LLENO.png" />
+          <img *ngIf="bulletVacio[8]" class="bullet" src="assets/autores/BULLET-LLENO.png" />
+          <img *ngIf="bulletVacio[9]" class="bullet" src="assets/autores/BULLET-LLENO.png" />
+          <img *ngIf="!bulletVacio[5]" class="bullet" src="assets/autores/BULLET-VACIO.png" />
+          <img *ngIf="!bulletVacio[6]" class="bullet" src="assets/autores/BULLET-VACIO.png" />
+          <img *ngIf="!bulletVacio[7]" class="bullet" src="assets/autores/BULLET-VACIO.png" />
+          <img *ngIf="!bulletVacio[8]" class="bullet" src="assets/autores/BULLET-VACIO.png" />
+          <img *ngIf="!bulletVacio[9]" class="bullet" src="assets/autores/BULLET-VACIO.png" />
+        </div>
+        <div class="col-lg-3 col-sm-2">
+          <img *ngIf="movil" class="anteriorMovil2" (click)="siguienteFragmento('true')"
+            src="assets/autores/SIGUIENTE.png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- FIN FOOTER MOVIL -->
+  </div>
+
+
+
+  <div *ngIf="movil">
+
+    <ng-container *ngIf="orientacion=='portrait'">
+
+
+
+      <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+          <div class="row container-fluid">
+            <div class="col-5">
+              <img class="img-fluid logo1" (click)="permitirRelatos('0')"
+                src="assets/autores/medellin unpress autores.png" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid logoCiudadEspejo float-right" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png" />
+            </div>
+            <div class="col-3">
+              <img class="img-fluid" src="assets/autores/WEB/LOGO-SNL.png" />
+            </div>
+
           </div>
 
+        </nav>
+
+      </header>
+
+      <img class="degradado2" src="assets/autores/WEB/DEGRADADO.png" />
 
 
-          <div *ngIf="movil">
-
-            <ng-container *ngIf="orientacion=='portrait'">
-              
-
-
-            <header>
-
-              <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-                <div class="row container-fluid">
-                  <div class="col-5">
-                    <img class="img-fluid logo1" (click)="permitirRelatos('0')" src="assets/autores/medellin unpress autores.png"/>
-                  </div>
-                  <div class="col-4">
-                     <img class="img-fluid logoCiudadEspejo float-right" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png"/>
-                  </div>
-                  <div class="col-3">
-                    <img class="img-fluid" src="assets/autores/WEB/LOGO-SNL.png"/>
-                 </div>
-              
-                </div>
-            
-              </nav>
-            
-            </header>   
-
-            <img class="degradado2" src="assets/autores/WEB/DEGRADADO.png"/>
-
-
-            <div class="row">
-              <div class="col-12">
-                <img class="img-fluid imagenFragmento"  src="{{fragmentoActual.urlImagen}}"/>
-              </div>
-              <div class="col-12 columnaTextoSecundario">
-                  <div class="col-12">
-                    <div class="font-weight-bold textoOriginal font-italic text-left">{{fragmentoActual.textoOriginal}}</div>
-                  </div>                
-                  <div class="col-12">
-                    <div class="">                  
-                    <span class="nombre">{{fragmentoActual.nombre}}</span>
-                    <span class="apellido font-italic">{{fragmentoActual.apellido}}</span>
-                  </div>
-                  </div>               
-                </div>                
-
-                <div class="col-12 contenedorTextoFragmento">                 
-                                               
-                    <div class="textoFragmento text-left">{{fragmentoActual.textoFragmento}}</div>
-                     <br><br><br><br><br><br><br>
-                </div> 
-            
-              </div> 
-
-            <div class="container-fluid footerWeb">
-              <div class="row text-center">
-                <div class="col-12">               
-              <img id="bullet0"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet1"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet2"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet3"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet4"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img class="brujulaHomeWeb" (click)="permitirRelatos('1')" src="assets/microRelatos/gifs/rosa2.png"/>
-           
-              <img id="bullet5"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet6"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet7"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet8"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet9"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-                </div>
-                <div class="col-12">
-                  <img class="medellin" src="assets/autores/WEB/NOMBRE FILTRO_PT.png"/>            
-                </div>
-                <div class="col-5">
-                  <img class="anteriorWeb float-right" (click)="siguienteFragmento('false')" src="assets/autores/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/ANTERIOR.png"/>
-                </div>
-                <div class="col-2 ">
-                
-                </div>
-                <div class="col-5">
-                  <img class="siguienteWeb float-left" (click)="siguienteFragmento('true')" src="assets/autores/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/SIGUIENTE.png"/>
-                </div>
-                <div class="col-12">
-
-                </div>
-              </div>
-
-            </div>
-           
-
-
-
-          </ng-container>
-
-          <ng-container *ngIf="orientacion=='landscape'">
-
-
-            
-
-            <header>
-
-              <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-                <div class="row container-fluid">
-                  <div class="col-5">
-                    <img class="img-fluid logo1Land" (click)="permitirRelatos('0')" src="assets/autores/medellin unpress autores.png"/>
-                  </div>
-                  <div class="col-4">
-                     <img class="img-fluid logoCiudadEspejoLand float-right" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png"/>
-                  </div>
-                  <div class="col-3">
-                    <img class="mg-fluid logoCiudadEspejoLand float-right" src="assets/autores/WEB/LOGO-SNL.png"/>
-                 </div>
-              
-                </div>
-            
-              </nav>
-            
-            </header>   
-
-
-            <div class="row contenedorLand">
-              <div class="col-5">
-                <img class="img-fluid imagenFragmentoLand float-right"  src="{{fragmentoActual.urlImagen}}"/>
-              </div>
-             <div class="col-3 columnaTextoSecundario">
-                  <div class="col-12">
-                    <div class="font-weight-bold textoOriginal font-italic text-right">{{fragmentoActual.textoOriginal}}</div>
-                  </div>                
-                  <div class="col-12">
-                    <div class="float-right">                  
-                    <span class="nombre">{{fragmentoActual.nombre}}</span>
-                    <span class="apellido font-italic">{{fragmentoActual.apellido}}</span>
-                  </div>
-                  </div>
-                  <div class="col-12">
-                   
-                    <!-- <div class="d-flex fuenteBibliografia font-weight-bold float-right text-right">{{fragmentoActual.fuenteBibliografia}}</div> -->
-                  </div>             
-                </div>
-                <div class="col-1">                 
-                                             
-                    <img class="img-fluid barraSeparadoraLand float-right"  src="assets/autores/WEB/BARRA VERTICAL.png"/>
-                  
-                </div> 
-
-                <div class="col-3 contenedorTextoFragmento">                 
-                                               
-                    <div class="textoFragmentoLand text-left">{{fragmentoActual.textoFragmento}}</div>
-                     
-                </div> 
-            
-              </div> 
-
-            <div class="container-fluid footerWebLand">
-              <div class="row text-center">
-                <div class="col-12 contenedorBulletWeb">               
-              <img id="bullet0"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet1"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet2"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet3"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet4"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img class="brujulaHomeWebLand" (click)="permitirRelatos('1')" src="assets/microRelatos/gifs/rosa2.png"/>
-           
-              <img id="bullet5"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet6"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet7"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet8"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-              <img id="bullet9"  class="bulletWeb" src="assets/autores/BULLET-VACIO.png"/>
-                </div>
-                <div class="col-12">
-                  <img class="medellinLand" src="assets/autores/WEB/NOMBRE FILTRO_PT.png"/>            
-                </div>
-                <div class="col-5">
-                  <img class="anteriorWebLand float-right" (click)="siguienteFragmento('false')" src="assets/autores/REPSONSIVE HORIZONTAL/ELEMENTOS ACTUALIZADOS/ANTERIOR.png"/>
-                </div>
-                <div class="col-2 ">
-                
-                </div>
-                <div class="col-5">
-                  <img class="siguienteWebLand float-left" (click)="siguienteFragmento('true')" src="assets/autores/REPSONSIVE HORIZONTAL/ELEMENTOS ACTUALIZADOS/SIGUIENTE.png"/>
-                </div>
-                <div class="col-12">
-
-                </div>
-              </div>
-
-            </div>
-            </ng-container>
+      <div class="row">
+        <div class="col-12">
+          <img class="img-fluid imagenFragmento" src="{{fragmentoActual.urlImagen}}" />
+        </div>
+        <div class="col-12 columnaTextoSecundario">
+          <div class="col-12">
+            <div class="font-weight-bold textoOriginal font-italic text-left">{{fragmentoActual.textoOriginal}}</div>
           </div>
+          <div class="col-12">
+            <div class="">
+              <span class="nombre">{{fragmentoActual.nombre}}</span>
+              <span class="apellido font-italic">{{fragmentoActual.apellido}}</span>
             </div>
-           
+          </div>
+        </div>
+
+        <div class="col-12 contenedorTextoFragmento">
+
+          <div class="textoFragmento text-left">{{fragmentoActual.textoFragmento}}</div>
+          <br><br><br><br><br><br><br>
+        </div>
+
+      </div>
+
+      <div class="container-fluid footerWeb">
+        <div class="row text-center">
+          <div class="col-12">
+            <img id="bullet0" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet1" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet2" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet3" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet4" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img class="brujulaHomeWeb" (click)="permitirRelatos('1')" src="assets/microRelatos/gifs/rosa2.png" />
+
+            <img id="bullet5" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet6" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet7" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet8" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet9" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+          </div>
+          <div class="col-12">
+            <img class="medellin" src="assets/autores/WEB/NOMBRE FILTRO_PT.png" />
+          </div>
+          <div class="col-5">
+            <img class="anteriorWeb float-right" (click)="siguienteFragmento('false')"
+              src="assets/autores/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/ANTERIOR.png" />
+          </div>
+          <div class="col-2 ">
+
+          </div>
+          <div class="col-5">
+            <img class="siguienteWeb float-left" (click)="siguienteFragmento('true')"
+              src="assets/autores/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/SIGUIENTE.png" />
+          </div>
+          <div class="col-12">
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+    </ng-container>
+
+    <ng-container *ngIf="orientacion=='landscape'">
+
+
+
+
+      <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+          <div class="row container-fluid">
+            <div class="col-5">
+              <img class="img-fluid logo1Land" (click)="permitirRelatos('0')"
+                src="assets/autores/medellin unpress autores.png" />
+            </div>
+            <div class="col-4">
+              <img class="img-fluid logoCiudadEspejoLand float-right" src="assets/autores/WEB/LOGO CIUDAD ESPEJO.png" />
+            </div>
+            <div class="col-3">
+              <img class="mg-fluid logoCiudadEspejoLand float-right" src="assets/autores/WEB/LOGO-SNL.png" />
+            </div>
+
+          </div>
+
+        </nav>
+
+      </header>
+
+
+      <div class="row contenedorLand">
+        <div class="col-5">
+          <img class="img-fluid imagenFragmentoLand float-right" src="{{fragmentoActual.urlImagen}}" />
+        </div>
+        <div class="col-3 columnaTextoSecundario">
+          <div class="col-12">
+            <div class="font-weight-bold textoOriginal font-italic text-right">{{fragmentoActual.textoOriginal}}</div>
+          </div>
+          <div class="col-12">
+            <div class="float-right">
+              <span class="nombre">{{fragmentoActual.nombre}}</span>
+              <span class="apellido font-italic">{{fragmentoActual.apellido}}</span>
+            </div>
+          </div>
+          <div class="col-12">
+
+            <!-- <div class="d-flex fuenteBibliografia font-weight-bold float-right text-right">{{fragmentoActual.fuenteBibliografia}}</div> -->
+          </div>
+        </div>
+        <div class="col-1">
+
+          <img class="img-fluid barraSeparadoraLand float-right" src="assets/autores/WEB/BARRA VERTICAL.png" />
+
+        </div>
+
+        <div class="col-3 contenedorTextoFragmento">
+
+          <div class="textoFragmentoLand text-left">{{fragmentoActual.textoFragmento}}</div>
+
+        </div>
+
+      </div>
+
+      <div class="container-fluid footerWebLand">
+        <div class="row text-center">
+          <div class="col-12 contenedorBulletWeb">
+            <img id="bullet0" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet1" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet2" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet3" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet4" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img class="brujulaHomeWebLand" (click)="permitirRelatos('1')" src="assets/microRelatos/gifs/rosa2.png" />
+
+            <img id="bullet5" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet6" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet7" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet8" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+            <img id="bullet9" class="bulletWeb" src="assets/autores/BULLET-VACIO.png" />
+          </div>
+          <div class="col-12">
+            <img class="medellinLand" src="assets/autores/WEB/NOMBRE FILTRO_PT.png" />
+          </div>
+          <div class="col-5">
+            <img class="anteriorWebLand float-right" (click)="siguienteFragmento('false')"
+              src="assets/autores/REPSONSIVE HORIZONTAL/ELEMENTOS ACTUALIZADOS/ANTERIOR.png" />
+          </div>
+          <div class="col-2 ">
+
+          </div>
+          <div class="col-5">
+            <img class="siguienteWebLand float-left" (click)="siguienteFragmento('true')"
+              src="assets/autores/REPSONSIVE HORIZONTAL/ELEMENTOS ACTUALIZADOS/SIGUIENTE.png" />
+          </div>
+          <div class="col-12">
+
+          </div>
+        </div>
+
+      </div>
+    </ng-container>
+  </div>
+</div>

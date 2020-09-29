@@ -18,7 +18,7 @@ export class AppComponent implements AfterViewInit {
 
   navegador="home";
 
-  title = 'test';  
+  title = 'Ciudad Espejo';  
  
 
   funcionNavegador(lugar: string){
