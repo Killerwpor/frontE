@@ -13,7 +13,7 @@
 
 .panelCon{
  position: fixed;
- width: 589px;
+ width: 31.7%;
   
 }
 
@@ -255,3 +255,59 @@ border-radius: 15px;
 		height: 50%;
 		z-index: 999;	
 }
+
+
+
+//Efecto HOVER
+
+.img__wrap {
+	position: relative;
+
+  }
+  
+  .img__description_layer {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(182, 178, 107, 0.6); 
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  
+	/* transition effect. not necessary */
+	transition: opacity .2s, visibility .2s;
+  }
+  
+  .img__wrap:hover .img__description_layer {
+	visibility: visible;
+	opacity: 1;
+  }
+  
+  .img__description {
+	  font-size: 3vw;
+	transition: .2s;
+	transform: translateY(1em);
+  }
+
+  .img__description2 {
+	font-size: 3vw;
+  transition: .2s;
+  transform: translateY(2em);
+}
+
+  .img__wrap:hover .img__description {
+	transform: translateY(0);
+  }
+
+  .img__wrap:hover .img__description2 {
+	transform: translateY(2em);
+  }
+
+  .textoGrande{
+	  font-size: 6vw;
+  }

@@ -27,7 +27,7 @@ export class FisurasComponent implements OnInit {
   fisuras3: Fisura[];
 
   @Output() navegador = new EventEmitter<string>();
-  relatos: Boolean=false;
+  relatos: Boolean=true;
   numeroFisura: string;
 
   constructor(public microRelatoServicio: MicrorelatosService, private deviceService: DeviceDetectorService) { }
