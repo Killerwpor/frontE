@@ -655,6 +655,7 @@ input[type="text"]
         z-index: 999;
         font-size: 4vw;
 font-family: "sweet-sans-pro";
+border-radius: 15px;
     }
 
     
@@ -725,6 +726,11 @@ font-family: "sweet-sans-pro";
     z-index: 999;
     font-size: 2vw;
 font-family: "sweet-sans-pro";
+border-radius: 15px;
+}
+
+.margen{
+    margin: 10px 10px 10px 10px;
 }
 
 /* .degradado{

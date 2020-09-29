@@ -60,46 +60,46 @@
 <div class="row">
 	<div class="col-4">
 		<div class="slider">
-			<div class="slide-track">
-				<div class="left">	
+		
+				<div class="">	
 				<ng-container *ngFor="let microRelato of fisuras1">
-					<div class="slide">						
+									
 						<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
 						<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
-					</div>
+					
 				</ng-container>	
 			</div>
-			</div>
+			
 			
 		</div>
 	</div>
 	<div class="col-4">
-		<div class="slider">
-			<div class="slide-track">
-				<div class="right">
+	
+	
+				<div class="panelCon mx-auto">
 				<ng-container *ngFor="let microRelato of fisuras2">
-					<div class="slide">
+					
 						<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
 						<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
-					</div>
+					
 				</ng-container>	
 			</div>			
-			</div>
+		
 			
-		</div>
+	
 	</div>
 	<div class="col-4">
 		<div class="slider">
-			<div class="slide-track">
-				<div class="left">
+			
+				<div class="">
 				<ng-container *ngFor="let microRelato of fisuras3">
-					<div class="slide">
+			
 						<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
 						<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
-					</div>
+			
 				</ng-container>	
 				</div>
-			</div>
+			
 			
 		</div>
 	</div>
@@ -141,7 +141,7 @@
 		<img class="botonMasMenos" (click)="abrirTexto()" src="assets/autores/MENOS-TEXTO.jpg " *ngIf="permitirTexto">
 		<img class="botonMasMenos" (click)="abrirTexto()" src="assets/autores/MAS-TEXTO.jpg " *ngIf="!permitirTexto">
 		<div class="textoDesplegable text-left" *ngIf="permitirTexto">
-		  Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!
+			<div class="margen"> Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!</div>
 		  </div>
 	  </div> 
 	  
@@ -237,7 +237,7 @@
 			<img class="botonMasMenosLand" (click)="abrirTexto()" src="assets/autores/MENOS-TEXTO.jpg " *ngIf="permitirTexto">
 			<img class="botonMasMenosLand" (click)="abrirTexto()" src="assets/autores/MAS-TEXTO.jpg " *ngIf="!permitirTexto">
 			<div class="textoDesplegableLand text-left" *ngIf="permitirTexto">
-			  Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!
+				<div class="margen"> Dicen algunos que el fuego cayó del cielo. Dicen otros que apareció espontáneamente en toda la ciudad. Hay quienes aseguran que estuvo previsto desde hace siglos y que había gente esperando la llegada del fuego como quien espera a un dios terrible. Algo es seguro para los habitantes de este lado del espejo: la ciudad entera ardió aquella noche. Y cuando el fuego se extinguió por completo, los sobrevivientes contemplaron la destrucción y construyeron un mundo nuevo. Quedan las historias. ¡Conócelas!</div>
 			  </div>
 			  </div>
 	

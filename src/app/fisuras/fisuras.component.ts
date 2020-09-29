@@ -34,9 +34,20 @@ export class FisurasComponent implements OnInit {
 
   ngOnInit(): void {
 
+    var winHeight = $(window).innerHeight();
+$(document).ready(function () {
+    $(".imagen").height(winHeight);
+    $("body").height(winHeight*$(".imagen").length);
+});
+
+
     $(document).ready(function(){ 
       $(window).scroll(function(){
-        $('.right').css('transform', 'translate3d(0,' + $(this).scrollTop()*2 + 'px, 0)'); 
+        
+
+  $(".panelCon").css('bottom',$(window).scrollTop()*-1);
+
+      //  $('.right').css('transform', 'translate3d(0,' + $(this).scrollTop()*2 + 'px, 0)'); 
      }).scroll();
  });  
 
@@ -129,8 +140,8 @@ hide(){
 onWindowScroll() {
   $(document).ready(function(){ 
     $(window).scroll(function(){
-      $('.right').css('transform', 'translate3d(0,' + $(this).scrollTop()*0.4 + 'px, 0)'); 
-      $('.left').css('transform', 'translate3d(0,'+$(this).scrollTop()*0.01 +'px, 0)'); 
+      $('.columnaInversa').css('transform', 'translate3d(0,' + $(this).scrollTop()*0.5 + 'px, 0)'); 
+      //$('.left').css('transform', 'translate3d(0,'+$(this).scrollTop()*0.01 +'px, 0)'); 
    }).scroll();
 });  
 
