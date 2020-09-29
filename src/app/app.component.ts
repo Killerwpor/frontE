@@ -16,7 +16,7 @@ export class AppComponent implements AfterViewInit {
 
   home: String="home1";
 
-  navegador="home";
+  navegador="fisuras";
 
   title = 'Ciudad Espejo';  
  
