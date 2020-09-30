@@ -86,13 +86,13 @@ export class MicrorelatosComponent implements OnInit {
   }
 
   habilitarCompartir(){
-
     this.compartirRedes=true;
 
   }
 
   async guardarMicroRelato(){
-  
+    alert("Se ha guardado su microrelato éxitosamente");
+    $(".subeTuHistoria").hide();
     
     var data={
       texto: this.textoGenerado,
@@ -432,8 +432,8 @@ this.stopAudio();
        compartirTwitter(url) {
          // t=document.title;
         var t="descripcion";
-        //window.open("https://twitter.com/share?url="+encodeURIComponent(url)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
-        window.open('https://www.twitter.com/sharer.php?u=www.google.com&picture=https://media.revistagq.com/photos/5ca5f6a77a3aec0df5496c59/16:9/w_1920,c_limit/bob_esponja_9564.png', 'ventanacompartir', 'toolbar=0, status=0, width=650, height=450');
+        window.open("https://twitter.com/share?url="+encodeURIComponent(url)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
+       // window.open('https://www.twitter.com/sharer.php?u=www.google.com&picture=https://media.revistagq.com/photos/5ca5f6a77a3aec0df5496c59/16:9/w_1920,c_limit/bob_esponja_9564.png', 'ventanacompartir', 'toolbar=0, status=0, width=650, height=450');
        }
        
   async compartirTw(){

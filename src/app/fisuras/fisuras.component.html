@@ -59,18 +59,24 @@
 <img class="degradado2" src="assets/Fisuras/WEB/DEGRADADO.png"/>
 <div class="row">
 	<div class="col-4">
-		<div class="slider">
+		<div class="slider1">
 		
-				<div class="">	
+				<div class="">
+
 				<ng-container *ngFor="let microRelato of fisuras1">
-					<div class="img__wrap">			
-						<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />		
-						<div class="img__description_layer">						
-							 <div class="img__description">FISURA<div class="textoGrande">#&nbsp;{{microRelato.numeroFisura}}</div></div> 
+				
+				 <div class="img__wrap">			
+					<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
+						
+
+						<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}" (click)="test($event)">						
+							 <div class="img__description mx-auto">FISURA<div class="textoGrande">#&nbsp;{{microRelato.numeroFisura}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}</div></div> 
 							
 						  </div>	
-						<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
+						
+
 					</div>
+					<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>	
 				</ng-container>	
 
 				
@@ -87,8 +93,18 @@
 				<div class="panelCon mx-auto">
 				<ng-container *ngFor="let microRelato of fisuras2">
 					
+					<div class="img__wrap">			
 						<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
-						<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
+							
+	
+							<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}" (click)="test($event)">						
+								<div class="img__description mx-auto">FISURA<div class="textoGrande">#&nbsp;{{microRelato.numeroFisura}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}</div></div> 
+								
+							  </div>	
+							
+	
+						</div>
+						<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>	
 					
 				</ng-container>	
 			</div>			
@@ -97,16 +113,25 @@
 	
 	</div>
 	<div class="col-4">
-		<div class="slider">
+		<div class="slider3">
 			
-				<div class="">
+			
 				<ng-container *ngFor="let microRelato of fisuras3">
 			
+					<div class="img__wrap">			
 						<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
-						<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
-			
+							
+	
+							<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}" (click)="test($event)">						
+								<div class="img__description mx-auto">FISURA<div class="textoGrande">#&nbsp;{{microRelato.numeroFisura}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}</div></div> 
+								
+							  </div>	
+							
+	
+						</div>
+						<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>	
 				</ng-container>	
-				</div>
+				
 			
 			
 		</div>
@@ -153,7 +178,7 @@
 		  </div>
 	  </div> 
 	  
-	  <svg class="menuHorizontal" viewBox="0 0 2000 1550">
+	  <svg class="menuHorizontal" viewBox="0 0 2000 200">
         <image class="" xlink:href="assets/Fisuras/RESPONSIVE VERTICAL/MENU-HORIZONTAL.jpg" width="100%"  />
         <a xlink:href="#home" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
         <a xlink:href="#autores" (click)="clickMenu(2)"><rect x="400" y="0" width="500" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
@@ -165,53 +190,77 @@
 	
 	  <div class="row">
 		<div class="col-12">
-			<div class="slider">
-				<div class="slide-track">
-					<div class="left">
-					<ng-container *ngFor="let microRelato of fisuras1">
-						<div class="slide">	
-												
-							<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
-							
-							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
-						</div>
-					</ng-container>	
-				</div>
-				</div>
+			<div class="">
 				
-			</div>
-		</div>
-		<div class="col-12">
-			<div class="slider">
-				<div class="slide-track">
-					<div class="right">	
-					<ng-container *ngFor="let microRelato of fisuras2">
-						<div class="slide">
-							
-							<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
-						
-							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
-						</div>
-					</ng-container>	
-					</div>			
-				</div>
-				
-			</div>
-		</div>
-		<div class="col-12">
-			<div class="slider">
-				<div class="slide-track">
-					<div class="left">
-					<ng-container *ngFor="let microRelato of fisuras3">
-						<div class="slide">
 					
-							<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
+					<ng-container *ngFor="let microRelato of fisuras1">
 						
-							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
-						</div>
+						<div class="img__wrap">			
+							<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
+								
+		
+								<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}" (click)="test($event)">						
+									<div class="img__description mx-auto">FISURA<div class="textoGrande">#&nbsp;{{microRelato.numeroFisura}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}</div></div> 
+									
+								  </div>	
+								
+		
+							</div>
+							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>							
+							
+						
+					</ng-container>	
+				
+				
+				
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="">
+				
+						
+					<ng-container *ngFor="let microRelato of fisuras2">
+
+						<div class="img__wrap">			
+							<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
+								
+		
+								<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}" (click)="test($event)">						
+									<div class="img__description mx-auto">FISURA<div class="textoGrande">#&nbsp;{{microRelato.numeroFisura}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}</div></div> 
+									
+								  </div>	
+								
+		
+							</div>
+							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>	
+					
+					</ng-container>	
+								
+			
+				
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="">
+				
+					
+					<ng-container *ngFor="let microRelato of fisuras3">
+						
+						<div class="img__wrap">			
+							<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
+								
+		
+								<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}" (click)="test($event)">						
+									<div class="img__description mx-auto">FISURA<div class="textoGrande">#&nbsp;{{microRelato.numeroFisura}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}</div></div> 
+									
+								  </div>	
+								
+		
+							</div>
+							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>	
 					</ng-container>
-				</div>	
-				</div>
+					
+				
 				
 			</div>
 		</div>

@@ -565,12 +565,12 @@
           <!--INICIO SECCIÓN -->
           <!--COMENTAR ESTA SECCIÓN Y DESCOMENTAR LA OTRA PARA VOLVER A LA NORMALIDAD -->
           <div class="col-12" *ngIf="contadorRespuestas==10">
-            <img class="imagenMicroRelato" src="{{urlImagen}}" />
+            <img class="imagenMicroRelatoMovil" src="{{urlImagen}}" />
           </div>
 
 
           <div class="col-12" *ngIf="contadorRespuestas==10">
-            <div class="microRelatoGeneradoLand">
+            <div class="microRelatoGenerado">
               <app-micro-relato-generado textoGenerado="{{textoGenerado}}" [porcentajeSolarPunk]="porcentajeSolarPunk"
                 [porcentajeDistopico]="porcentajeDistopico" [urlImagen]="urlImagen" [respuestas]="respuestas">
               </app-micro-relato-generado>
@@ -578,7 +578,7 @@
 
           </div>
 
-          <div class="iconosCompartir" *ngIf="contadorRespuestas==10 && compartirRedes">
+          <div class="iconosCompartirMovil" *ngIf="contadorRespuestas==10 && compartirRedes">
             <div>
               <img class="img-fluid iconoFb" (click)="compartirFb()"
                 src="assets/microRelatos/ELEMENTOS TRSVLS/ICONO-FB.png" />
@@ -586,10 +586,7 @@
             <div>
               <img class="img-fluid iconoTw" (click)="compartirTw()"
                 src="assets/microRelatos/ELEMENTOS TRSVLS/TWITTER-ICONO.png" />
-            </div>
-            <div>
-              <img class="img-fluid iconoIg" src="assets/microRelatos/ELEMENTOS TRSVLS/ICONO-IG.png" />
-            </div>
+            </div>          
           </div>
 
           <div class="container-fluid footer" *ngIf="contadorRespuestas==10">

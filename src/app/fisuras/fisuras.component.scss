@@ -13,7 +13,7 @@
 
 .panelCon{
  position: fixed;
- width: 31.7%;
+ width: 26.8%;
   
 }
 
@@ -23,6 +23,8 @@
 	margin-top: 5%;
 	width: 100%;
 	height: auto;
+	z-index: 1;
+
 }
 
 .logoFisuras{
@@ -134,6 +136,28 @@ cursor: pointer;
 
    
 @media only screen and (max-width: 500px) {
+
+	.img__description {	
+		font-family: "sweet-sans-pro";
+		font-size: 45px !important;
+  }
+
+
+	.textoGrande{		
+		width: auto;
+		font-family: "krete";
+		font-size: 45px !important;
+	}
+  
+	.textoPequeño{
+		font-family: "sweet-sans-pro";
+		width: auto;
+		position: relative;
+		top: 10px;
+		font-size: 18px !important;
+	}
+
+
 	.degradado{
         position: fixed;
         top: 90%;
@@ -259,12 +283,15 @@ border-radius: 15px;
   }
   
   .img__description_layer {
+	  width: auto;
+	border-radius: 10px 10px 10px 10px;
 	position: absolute;
-	top: 0;
+	top: 6.5%;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(182, 178, 107, 0.6); 
+	background: rgba(182, 178, 107, 0.4); 
+	height: 94%;
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
@@ -281,17 +308,16 @@ border-radius: 15px;
 	opacity: 1;
   }
   
-  .img__description {
+  .img__description {	
+	    position: relative;
+	top: 5%;
 	  font-size: 3vw;
 	transition: .2s;
 	transform: translateY(1em);
+z-index: 0;
   }
 
-  .img__description2 {
-	font-size: 3vw;
-  transition: .2s;
-  transform: translateY(2em);
-}
+
 
   .img__wrap:hover .img__description {
 	transform: translateY(0);
@@ -302,5 +328,30 @@ border-radius: 15px;
   }
 
   .textoGrande{
-	  font-size: 6vw;
+	  width: auto;
+	  font-size: 5vw;
   }
+
+  .textoPequeño{
+	  width: auto;
+	  position: relative;
+	  top: 10px;
+	  font-size: 1.2vw;
+  }
+
+  .slider{
+	 width: 85%;
+  }
+
+  .slider1{
+	  position: relative;
+	  left: 10%;
+	width: 85%;
+ }
+
+ 
+ .slider3{
+	position: relative;
+	right: 10%;
+  width: 85%;
+}

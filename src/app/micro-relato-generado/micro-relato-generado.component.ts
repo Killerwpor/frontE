@@ -95,6 +95,8 @@ orientacion: String;
 
   async guardarMicroRelato(){
  
+    alert("Se ha guardado su microrelato éxitosamente");
+    $(".iconSubeTuHistoria").hide();
 
     var data={
       texto: this.textoGenerado,

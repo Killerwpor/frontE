@@ -31,14 +31,22 @@ cursor: pointer;
    width: 80%;
 }
 
-.textoOriginalMovil {
+/* .textoOriginalMovil {
     font-family: "krete";
     color: #92B7CB;
     font-size: 5vw;
     width: 90%;
     padding-left: 5%;
     
-}
+} */
+.imagenMicroRelatoMovil{
+    /* max-width: 650px !important;
+    max-height: 600px !important; */
+    position: relative;
+    bottom: 10%;
+    margin-left: 0%;
+    width: 100%;
+ }
 
 .form-control{
     color: #F8EBE3;
@@ -155,7 +163,7 @@ cursor: pointer;
   .contenedorFooter{
       position: fixed;
       left: 0em;
-      top: 83.5%;
+      top: 85.5%;
   }
 
   .brujulaVolver:hover{
@@ -945,11 +953,11 @@ padding-left: 20%;
         width: 50% !important;
     }
 
-    .iconosCompartir{
+    .iconosCompartirMovil{
         width: 100%;
         position: fixed;
-  padding-left: 40%;
-  top: 60%;
+  padding-left: 80%;
+  top: 70%;
     z-index: 999;
     }
 
@@ -967,7 +975,7 @@ padding-left: 20%;
     .textoFisura{
         position: absolute;
         left: 20%;
-        top: 50%;
+        top: 10%;
     }
     
     .textoTextoFisura{
@@ -978,7 +986,7 @@ padding-left: 20%;
     .numeroFisura{
         position: absolute;
         left: 20%;
-        top: 68%;
+        top: 20%;
     }
     
     .textoNumeroFisura{
@@ -989,4 +997,8 @@ padding-left: 20%;
     .footerCompartir{
         background-color: 	#cdd083;
         margin-top: 5%;
+    }
+
+    .container-fluidMovil{
+     background-color: white;
     }
