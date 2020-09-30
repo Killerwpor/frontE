@@ -1,375 +1,353 @@
 <div class="noScroll">
-<div *ngIf="!movil">
-<div *ngIf="!relatos" class="">
-<div class="row contenedor">
-	<div class="col-xl-4 col-md-4 col-sm-4 col-4">
+	<div *ngIf="!movil">
+		<div *ngIf="!relatos" class="">
+			<img class="logoSNL" src="https://assetsexplora.s3.amazonaws.com/assets/comun/LOGO-SNL.png" />
+			<img class="degradadoIzq" src="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/WEB/DEGRADADO.png" />
+			<img class="fixed-bottom decoracionFondo"
+				src="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/WEB/DECOR-10.png" />
+			<svg class="menuBar" viewBox="0 0 36 628">
+				<image class="float-right"
+					xlink:href="https://assetsexplora.s3.amazonaws.com/assets/comun/MENU WEB 4.png" width="100%" />
+				<a xlink:href="#home" (click)="clickMenu(1)">
+					<rect x="0" y="0" width="36" height="118" fill="rgba(0,0,0,1)" opacity="0" /></a>
+				<a xlink:href="#autores" (click)="clickMenu(2)">
+					<rect x="0" y="118" width="36" height="164" fill="rgba(0,0,0,1)" opacity="0" /></a>
+				<a xlink:href="#microRelatos" (click)="clickMenu(3)">
+					<rect x="0" y="282" width="36" height="177" fill="rgba(0,0,0,1)" opacity="0" /></a>
+				<a xlink:href="#fisuras" (click)="clickMenu(4)">
+					<rect x="0" y="459" width="36" height="156" fill="rgba(0,0,0,1)" opacity="0" /></a>
+			</svg>
 
-	</div>
-	<div class="col-xl-4 col-md-4 col-sm-4 col-4">
-		<div class="col-xl-12 col-md-12 col-sm-12 col-12">
-			<img class="img-fluid logoFisuras" src="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/WEB/NOMBRE FISURAS.png"/>
+
+			<div class="row contenedor">
+				<div class="col-xl-4 col-md-4 col-sm-4 col-4">
+
+				</div>
+				<div class="col-xl-4 col-md-4 col-sm-4 col-4">
+					<div class="col-xl-12 col-md-12 col-sm-12 col-12">
+						<img class="img-fluid logoFisuras"
+							src="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/WEB/NOMBRE FISURAS.png" />
+					</div>
+					<div class="col-xl-12 col-md-12 col-sm-12 col-12 texto">
+						<br>
+						Una fisura es el espacio entre las piezas de un cristal roto. Pero en Ciudad Espejo las fisuras
+						son portales de encuentro entre las dos ciudades.
+						Habitan en las fisuras los testimonios de quienes han transitado por los dos mundos --como tú,
+						forastero-- y han sobrevivido para contarlo.
+					</div>
+					<div class="col-xl-12 col-md-12 col-sm-12 col-12">
+						<img class="float-right flecha" (click)="permitirRelatos()"
+							src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/gifs/flecha.png" />
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-4 col-sm-4 col-4">
+
+				</div>
+			</div>
 		</div>
-		<div class="col-xl-12 col-md-12 col-sm-12 col-12 texto">
-			<br>
-			Una fisura es el espacio entre las piezas de un cristal roto. Pero en Ciudad Espejo las fisuras son portales de encuentro entre las dos ciudades.
-			Habitan en las fisuras los testimonios de quienes han transitado por los dos mundos --como tú, forastero-- y han sobrevivido para contarlo.
-		</div>
-		<div class="col-xl-12 col-md-12 col-sm-12 col-12">
-			<img class="float-right flecha" (click)="permitirRelatos()" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/gifs/flecha.png"/> 
-		</div>
-	</div>
-	<div class="col-xl-4 col-md-4 col-sm-4 col-4">
-
-	</div>
-</div>
-<img class="degradado" src="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/WEB/DEGRADADO.png"/>
-<img class="fixed-bottom decoracion" src="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/WEB/DECOR-10.png"/>
-
-<svg class="menu" viewBox="0 -250 100 2000">
-	<image class="float-right" xlink:href="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/WEB/MENU.png" width="100%"  /> 
-	<a xlink:href="#1" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
-	<a xlink:href="#2" (click)="clickMenu(2)"><rect x="0" y="325" width="320" height="470" fill="rgba(0,0,0,0)" opacity="0.5"/></a> 
-	<a xlink:href="#3" (click)="clickMenu(3)"><rect x="0" y="800" width="320" height="520" fill="rgba(0,0,0,0)" opacity="0.5"/></a>                             
-  </svg>   
-
-
-</div>
 
 
 
 
-<div *ngIf="relatos" class="" (window:scroll)="onWindowScroll()">
-<div class="container-fluid">
-	<header>
-		<nav class="fixed-top">
-		  <div class="row">
-			<div class="col-xl-6 col-md-4 col-sm-4 col-4">
-			
-		  </div>
-			<div class="col-xl-4 col-md-4 col-sm-4 col-4">
-			  
-			</div>  
-			<div class="col-xl-2 col-md-3 col-sm-3 col-3">
-				<img class="img-fluid logo" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/SNL-2.png"/>
-			  </div>    
-		  </div>  
-		</nav>  
-	  </header> 
-</div>
-<img class="degradado2" src="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/WEB/DEGRADADO.png"/>
-<div class="row">
-	<div class="col-4">
-		<div class="slider1">
-		
-				<div class="">
+		<div *ngIf="relatos" class="" (window:scroll)="onWindowScroll()">
+			<div class="container-fluid">
+				<img class="logoSNL" src="https://assetsexplora.s3.amazonaws.com/assets/comun/LOGO-SNL.png" />
+				<img class="degradadoIzq"
+					src="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/WEB/DEGRADADO.png" />
 
-				<ng-container *ngFor="let microRelato of fisuras1">
-				
-				 <div class="img__wrap">			
-					<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
-						
+				<header>
+					<nav class="fixed-top">
+						<div class="row">
+							<div class="col-xl-6 col-md-4 col-sm-4 col-4">
 
-						<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}" (click)="test($event)">						
-							 <div class="img__description mx-auto">FISURA<div class="textoGrande">#&nbsp;{{microRelato.numeroFisura}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}</div></div> 
-							
-						  </div>	
-						
+							</div>
+							<div class="col-xl-4 col-md-4 col-sm-4 col-4">
+
+							</div>
+							<!-- <div class="col-xl-2 col-md-3 col-sm-3 col-3">
+								<img class="img-fluid logo"
+									src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/SNL-2.png" />
+							</div> -->
+						</div>
+					</nav>
+				</header>
+			</div>
+			<!-- <img class="degradado2" src="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/WEB/DEGRADADO.png" /> -->
+			<div class="row">
+				<div class="col-4">
+					<div class="slider1">
+
+						<div class="">
+
+							<ng-container *ngFor="let microRelato of fisuras1">
+
+								<div class="img__wrap">
+									<img (click)="clickCard($event)" class="img-fluid imagen"
+										id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />
+
+
+									<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}"
+										(click)="test($event)">
+										<div class="img__description mx-auto">FISURA<div class="textoGrande">
+												#&nbsp;{{microRelato.numeroFisura}}</div>
+											<div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}
+											</div>
+											<div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}
+											</div>
+										</div>
+
+									</div>
+
+
+								</div>
+								<div class="{{microRelato.numeroFisura}} hide">
+									<app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto"
+										[urlImagen]="microRelato.urlImagen"></app-fisura-generada>
+								</div>
+							</ng-container>
+
+
+
+
+						</div>
+
 
 					</div>
-					<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>	
-				</ng-container>	
-
-				
-					
-				  
-			</div>
-			
-			
-		</div>
-	</div>
-	<div class="col-4">
-	
-	
-				<div class="panelCon mx-auto">
-				<ng-container *ngFor="let microRelato of fisuras2">
-					
-					<div class="img__wrap">			
-						<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
-							
-	
-							<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}" (click)="test($event)">						
-								<div class="img__description mx-auto">FISURA<div class="textoGrande">#&nbsp;{{microRelato.numeroFisura}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}</div></div> 
-								
-							  </div>	
-							
-	
-						</div>
-						<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>	
-					
-				</ng-container>	
-			</div>			
-		
-			
-	
-	</div>
-	<div class="col-4">
-		<div class="slider3">
-			
-			
-				<ng-container *ngFor="let microRelato of fisuras3">
-			
-					<div class="img__wrap">			
-						<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
-							
-	
-							<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}" (click)="test($event)">						
-								<div class="img__description mx-auto">FISURA<div class="textoGrande">#&nbsp;{{microRelato.numeroFisura}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}</div></div> 
-								
-							  </div>	
-							
-	
-						</div>
-						<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>	
-				</ng-container>	
-				
-			
-			
-		</div>
-	</div>
-	<div class="container">
-		<svg class="menu" viewBox="0 -250 100 2000">
-			<image class="float-right" xlink:href="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/WEB/MENU.png" width="100%"  /> 
-			<a xlink:href="#1" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
-			<a xlink:href="#2" (click)="clickMenu(2)"><rect x="0" y="325" width="320" height="470" fill="rgba(0,0,0,0)" opacity="0.5"/></a> 
-			<a xlink:href="#3" (click)="clickMenu(3)"><rect x="0" y="800" width="320" height="520" fill="rgba(0,0,0,0)" opacity="0.5"/></a>                             
-		  </svg>   
-		</div>
-	
-</div>
-</div>
-</div>
+				</div>
+				<div class="col-4">
 
 
-<div *ngIf="movil">
+					<div class="panelCon mx-auto">
+						<ng-container *ngFor="let microRelato of fisuras2">
+
+							<div class="img__wrap">
+								<img (click)="clickCard($event)" class="img-fluid imagen"
+									id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />
 
 
-	<ng-container *ngIf="orientacion=='portrait'">
+								<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}"
+									(click)="test($event)">
+									<div class="img__description mx-auto">FISURA<div class="textoGrande">
+											#&nbsp;{{microRelato.numeroFisura}}</div>
+										<div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}
+										</div>
+										<div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}
+										</div>
+									</div>
+
+								</div>
 
 
-	<img class="degradado fixed-bottom" src="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/RESPONSIVE VERTICAL/DEGRADADI-VERTICAL.png"/>
-	<header class="">
-		<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
-		  <div class="row container-fluid">
-			<div class="col-6">
-			  <img class="img-fluid logo1Atras" (click)="clickMenu(1)" src="https://assetsexplora.s3.amazonaws.com/assets/autores/ciudad espejo press autores.png"/>
-			</div>
-			<div class="col-6">
-			  <img class="img-fluid logo2Home" src="https://assetsexplora.s3.amazonaws.com/assets\Fisuras\RESPONSIVE VERTICAL/NOMBRE-GILTRO.png"/>
-			</div>    
-		  </div>  
-		</nav>  
-	  </header> 
-
-	  <div class="dropdown">
-		<img class="botonMasMenos" (click)="abrirTexto()" src="https://assetsexplora.s3.amazonaws.com/assets/autores/MENOS-TEXTO.jpg " *ngIf="permitirTexto">
-		<img class="botonMasMenos" (click)="abrirTexto()" src="https://assetsexplora.s3.amazonaws.com/assets/autores/MAS-TEXTO.jpg " *ngIf="!permitirTexto">
-		<div class="textoDesplegable text-left" *ngIf="permitirTexto">
-			<div class="margen"> Una fisura es el espacio entre las piezas de un cristal roto. Pero en Ciudad Espejo las fisuras son portales de encuentro entre las dos ciudades.
-				Habitan en las fisuras los testimonios de quienes han transitado por los dos mundos --como tú, forastero-- y han sobrevivido para contarlo.</div>
-		  </div>
-	  </div> 
-	  
-	  <svg class="menuHorizontal" viewBox="0 0 2000 200">
-        <image class="" xlink:href="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/RESPONSIVE VERTICAL/MENU-HORIZONTAL.jpg" width="100%"  />
-        <a xlink:href="#home" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
-        <a xlink:href="#autores" (click)="clickMenu(2)"><rect x="400" y="0" width="500" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
-        <a xlink:href="#microRelatos" (click)="clickMenu(3)"><rect x="950" y="0" width="500" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
-        <a xlink:href="#fisuras" (click)="clickMenu(4)"><rect x="1500" y="0" width="500" height="270" fill="rgba(0,0,0,0)" opacity="0.5"/></a>
-
-      </svg> 
-		<!-- <image class="" xlink:href="" width="100%"  /> -->
-	
-	  <div class="row">
-		<div class="col-12">
-			<div class="">
-				
-					
-					<ng-container *ngFor="let microRelato of fisuras1">
-						
-						<div class="img__wrap">			
-							<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
-								
-		
-								<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}" (click)="test($event)">						
-									<div class="img__description mx-auto">FISURA<div class="textoGrande">#&nbsp;{{microRelato.numeroFisura}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}</div></div> 
-									
-								  </div>	
-								
-		
 							</div>
-							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>							
-							
-						
-					</ng-container>	
-				
-				
-				
-			</div>
-		</div>
-		<div class="col-12">
-			<div class="">
-				
-						
-					<ng-container *ngFor="let microRelato of fisuras2">
-
-						<div class="img__wrap">			
-							<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
-								
-		
-								<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}" (click)="test($event)">						
-									<div class="img__description mx-auto">FISURA<div class="textoGrande">#&nbsp;{{microRelato.numeroFisura}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}</div></div> 
-									
-								  </div>	
-								
-		
+							<div class="{{microRelato.numeroFisura}} hide">
+								<app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto"
+									[urlImagen]="microRelato.urlImagen"></app-fisura-generada>
 							</div>
-							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>	
-					
-					</ng-container>	
-								
-			
-				
-			</div>
-		</div>
-		<div class="col-12">
-			<div class="">
-				
-					
-					<ng-container *ngFor="let microRelato of fisuras3">
-						
-						<div class="img__wrap">			
-							<img (click)="clickCard($event)" class="img-fluid imagen" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
-								
-		
-								<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}" (click)="test($event)">						
-									<div class="img__description mx-auto">FISURA<div class="textoGrande">#&nbsp;{{microRelato.numeroFisura}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}</div><div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}</div></div> 
-									
-								  </div>	
-								
-		
+
+						</ng-container>
+					</div>
+
+
+
+				</div>
+				<div class="col-4">
+					<div class="slider3">
+
+
+						<ng-container *ngFor="let microRelato of fisuras3">
+
+							<div class="img__wrap">
+								<img (click)="clickCard($event)" class="img-fluid imagen"
+									id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />
+
+
+								<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}"
+									(click)="test($event)">
+									<div class="img__description mx-auto">FISURA<div class="textoGrande">
+											#&nbsp;{{microRelato.numeroFisura}}</div>
+										<div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}
+										</div>
+										<div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}
+										</div>
+									</div>
+
+								</div>
+
+
 							</div>
-							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>	
-					</ng-container>
-					
-				
-				
+							<div class="{{microRelato.numeroFisura}} hide">
+								<app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto"
+									[urlImagen]="microRelato.urlImagen"></app-fisura-generada>
+							</div>
+						</ng-container>
+
+
+
+					</div>
+				</div>
+				<div class="container">
+					<svg class="menuBar" viewBox="0 0 36 628">
+						<image class="float-right"
+							xlink:href="https://assetsexplora.s3.amazonaws.com/assets/comun/MENU WEB 4.png"
+							width="100%" />
+						<a xlink:href="#home" (click)="clickMenu(1)">
+							<rect x="0" y="0" width="36" height="118" fill="rgba(0,0,0,1)" opacity="0" /></a>
+						<a xlink:href="#autores" (click)="clickMenu(2)">
+							<rect x="0" y="118" width="36" height="164" fill="rgba(0,0,0,1)" opacity="0" /></a>
+						<a xlink:href="#microRelatos" (click)="clickMenu(3)">
+							<rect x="0" y="282" width="36" height="177" fill="rgba(0,0,0,1)" opacity="0" /></a>
+						<a xlink:href="#fisuras" (click)="clickMenu(4)">
+							<rect x="0" y="459" width="36" height="156" fill="rgba(0,0,0,1)" opacity="0" /></a>
+					</svg>
+				</div>
+
 			</div>
 		</div>
-		
-	</div>
-	
-
-</ng-container>
-
-
-<ng-container *ngIf="orientacion=='landscape'">
-
-
-	  <img class="degradadoLand fixed-bottom" src="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/RESPONSIVE VERTICAL/DEGRADADI-VERTICAL.png"/>
-	<header class="">
-		<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
-		  <div class="row container-fluid">
-			<div class="col-6">
-			  <img class="img-fluid logo1AtrasLand" (click)="clickMenu(1)" src="https://assetsexplora.s3.amazonaws.com/assets/autores/ciudad espejo press autores.png"/>
-			</div>
-			<div class="col-6">
-			  <img class="img-fluid logo2HomeLand" src="https://assetsexplora.s3.amazonaws.com/assets\Fisuras\RESPONSIVE VERTICAL/NOMBRE-GILTRO.png"/>
-			</div>    
-		  </div>  
-		</nav>  
-	  </header>  
-
-	
-
-		<div class="dropdownLand">
-			<img class="botonMasMenosLand" (click)="abrirTexto()" src="https://assetsexplora.s3.amazonaws.com/assets/autores/MENOS-TEXTO.jpg " *ngIf="permitirTexto">
-			<img class="botonMasMenosLand" (click)="abrirTexto()" src="https://assetsexplora.s3.amazonaws.com/assets/autores/MAS-TEXTO.jpg " *ngIf="!permitirTexto">
-			<div class="textoDesplegableLand text-left" *ngIf="permitirTexto">
-				<div class="margen"> Una fisura es el espacio entre las piezas de un cristal roto. Pero en Ciudad Espejo las fisuras son portales de encuentro entre las dos ciudades.
-					Habitan en las fisuras los testimonios de quienes han transitado por los dos mundos --como tú, forastero-- y han sobrevivido para contarlo.</div>
-			  </div>
-			  </div>
-	
-		<svg class="menuLand" viewBox="0 0 100 1800">
-			<image class="float-right" xlink:href="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/REPSONSIVE HORIZONTAL/ELEMENTOS ACTUALIZADOS/MENU-FISURAS.png" width="60%"  /> 
-			<a xlink:href="#home" (click)="clickMenu(1)"><rect x="0" y="0" width="320" height="150" fill="rgba(0,0,0,0.1)" opacity="0"/></a>
-			 <a xlink:href="#autores" (click)="clickMenu(2)"><rect x="0" y="170" width="320" height="230" fill="rgba(0,0,0,0.1)" opacity="0"/></a> 
-			<a xlink:href="#microRelatos" (click)="clickMenu(3)"><rect x="0" y="400" width="320" height="250" fill="rgba(0,0,0,0.1)" opacity="0"/></a> 
-			 <a xlink:href="#fisuras" (click)="clickMenu(4)"><rect x="0" y="650" width="320" height="220" fill="rgba(0,0,0,0.1)" opacity="0"/></a>                               --> -->
-		  </svg> 
-
-	  <div class="row">
-		<div class="col-12">
-			<div class="slider">
-				<div class="slide-track">
-					<div class="left">
-					<ng-container *ngFor="let microRelato of fisuras1">
-						<div class="slide">	
-												
-							<img (click)="clickCard($event)" class="img-fluid imagenLand mx-auto" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
-							
-							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
-						</div>
-					</ng-container>	
-				</div>
-				</div>
-				
-			</div>
-		</div>
-		<div class="col-12">
-			<div class="slider">
-				<div class="slide-track">
-					<div class="right">	
-					<ng-container *ngFor="let microRelato of fisuras2">
-						<div class="slide">
-							
-							<img (click)="clickCard($event)" class="img-fluid imagenLand mx-auto" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
-						
-							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
-						</div>
-					</ng-container>	
-					</div>			
-				</div>
-				
-			</div>
-		</div>
-		<div class="col-12">
-			<div class="slider">
-				<div class="slide-track">
-					<div class="left">
-					<ng-container *ngFor="let microRelato of fisuras3">
-						<div class="slide">
-					
-							<img (click)="clickCard($event)" class="img-fluid imagenLand mx-auto" id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />			
-						
-							<div class="{{microRelato.numeroFisura}} hide"><app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto" [urlImagen]="microRelato.urlImagen"></app-fisura-generada></div>
-						</div>
-					</ng-container>
-				</div>	
-				</div>
-				
-			</div>
-		</div>
-		
 	</div>
 
 
-	</ng-container>
+	<div *ngIf="movil">
 
 
+		<ng-container *ngIf="orientacion=='portrait'">
+			<img class="degradado fixed-bottom"
+				src="https://assetsexplora.s3.amazonaws.com/assets/Fisuras/RESPONSIVE VERTICAL/DEGRADADI-VERTICAL.png" />
+			<img class="logoSNLMovil" src="https://assetsexplora.s3.amazonaws.com/assets/comun/LOGO-SNL.png" />
+			<svg class="menuHorizontal" viewBox="0 0 615 36">
+				<image class="" xlink:href="https://assetsexplora.s3.amazonaws.com/assets/comun/MENU WEB 4H.png"
+					width="100%" />
+				<a xlink:href="#home" (click)="clickMenu(1)">
+					<rect x="0" y="0" width="118" height="36" fill="rgba(0,0,0,1)" opacity="0" /></a>
+				<a xlink:href="#autores" (click)="clickMenu(2)">
+					<rect x="119" y="0" width="162" height="36" fill="rgba(0,0,0,1)" opacity="0" /></a>
+				<a xlink:href="#microRelatos" (click)="clickMenu(3)">
+					<rect x="283" y="0" width="174" height="36" fill="rgba(0,0,0,1)" opacity="0" /></a>
+				<a xlink:href="#fisuras" (click)="clickMenu(4)">
+					<rect x="458" y="0" width="155" height="36" fill="rgba(0,0,0,1)" opacity="0" /></a>
+			</svg>
+
+			<div class="dropdown">
+				<img class="botonMasMenos" (click)="abrirTexto()"
+					src="https://assetsexplora.s3.amazonaws.com/assets/autores/MENOS-TEXTO.jpg " *ngIf="permitirTexto">
+				<img class="botonMasMenos" (click)="abrirTexto()"
+					src="https://assetsexplora.s3.amazonaws.com/assets/autores/MAS-TEXTO.jpg " *ngIf="!permitirTexto">
+				<div class="textoDesplegable text-left" *ngIf="permitirTexto">
+					<div class="margen"> Una fisura es el espacio entre las piezas de un cristal roto. Pero en Ciudad
+						Espejo las fisuras son portales de encuentro entre las dos ciudades.
+						Habitan en las fisuras los testimonios de quienes han transitado por los dos mundos --como tú,
+						forastero-- y han sobrevivido para contarlo.</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<div class="">
+						<ng-container *ngFor="let microRelato of fisuras1">
+							<div class="img__wrap">
+								<img (click)="clickCard($event)" class="img-fluid imagen"
+									id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />
+
+
+								<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}"
+									(click)="test($event)">
+									<div class="img__description mx-auto">FISURA<div class="textoGrande">
+											#&nbsp;{{microRelato.numeroFisura}}</div>
+										<div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}
+										</div>
+										<div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="{{microRelato.numeroFisura}} hide">
+								<app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto"
+									[urlImagen]="microRelato.urlImagen"></app-fisura-generada>
+							</div>
+						</ng-container>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="">
+						<ng-container *ngFor="let microRelato of fisuras2">
+							<div class="img__wrap">
+								<img (click)="clickCard($event)" class="img-fluid imagen"
+									id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />
+
+
+								<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}"
+									(click)="test($event)">
+									<div class="img__description mx-auto">FISURA<div class="textoGrande">
+											#&nbsp;{{microRelato.numeroFisura}}</div>
+										<div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}
+										</div>
+										<div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}
+										</div>
+									</div>
+
+								</div>
+
+
+							</div>
+							<div class="{{microRelato.numeroFisura}} hide">
+								<app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto"
+									[urlImagen]="microRelato.urlImagen"></app-fisura-generada>
+							</div>
+
+						</ng-container>
+
+
+
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="">
+
+
+						<ng-container *ngFor="let microRelato of fisuras3">
+
+							<div class="img__wrap">
+								<img (click)="clickCard($event)" class="img-fluid imagen"
+									id="{{microRelato.numeroFisura}}" src="{{microRelato.urlImagen}}" alt="" />
+
+
+								<div class="img__description_layer" id="{{microRelato.numeroFisura+'h'}}"
+									(click)="test($event)">
+									<div class="img__description mx-auto">FISURA<div class="textoGrande">
+											#&nbsp;{{microRelato.numeroFisura}}</div>
+										<div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% solarpunk'}}
+										</div>
+										<div class="textoPequeño">{{microRelato.porcentajeSolarPunk+'% distópico'}}
+										</div>
+									</div>
+
+								</div>
+
+
+							</div>
+							<div class="{{microRelato.numeroFisura}} hide">
+								<app-fisura-generada (click)="hide()" [textoGenerado]="microRelato.texto"
+									[urlImagen]="microRelato.urlImagen"></app-fisura-generada>
+							</div>
+						</ng-container>
+
+
+
+					</div>
+				</div>
+
+			</div>
+
+
+		</ng-container>
+
+
+		<ng-container *ngIf="orientacion=='landscape'">
+			<div class="col-12">
+				<img class="rotarCel" src="https://assetsexplora.s3.amazonaws.com/assets/comun/instruccion movil.png" />
+			</div>
+		</ng-container>
+
+	</div>
 </div>
-</div>
-
- 
-
-

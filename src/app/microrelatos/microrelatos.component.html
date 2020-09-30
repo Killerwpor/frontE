@@ -1,11 +1,14 @@
 <div *ngIf="!microRelatos" class="noScroll">
   <div *ngIf="!movil">
     <img class="degradadoIzq" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/DEGRADADO.png" />
-    <img class="fixed-bottom decoracionFondo" src="https://assetsexplora.s3.amazonaws.com/assets/autores/WEB/DECOR2.png" />
-    <img class="regresoCiudadEspejo" (click)="clickMenu(0)" src="https://assetsexplora.s3.amazonaws.com/assets/autores/ciudad espejo unpress.png" />
+    <img class="fixed-bottom decoracionFondo"
+      src="https://assetsexplora.s3.amazonaws.com/assets/autores/WEB/DECOR2.png" />
+    <img class="regresoCiudadEspejo" (click)="clickMenu(0)"
+      src="https://assetsexplora.s3.amazonaws.com/assets/autores/ciudad espejo unpress.png" />
     <img class="logoSNL" src="https://assetsexplora.s3.amazonaws.com/assets/comun/LOGO-SNL.png" />
     <svg class="menuBar" viewBox="0 0 36 628">
-      <image class="float-right" xlink:href="https://assetsexplora.s3.amazonaws.com/assets/comun/MENU WEB 3.png" width="100%" />
+      <image class="float-right" xlink:href="https://assetsexplora.s3.amazonaws.com/assets/comun/MENU WEB 3.png"
+        width="100%" />
       <a xlink:href="#home" (click)="clickMenu(1)">
         <rect x="0" y="0" width="36" height="118" fill="rgba(0,0,0,1)" opacity="0" /></a>
       <a xlink:href="#autores" (click)="clickMenu(2)">
@@ -19,10 +22,12 @@
     <div class="row zBajo">
       <div class="col-5 headerAmbos zBajo">
         <div class="col-12 MedellinAmbos">
-          <img class="img-fluid logoMedellinAmbos" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/NOMBRE FILTRO_PT.png" />
+          <img class="img-fluid logoMedellinAmbos"
+            src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/NOMBRE FILTRO_PT.png" />
         </div>
         <div class="col-12 separadorAmbos">
-          <img class="img-fluid" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/BARRA HORIZONTAL.png" />
+          <img class="img-fluid"
+            src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/BARRA HORIZONTAL.png" />
         </div>
         <div class="col-12">
           <div class="text-left textoFragmentoAmbos">Esto sucedió un día de este lado del espejo: grandes fragmentos
@@ -38,11 +43,13 @@
 
             <div class="col-4">
               <br>
-              <img class="img-fluid  rosaAmbos" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/gifs/rosa.png" />
+              <img class="img-fluid  rosaAmbos"
+                src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/gifs/rosa.png" />
             </div>
             <div class="col-3">
               <br>
-              <img class="img-fluid align-middle eligeUnFragmentoAmbos" src="https://assetsexplora.s3.amazonaws.com/assets/autores/ELIGE UN FRAGMENTO.png" />
+              <img class="img-fluid align-middle eligeUnFragmentoAmbos"
+                src="https://assetsexplora.s3.amazonaws.com/assets/autores/ELIGE UN FRAGMENTO.png" />
             </div>
           </div>
 
@@ -51,7 +58,8 @@
       <div class="col-5">
 
         <svg class="mapaAmbos" viewBox="0 -25 806 976">
-          <image class="img-fluid maximo" xlink:href="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/MAPA-CON-ELEMENTOS.png" />
+          <image class="img-fluid maximo"
+            xlink:href="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/MAPA-CON-ELEMENTOS.png" />
           <a xlink:href="#Algoritmo" (click)="permitirRelatos(6)">
             <polygon
               points="66,7 295,93 301,130 282,138 290,171 277,183 258,166 243,141 211,133 186,151 130,116 70,147 46,89"
@@ -93,8 +101,10 @@
     <ng-container *ngIf="orientacion=='portrait'">
       <img class="logoSNLMovil" src="https://assetsexplora.s3.amazonaws.com/assets/comun/LOGO-SNL.png" />
 
-      <img class="fixed-bottom decoracionhomeMovil" src="https://assetsexplora.s3.amazonaws.com/assets/autores/WEB/DECOR1.png" />
-      <img class="regresoCiudadEspejoMovil" (click)="clickMenu(1)" src="https://assetsexplora.s3.amazonaws.com/assets/autores/ciudad espejo unpress.png" />
+      <img class="fixed-bottom decoracionhomeMovil"
+        src="https://assetsexplora.s3.amazonaws.com/assets/autores/WEB/DECOR1.png" />
+      <img class="regresoCiudadEspejoMovil" (click)="clickMenu(1)"
+        src="https://assetsexplora.s3.amazonaws.com/assets/autores/ciudad espejo unpress.png" />
 
       <svg class="menuHorizontal" viewBox="0 0 615 36">
         <image class="" xlink:href="https://assetsexplora.s3.amazonaws.com/assets/comun/MENU WEB 3H.png" width="100%" />
@@ -109,9 +119,11 @@
       </svg>
 
       <div class="dropdown">
-        <img class="botonMasMenos" (click)="abrirTexto()" src="https://assetsexplora.s3.amazonaws.com/assets\microRelatos\RESPONSIVE VERTICAL/MENOS-TEXTO.jpg"
+        <img class="botonMasMenos" (click)="abrirTexto()"
+          src="https://assetsexplora.s3.amazonaws.com/assets\microRelatos\RESPONSIVE VERTICAL/MENOS-TEXTO.jpg"
           *ngIf="permitirTexto">
-        <img class="botonMasMenos" (click)="abrirTexto()" src="https://assetsexplora.s3.amazonaws.com/assets\microRelatos\RESPONSIVE VERTICAL/MAS-TEXTP.jpg"
+        <img class="botonMasMenos" (click)="abrirTexto()"
+          src="https://assetsexplora.s3.amazonaws.com/assets\microRelatos\RESPONSIVE VERTICAL/MAS-TEXTP.jpg"
           *ngIf="!permitirTexto">
         <div class="textoDesplegable text-left" *ngIf="permitirTexto">
           <div class="margen">Esto sucedío un día de este lado del espejo: grandes fragmentos de ciudad desaparecieron
@@ -123,12 +135,14 @@
         </div>
       </div>
 
-      <img class="degradado fixed-bottom" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE VERTICAL/DEGRADADO-MICRO.png" />
+      <img class="degradado fixed-bottom"
+        src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE VERTICAL/DEGRADADO-MICRO.png" />
 
       <div class="col-12">
 
         <svg class="mapaAmbosMovil fixed-top" viewBox="0 -25 806 976">
-          <image class="img-fluid maximo" xlink:href="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/MAPA-CON-ELEMENTOS.png" />
+          <image class="img-fluid maximo"
+            xlink:href="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/MAPA-CON-ELEMENTOS.png" />
           <a xlink:href="#Algoritmo" (click)="permitirRelatos(6)">
             <polygon
               points="66,7 295,93 301,130 282,138 290,171 277,183 258,166 243,141 211,133 186,151 130,116 70,147 46,89"
@@ -166,10 +180,12 @@
 
       <div class="row">
         <div class="col-12">
-          <img class="fixed-bottom rosaRojaMovil" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/gifs/rosa.png" />
+          <img class="fixed-bottom rosaRojaMovil"
+            src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/gifs/rosa.png" />
         </div>
         <div class="col-12">
-          <img class="fixed-bottom eligeUnFragmentoIzqMovil" src="https://assetsexplora.s3.amazonaws.com/assets/autores/ELIGE UN FRAGMENTO.png" />
+          <img class="fixed-bottom eligeUnFragmentoIzqMovil"
+            src="https://assetsexplora.s3.amazonaws.com/assets/autores/ELIGE UN FRAGMENTO.png" />
         </div>
       </div>
 
@@ -189,7 +205,8 @@
 <div *ngIf="microRelatos" class="">
   <div *ngIf="!movil">
     <img class="degradadoIzq" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/DEGRADADO.png" />
-    <img class="fixed-bottom decoracionFondo" src="https://assetsexplora.s3.amazonaws.com/assets/autores/WEB/DECOR2.png" />
+    <img class="fixed-bottom decoracionFondo"
+      src="https://assetsexplora.s3.amazonaws.com/assets/autores/WEB/DECOR2.png" />
     <img class="regresoMedellin" (click)="permitirRelatos('0')"
       src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/medellin unpress microrrelatos.png" />
     <img class="ciudadEspejoDer" src="https://assetsexplora.s3.amazonaws.com/assets/comun/LOGO_CE_PEQ.png" />
@@ -225,7 +242,8 @@
               <div class="textoTeoria text-right">{{microRelatoActual.fraseDeTeoria}}</div>
             </div>
             <div class="col-12">
-              <div class="text-right"><img src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/CORONDEL.png" /></div>
+              <div class="text-right"><img
+                  src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/CORONDEL.png" /></div>
             </div>
             <div class="col-12">
               <div class="img-fluid text-right" (click)="playAudio(microRelatoActual.urlAudio)"><img
@@ -482,16 +500,26 @@
             </div>
             <div class="col-12">
               <br>
-              <div *ngIf="contadorRespuestas==0" class="text-left"><img src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/0_.png" /></div>
-              <div *ngIf="contadorRespuestas==1" class="text-left"><img src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/10_.png" /></div>
-              <div *ngIf="contadorRespuestas==2" class="text-left"><img src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/20_.png" /></div>
-              <div *ngIf="contadorRespuestas==3" class="text-leftt"><img src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/30_.png" /></div>
-              <div *ngIf="contadorRespuestas==4" class="text-left"><img src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/40_.png" /></div>
-              <div *ngIf="contadorRespuestas==5" class="text-left"><img src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/50_.png" /></div>
-              <div *ngIf="contadorRespuestas==6" class="text-left"><img src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/60_.png" /></div>
-              <div *ngIf="contadorRespuestas==7" class="text-left"><img src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/70_.png" /></div>
-              <div *ngIf="contadorRespuestas==8" class="text-left"><img src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/80_.png" /></div>
-              <div *ngIf="contadorRespuestas==9" class="text-left"><img src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/90_.png" /></div>
+              <div *ngIf="contadorRespuestas==0" class="text-left"><img
+                  src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/0_.png" /></div>
+              <div *ngIf="contadorRespuestas==1" class="text-left"><img
+                  src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/10_.png" /></div>
+              <div *ngIf="contadorRespuestas==2" class="text-left"><img
+                  src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/20_.png" /></div>
+              <div *ngIf="contadorRespuestas==3" class="text-leftt"><img
+                  src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/30_.png" /></div>
+              <div *ngIf="contadorRespuestas==4" class="text-left"><img
+                  src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/40_.png" /></div>
+              <div *ngIf="contadorRespuestas==5" class="text-left"><img
+                  src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/50_.png" /></div>
+              <div *ngIf="contadorRespuestas==6" class="text-left"><img
+                  src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/60_.png" /></div>
+              <div *ngIf="contadorRespuestas==7" class="text-left"><img
+                  src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/70_.png" /></div>
+              <div *ngIf="contadorRespuestas==8" class="text-left"><img
+                  src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/80_.png" /></div>
+              <div *ngIf="contadorRespuestas==9" class="text-left"><img
+                  src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/90_.png" /></div>
             </div>
 
 
@@ -507,16 +535,20 @@
     <div class="container-fluid contenedorFooter" *ngIf="!movil">
       <div class="row text-center">
         <div class="col-5">
-          <img class="anteriorWeb float-right" (click)="next(false)" src="https://assetsexplora.s3.amazonaws.com/assets/comun/BOTON ANTERIOR_UNPRESS.png" />
+          <img class="anteriorWeb float-right" (click)="next(false)"
+            src="https://assetsexplora.s3.amazonaws.com/assets/comun/BOTON ANTERIOR_UNPRESS.png" />
         </div>
         <div class="col-2 ">
-          <img class="brujulaVolver" (click)="permitirRelatos(0)" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/gifs/rosa.png" />
+          <img class="brujulaVolver" (click)="permitirRelatos(0)"
+            src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/gifs/rosa.png" />
         </div>
         <div class="col-5">
-          <img class="siguienteWeb float-left" (click)="next(true)" src="https://assetsexplora.s3.amazonaws.com/assets/comun/BOTON SIGUIENTE UNPRESS.png" />
+          <img class="siguienteWeb float-left" (click)="next(true)"
+            src="https://assetsexplora.s3.amazonaws.com/assets/comun/BOTON SIGUIENTE UNPRESS.png" />
         </div>
         <div class="col-12">
-          <img class="medellinInverso2" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/MEDELLIN-INVERTIDO-PEQUENO.png" />
+          <img class="medellinInverso2"
+            src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/MEDELLIN-INVERTIDO-PEQUENO.png" />
         </div>
       </div>
     </div>
@@ -531,11 +563,12 @@
     <ng-container *ngIf="orientacion=='portrait'">
 
       <img class="regresoMedellinMovil" (click)="permitirRelatos('0')"
-      src="https://assetsexplora.s3.amazonaws.com/assets/autores/medellin unpress autores.png" />
-    <img class="ciudadEspejoDerMovil" src="https://assetsexplora.s3.amazonaws.com/assets/comun/LOGO_CE_PEQ.png" />
-    <img class="logoSNLMovil" src="https://assetsexplora.s3.amazonaws.com/assets/comun/LOGO-SNL.png" />
+        src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/medellin unpress microrrelatos.png" />
+      <img class="ciudadEspejoDerMovil" src="https://assetsexplora.s3.amazonaws.com/assets/comun/LOGO_CE_PEQ.png" />
+      <img class="logoSNLMovil" src="https://assetsexplora.s3.amazonaws.com/assets/comun/LOGO-SNL.png" />
 
-    <img class="degradado2 fixed-bottom" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE VERTICAL/DEGRADADO-MICRO.png" />
+      <img class="degradado2 fixed-bottom"
+        src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE VERTICAL/DEGRADADO-MICRO.png" />
 
       <!-- <header class="">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
@@ -586,19 +619,21 @@
             <div>
               <img class="img-fluid iconoTw" (click)="compartirTw()"
                 src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/ELEMENTOS TRSVLS/TWITTER-ICONO.png" />
-            </div>          
+            </div>
           </div>
 
           <div class="container-fluid footer" *ngIf="contadorRespuestas==10">
 
             <div class="row">
               <div class="col-4">
-                <img *ngIf="movil" class="img-fluid" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE VERTICAL/otros-relatos.png" />
+                <img *ngIf="movil" class="img-fluid"
+                  src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE VERTICAL/otros-relatos.png" />
               </div>
 
               <div class="col-4">
                 <div><img class="subeTuHistoria" (click)="guardarMicroRelato()"
-                    src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/SUBE-TU-HISTORIA-.png" /></div>
+                    src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE VERTICAL/ELEMENTOS ACTUALIZADOS/SUBE-TU-HISTORIA-.png" />
+                </div>
               </div>
               <div class="col-4">
                 <img class="img-fluid" (click)="habilitarCompartir()"
@@ -621,7 +656,8 @@
                 <div class="textoFragmento text-left">{{microRelatoActual.texto}}</div>
               </div>
               <div class="col-12">
-                <div class="textoOriginal2"><br>Visita todos los microrrelatos para construir el tuyo.</div>
+                <div class="textoOriginal3 font-weight-bold"><br>CONSTRUYE TU PROPIA HISTORIA</div>
+                <div class="textoOriginal2"><br>*** Imagina tu ciudad futura y responde todas las preguntas.</div>
               </div>
               <div class="col-12">
                 <div *ngIf="bulletVacio[0]" class="textoFragmento3 font-weight-bold">¿Cómo se llama tu personaje? (una
@@ -877,33 +913,44 @@
                 </div>
 
                 <div class="col-2">
-                  <div class="img-fluid text-right" (click)="playAudio(microRelatoActual.urlAudio)"><img
+                  <div class="img-fluid audioiconMovil" (click)="playAudio(microRelatoActual.urlAudio)"><img
                       src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/ECUALIZADOR-OFF.png" /></div>
                 </div>
                 <div class="col-3">
-                  <img class="brujulaVolver" (click)="permitirRelatos(0)" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/gifs/rosa.png" />
+                  <img class="brujulaVolver" (click)="permitirRelatos(0)"
+                    src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/gifs/rosa.png" />
                 </div>
                 <div class="col-3">
                   <div *ngIf="contadorRespuestas==0" class="text-left"><img class="porcentajePortrait"
-                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/0.png" /></div>
+                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/0.png" />
+                  </div>
                   <div *ngIf="contadorRespuestas==1" class="text-left"><img class="porcentajePortrait"
-                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/10.png" /></div>
+                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/10.png" />
+                  </div>
                   <div *ngIf="contadorRespuestas==2" class="text-left"><img class="porcentajePortrait"
-                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/20.png" /></div>
+                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/20.png" />
+                  </div>
                   <div *ngIf="contadorRespuestas==3" class="text-leftt"><img class="porcentajePortrait"
-                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/30.png" /></div>
+                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/30.png" />
+                  </div>
                   <div *ngIf="contadorRespuestas==4" class="text-left"><img class="porcentajePortrait"
-                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/40.png" /></div>
+                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/40.png" />
+                  </div>
                   <div *ngIf="contadorRespuestas==5" class="text-left"><img class="porcentajePortrait"
-                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/50.png" /></div>
+                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/50.png" />
+                  </div>
                   <div *ngIf="contadorRespuestas==6" class="text-left"><img class="porcentajePortrait"
-                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/60.png" /></div>
+                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/60.png" />
+                  </div>
                   <div *ngIf="contadorRespuestas==7" class="text-left"><img class="porcentajePortrait"
-                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/70.png" /></div>
+                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/70.png" />
+                  </div>
                   <div *ngIf="contadorRespuestas==8" class="text-left"><img class="porcentajePortrait"
-                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/80.png" /></div>
+                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/80.png" />
+                  </div>
                   <div *ngIf="contadorRespuestas==9" class="text-left"><img class="porcentajePortrait"
-                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/90.png" /></div>
+                      src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/RESPONSIVE HORIZONTAL/90.png" />
+                  </div>
                 </div>
 
                 <div class="col-2">
@@ -934,11 +981,13 @@
         <div class="row mt-2">
 
           <div class="col-5">
-            <img class="img-fluid" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/ELEMENTOS TRSVLS/CABEZOTE-CIUDAD-ESPEJO.png" />
+            <img class="img-fluid"
+              src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/ELEMENTOS TRSVLS/CABEZOTE-CIUDAD-ESPEJO.png" />
           </div>
           <div class="col-7">
             <!-- <img class="img-fluid logocompartir" src="{{urlImagen}}"/> -->
-            <img class="img-fluid" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/ELEMENTOS TRSVLS/BANNER-LOGOS.png" />
+            <img class="img-fluid"
+              src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/ELEMENTOS TRSVLS/BANNER-LOGOS.png" />
 
           </div>
         </div>
@@ -961,7 +1010,8 @@
 
       </div>
       <div class="col-12">
-        <img class="img-fluid centrarImagen" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/BULLET-SEPARADOR.png" />
+        <img class="img-fluid centrarImagen"
+          src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/BULLET-SEPARADOR.png" />
       </div>
       <div class="col-12">
         <br>
@@ -974,7 +1024,8 @@
       <div class="col-12 footerCompartir">
         <div class="row">
           <div class="col-12">
-            <img class="img-fluid" src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/ELEMENTOS TRSVLS/PATA-TEXTO.png" />
+            <img class="img-fluid"
+              src="https://assetsexplora.s3.amazonaws.com/assets/microRelatos/ELEMENTOS TRSVLS/PATA-TEXTO.png" />
           </div>
 
         </div>

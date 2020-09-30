@@ -34,9 +34,9 @@
 .texto{
 	position: relative;
 	left: 100px;
-    font-family: "krete";
+	font-family: "sweet-sans-pro";
 	color: #F8EBE3; 
-	font-size: 1em;
+	font-size: 1.2em;
 }
 
 .degradado{
@@ -177,9 +177,6 @@ cursor: pointer;
 		  z-index: -1;
 	  }
 
-	 
-
-
 }
 
 .dropdownLand{
@@ -198,14 +195,17 @@ cursor: pointer;
 
 
 .botonMasMenos{
-    width:15%;
+    width:10%;
     z-index: 999;
 }
+
 
 .botonMasMenosLand{
     width: 5%;
     z-index: 999;
 }
+
+
 
 
 .textoDesplegable{
