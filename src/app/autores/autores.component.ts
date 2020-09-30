@@ -96,7 +96,7 @@ export class AutoresComponent implements OnInit {
       if(this.contadorFragmento<9){        
         this.fragmentoActual=fragmentos[this.contadorFragmento+1];
         this.contadorFragmento++; 
-        $("#bullet"+this.contadorFragmento).attr('src','assets/autores/BULLET-LLENO.png');
+        $("#bullet"+this.contadorFragmento).attr('src','https://assetsexplora.s3.amazonaws.com/assets/autores/BULLET-LLENO.png');
            
        
      

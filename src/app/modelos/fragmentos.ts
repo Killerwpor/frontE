@@ -4,7 +4,7 @@ import { Fragmento } from './fragmento';
 
     export const fragmentos: Fragmento[] = [
     {
-        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/HUMO_COMP_FVERDE.png",
+        urlImagen: "https://assetsexplora.s3.amazonaws.com/assets/autores/ILUSTRACIONES PARA APP/HUMO_COMP_FVERDE.png",
         nombre: 'GONZALO' ,
         apellido: 'ARANGO',
         fuenteBibliografia: '"Medellín a solas contigo"',
@@ -13,7 +13,7 @@ import { Fragmento } from './fragmento';
         
     },
     {   
-        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/EXPERIMENTACION_COMP_ILUSTRACION.png",
+        urlImagen: "https://assetsexplora.s3.amazonaws.com/assets/autores/ILUSTRACIONES PARA APP/EXPERIMENTACION_COMP_ILUSTRACION.png",
         nombre: 'INÉS',
         apellido: 'POSADA',
         fuenteBibliografia:'"El duro silencio de las cosas". En: Lo lento, lo pequeño, lo cercano. Editorial Atarraya, Medellín, 2018.',
@@ -22,7 +22,7 @@ import { Fragmento } from './fragmento';
 
     },
     {
-        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/MICO_COMP_ILUSTRACION.png",
+        urlImagen: "https://assetsexplora.s3.amazonaws.com/assets/autores/ILUSTRACIONES PARA APP/MICO_COMP_ILUSTRACION.png",
         nombre: 'JOSÉ MANUEL',
         apellido: 'ARANGO',
         fuenteBibliografia: '"El sueño rencoroso"',
@@ -31,7 +31,7 @@ import { Fragmento } from './fragmento';
 
     },
     {
-        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/LUNA_COMP_naranja.png",
+        urlImagen: "https://assetsexplora.s3.amazonaws.com/assets/autores/ILUSTRACIONES PARA APP/LUNA_COMP_naranja.png",
         nombre: 'JAIME',
         apellido: 'JARAMILLO ESCOBAR',
         fuenteBibliografia: '""En la luna"". En: Poemas para hoy. Editorial Universidad de Antioquia. Medellín, 2019."',
@@ -40,7 +40,7 @@ import { Fragmento } from './fragmento';
 
     },
     {
-        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/PATIO_COMP_ILLUSTRACION.png",
+        urlImagen: "https://assetsexplora.s3.amazonaws.com/assets/autores/ILUSTRACIONES PARA APP/PATIO_COMP_ILLUSTRACION.png",
         nombre: 'MANUELA',
         apellido: 'GÓMEZ',
         fuenteBibliografia: '"El cemento de una casa". En: La vida como era. Editorial Atarraya, 2017."',
@@ -49,7 +49,7 @@ import { Fragmento } from './fragmento';
 
     },
     {
-        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/NINA_COMP_ILUSTRACION.png",
+        urlImagen: "https://assetsexplora.s3.amazonaws.com/assets/autores/ILUSTRACIONES PARA APP/NINA_COMP_ILUSTRACION.png",
         nombre: 'YENNY',
         apellido: 'LEÓN',
         fuenteBibliografia: 'De Entre árboles y piedras. Planeta, 2013."',
@@ -58,7 +58,7 @@ import { Fragmento } from './fragmento';
 
     },
     {
-        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/ECOS_COMP_ILUSTRACION.png",
+        urlImagen: "https://assetsexplora.s3.amazonaws.com/assets/autores/ILUSTRACIONES PARA APP/ECOS_COMP_ILUSTRACION.png",
         nombre: 'JORGE MARIO',
         apellido:  'BETANCUR',
         fuenteBibliografia: 'Moscas de todos los colres: barrio Guayaquil de Medellín, 1894-1034. Editorial Universidad de Antioquia. Medellín, 2006',
@@ -67,7 +67,7 @@ import { Fragmento } from './fragmento';
 
     },
     {
-        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/GARDEL_COMP_ILUSTRACION.png",
+        urlImagen: "https://assetsexplora.s3.amazonaws.com/assets/autores/ILUSTRACIONES PARA APP/GARDEL_COMP_ILUSTRACION.png",
         nombre: 'MANUEL',
         apellido: 'MEJÍA VALLEJO',
         fuenteBibliografia:'Aire de tango. Editorial Eafit. Medellín, 2008. "',
@@ -76,7 +76,7 @@ import { Fragmento } from './fragmento';
 
     },
     {
-        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/RIO_COMP_ILUSTRACION.png",
+        urlImagen: "https://assetsexplora.s3.amazonaws.com/assets/autores/ILUSTRACIONES PARA APP/RIO_COMP_ILUSTRACION.png",
         nombre: 'TOMÁS',
         apellido: 'CARRASQUILLA',
         fuenteBibliografia: 'Fragmento de ""Medellín"" citado por Reinaldo Spitaletta. En ""El Medellín que vio Tomás Carrasquilla"". Url: https://spitaletta.wordpress.com/tag/tomas-carrasquilla/ "',
@@ -84,7 +84,7 @@ import { Fragmento } from './fragmento';
         textoFragmento: 'Sigo estas instrucciones: 1. En el solsticio de verano, antes de terminar el día, entro a la canalización que solía ser el río Medellín. 2. Miro al norte. 3. Camino. 4. Avanzo con las imágenes del pasado en mi cabeza que, como una cuerda, me guían en la oscuridad de la cueva. 5. Las veo: las viejas calles paralelas al río, los puentes que lo atraviesan. 6. La siento: el agua filtrándose en mis zapatos. La fuerza de la corriente que ya no existe. 7. Los huelo: los químicos vertidos, la podredumbre de las casas... Pero a un paso de cruzar el umbral, suelto la cuerda, las imágenes, porque no estoy listo todavía. Todo se desvanece repentinamente: las viejas calles, los puentes, el agua, el olor. Intentaré el año que viene.'
     },
     {
-        urlImagen: "assets/autores/ILUSTRACIONES PARA APP/CULTO_ILUSTRACION.png",
+        urlImagen: "https://assetsexplora.s3.amazonaws.com/assets/autores/ILUSTRACIONES PARA APP/CULTO_ILUSTRACION.png",
         nombre: 'SOFÍA',
         apellido: 'OSPINA de NAVARRO',
         fuenteBibliografia: '"La buena mesa"',
