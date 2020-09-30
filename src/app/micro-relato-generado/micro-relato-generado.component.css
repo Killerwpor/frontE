@@ -83,7 +83,7 @@
     cursor: pointer;
 }
 .container-fluid2{
-
+background-color: white;
 }
 
 textarea{
@@ -118,6 +118,7 @@ left: 0;
 
     .iconSubeTuHistoria{
  margin-left: -25px;
+ z-index: 999;
           }  
         .iconoCompartir{  
             margin-left: -45px;    

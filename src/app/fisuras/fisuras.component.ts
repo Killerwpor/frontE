@@ -120,13 +120,24 @@ abrirTexto(){
 }
 
 
-clickCard(event){
+test(event){ 
+  let elementId: string = (event.target as Element).id;
+  $("#"+elementId+'h').hide();
+  var aux=elementId.replace('h','');
+  this.clickCard(aux);
+  //alert("click");
+  //let elementId: string = (event.target as Element).id;
+  //console.log(texto);
+}
+
+clickCard(elementId){
   $(".imagen").show();
   $(".hide").hide();
-  let elementId: string = (event.target as Element).id;
+  console.log("Id: "+elementId);
   $("#"+elementId).hide();
   $("."+elementId).show();
   this.numeroFisura=elementId;
+  $(".img__description_layer").show();
   
 }
 
