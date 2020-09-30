@@ -31,6 +31,15 @@ cursor: pointer;
    width: 80%;
 }
 
+.textoOriginalMovil {
+    font-family: "krete";
+    color: #92B7CB;
+    font-size: 5vw;
+    width: 90%;
+    padding-left: 5%;
+    
+}
+
 .form-control{
     color: #F8EBE3;
 }
@@ -562,6 +571,7 @@ input[type="text"]
 
     .imagenMicroRelato{
       width: 100%;
+      top: 0em;
      }
 
     .mapaMovil{
@@ -571,11 +581,11 @@ input[type="text"]
     }
 
     .textoFragmento{
-        margin-top: 10px;
         color:  #F8EBE3;
-        font-family: "krete";
+        font-family: "sweet-sans-pro";
         font-size: 5vw;
     }
+    
     
 
     .contenedorTextoFragmento{
@@ -692,12 +702,6 @@ border-radius: 15px;
         left: 0px;
         z-index: -999;
     }
-
-    .menuHorizontal{
-        position: relative;
-        top: 90px;     
-      
-      }
 
       .rosaMovil{
        position: relative;

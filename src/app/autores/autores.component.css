@@ -1,32 +1,32 @@
-.contenedorRelatos{
+.contenedorRelatos {
     position: relative;
     top: 200px;
     margin-top: 0%;
-    padding: 0px,0px,0px,0px !important;
+    padding: 0px, 0px, 0px, 0px !important;
 }
 
-.contenedorPrincipal{
+.contenedorPrincipal {
     margin-top: 2%;
 }
 
-.colMapa{
+.colMapa {
     margin-top: 1%;
 }
 
-.margen{
+.margen {
     margin: 10px 10px 10px 10px;
 }
 
-.logoMedellin{
+.logoMedellin {
     width: 50%;
 }
 
-.header{
-   padding-top: 250px;
-   padding-left: 200px;
+.header {
+    padding-top: 250px;
+    padding-left: 200px;
 }
 
-.Medellin{
+.Medellin {
     position: relative;
     right: 40px;
     top: 15px;
@@ -34,67 +34,66 @@
     height: auto;
 }
 
-.separador{
+.separador {
     position: relative;
     right: 100px;
     width: 340px;
 }
 
-.texto{
-   padding-top: 20%;
+.texto {
+    padding-top: 20%;
 }
 
-.logo1Atras{
+.logo1Atras {
     position: relative;
     left: 7%;
     width: 28%;
 }
 
-.logo1Atras:hover{
-    cursor: pointer;    
+.logo1Atras:hover {
+    cursor: pointer;
 }
 
-.logo1{
+.logo1 {
     margin-left: 6%;
     z-index: 999 !important;
 }
 
-.logo1:hover{
-   cursor: pointer;
+.logo1:hover {
+    cursor: pointer;
 }
 
-.zImportant{
+.zImportant {
     z-index: 999;
 }
 
-.zBajo{
+.zBajo {
     z-index: -999;
 }
 
-
-.navbar{
+.navbar {
     margin-top: 1.5%;
     z-index: 999 !important;
 }
 
-.columnaTextoSecundario{
+.columnaTextoSecundario {
     position: relative;
     top: 12px;
     left: 5%;
 }
 
-.logoFiltro{
+.logoFiltro {
     position: relative;
     right: 100px;
 }
 
-.decoracion{
+.decoracion {
     z-index: -999;
     width: 100%;
     height: 100%;
 }
 
-.logoCiudadEspejo{
+.logoCiudadEspejo {
     width: 26%;
 }
 
@@ -104,28 +103,25 @@
     top: 20%;
 }
 
-.logo1Home{
+.logo1Home {
     width: 20%;
 }
 
-
-
-.logo2Home{
+.logo2Home {
     position: relative;
     left: 3%;
     bottom: 14px;
     float: right;
-
     width: 11.5%;
 }
 
-.logo2{
+.logo2 {
     float: right;
     margin-left: 200px;
     width: 50%;
 }
 
-.aliados{
+.aliados {
     position: fixed;
     top: 2%;
     left: 65%;
@@ -133,53 +129,51 @@
     z-index: 999;
 }
 
-.aliados:hover{
+.aliados:hover {
     cursor: pointer;
 }
 
-.btn-group{
+.btn-group {
     position: relative;
     top: 140px;
     width: 60%;
- }
-
- .btn-group:hover{
-   cursor: pointer !important;
-  }
-
-  .separador{
-      height: 10px;
-  }
-
-  .rosa{
-      width: 60%;
-  }
-
-
-
-  .brujula{
-      position: absolute;
-      top: -250px;
-      left: 92%;
-width: 18%;
 }
 
-.brujula:hover{
+.btn-group:hover {
+    cursor: pointer !important;
+}
+
+.separador {
+    height: 10px;
+}
+
+.rosa {
+    width: 60%;
+}
+
+.brujula {
+    position: absolute;
+    top: -250px;
+    left: 92%;
+    width: 18%;
+}
+
+.brujula:hover {
     cursor: pointer;
 }
 
-.barraSeparadora{
+.barraSeparadora {
     width: auto;
     height: 400px;
     padding-right: 40%;
 }
 
-.brujulaHomeWeb{
+.brujulaHomeWeb {
     margin-top: 8%;
     width: 30%;
 }
 
-.brujulaHomeWeb:hover{
+.brujulaHomeWeb:hover {
     cursor: pointer;
 }
 
@@ -198,12 +192,10 @@ width: 18%;
     margin-top: -10px;
 }
 
-.footerWeb{
-
-      position: fixed;
-      left: 0em;
-      top: 83%;
-
+.footerWeb {
+    position: fixed;
+    left: 0em;
+    top: 83%;
 }
 
 /* .imagenFragmento{
@@ -218,9 +210,10 @@ width: 18%;
 .imagenFragmento {
     width: 80%;
     z-index: -999;
-} 
+}
 
 /* POPUP  */
+
 .modalbox .box {
     background-color: rgba(9, 49, 61, 0.5);
     margin: 0 auto;
@@ -228,16 +221,18 @@ width: 18%;
     padding: 40px;
     width: 100%;
     margin-top: 100px;
-    }
-    .modalbox .content {
+}
+
+.modalbox .content {
     display: block;
     font-family: Verdana;
     font-size: 18px;
     line-height: 22px;
     padding: 10px 0 0;
     color: #fff;
-        }
-    .modalbox .close {
+}
+
+.modalbox .close {
     color: #fff;
     display: block;
     float: left;
@@ -245,44 +240,46 @@ width: 18%;
     font-size: 22px;
     height: 25px;
     text-decoration: none;
-        }
+}
 
-
-.modalbox{ /*Caja Total del POPOPUP*/
+.modalbox {
+    /*Caja Total del POPOPUP*/
     position: fixed;
     z-index: 9999;
     width: 30%;
     height: auto;
     top: 0;
     left: 0%;
-    color:#333333;
-    }
+    color: #333333;
+}
 
 .modalbox:target {
     display: block;
     outline: none;
 }
+
 /* FIN POPUP */
-.botonMasMenos{
+
+.botonMasMenos {
     width: 10%;
 }
 
-.contenedorMapa{
+.contenedorMapa {
     padding-top: 1px;
-
 }
 
-.mapa{
+.mapa {
     width: 94%;
     max-width: 94%;
     min-width: 94%;
     height: auto;
 }
 
-.barraHorizontal{
+.barraHorizontal {
     width: 60%;
 }
-.menu{ 
+
+.menu {
     position: relative;
     left: 10%;
     min-width: 30%;
@@ -290,15 +287,13 @@ width: 18%;
     height: auto;
     padding-top: 230px;
     width: 50px;
-
 }
 
-.menu:hover{
-  cursor: pointer;
+.menu:hover {
+    cursor: pointer;
 }
 
-
-.imagenRelatos{
+.imagenRelatos {
     width: 50%;
 }
 
@@ -315,6 +310,21 @@ width: 18%;
     font-size: 1vw;
 }
 
+.nombreMovil {
+    color: #92B7CB;
+    font-family: "sweet-sans-pro";
+    margin-right: 4px;
+    font-size: 5vw;
+    padding-left: 5%;
+}
+
+.apellidoMovil {
+    color: #92B7CB;
+    font-family: "sweet-sans-pro";
+    font-size: 5vw;
+}
+
+
 .fuenteBibliografia {
     color: #92B7CB;
     font-family: "sweet-sans-pro";
@@ -326,7 +336,22 @@ width: 18%;
     font-size: 1vw;
 }
 
- .footer{
+/* .textoOriginalMovil {
+    font-family: "krete";
+    color: #92B7CB;
+    font-size: 4vw;
+} */
+
+.textoOriginalMovil {
+    font-family: "krete";
+    color: #92B7CB;
+    font-size: 5vw;
+    width: 90%;
+    padding-left: 5%;
+    
+}
+
+.footer {
     background-color: #09313D;
     position: fixed;
     left: 0px;
@@ -334,47 +359,46 @@ width: 18%;
     height: 110px;
 }
 
-.anterior{
+.anterior {
     margin-top: 10%;
     width: 250px;
 }
 
-.anterior2{
+.anterior2 {
     margin-top: 9%;
     margin-left: 80px;
     width: 250px;
 }
 
-.anterior:hover{
-    cursor:pointer;
+.anterior:hover {
+    cursor: pointer;
 }
 
-.anterior2:hover{
-    cursor:pointer;
+.anterior2:hover {
+    cursor: pointer;
 }
 
-.bullets{
+.bullets {
     margin-top: 3.2%;
     margin-left: 0%;
 }
 
-.bullet{
+.bullet {
     width: 20px;
 }
 
-.bulletWeb{
+.bulletWeb {
     margin-right: 10px;
     width: 15px;
 }
 
-.bullets2{
+.bullets2 {
     position: relative;
     left: 5%;
     margin-top: 2.8%;
-    
 }
 
-.degradado{
+.degradado {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -382,80 +406,68 @@ width: 18%;
     z-index: -999;
 }
 
-.contenedorTextoFragmento{
+.contenedorTextoFragmento {
     position: relative;
     right: 50px;
 }
 
-.bullet2{
+.bullet2 {
     width: 20px;
 }
 
-.brujulaHome{
+.brujulaHome {
     position: relative;
     left: 50px;
     width: 100px;
 }
 
+.brujulaHome:hover {
+    cursor: pointer
+}
 
-
-.brujulaHome:hover{
-    cursor: pointer   
-} 
-
-.barraScroll{
+.barraScroll {
     position: fixed;
     top: 150px;
     width: auto;
     height: 520px;
-    
     right: 100px;
 }
 
-.botonScroll{
+.botonScroll {
     position: absolute;
     top: 30%;
     right: -4.5%;
 }
 
-.textoFragmento{
+.textoFragmento {
     margin-top: 10px;
     color: #F8EBE3;
     font-family: "sweet-sans-pro";
     font-size: 1vw;
 }
 
-
-
 @media only screen and (max-width: 500px) {
-
-    .mapaMovil{
+    .mapaMovil {
         position: relative;
         top: -70px;
-       
     }
-
-    .textoFragmento{
+    .textoFragmento {
         margin-top: 10px;
-        color:  #F8EBE3;
+        color: #F8EBE3;
         font-family: "krete";
         font-size: 5vw;
     }
-    
-
-    .contenedorTextoFragmento{
+    .contenedorTextoFragmento {
         position: relative;
         right: 0px;
         top: 100px;
     }
-
-    .columnaTextoSecundario{
+    .columnaTextoSecundario {
         position: relative;
         top: 80px;
         left: 5%;
     }
-
-    .imagenFragmento{
+    .imagenFragmento {
         position: relative;
         top: 80px;
         width: 100%;
@@ -463,62 +475,50 @@ width: 18%;
         max-height: 300px;
         z-index: -999;
     }
-
-    .medellin{
+    .medellin {
         position: relative;
         top: 0px !important;
         width: 25%;
-
     }
-
-    .brujulaHomeWeb{
+    .brujulaHomeWeb {
         position: relative;
         right: 1%;
         margin-top: 0% !important;
         width: 20%;
     }
-
-    .siguienteWeb{
+    .siguienteWeb {
         position: relative;
         left: 40%;
         bottom: 68px;
         margin-top: 0%;
         width: 50% !important;
     }
-
-    .anteriorWeb{
+    .anteriorWeb {
         position: relative;
         left: -52%;
         bottom: 68px;
         margin-top: 0%;
         width: 50% !important;
     }
-
-    .bulletWeb{       
+    .bulletWeb {
         width: 10px;
     }
-
-    .footerWeb{
+    .footerWeb {
         background-color: #012D39;
         position: fixed;
         left: 0em;
-        top: 85%;  
-  }
-
-    .logoCiudadEspejo{
+        top: 85%;
+    }
+    .logoCiudadEspejo {
         width: 80%;
     }
-    
-
-    .logo1Atras{
+    .logo1Atras {
         width: 100%;
     }
-
-    .logo2Home{
+    .logo2Home {
         width: 50%;
     }
-
-    .degradado{
+    .degradado {
         position: fixed;
         top: 90%;
         width: 100%;
@@ -527,29 +527,25 @@ width: 18%;
         z-index: -999;
     }
 
-    .botonMasMenos{
+    .botonMasMenos {
         position: relative;
         top: 200px;
         width: 10%;
         z-index: 999;
     }
-
-    .textoDesplegable{
+    .textoDesplegable {
         position: absolute;
         top: 232px;
         background-color: #F8EBE3;
         z-index: 999;
         font-size: 4vw;
-font-family: "sweet-sans-pro";
-border-radius: 15px;
+        font-family: "sweet-sans-pro";
+        border-radius: 15px;
     }
-
-    
-    .botonMasMenos:hover{
+    .botonMasMenos:hover {
         cursor: pointer;
     }
-
-    .degradado2{
+    .degradado2 {
         position: fixed;
         top: 80%;
         width: 100%;
@@ -557,164 +553,12 @@ border-radius: 15px;
         left: 0px;
         z-index: -999;
     }
-
-    .menuHorizontal{
+    .rosaMovil {
         position: relative;
-        top: 90px;     
-      
-      }
-
-      .rosaMovil{
-       position: relative;
-       bottom: 110px;
-       left: 65%;
-      }
-
-      .rosa2Movil{
-   width: 80%;
-       }
-    
-}
-
-.logo1AtrasLand{
-    position: relative;
-    left: 7%;
-    width: 35%;
-}
-
-.logo2HomeLand{
-    position: relative;
-    left: -33%;
-    bottom: 14px;
-    float: right;
-
-    width: 20%;
-}
-
-.dropdownLand{
-    position: relative;
-    top: 100px;
-    z-index: 999;
-}
-
-.botonMasMenosLand{
-    width: 5%;
-    z-index: 999;
-}
-
-.textoDesplegableLand{
-    position: absolute;
-    margin-right: 55%;
-    top: 35px;
-    background-color: #F8EBE3;
-    z-index: 999;
-    font-size: 2vw;
-font-family: "sweet-sans-pro";
-border-radius: 15px;
-}
-
-/* .degradado{
-    position: fixed;
-    top: 90%;
-    width: 100%;
-    height: 10%;
-    left: 0px;
-    z-index: -999;
-} */
-
-.mapaMovilLand{
-position: relative;
-
-   
-}
-
-.rosaMovilLand{
-    position: relative;
-    bottom: 40px;
-    left: 75%;
-   }
-
-   .menuLand{
-    position: fixed;
-    top: 10%;
-    left: 95%;
-    z-index: 999;
-
-
-}
-
-.footerWebLand{
-    background-color: #09313D;
-    position: fixed;
-    left: 0em;
-    top: 5%;
-
-}
-
-.brujulaHomeWebLand{
-   position: relative;
-   top: 0px;
-    width: 10%;
-}
-
-.anteriorWebLand{
-    position: relative;
-    top: 230px;
-    right: 50%;
-    width: 30%;
-}
-
-.siguienteWebLand{
-    position: relative;
-    left: 50%;
-    top: 230px;
-    width: 35%;
-}
-
-.medellinLand{
-    position: relative;
-    top: 290px;
-    width: 10%;
-}
-
-.contenedorBulletWeb{
-position: relative;
-top: 300px;
-}
-
-.logo1Land{
-    position: relative;
-    top: -20px;
-    width: 50%;
-}
-
-.logoCiudadEspejoLand{
-    position: relative;
-    top: -10px;
-    width: 50%;
-}
-
-.contenedorLand{
-    position: relative;
-    top: 150px;
-}
-
-.textoFragmentoLand{
-    font-size: 1.5vw;
-}
-.imagenFragmentoLand{
-    position: fixed;
-    top: 80px;
-    width: 40%;
-    max-width: 600px;
-    max-height: 300px;
-    z-index: -999;
-}
-
-.barraSeparadoraLand{
- 
-        width: auto;
-        height: 100%;
-        padding-right: 80%;
-
+        bottom: 110px;
+        left: 65%;
+    }
+    .rosa2Movil {
+        width: 80%;
+    }
 }

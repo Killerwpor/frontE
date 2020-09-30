@@ -22,6 +22,13 @@ body {
   background-color: #032E3A;
 }
 
+.rotarCel {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+
 .logoFiesta {
   position: fixed;
   top: 5.3%;
@@ -36,11 +43,33 @@ body {
   width: 4.5%;
 }
 
+.logoFiestaMovil {
+  position: fixed;
+  top: 2.5%;
+  left: 6%;
+  width: 24%;
+}
+
+.logoSNLMovil {
+  position: fixed;
+  top: 2.4%;
+  right: 6%;
+  width: 15%;
+}
+
 .menuBar {
   position: absolute;
   top: 20%;
   right: 6%;
   width: 1.8%;
+  z-index: 999;
+}
+
+.menuHorizontal {
+  position: absolute;
+  top: 90px;
+  left: 10%;
+  width: 80%;
   z-index: 999;
 }
 
@@ -56,6 +85,18 @@ body {
   cursor: pointer;
 }
 
+.regresoCiudadEspejoMovil {
+  position: fixed;
+  top: 3.5%;
+  left: 6%;
+  width: 30%;
+  z-index: 999;
+}
+
+.regresoCiudadEspejoMovil:hover {
+  cursor: pointer;
+}
+
 .regresoMedellin {
   position: absolute;
   top: 5.7%;
@@ -68,13 +109,25 @@ body {
   cursor: pointer;
 }
 
+.regresoMedellinMovil {
+  position: fixed;
+  top: 4.5%;
+  left: 6%;
+  width: 35%;
+  z-index: 999;
+}
+
+.regresoMedellinMovil:hover {
+  cursor: pointer;
+}
+
 .degradadoIzq {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 9%;
-    height: 100%;
-    z-index: -999;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 9%;
+  height: 100%;
+  z-index: -999;
 }
 
 .decoracionFondo {
@@ -83,11 +136,24 @@ body {
   top: 0%;
 }
 
+.decoracionhomeMovil {
+  z-index: -999;
+  width: 200%;
+}
+
 .ciudadEspejoDer {
   position: fixed;
   top: 5.5%;
   right: 12%;
   width: 8%;
+  z-index: 999;
+}
+
+.ciudadEspejoDerMovil {
+  position: fixed;
+  top: 3.4%;
+  right: 30%;
+  width: 22%; 
   z-index: 999;
 }
 
@@ -121,14 +187,46 @@ body {
   font-size: 1vw;
 }
 
+.textoFragmentoAmbosMovil {
+  margin-top: 10px;
+  color: #F8EBE3;
+  font-family: "sweet-sans-pro";
+  font-size: 5vw;
+}
+
 .rosaAmbos {
   width: 60%;
+}
+
+.rosaAzulMovil {
+  width: 20%;
+  left: 78%; 
+  bottom: 10%;
+}
+
+.rosaRojaMovil {
+  width: 20%;
+  left: 10%; 
+  bottom: 10%;
+  z-index: 901;
 }
 
 .eligeUnFragmentoAmbos {
   position: relative;
   right: 70%;
   top: 20%;
+}
+
+.eligeUnFragmentoDerMovil {
+  width: 20%;
+  left: 75%; 
+  bottom: 5%;
+}
+
+.eligeUnFragmentoIzqMovil {
+  width: 20%;
+  left: 10%; 
+  bottom: 5%;
 }
 
 .mapaAmbos {
@@ -139,21 +237,11 @@ body {
   z-index: 901 !important;
 }
 
-
-.logoFiestaMovil {
-  position: fixed;
-  top: 3%;
-  left: 5%;
-  width: 22%;
+.mapaAmbosMovil {
+  /* position: relative; */
+  top: 22%; 
+  z-index: 901 !important;
 }
-
-.logoSNLMovil {
-  position: fixed;
-  top: 2%;
-  right: 6%;
-  width: 14%;
-}
-
 
 /** {
     scrollbar-width: thin;
