@@ -76,7 +76,7 @@ export class AutoresComponent implements OnInit {
     else{
        this.fragmentoActual=fragmentos[numero];
        $( document ).ready(function() {
-        $("#bullet"+numero).attr('src','assets/autores/BULLET-LLENO.png');
+        $("#bullet"+numero).attr('src','https://assetsexplora.s3.amazonaws.com/assets/autores/BULLET-LLENO.png');
     });
            this.bulletVacio[numero]=true;
          this.contadorFragmento=numero;
