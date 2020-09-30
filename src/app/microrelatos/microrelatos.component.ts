@@ -95,6 +95,7 @@ export class MicrorelatosComponent implements OnInit {
     $(".subeTuHistoria").hide();
     
     var data={
+      primerParrafo: this.primerParrafo,
       texto: this.textoGenerado,
       porcentajeDistopico: this.porcentajeDistopico,
       porcentajeSolarPunk: this.porcentajeSolarPunk
@@ -104,7 +105,7 @@ export class MicrorelatosComponent implements OnInit {
 
 
 
-    this.microRelatoServicio.guardarMicroRelato(this.respuestas).subscribe(result => {
+    this.microRelatoServicio.guardarMicroRelato(data).subscribe(result => {
       console.log(result);
       this.numeroFisura=result.numeroFisura;
       this.urlImagen=result.urlImagen;

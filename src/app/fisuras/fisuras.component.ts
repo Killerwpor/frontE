@@ -69,15 +69,21 @@ this.orientacion="portrait";
     else{
       this.movil=false;
     }
-
+    
     this.microRelatoServicio.traerMicroRelatos().subscribe(result => {
-      console.log(result);
-     this.fisuras1=result[0];
-     this.fisuras2=result[1];
-     this.fisuras3=result[2];
-     console.log(this.fisuras1);
-      console.log(this.fisuras2);
-      console.log(this.fisuras3);
+      
+      console.log("FISURAS 1");
+        this.fisuras1=result[0];
+        console.log(this.fisuras1);
+        console.log("FISURAS 2");
+        this.fisuras2=result[1];
+        console.log(this.fisuras2);
+        console.log("FISURAS 3");
+        this.fisuras3=result[2];
+        console.log(this.fisuras3);
+      
+    
+    
      });
 
 }

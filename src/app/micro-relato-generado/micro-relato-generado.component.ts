@@ -99,11 +99,12 @@ orientacion: String;
     $(".iconSubeTuHistoria").hide();
 
     var data={
+      primerParrafo: this.primerParrafo,
       texto: this.textoGenerado,
       porcentajeDistopico: this.porcentajeDistopico,
       porcentajeSolarPunk: this.porcentajeSolarPunk
     }
-    this.microRelatoServicio.guardarMicroRelato(this.respuestas).subscribe(result => {
+    this.microRelatoServicio.guardarMicroRelato(data).subscribe(result => {
       this.numeroFisura=result.numeroFisura;
       this.urlImagen=result.urlImagen;
       this.relatoGuardado=true;
