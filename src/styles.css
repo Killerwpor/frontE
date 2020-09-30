@@ -15,7 +15,7 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-image: url('assets/comun/fondo.webp');
+  background-image: url('https://assetsexplora.s3.amazonaws.com/assets/comun/fondo.webp');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;

@@ -3,7 +3,7 @@
     -moz-border-radius: 10px;
     border-radius: 10px;
      min-width: 100%;
-     background-image: url("/assets/microRelatos/WEB/GLOBO-TEXTO-INTRO.png");
+     background-image: url("https://assetsexplora.s3.amazonaws.com/assets/microRelatos/WEB/GLOBO-TEXTO-INTRO.png");
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-size: 100% 100%; 
