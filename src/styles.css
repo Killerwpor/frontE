@@ -41,6 +41,15 @@ body {
   top: 5.3%;
   right: 6%;
   width: 4.5%;
+  z-index: 999;
+}
+
+.logoSNL2 {
+  position: fixed;
+  top: 5.3%;
+  right: 3%;
+  width: 4.5%;
+  z-index: 999;
 }
 
 .logoFiestaMovil {
@@ -55,18 +64,27 @@ body {
   top: 2.4%;
   right: 6%;
   width: 15%;
+  z-index: 999;
 }
 
 .menuBar {
-  position: absolute;
+  position: fixed;
   top: 20%;
   right: 6%;
   width: 1.8%;
   z-index: 999;
 }
 
+.menuBar2 {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  width: 1.8%;
+  z-index: 999;
+}
+
 .menuHorizontal {
-  position: absolute;
+  position: fixed;
   top: 90px;
   left: 10%;
   width: 80%;
